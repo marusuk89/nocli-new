@@ -1,0 +1,23 @@
+EQM 1
+APEQM 1
+RMOD 32767
+actPimCancellation false
+actSharedRUIndControl false
+actSnapshotCollection false
+administrativeState Unlocked
+alVoltHighThreshold 5800
+alVoltLowThreshold 4050
+alVoltUnstableThreshold 5
+energySavingMode NORMAL
+legacyWideCarrierMode false
+linkSpeed Auto
+moduleLocation "DGhwanggeumilD7_C00A [G] [1506] [2403873699]"
+pimCancellingEnabled true
+prodCodePlanned 473966B
+RSL 1
+dcVoltageEnabled false
+hdlcCommunicationAllowed false
+exit
+exit
+exit
+exit

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raml version="2.1" xmlns="raml21.xsd">
+  <cmData type="actual" scope="all" domain="ALL">
+    <header>
+      <log dateTime="2025-06-12T06:11:46+09:00" action="created"/>
+    </header>
+    <managedObject class="NOKLTE:SIB" version="xL24R2FSM3_2404_100" distName="MRBTS-000/LNBTS-000/LNCEL-000/SIB-0" operation="create">
+      <list name="spStResPars">
+        <item>
+          <p name="nCellChgHigh">6</p>
+          <p name="nCellChgMed">3</p>
+          <p name="qHystSfHigh">-2 dB</p>
+          <p name="qHystSfMed">0 dB</p>
+          <p name="tEvaluation">120s</p>
+          <p name="tHystNormal">120s</p>
+        </item>
+      </list>
+    </managedObject>
+    <managedObject class="NOKLTE:LNCEL" version="xL24R2FSM3_2404_100" distName="MRBTS-000/LNBTS-000/LNCEL-000" operation="create">
+      <p name="hsScenario">scenario1</p>	
+      <p name="mobStateParamNCelChgHgh">6</p>
+      <p name="mobStateParamNCelChgMed">3</p>
+      <p name="mobStateParamTEval">120s</p>
+      <p name="mobStateParamTHystNorm">120s</p>
+      <p name="timeToTriggerSfHigh">0.25</p>
+      <p name="timeToTriggerSfMedium">0.5</p>
+    </managedObject>
+    <managedObject class="NOKLTE:IRFIM" version="xL24R2FSM3_2404_100" distName="MRBTS-000/LNBTS-000/LNCEL-000/IRFIM-1" operation="create">
+      <list name="tResEutSF">
+        <item>
+          <p name="eutResTiFHM">0.5</p>
+          <p name="eutResTiFMM">0.5</p>
+        </item>
+      </list>
+    </managedObject>
+    <managedObject class="NOKLTE:IRFIM" version="xL24R2FSM3_2404_100" distName="MRBTS-000/LNBTS-000/LNCEL-000/IRFIM-2" operation="create">
+      <list name="tResEutSF">
+        <item>
+          <p name="eutResTiFHM">0.5</p>
+          <p name="eutResTiFMM">0.5</p>
+        </item>
+      </list>
+    </managedObject>
+    <managedObject class="NOKLTE:LNCEL_FDD" version="xL24R2FSM3_2404_100" distName="MRBTS-000/LNBTS-000/LNCEL-000/LNCEL_FDD-0" operation="create">
+      <p name="prachCS">10</p>
+      <p name="prachConfIndex">20</p>
+      <p name="prachHsFlag">true</p>
+      <p name="rootSeqIndex">520</p>
+      <p name="ulCombinationMode">MRC</p>
+    </managedObject>
+  </cmData>
+</raml>

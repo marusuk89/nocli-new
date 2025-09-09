@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<raml version="2.1">
+  <cmData type="plan" scope="all" id="3257682577">
+    <header>
+      <log action="create" dateTime="2025-04-23T10:05:17.717Z"/>
+    </header>
+    <managedObject class="com.nokia.srbts.eqm:RMOD" distName="MRBTS-130112/EQM-1/APEQM-1/RMOD-5" version="EQM24R1FSM3_2322_100" operation="create">
+      <p name="actPimCancellation">false</p>
+      <p name="actSharedRUIndControl">false</p>
+      <p name="actSnapshotCollection">false</p>
+      <p name="administrativeState">Unlocked</p>
+      <p name="alVoltHighThreshold">5800</p>
+      <p name="alVoltLowThreshold">4050</p>
+      <p name="alVoltUnstableThreshold">5</p>
+      <p name="energySavingMode">NORMAL</p>
+      <p name="legacyWideCarrierMode">false</p>
+      <p name="pimCancellingEnabled">true</p>
+      <p name="prodCodePlanned">472169A</p>
+    </managedObject>
+    <managedObject class="com.nokia.srbts.eqm:ANTL" distName="MRBTS-130112/EQM-1/APEQM-1/RMOD-5/ANTL-1" version="EQM24R1FSM3_2322_100" operation="create">
+      <p name="antPortId">1</p>
+      <p name="antennaPathDelayDL">200</p>
+      <p name="antennaPathDelayUL">200</p>
+      <p name="cwaThreshold">215</p>
+      <p name="totalLoss">30</p>
+    </managedObject>
+    <managedObject class="com.nokia.srbts.eqm:ANTL" distName="MRBTS-130112/EQM-1/APEQM-1/RMOD-5/ANTL-2" version="EQM24R1FSM3_2322_100" operation="create">
+      <p name="antPortId">2</p>
+      <p name="antennaPathDelayDL">200</p>
+      <p name="antennaPathDelayUL">200</p>
+      <p name="cwaThreshold">215</p>
+      <p name="totalLoss">30</p>
+    </managedObject>
+  </cmData>
+</raml>
+	

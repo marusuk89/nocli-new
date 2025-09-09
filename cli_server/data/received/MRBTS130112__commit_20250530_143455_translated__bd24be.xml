@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<raml xmlns="raml21.xsd" version="2.1">
+  <cmData type="plan">
+    <managedObject class="com.nokia.srbts:MRBTS" distName="MRBTS-130112" version="SBTS24R2FSM3_2402_100" operation="create"/>
+  </cmData>
+</raml>

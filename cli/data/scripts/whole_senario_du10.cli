@@ -1,0 +1,151 @@
+#######################################
+################# 24R2 ################
+#######################################
+
+## config 모드 진입 명령어
+config
+
+## 셋업 모드 진입 명령어
+init-stp
+
+## 해당 국소가 살아있는지 테스트 하는 명령어
+dest-bts 130126
+
+## 해당 국소의 ping을 확인할수 있는 명령어
+check-ping 130126
+
+
+exit
+init-bts -r 4G -v 24R2 -i 65534
+set-du-type du10
+tgt-bts 130126
+#exec-script INITBTS_BASE.SCRIPT.cli
+exec-script 24R2_DU10_INITBTS_FILTER_SCRIPT_V0.7.5.cli
+exec-script 24R2_du10_bts130126_userinput.cli
+commit
+apply-bts-cfg-commission
+act-bts-cfg-commission
+exit
+yes
+
+init-cell -v 24R2 -r 4G -i 350
+set-du-type du10
+set-ru-type FHCA
+#set-ru-type AHCA
+#set-ru-type FXCA
+tgt-bts 130126
+dnload-bts-cfg
+exec-script 24R2_senario_du10_initcell_autocfg_130126.txt
+set-cfg-tmpl GONGDONG1.cli
+commit
+apply-bts-cfg
+act-bts-cfg
+exit
+yes
+
+init-cell -v 24R2 -r 4G -i 450
+set-du-type du10
+#set-ru-type FHCA
+set-ru-type AHCA
+#set-ru-type FXCA
+tgt-bts 130126
+dnload-bts-cfg
+exec-script 24R2_senario_du10_initcell_autocfg_130126_2.txt
+set-cfg-tmpl GONGDONG1.cli
+commit
+apply-bts-cfg
+act-bts-cfg
+exit
+yes
+
+init-cell -v 24R2 -r 4G -i 550
+set-du-type du10
+#set-ru-type FHCA
+#set-ru-type AHCA
+set-ru-type FXCA
+tgt-bts 130126
+dnload-bts-cfg
+exec-script 24R2_senario_du10_initcell_autocfg_130126_3.txt
+set-cfg-tmpl GONGDONG1.cli
+commit
+apply-bts-cfg
+act-bts-cfg
+
+dnload-bts-cfg
+exec-script senario_kill_dummy.cli
+commit
+apply-bts-cfg
+act-bts-cfg
+
+#######################################
+################ 25R2 #################
+#######################################
+## filter script 의 LNMME 갯수 줄여야 해서 버전 나눔. 룰북에 0~4 까지 있고 filter_script에는 0~2x까지 있었기 때문
+## rrcGuardTimer formula 에러 -> 이 경우 formula를 통한 작업 하고 난후 임의로 t1파일을 변경해야하며 그 후는 변경 사항 없음
+## syncIputList에서 값을 GNSS Reciever를 쓸 경우 GNSSE MO가 필요하여서 GNSSE가 필요가 없는 Sync Master로 변경
+## MOPR, MORED가 룰북에 없어서 추가함 (에러 내용은 해당 MO의 필수 파라미터가 없다는 내용)
+config
+init-stp
+dest-bts 130126
+check-ping 130126
+exit
+init-bts -r 4G -v 25R2 -i 65534
+set-du-type du10
+tgt-bts 130126
+#exec-script INITBTS_BASE.SCRIPT.cli
+exec-script 25R2_DU10_INITBTS_FILTER_SCRIPT_V0.7.5.cli
+exec-script 25R2_du10_bts130126_userinput.cli
+commit
+apply-bts-cfg-commission
+act-bts-cfg-commission
+exit
+yes
+
+init-cell -v 24R2 -r 4G -i 350
+set-du-type du10
+set-ru-type FHCA
+#set-ru-type AHCA
+#set-ru-type FXCA
+tgt-bts 130126
+dnload-bts-cfg
+exec-script 25R2_senario_du10_initcell_autocfg_130126.txt
+set-cfg-tmpl GONGDONG1.cli
+commit
+apply-bts-cfg
+act-bts-cfg
+exit
+yes
+
+init-cell -v 24R2 -r 4G -i 450
+set-du-type du10
+#set-ru-type FHCA
+set-ru-type AHCA
+#set-ru-type FXCA
+tgt-bts 130126
+dnload-bts-cfg
+exec-script 25R2_senario_du10_initcell_autocfg_130126_2.txt
+set-cfg-tmpl GONGDONG1.cli
+commit
+apply-bts-cfg
+act-bts-cfg
+exit
+yes
+
+init-cell -v 24R2 -r 4G -i 550
+set-du-type du10
+#set-ru-type FHCA
+#set-ru-type AHCA
+set-ru-type FXCA
+tgt-bts 130126
+dnload-bts-cfg
+exec-script 25R2_senario_du10_initcell_autocfg_130126_3.txt
+set-cfg-tmpl GONGDONG1.cli
+commit
+apply-bts-cfg
+act-bts-cfg
+
+dnload-bts-cfg
+exec-script senario_kill_dummy.cli
+commit
+apply-bts-cfg
+act-bts-cfg

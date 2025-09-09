@@ -1,0 +1,117 @@
+2025-07-21 11:08:27 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-21 11:08:27 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-21 11:08:27 | config > | init_stp | RESULT: OK
+2025-07-21 11:08:33 | config/init-cell(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-21 11:08:33 | config/init-cell(24R2, 4G) > | set_ru_type FHCA | RESULT: OK
+2025-07-21 11:08:33 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-21 11:08:42 | MRBTS(130126) > | dnload_bts_cfg | RESULT: OK
+2025-07-21 11:08:42 | MRBTS(130126) > | exec_script 25R2_senario_du10_initcell_autocfg_130126.txt | RESULT: OK
+2025-07-21 11:08:42 | MRBTS(130126) > | set_cfg_tmpl GONGDONG1.cli | RESULT: OK
+2025-07-21 11:08:42 | MRBTS(130126) > | commit | RESULT: NOK
+2025-07-21 11:08:50 | MRBTS(130126) > | apply_bts_cfg | RESULT: OK
+2025-07-21 11:09:13 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-21 11:09:13 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-21 11:09:13 | config > | init_stp | RESULT: OK
+2025-07-21 11:42:21 | config-x/auto-comm > | compare_scf MRBTS130126__cellcommit_20250710_181012_translated__f60605.xml MRBTS130126__cellcommit_20250711_133612_translated__edd564.xml | RESULT: NOK
+2025-07-21 11:43:11 | config-x/auto-comm > | compare_scf MRBTS130126__cellcommit_20250710_181012_translated__f60605.xml MRBTS130126__cellcommit_20250711_133612_translated__edd564.xml | RESULT: NOK
+2025-07-21 11:46:18 | config-x/auto-comm > | compare_scf MRBTS130126__cellcommit_20250710_181012_translated__f60605.xml MRBTS130126__cellcommit_20250711_133612_translated__edd564.xml | RESULT: NOK
+2025-07-21 11:47:17 | config-x/auto-comm > | compare_scf MRBTS130126__cellcommit_20250710_181012_translated__f60605.xml MRBTS130126__cellcommit_20250711_133612_translated__edd564.xml | RESULT: NOK
+2025-07-21 11:48:55 | config-x/auto-comm > | compare_scf MRBTS130126__cellcommit_20250710_181012_translated__f60605.xml MRBTS130126__cellcommit_20250711_133612_translated__edd564.xml | RESULT: NOK
+2025-07-21 11:49:37 | config-x/auto-comm > | compare_scf MRBTS130126__cellcommit_20250710_181012_translated__f60605.xml MRBTS130126__cellcommit_20250711_133612_translated__edd564.xml | RESULT: NOK
+2025-07-21 11:50:57 | config-x/auto-comm > | compare_scf MRBTS130126__cellcommit_20250710_181012_translated__f60605.xml MRBTS130126__cellcommit_20250711_133612_translated__edd564.xml | RESULT: NOK
+2025-07-21 11:52:09 | config-x/auto-comm > | compare_scf MRBTS130126__cellcommit_20250710_181012_translated__f60605.xml MRBTS130126__cellcommit_20250711_133612_translated__edd564.xml | RESULT: NOK
+2025-07-21 11:52:43 | config-x/auto-comm > | compare_scf MRBTS130126__cellcommit_20250710_181012_translated__f60605.xml MRBTS130126__cellcommit_20250711_133612_translated__edd564.xml | RESULT: NOK
+2025-07-21 11:53:42 | config-x/auto-comm > | compare_scf MRBTS130126__cellcommit_20250710_181012_translated__f60605.xml MRBTS130126__cellcommit_20250711_133612_translated__edd564.xml | RESULT: NOK
+2025-07-21 11:54:29 | config-x/auto-comm > | compare_scf MRBTS130126__cellcommit_20250710_181012_translated__f60605.xml MRBTS130126__cellcommit_20250711_133612_translated__edd564.xml | RESULT: NOK
+2025-07-21 12:01:55 | config-x/auto-comm > | compare_scf MRBTS130126__cellcommit_20250710_181012_translated__f60605.xml MRBTS130126__cellcommit_20250711_133612_translated__edd564.xml | RESULT: NOK
+2025-07-21 12:02:37 | config-x/auto-comm > | compare_scf MRBTS130126__cellcommit_20250710_181012_translated__f60605.xml MRBTS130126__cellcommit_20250711_133612_translated__edd564.xml | RESULT: NOK
+2025-07-21 12:03:22 | config-x/auto-comm > | compare_scf MRBTS130126__cellcommit_20250710_181012_translated__f60605.xml MRBTS130126__cellcommit_20250711_133612_translated__edd564.xml | RESULT: NOK
+2025-07-21 13:50:14 | config-x/auto-comm > | list_tmpl 20250721 | RESULT: NOK
+2025-07-21 13:50:15 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-21 13:50:15 | config-x/auto-comm > | list_script 20250721 | RESULT: NOK
+2025-07-21 13:56:16 | config-x/auto-comm > | list_tmpl 20250721 | RESULT: NOK
+2025-07-21 13:56:17 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-21 13:56:17 | config-x/auto-comm > | list_script 20250721 | RESULT: NOK
+2025-07-21 13:56:33 | MRBTS(130126) > | autocomm_run_script 100.DU130126_x_initbts_pass.cli | RESULT: OK
+2025-07-21 14:01:56 | config-x/auto-comm > | list_tmpl 20250721 | RESULT: NOK
+2025-07-21 14:01:57 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-21 14:01:57 | config-x/auto-comm > | list_script 20250721 | RESULT: NOK
+2025-07-21 14:02:20 | MRBTS(130126) > | autocomm_run_script 100.DU130126_x_initbts_pass.cli | RESULT: OK
+2025-07-21 14:13:58 | config-x/auto-comm > | list_tmpl 20250721 | RESULT: NOK
+2025-07-21 14:13:59 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-21 14:14:18 | config-x/auto-comm > | set debug true | RESULT: NOK
+2025-07-21 14:14:22 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-21 14:17:46 | config-x/auto-comm > | list_tmpl 20250721 | RESULT: NOK
+2025-07-21 14:17:47 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-21 14:18:15 | config-x/auto-comm > | set debug true | RESULT: NOK
+2025-07-21 14:18:18 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-21 14:20:06 | config-x/auto-comm > | list_tmpl 20250721 | RESULT: NOK
+2025-07-21 14:20:07 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: OK
+2025-07-21 14:22:09 | config-x/auto-comm > | list_tmpl 20250721 | RESULT: NOK
+2025-07-21 14:22:48 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: OK
+2025-07-21 14:27:59 | config-x/auto-comm > | list_tmpl 20250721 | RESULT: NOK
+2025-07-21 14:28:00 | MRBTS(130120) > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: OK
+2025-07-21 14:28:11 | MRBTS(130120) > | set debug true | RESULT: OK
+2025-07-21 14:30:27 | config-x/auto-comm > | list_tmpl 20250721 | RESULT: NOK
+2025-07-21 14:30:27 | MRBTS(130120) > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: OK
+2025-07-21 14:31:04 | config-x/auto-comm > | list_tmpl 20250721 | RESULT: NOK
+2025-07-21 14:31:04 | MRBTS(130120) > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: OK
+2025-07-21 14:31:12 | MRBTS(130120) > | set debug true | RESULT: OK
+2025-07-21 14:32:09 | config-x/auto-comm > | list_tmpl 20250721 | RESULT: NOK
+2025-07-21 14:32:10 | MRBTS(130120) > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: OK
+2025-07-21 14:32:14 | MRBTS(130120) > | set debug true | RESULT: OK
+2025-07-21 14:34:42 | config-x/auto-comm > | list_tmpl 20250721 | RESULT: NOK
+2025-07-21 14:34:43 | MRBTS(130120) > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: OK
+2025-07-21 14:34:53 | MRBTS(130120) > | set debug true | RESULT: OK
+2025-07-21 14:35:38 | config-x/auto-comm > | list_tmpl 20250721 | RESULT: NOK
+2025-07-21 14:35:38 | MRBTS(130120) > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: OK
+2025-07-21 14:35:43 | MRBTS(130120) > | set debug true | RESULT: OK
+2025-07-21 14:37:01 | config-x/auto-comm > | list_tmpl 20250721 | RESULT: NOK
+2025-07-21 14:37:02 | MRBTS(130120) > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: OK
+2025-07-21 14:37:05 | MRBTS(130120) > | set debug true | RESULT: OK
+2025-07-21 14:38:03 | config-x/auto-comm > | list_tmpl 20250721 | RESULT: NOK
+2025-07-21 14:38:06 | MRBTS(130120) > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: OK
+2025-07-21 14:38:10 | MRBTS(130120) > | set debug true | RESULT: OK
+2025-07-21 14:41:11 | config-x/auto-comm > | list_tmpl 20250721 | RESULT: NOK
+2025-07-21 14:42:23 | config-x/auto-comm > | list_tmpl 20250721 | RESULT: NOK
+2025-07-21 14:43:07 | MRBTS(130126) > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: OK
+2025-07-21 14:48:58 | config-x/auto-comm > | list_tmpl 20250721 | RESULT: NOK
+2025-07-21 14:49:41 | MRBTS(130126) > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: OK
+2025-07-21 14:56:24 | config-x/auto-comm > | list_tmpl 20250721 | RESULT: NOK
+2025-07-21 14:57:07 | MRBTS(130126) > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: OK
+2025-07-21 14:57:35 | MRBTS(130126) > eqm(1) > apeqm(1) > rmod(1) > | autocomm_run_script 101.DU130126_Cell48291_initcell_pass.cli | RESULT: OK
+2025-07-21 15:08:59 | config-x/auto-comm > | set_cfg_scf 25R2_NOKIA_CLI_Rulebook_SCF_DU10_InitCell_LTE_V1.0.xml | RESULT: NOK
+2025-07-21 15:19:09 | config-x/auto-comm > | set_cfg_scf 25R2_NOKIA_CLI_Rulebook_SCF_DU10_InitCell_LTE_V1.0.xml | RESULT: NOK
+2025-07-21 15:21:16 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-21 15:21:16 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-21 15:21:16 | config > | init_stp | RESULT: OK
+2025-07-21 15:21:16 | config/init-bts(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-21 15:21:20 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-21 15:21:24 | MRBTS(130126) > | set_cfg_scf 25R2_NOKIA_CLI_Rulebook_SCF_DU10_InitBts_LTE_V1.0.xml | RESULT: OK
+2025-07-21 15:21:41 | MRBTS(130126) > | set_cfg_scf 25R2_NOKIA_CLI_Rulebook_SCF_DU10_InitCell_LTE_V1.0.xml | RESULT: NOK
+2025-07-21 15:22:17 | MRBTS(130126) > | set_cfg_scf 25R2_NOKIA_CLI_Rulebook_SCF_DU10_InitCell_LTE_V1.0.xml | RESULT: OK
+2025-07-21 15:22:23 | MRBTS(130126) > | commit_all -t 1 | RESULT: OK
+2025-07-21 15:29:26 | config-x/auto-comm > | list_tmpl 20250721 | RESULT: NOK
+2025-07-21 15:30:05 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: OK
+2025-07-21 15:35:31 | config-x/auto-comm > | rulebook_to_dict 25R2_NOKIA_CLI_Rulebook_SCF_DU10_InitCell_LTE_V1.0_t1.xml | RESULT: OK
+2025-07-21 15:36:52 | config-x/auto-comm > | list_tmpl 20250721 | RESULT: NOK
+2025-07-21 15:37:32 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: OK
+2025-07-21 15:37:32 | config-x/auto-comm > | list_script 20250721 | RESULT: OK
+2025-07-21 15:37:56 | MRBTS(130126) > | autocomm_run_script 101.DU130126_Cell48291_initcell_pass.cli | RESULT: OK
+2025-07-21 15:54:11 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-21 15:54:11 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-21 15:54:11 | config > | init_stp | RESULT: OK
+2025-07-21 15:54:12 | config/init-bts(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-21 15:54:12 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-21 15:54:31 | MRBTS(130126) > | rulebook_to_dict 25R2_NOKIA_CLI_Rulebook_SCF_DU10_InitCell_LTE_V1.0_t1.xml | RESULT: OK
+2025-07-21 15:55:11 | config-x/auto-comm > | list_tmpl 20250721 | RESULT: NOK
+2025-07-21 15:55:50 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: OK
+2025-07-21 15:55:50 | config-x/auto-comm > | list_script 20250721 | RESULT: OK
+2025-07-21 15:56:30 | MRBTS(130126) > | autocomm_run_script 101.DU130126_Cell48291_initcell_pass.cli | RESULT: OK
+2025-07-21 16:01:19 | MRBTS(130126) > | act_bts_cfg | RESULT: OK
+2025-07-21 17:17:36 | config-x/auto-comm > | list_tmpl 20250721 | RESULT: NOK
+2025-07-21 17:18:15 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: OK
+2025-07-21 17:18:15 | config-x/auto-comm > | list_script 20250721 | RESULT: OK
+2025-07-21 17:18:32 | MRBTS(130126) > | autocomm_run_script 101.DU130126_Cell48291_initcell_pass.cli | RESULT: OK
+2025-07-21 17:21:16 | config-x > | help | RESULT: NOK
+2025-07-21 17:26:34 | # nocli > | rulebook_to_dict 25R2_NOKIA_CLI_Rulebook_SCF_DU10_InitCell_LTE_V1.0_t1.xml | RESULT: NOK

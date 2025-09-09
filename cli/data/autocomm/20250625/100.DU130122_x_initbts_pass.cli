@@ -1,0 +1,90 @@
+### HEADER ###
+config
+init-stp
+dest-bts 130122
+check-ping 130122
+exit
+init-bts -r 4G -v 24R2
+autocomm-run-script 100.DU130122_x_pass.cli
+
+### BODY ###
+set-du-type du10
+tgt-bts 130122
+exec-script initbts_AHCH_part1.cli
+# 진입 단계 종료
+
+btsName NL_GumiOkgye
+# MRBTS 단계 종료
+
+LNBTS 130122
+enbName NL_GumiOkgye
+exit-all
+# LNBTS 단계 종료
+
+EQM 1
+APEQM 1
+SMOD 1
+prod-name FSMF
+exit-all
+# SMOD 단계 종료
+
+# TNLSVC → IPIF 설정
+TNLSVC 1
+TNL 1
+IPNO 1
+IPIF 1
+IPADDRESSV4 1
+localIpAddr 172.20.198.218
+localIpPrefixLength 29
+exit
+IPRT 1
+list staticRoutes 1 gateway 172.20.198.217
+list staticRoutes 1 routeIpMtu 1510
+list staticRoutes 1 destIpAddr 0.0.0.0
+exit-all
+# TNLSVC 설정 종료
+
+# TNLSVC → ETHSVC 설정
+TNLSVC 1
+TNL 1
+ETHSVC 1
+ETHIF 1
+VLANIF 1
+vlanId 100
+exit-all
+# ETHSVC 설정 종료
+
+# SYNC-1/CLOCK 구성
+MNL 1
+MNLENT 1
+SYNC 1
+CLOCK 1
+list syncInputList 1 syncInputPrio 1
+list syncInputList 1 syncInputType "1pps/ToD from external GNSS receiver"
+list syncInputList 2 syncInputPrio 2
+list syncInputList 2 syncInputType "1pps/ToD from external GNSS receiver"
+list syncInputList 3 syncInputPrio 3
+list syncInputList 3 syncInputType "TOPP"
+exit
+GNSSE 1
+gnssLineDelay 519
+exit
+TOPP 1
+masterIpAddr
+exit
+NTP 1
+list ntpServerIpAddrList 1 val 4.5.1.99
+list ntpServerIpAddrList 2 val 4.6.1.2
+maxNtpTimeError 200
+ntpAlarmingThreshold 300
+ntpDscp 46
+exit-all
+
+# BBMOD 설정
+EQM 1
+APEQM 1
+BBMOD 1
+prod-name FBBC
+exit-all
+# BBMOD 설정 종료
+

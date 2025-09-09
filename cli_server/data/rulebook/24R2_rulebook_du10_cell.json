@@ -1,0 +1,9037 @@
+{
+  "RMOD": {
+    "000": {
+      "actPimCancellation": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actSharedRUIndControl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actSnapshotCollection": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "administrativeState": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "Unlocked"
+      },
+      "alVoltHighThreshold": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "58.0"
+      },
+      "alVoltLowThreshold": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "40.5"
+      },
+      "alVoltUnstableThreshold": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "5.0"
+      },
+      "energySavingMode": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "NORMAL"
+      },
+      "legacyWideCarrierMode": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "pimCancellingEnabled": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "prodCodePlanned": {
+        "req": 1,
+        "ishow": 1,
+        "soam": 1,
+        "value": "472142A"
+      }
+    }
+  },
+  "ANTL": {
+    "000": {
+      "antPortId": {
+        "req": 1,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "antennaPathDelayDL": {
+        "req": 1,
+        "ishow": 0,
+        "soam": 1,
+        "value": "2.0"
+      },
+      "antennaPathDelayUL": {
+        "req": 1,
+        "ishow": 0,
+        "soam": 1,
+        "value": "2.0"
+      },
+      "cwaThreshold": {
+        "req": 1,
+        "ishow": 0,
+        "soam": 1,
+        "value": "215.0"
+      },
+      "totalLoss": {
+        "req": 1,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.3"
+      }
+    }
+  },
+  "CABLINK": {
+    "000": {
+      "firstEndpointDN": {
+        "req": 1,
+        "ishow": 1,
+        "soam": 1,
+        "value": "***"
+      },
+      "firstEndpointLabel": {
+        "req": 1,
+        "ishow": 1,
+        "soam": 1,
+        "value": "***"
+      },
+      "firstEndpointPortId": {
+        "req": 1,
+        "ishow": 1,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "secondEndpointDN": {
+        "req": 1,
+        "ishow": 1,
+        "soam": 1,
+        "value": "***"
+      },
+      "secondEndpointPortId": {
+        "req": 1,
+        "ishow": 1,
+        "soam": 1,
+        "value": "0.0"
+      }
+    }
+  },
+  "LNCEL": {
+    "000": {
+      "a1TimeToTriggerDeactInterMeas": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0ms"
+      },
+      "a2RedirectQci1": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "enabled"
+      },
+      "a2TimeToTriggerActInterFreqMeas": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "5120ms"
+      },
+      "a2TimeToTriggerRedirect": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "5120ms"
+      },
+      "a3Offset": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "2.0"
+      },
+      "a3ReportAmount": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "infinity"
+      },
+      "a3ReportInterval": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "240ms"
+      },
+      "a3TimeToTrigger": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "256ms"
+      },
+      "a3TriggerQuantityHO": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "RSRP"
+      },
+      "a5ReportAmount": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "infinity"
+      },
+      "a5ReportInterval": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "240ms"
+      },
+      "a5TimeToTrigger": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "320ms"
+      },
+      "a5TriggerQuantityIntraFreqHO": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "RSRP"
+      },
+      "actAcHpsLimits": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actAir2Ground": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actAmle": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actAntPortMap": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actB1ReturnTo5GSA": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actCaArchEnhImp": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "off"
+      },
+      "actCaBlocking": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actCaScellSchedWeightFactor": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actCarelCounters": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actCsiRsSubFNonTM9Sch": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actDataSessionProf": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actDeltaCqiAgingScellChEst": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actDlPwBackoff": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actDlsLdAdaptPf": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actDlsOldtc": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "actDlsVoicePacketAgg": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "actDownSampling": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actDrx": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "actDrxDuringMeasGap": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actDrxDuringTTIB": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actDynamicDataSessionProf": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actEDrxIdle": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actEicic": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actEirpControl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "disabled"
+      },
+      "actEnDcBlocking": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actEndcHoPrefLay": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actEndcIntraFreqMdt": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "actExtSib1": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actFastPdcchAdapt": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actFlexDupGap": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actFlowCtrlEnh": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actForcedDrxS1Ho": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "actGsmSrvccMeasOpt": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actHapPrachCfg": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actHapPrachTaFilt": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actInactiveTimeForwarding": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actInterFreqLB": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actInterFreqSPIDBasedHo": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "none"
+      },
+      "actIntraFreqLoadBal": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actLBSpidUeSel": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actLdPdcch": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "actMaxNumUeDlNonGbr": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "actMcsUpgrade": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "Disabled"
+      },
+      "actMfbiDupFre": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "False"
+      },
+      "actMicroDtx": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actModulationSchemeDl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "64QAM"
+      },
+      "actModulationSchemeUL": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "256QAMand16QAMHighMCS"
+      },
+      "actNbrForNonGbrBearers": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actNoIntraBandIFMeasurements": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actOlLaPdcch": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "actOtdoa": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actPdcchQci1SrbControl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actPeriodicB1NRMeas": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "disabled"
+      },
+      "actPeriodical5GRedirect": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actProactSchedBySrb": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "actPrsTxDiv": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actPttOverbooking": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actPuschPrbDistribution": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actPuschPrbDistributionEnh": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actQci1BlerTgt": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actQci1RfDrx": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actQci1eVTT": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "actRbr": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actReducedFormat": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actReqDiffFallbacks": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actResourceAllocType1": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actReturnTo5GSA": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "disabled"
+      },
+      "actRrcConnRelDelayForwarding": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actScellBadChQualExtMonitor": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actScellConfigForHiDemand": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actSixIfMeasurements": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actSmartDrx": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actSrb1Robustness": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "actTaDisconnect": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actTcpServiceDiff": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actTtiBundling": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "actTtibAcqi": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "actTtibRsc": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "actUca": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actUePowerBasedMobThr": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actUl256QamChQualEst": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "actUlDynamicTargetBler": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actUlGrpHop": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actUlLnkAdp": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "fUlLa"
+      },
+      "actUlVarianceAdapt": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actUlpcMethod": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "PuschCLPucchCL"
+      },
+      "actUlpcRachPwrCtrl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "actUlsLdAdaptPf": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actUlsOptimizePrbMcs": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "actVoLteSrcRate": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "actVoipCovBoost": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actVoipCovBoostEnh": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "off"
+      },
+      "adaptPdcchDwellTime": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "100.0"
+      },
+      "addGbrTrafficRrHo": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "5.0"
+      },
+      "addGbrTrafficTcHo": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "addSpectrEmi": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.0"
+      },
+      "administrativeState": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "unlocked"
+      },
+      "allowPbIndexZero": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "amRlcSnFieldLengthDl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10bit"
+      },
+      "amleMaxNumHo": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10.0"
+      },
+      "amlePeriodLoadExchange": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1000ms"
+      },
+      "caPoolId": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "cellIndOffServ": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0dB"
+      },
+      "cellResourceSharingMode": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "none"
+      },
+      "cellTechnology": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "FDD"
+      },
+      "cellType": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "large"
+      },
+      "cqiAperEnable": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "cqiAperMode": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "FBT2"
+      },
+      "cqiPerSbCycK": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.0"
+      },
+      "cqiPerSimulAck": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "csgType": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "openAccess"
+      },
+      "dSrTransMax": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "64n"
+      },
+      "defPagCyc": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "128rf"
+      },
+      "deltaLbCioMargin": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "deltaPreMsg3": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.0"
+      },
+      "deltaTfEnabled": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "dlCaMinPcellCqi": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "dlCaMinPcellCqiQci1": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "dlCellPwrRed": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "dlInterferenceEnable": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "dlInterferenceLevel": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "dlInterferenceModulation": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "QPSK"
+      },
+      "dlOlqcEnable": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "dlPathlossChg": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "3 db"
+      },
+      "dlPcfichBoost": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "dlPhichBoost": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "dlSrbCqiOffset": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-4.0"
+      },
+      "dlTargetBler": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10.0"
+      },
+      "dlamcCqiDef": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "6.0"
+      },
+      "dlamcEnable": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "dlsDciCch": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "DCI format 1C"
+      },
+      "dlsOldtcTarget": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.98"
+      },
+      "dlsUsePartPrb": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "PRBs with PSS or SSS and PBCH used"
+      },
+      "eIcicMaxMutePattern": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "mp4"
+      },
+      "eTputFilterConfig": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "51.0"
+      },
+      "eTputInitMcs": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "20.0"
+      },
+      "eUlLaAtbPeriod": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "30.0"
+      },
+      "eUlLaBlerAveWin": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "30.0"
+      },
+      "eUlLaDeltaMcs": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.0"
+      },
+      "eUlLaLowMcsThr": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "2.0"
+      },
+      "eUlLaLowPrbThr": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "5.0"
+      },
+      "eUlLaPrbIncDecFactor": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.7"
+      },
+      "ecidMeasSupervisionTimer": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "3000.0"
+      },
+      "enableAmcPdcch": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "enableBetterCellHo": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "enableCovHo": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "enableDefaultBcsChkEnDc": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "enableLowAgg": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "enablePcPdcch": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "expectedCellSize": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "60km"
+      },
+      "fUlLAAtbTrigThr": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-2.0"
+      },
+      "filterCoeff": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "fc4"
+      },
+      "filterCoefficientCSFBCpichEcn0": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "fc4"
+      },
+      "filterCoefficientCSFBCpichRscp": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "fc4"
+      },
+      "filterCoefficientCpichEcn0": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "fc4"
+      },
+      "filterCoefficientCpichRscp": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "fc4"
+      },
+      "filterCoefficientRSRP": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "fc8"
+      },
+      "filterCoefficientRSRQ": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "fc4"
+      },
+      "filterCoefficientRSSI": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "fc2"
+      },
+      "gbrCongHandling": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "l2andl3"
+      },
+      "grpAssigPUSCH": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.0"
+      },
+      "harqMaxMsg3": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "3.0"
+      },
+      "harqMaxTrDl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "7.0"
+      },
+      "harqMaxTrSignalingDl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "7.0"
+      },
+      "harqMaxTrUlTtiBundling": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "24.0"
+      },
+      "harqMaxTrVoLteDl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "8.0"
+      },
+      "harqMaxTxUl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "7"
+      },
+      "hopModePusch": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "interSubFrame"
+      },
+      "hysA3Offset": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.0"
+      },
+      "hysThreshold2GERAN": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "hysThreshold2InterFreq": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "hysThreshold2Wcdma": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "hysThreshold2a": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "hysThreshold3": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "hysThreshold4": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "iFEndcHoRetryTimer": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "60.0"
+      },
+      "idleLBCapThresh": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "100.0"
+      },
+      "idleLBCelResWeight": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "20.0"
+      },
+      "idleLBPercCaUe": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "idleLBPercUeTM9": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "idleLBPercentageOfUes": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "ilReacTimerUl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "inactivityTimer": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10.0"
+      },
+      "inactivityTimerQci5Sign": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "iniMcsDl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "4.0"
+      },
+      "iniMcsUl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10.0"
+      },
+      "iniPrbsUl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10.0"
+      },
+      "iniUl256QamChQualEst": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1s"
+      },
+      "lbLoadFilCoeff": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "4.0"
+      },
+      "lcrId": {
+        "req": 1,
+        "ishow": 1,
+        "soam": 1,
+        "value": "5.0"
+      },
+      "longPeriodScellChEst": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "2000.0"
+      },
+      "lowerMarginCio": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-10.0"
+      },
+      "lteNrDssMode": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "none"
+      },
+      "maxBitrateDl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "170000.0"
+      },
+      "maxBitrateUl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "110000.0"
+      },
+      "maxCrPgDl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.12"
+      },
+      "maxCrRa4Dl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.12"
+      },
+      "maxCrRaDl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.12"
+      },
+      "maxCrRaDlHo": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.12"
+      },
+      "maxCrSibDl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.26"
+      },
+      "maxGbrTrafficLimit": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "85.0"
+      },
+      "maxNumCaUeScell": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "100.0"
+      },
+      "maxNumScells": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "2.0"
+      },
+      "maxNumUeProactiveUl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10.0"
+      },
+      "maxNumUeProactiveUlNonTxSkip": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10.0"
+      },
+      "maxNumVoLteProactUlGrantsPerTti": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "5.0"
+      },
+      "maxPdcchAgg": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "16.0"
+      },
+      "maxPdcchAggHighLoad": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "16.0"
+      },
+      "maxPeriodicCqiIncrease": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "15.0"
+      },
+      "maxPhyCces": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "8"
+      },
+      "mbrSelector": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "OaM"
+      },
+      "measQuantityCSFBUtra": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "cpichRSCP"
+      },
+      "measQuantityUtra": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "cpichRSCP"
+      },
+      "minBitrateDl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "30.0"
+      },
+      "minBitrateUl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "30.0"
+      },
+      "mobStateParamNCelChgHgh": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10.0"
+      },
+      "mobStateParamNCelChgMed": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "5.0"
+      },
+      "mobStateParamTEval": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "30s"
+      },
+      "mobStateParamTHystNorm": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "30s"
+      },
+      "msg3ConsecutiveDtx": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0"
+      },
+      "msg3DtxOffset": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "multLoadMeasRrm": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "2.0"
+      },
+      "multLoadMeasRrmEicic": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "2.0"
+      },
+      "n310Qci1": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "n6"
+      },
+      "nbIoTMode": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "inband"
+      },
+      "nbIotLinkedCellId": {
+        "req": 1,
+        "ishow": 1,
+        "soam": 1,
+        "value": "105.0"
+      },
+      "offsetFreqIntra": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0dB"
+      },
+      "p0NomPucch": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-109.0"
+      },
+      "p0NomPusch": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-70.0"
+      },
+      "pMax": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "47.8"
+      },
+      "pagingNb": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "oneT"
+      },
+      "pdcchAggDefUe": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "4"
+      },
+      "pdcchAggMsg4": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "4.0"
+      },
+      "pdcchAggPaging": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "4.0"
+      },
+      "pdcchAggPreamb": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "4.0"
+      },
+      "pdcchAggRaresp": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "4.0"
+      },
+      "pdcchAggRarespHo": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "4.0"
+      },
+      "pdcchAggSib": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "4.0"
+      },
+      "pdcchAlpha": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.8"
+      },
+      "pdcchCqiShift": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-5.0"
+      },
+      "pdcchCqiShift4Tx": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "pdcchHarqTargetBler": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.0"
+      },
+      "pdcchOrderConfig": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "enabled"
+      },
+      "pdcchUlDlBal": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.5"
+      },
+      "perUl256QamChQualEst": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "5s"
+      },
+      "periodicCqiFeedbackType": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "wideband"
+      },
+      "phyCellId": {
+        "req": 1,
+        "ishow": 1,
+        "soam": 1,
+        "value": "318.0"
+      },
+      "prachDetThresScaling": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.0"
+      },
+      "preventCellActivation": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "prsPowerBoost": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "puschAckOffI": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10.0"
+      },
+      "puschCqiOffI": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "8.0"
+      },
+      "puschHarqMode": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "adaptive"
+      },
+      "puschRiOffI": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "11.0"
+      },
+      "raContResoT": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "64ms"
+      },
+      "raLargeMcsUl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "5.0"
+      },
+      "raMsgPoffGrB": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10 dB"
+      },
+      "raNondedPreamb": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "40"
+      },
+      "raPreGrASize": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "32"
+      },
+      "raRespWinSize": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10"
+      },
+      "raSmallMcsUl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "5.0"
+      },
+      "raSmallVolUl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "144 bits"
+      },
+      "rcAmbrMgnDl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.03"
+      },
+      "rcAmbrMgnUl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.02"
+      },
+      "rcEnableDl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "rcEnableUl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "redBwEnDl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "redBwMaxRbDl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "50.0"
+      },
+      "redBwRpaEnUl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "reqMaxCCsDlOffset": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "rttCsfbType": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "forbidden"
+      },
+      "sbHoMode": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "all"
+      },
+      "scellBadChQualThr": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.0"
+      },
+      "scellFastSchedulingSelect": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "normal"
+      },
+      "scellGoodChQualThr": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.0"
+      },
+      "scellNotDetectableThr": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "shortPeriodScellChEst": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "200.0"
+      },
+      "t301Guard": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "390.0"
+      },
+      "t302": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "8000.0"
+      },
+      "t304InterRAT": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "500ms"
+      },
+      "t304InterRATGsm": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "500ms"
+      },
+      "t304IntraLte": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1000ms"
+      },
+      "t304eNaccGsm": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "2000ms"
+      },
+      "t310Qci1": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1000ms"
+      },
+      "t320": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "180min"
+      },
+      "tExtendedWait": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "300.0"
+      },
+      "tLoadMeasX2": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10000ms"
+      },
+      "tLoadMeasX2Eicic": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "2000"
+      },
+      "tPeriodicBsr": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10ms"
+      },
+      "tPeriodicPhr": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "20sf"
+      },
+      "tPingPong": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "3000.0"
+      },
+      "tProhibitPhr": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0sf"
+      },
+      "tReTxBsrTime": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "320 ms"
+      },
+      "tStoreUeCntxt": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "2000.0"
+      },
+      "taMaxOffset": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.52"
+      },
+      "taTimer": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "infinity"
+      },
+      "taTimerMargin": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "2000.0"
+      },
+      "tac": {
+        "req": 1,
+        "ishow": 1,
+        "soam": 1,
+        "value": "59445.0"
+      },
+      "targetSelMethod": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "SIB_based"
+      },
+      "threshold1": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-50.0"
+      },
+      "threshold2InterFreq": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-139.0"
+      },
+      "threshold2a": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-68.0"
+      },
+      "threshold2aQci1": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-137.0"
+      },
+      "threshold3": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-140.0"
+      },
+      "threshold3a": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-43.0"
+      },
+      "threshold4": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-140.0"
+      },
+      "timeToTriggerSfHigh": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.5"
+      },
+      "timeToTriggerSfMedium": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.5"
+      },
+      "tmpActFeat1": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0"
+      },
+      "tmpActFeat2": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0"
+      },
+      "tmpParam15": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "tmpParam16": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "tmpParam19": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "957.0"
+      },
+      "tmpParam4": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "tmpParam5": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "tmpParam6": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "ttiBundlingBlerTarget": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "6.0"
+      },
+      "ttiBundlingBlerThreshold": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "20.0"
+      },
+      "ttiBundlingSinrThreshold": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.0"
+      },
+      "ttibAltUlPrbThreshold": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "ttibMinDelayAfterBearerSetup": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "ttibMinUlPrb": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "2.0"
+      },
+      "ttibOperMode": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "sinrBasedTtibOnAllowed"
+      },
+      "ttibSinrDwellTimeIn": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "200.0"
+      },
+      "ttibSinrDwellTimeOut": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "200.0"
+      },
+      "ttibSinrThresholdIn": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "8.0"
+      },
+      "ttibSinrThresholdOut": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "19.0"
+      },
+      "ttibUlsMinTbs": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "144.0"
+      },
+      "ul256QamDeactChQualThr": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "22.0"
+      },
+      "ul256QamReactChQualThr": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "25.0"
+      },
+      "ulCaMinPcellSinr": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "ulCaMinPcellSinrQci1": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "ulRsCs": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "ulTargetBler": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10.0"
+      },
+      "ulamcAllTbEn": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "ulamcSwitchPer": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "30.0"
+      },
+      "ulatbEventPer": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.0"
+      },
+      "ulpcAlpha": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "alpha 0.7"
+      },
+      "ulpcReadPeriod": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "50.0"
+      },
+      "ulsFdPrbAssignAlg": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "MixedFD"
+      },
+      "ulsMaxPacketAgg": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "2.0"
+      },
+      "ulsMinRbNonTtibVolte": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "2.0"
+      },
+      "ulsMinRbPerUe": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "3.0"
+      },
+      "ulsMinTbs": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "104.0"
+      },
+      "ulsMinTbsNonTtibVolte": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "120.0"
+      },
+      "ulsOptimizePrbMinMcs": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "5.0"
+      },
+      "ulsSchedMethod": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "channel unaware"
+      },
+      "upperMarginCio": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10.0"
+      },
+      "voLteProactUlGrantPeriodRegTx": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "20.0"
+      },
+      "voLteProactUlGrantPeriodTtib": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "20.0"
+      },
+      "dFListPucch": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "dFpucchF1": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "0"
+            },
+            "dFpucchF1b": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "1"
+            },
+            "dFpucchF2": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "0"
+            },
+            "dFpucchF2a": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "0"
+            },
+            "dFpucchF2b": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "0"
+            }
+          }
+        ]
+      },
+      "drxProfile101": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "drxInactivityT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "200"
+            },
+            "drxLongCycle": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "160ms"
+            },
+            "drxOnDuratT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "6"
+            },
+            "drxProfileIndex": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "101"
+            },
+            "drxProfilePriority": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "50.0"
+            },
+            "drxRetransT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "4"
+            }
+          }
+        ]
+      },
+      "drxProfile102": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "drxInactivityT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "2560"
+            },
+            "drxLongCycle": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "1280ms"
+            },
+            "drxOnDuratT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "10"
+            },
+            "drxProfileIndex": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "102"
+            },
+            "drxProfilePriority": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "30.0"
+            },
+            "drxRetransT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "16"
+            }
+          }
+        ]
+      },
+      "drxProfile103": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "drxInactivityT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "10"
+            },
+            "drxLongCycle": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "160ms"
+            },
+            "drxOnDuratT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "6"
+            },
+            "drxProfileIndex": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "103"
+            },
+            "drxProfilePriority": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "50.0"
+            },
+            "drxRetransT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "16"
+            }
+          }
+        ]
+      },
+      "drxProfile104": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "drxInactivityT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "30"
+            },
+            "drxLongCycle": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "320"
+            },
+            "drxOnDuratT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "6"
+            },
+            "drxProfileIndex": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "104"
+            },
+            "drxProfilePriority": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "45.0"
+            },
+            "drxRetransT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "4"
+            }
+          }
+        ]
+      },
+      "drxProfile105": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "drxInactivityT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "20"
+            },
+            "drxLongCycle": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "320ms"
+            },
+            "drxOnDuratT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "10"
+            },
+            "drxProfileIndex": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "105"
+            },
+            "drxProfilePriority": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "30.0"
+            },
+            "drxRetransT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "16"
+            }
+          }
+        ]
+      },
+      "iFLBLoadThresholds": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "iFLBBearCheckTimer": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "10.0"
+            },
+            "iFLBHighLoadGBRDL": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "95.0"
+            },
+            "iFLBHighLoadNonGBRDL": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "95.0"
+            },
+            "iFLBHighLoadPdcch": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "95.0"
+            },
+            "iFLBRetryTimer": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "30.0"
+            },
+            "maxNumAmleNeigh": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "16.0"
+            }
+          }
+        ]
+      },
+      "intraFreqLbLoadThresholds": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "highLoadGbrDl": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "95.0"
+            },
+            "highLoadNonGbrDl": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "95.0"
+            },
+            "highLoadPdcch": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "95.0"
+            },
+            "hysteresisLoadDlGbr": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "2.0"
+            },
+            "hysteresisLoadDlNonGbr": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "2.0"
+            },
+            "hysteresisLoadPdcch": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "2.0"
+            },
+            "loadBalancingProfile": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "medium"
+            },
+            "maxLbPartners": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "16.0"
+            }
+          }
+        ]
+      },
+      "loadSettings": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "cellCapClass": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "100.0"
+            },
+            "mlbEicicOperMode": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "allUes"
+            },
+            "nomNumPrbNonGbr": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "1"
+            },
+            "targetLoadGbrDl": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "90.0"
+            },
+            "targetLoadNonGbrDl": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "90.0"
+            },
+            "targetLoadPdcch": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "90.0"
+            },
+            "ulCacIgnore": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "false"
+            },
+            "ulCacSelection": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "ulReflectDlCac"
+            },
+            "ulStaticCac": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "100.0"
+            }
+          }
+        ]
+      },
+      "moPrMappingList": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "lteNrDualConnectSupport": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "EN-DC_capable"
+            },
+            "mcc": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "450.0"
+            },
+            "mnc": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "6.0"
+            },
+            "mncLength": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "2.0"
+            },
+            "moPrId": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "1.0"
+            },
+            "spid": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "99.0"
+            }
+          },
+          {
+            "lteNrDualConnectSupport": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "EN-DC_capable"
+            },
+            "mcc": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "450.0"
+            },
+            "mnc": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "6.0"
+            },
+            "mncLength": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "2.0"
+            },
+            "moPrId": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "1.0"
+            },
+            "spid": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "61.0"
+            }
+          },
+          {
+            "lteNrDualConnectSupport": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "EN-DC_capable"
+            },
+            "mcc": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "450.0"
+            },
+            "mnc": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "6.0"
+            },
+            "mncLength": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "2.0"
+            },
+            "moPrId": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "1.0"
+            },
+            "spid": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "76.0"
+            }
+          }
+        ]
+      },
+      "pcellSwapConfig": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "disableVideoGbrPcellSwap": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "QCI_67"
+            },
+            "enableVoLteUePcellSwap": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "UesWithoutVoLte"
+            },
+            "numCaUeThreshold": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "100.0"
+            },
+            "pcellSwapMaxHoRate": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "5.0"
+            },
+            "pFreqPrio": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "2.0"
+            },
+            "puschLoadHysteresis": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "10.0"
+            },
+            "puschLoadIndexThr": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "100"
+            },
+            "scellChQualThreshold": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "8.0"
+            },
+            "scellStateForPcellSwap": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "activated"
+            },
+            "ulSinrLowThreshold": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "6.0"
+            }
+          }
+        ]
+      },
+      "perMeasLocServ": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "reportAmountPerLoc": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "2"
+            },
+            "reportIntervalPerLoc": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "640ms"
+            }
+          }
+        ]
+      },
+      "qci1eVTTConfig": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "qci1DlTargetBler": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "3.0"
+            },
+            "qci1HarqMaxTrDl": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "7.0"
+            },
+            "qci1HarqMaxTrUl": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "7.0"
+            },
+            "qci1ReconStopTimer": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "1.0"
+            },
+            "qci1ThroughputFactorDl": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "4.0"
+            },
+            "qci1ThroughputFactorUl": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "4.0"
+            },
+            "qci1UlTargetBler": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "3.0"
+            }
+          }
+        ]
+      },
+      "redBwRbUlConfig": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "redBwMaxRbUl": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "50.0"
+            },
+            "redBwMinRbUl": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "1.0"
+            }
+          }
+        ]
+      },
+      "ulpcPucchConfig": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "ulpcLowlevCch": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "-111.0"
+            },
+            "ulpcLowqualCch": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "9.0"
+            },
+            "ulpcUplevCch": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "-108.0"
+            },
+            "ulpcUpqualCch": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "11.0"
+            }
+          }
+        ]
+      },
+      "ulpcPuschConfig": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "ulpcLowlevSch": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "-103.0"
+            },
+            "ulpcLowqualSch": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "18.0"
+            },
+            "ulpcUplevSch": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "-78.0"
+            },
+            "ulpcUpqualSch": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "27.0"
+            }
+          }
+        ]
+      }
+    },
+    "999": {
+      "a1TimeToTriggerDeactInterMeas": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "640ms"
+      },
+      "a2RedirectQci1": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "enabled"
+      },
+      "a2TimeToTriggerActInterFreqMeas": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "640ms"
+      },
+      "a2TimeToTriggerActWcdmaMeas": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "320ms"
+      },
+      "a2TimeToTriggerRedirect": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "5120ms"
+      },
+      "a3Offset": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "2.0"
+      },
+      "a3ReportAmount": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "infinity"
+      },
+      "a3ReportInterval": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "240ms"
+      },
+      "a3TimeToTrigger": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "256ms"
+      },
+      "a3TriggerQuantityHO": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "RSRP"
+      },
+      "a5ReportAmount": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "infinity"
+      },
+      "a5ReportInterval": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "240ms"
+      },
+      "a5TimeToTrigger": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "320ms"
+      },
+      "a5TriggerQuantityIntraFreqHO": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "RSRP"
+      },
+      "actAcHpsLimits": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actAir2Ground": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actAmle": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actAntPortMap": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actB1ReturnTo5GSA": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actCaBlocking": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actCaScellSchedWeightFactor": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actCarelCounters": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actCsiRsSubFNonTM9Sch": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actDataSessionProf": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actDeltaCqiAgingScellChEst": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actDlPwBackoff": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actDlsLdAdaptPf": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actDlsOldtc": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "actDlsVoicePacketAgg": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "actDownSampling": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actDrx": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "actDrxDuringMeasGap": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actDrxDuringTTIB": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actDynamicDataSessionProf": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actEDrxIdle": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actEicic": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actEirpControl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "disabled"
+      },
+      "actEnDcBlocking": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actEndcHoPrefLay": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actEndcIntraFreqMdt": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actExtSib1": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actFastPdcchAdapt": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actFlexDupGap": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actForcedDrxS1Ho": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actGsmSrvccMeasOpt": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actHapPrachCfg": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actHapPrachTaFilt": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actInterFreqLB": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actInterFreqSPIDBasedHo": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "none"
+      },
+      "actIntraFreqLoadBal": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actLBSpidUeSel": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actLdPdcch": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "actMaxNumUeDlNonGbr": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "actMcsUpgrade": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "Disabled"
+      },
+      "actMfbiDupFre": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "False"
+      },
+      "actMicroDtx": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actModulationSchemeDl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "64QAM"
+      },
+      "actModulationSchemeUL": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "256QAMand16QAMHighMCS"
+      },
+      "actNbrForNonGbrBearers": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actNoIntraBandIFMeasurements": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actOlLaPdcch": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "actOtdoa": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actPdcchQci1SrbControl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actPeriodicB1NRMeas": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "disabled"
+      },
+      "actPeriodical5GRedirect": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actProactSchedBySrb": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "actPrsTxDiv": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actPttOverbooking": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actPuschPrbDistribution": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actPuschPrbDistributionEnh": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actQci1BlerTgt": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actQci1RfDrx": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actQci1eVTT": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "actReducedFormat": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actReqDiffFallbacks": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actResourceAllocType1": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actReturnTo5GSA": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "disabled"
+      },
+      "actRrcConnRelDelayForwarding": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actScellBadChQualExtMonitor": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actSixIfMeasurements": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actSmartDrx": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actSrb1Robustness": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "actTaDisconnect": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actTcpServiceDiff": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actTtiBundling": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actUca": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actUePowerBasedMobThr": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actUl256QamChQualEst": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "actUlDynamicTargetBler": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actUlGrpHop": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actUlLnkAdp": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "fUlLa"
+      },
+      "actUlVarianceAdapt": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actUlpcMethod": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "PuschCLPucchCL"
+      },
+      "actUlpcRachPwrCtrl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "actUlsLdAdaptPf": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actUlsOptimizePrbMcs": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actVoLteSrcRate": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actVoipCovBoost": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actVoipCovBoostEnh": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "off"
+      },
+      "addGbrTrafficRrHo": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "5.0"
+      },
+      "addGbrTrafficTcHo": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "addSpectrEmi": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.0"
+      },
+      "administrativeState": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "unlocked"
+      },
+      "allowPbIndexZero": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "amRlcSnFieldLengthDl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10bit"
+      },
+      "amleMaxNumHo": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10.0"
+      },
+      "amlePeriodLoadExchange": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1000ms"
+      },
+      "cellIndOffServ": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0dB"
+      },
+      "cellResourceSharingMode": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "none"
+      },
+      "cellTechnology": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "NB-IoT-FDD"
+      },
+      "cellType": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "large"
+      },
+      "cqiAperEnable": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "cqiAperMode": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "FBT2"
+      },
+      "cqiPerSbCycK": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.0"
+      },
+      "cqiPerSimulAck": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "csgType": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "openAccess"
+      },
+      "dSrTransMax": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "64n"
+      },
+      "defPagCyc": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "256rf"
+      },
+      "deltaLbCioMargin": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "deltaPreMsg3": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "5.0"
+      },
+      "deltaTfEnabled": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "dlCellPwrRed": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "dlInterferenceEnable": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "dlInterferenceLevel": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "dlInterferenceModulation": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "QPSK"
+      },
+      "dlOlqcEnable": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "dlPathlossChg": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "3 db"
+      },
+      "dlPcfichBoost": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "dlPhichBoost": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "dlSrbCqiOffset": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-4.0"
+      },
+      "dlTargetBler": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10.0"
+      },
+      "dlamcCqiDef": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "6.0"
+      },
+      "dlamcEnable": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "dlsDciCch": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "DCI format 1C"
+      },
+      "dlsOldtcTarget": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.98"
+      },
+      "dlsUsePartPrb": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "PRBs with PSS or SSS and PBCH used"
+      },
+      "eIcicMaxMutePattern": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "mp4"
+      },
+      "eTputFilterConfig": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "51.0"
+      },
+      "eTputInitMcs": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "20.0"
+      },
+      "eUlLaAtbPeriod": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "30.0"
+      },
+      "eUlLaBlerAveWin": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "30.0"
+      },
+      "eUlLaDeltaMcs": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.0"
+      },
+      "eUlLaLowMcsThr": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "2.0"
+      },
+      "eUlLaLowPrbThr": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "5.0"
+      },
+      "eUlLaPrbIncDecFactor": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.7"
+      },
+      "ecidMeasSupervisionTimer": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "3000.0"
+      },
+      "enableAmcPdcch": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "enableBetterCellHo": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "enableCovHo": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "enableDefaultBcsChkEnDc": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "enableLowAgg": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "enablePcPdcch": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "expectedCellSize": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "2.1km"
+      },
+      "fUlLAAtbTrigThr": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-2.0"
+      },
+      "filterCoeff": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "fc4"
+      },
+      "filterCoefficientCSFBCpichEcn0": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "fc4"
+      },
+      "filterCoefficientCSFBCpichRscp": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "fc4"
+      },
+      "filterCoefficientCpichEcn0": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "fc4"
+      },
+      "filterCoefficientCpichRscp": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "fc4"
+      },
+      "filterCoefficientRSRP": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "fc8"
+      },
+      "filterCoefficientRSRQ": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "fc4"
+      },
+      "filterCoefficientRSSI": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "fc2"
+      },
+      "gbrCongHandling": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "l2andl3"
+      },
+      "grpAssigPUSCH": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.0"
+      },
+      "harqMaxMsg3": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "3.0"
+      },
+      "harqMaxTrDl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "7.0"
+      },
+      "harqMaxTrUlTtiBundling": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "12.0"
+      },
+      "harqMaxTxUl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "7"
+      },
+      "hopModePusch": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "interSubFrame"
+      },
+      "hysA3Offset": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.0"
+      },
+      "hysThreshold2GERAN": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "hysThreshold2InterFreq": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "hysThreshold2Wcdma": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "hysThreshold2a": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "hysThreshold3": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "hysThreshold4": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "iFEndcHoRetryTimer": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "60.0"
+      },
+      "idleLBCapThresh": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.0"
+      },
+      "idleLBCelResWeight": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10.0"
+      },
+      "idleLBPercCaUe": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "idleLBPercUeTM9": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "idleLBPercentageOfUes": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "ilReacTimerUl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "inactivityTimer": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10.0"
+      },
+      "inactivityTimerQci5Sign": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "iniMcsDl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "4.0"
+      },
+      "iniMcsUl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10.0"
+      },
+      "iniPrbsUl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10.0"
+      },
+      "iniUl256QamChQualEst": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1s"
+      },
+      "lbLoadFilCoeff": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "4.0"
+      },
+      "lcrId": {
+        "req": 1,
+        "ishow": 1,
+        "soam": 1,
+        "value": "105.0"
+      },
+      "longPeriodScellChEst": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "2000.0"
+      },
+      "lowerMarginCio": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-10.0"
+      },
+      "lteNrDssMode": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "none"
+      },
+      "maxBitrateDl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "170000.0"
+      },
+      "maxBitrateUl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "110000.0"
+      },
+      "maxCrPgDl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.12"
+      },
+      "maxCrRa4Dl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.12"
+      },
+      "maxCrRaDl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.12"
+      },
+      "maxCrSibDl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.26"
+      },
+      "maxGbrTrafficLimit": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "85.0"
+      },
+      "maxNumCaUeScell": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "100.0"
+      },
+      "maxNumScells": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "2.0"
+      },
+      "maxPdcchAgg": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "16.0"
+      },
+      "maxPdcchAggHighLoad": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "16.0"
+      },
+      "maxPhyCces": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "8"
+      },
+      "mbrSelector": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "OaM"
+      },
+      "measQuantityCSFBUtra": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "cpichRSCP"
+      },
+      "measQuantityUtra": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "cpichRSCP"
+      },
+      "minBitrateDl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "30.0"
+      },
+      "minBitrateUl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "30.0"
+      },
+      "mobStateParamNCelChgHgh": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10.0"
+      },
+      "mobStateParamNCelChgMed": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "5.0"
+      },
+      "mobStateParamTEval": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "30s"
+      },
+      "mobStateParamTHystNorm": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "30s"
+      },
+      "msg3ConsecutiveDtx": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0"
+      },
+      "msg3DtxOffset": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "multLoadMeasRrm": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "2.0"
+      },
+      "multLoadMeasRrmEicic": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "2.0"
+      },
+      "n310Qci1": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "n6"
+      },
+      "nbIoTMode": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "inband"
+      },
+      "nbIotLinkedCellId": {
+        "req": 1,
+        "ishow": 1,
+        "soam": 1,
+        "value": "5.0"
+      },
+      "offsetFreqIntra": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0dB"
+      },
+      "p0NomPucch": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-109.0"
+      },
+      "p0NomPusch": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-85.0"
+      },
+      "pMax": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "47.8"
+      },
+      "pagingNb": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "oneT"
+      },
+      "pdcchAggDefUe": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "4"
+      },
+      "pdcchAggMsg4": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "4.0"
+      },
+      "pdcchAggPaging": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "4.0"
+      },
+      "pdcchAggPreamb": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "4.0"
+      },
+      "pdcchAggRaresp": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "4.0"
+      },
+      "pdcchAggSib": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "4.0"
+      },
+      "pdcchAlpha": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.8"
+      },
+      "pdcchCqiShift": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-5.0"
+      },
+      "pdcchHarqTargetBler": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.0"
+      },
+      "pdcchUlDlBal": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.5"
+      },
+      "perUl256QamChQualEst": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "5s"
+      },
+      "periodicCqiFeedbackType": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "wideband"
+      },
+      "phyCellId": {
+        "req": 1,
+        "ishow": 1,
+        "soam": 1,
+        "value": "318.0"
+      },
+      "prachDetThresScaling": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.0"
+      },
+      "preventCellActivation": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "prsPowerBoost": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "puschAckOffI": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10.0"
+      },
+      "puschCqiOffI": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "8.0"
+      },
+      "puschRiOffI": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "11.0"
+      },
+      "raContResoT": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "64ms"
+      },
+      "raLargeMcsUl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "5.0"
+      },
+      "raMsgPoffGrB": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10 dB"
+      },
+      "raNondedPreamb": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "40"
+      },
+      "raPreGrASize": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "32"
+      },
+      "raRespWinSize": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10"
+      },
+      "raSmallMcsUl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "5.0"
+      },
+      "raSmallVolUl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "144 bits"
+      },
+      "rcAmbrMgnDl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.03"
+      },
+      "rcAmbrMgnUl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.02"
+      },
+      "rcEnableDl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "rcEnableUl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "redBwEnDl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "redBwMaxRbDl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "50.0"
+      },
+      "redBwRpaEnUl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "reqMaxCCsDlOffset": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "rttCsfbType": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "forbidden"
+      },
+      "sbHoMode": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "all"
+      },
+      "scellBadChQualThr": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.0"
+      },
+      "scellGoodChQualThr": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.0"
+      },
+      "scellNotDetectableThr": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "shortPeriodScellChEst": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "200.0"
+      },
+      "t301Guard": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "100.0"
+      },
+      "t302": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "8000.0"
+      },
+      "t304InterRAT": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "500ms"
+      },
+      "t304InterRATGsm": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "500ms"
+      },
+      "t304IntraLte": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1000ms"
+      },
+      "t304eNaccGsm": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "2000ms"
+      },
+      "t310Qci1": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1000ms"
+      },
+      "t320": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10min"
+      },
+      "tExtendedWait": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "300.0"
+      },
+      "tLoadMeasX2": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10000ms"
+      },
+      "tLoadMeasX2Eicic": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "2000"
+      },
+      "tPeriodicBsr": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10ms"
+      },
+      "tPeriodicPhr": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "20sf"
+      },
+      "tPingPong": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "3000.0"
+      },
+      "tProhibitPhr": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0sf"
+      },
+      "tReTxBsrTime": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "320 ms"
+      },
+      "tStoreUeCntxt": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "2000.0"
+      },
+      "taMaxOffset": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.52"
+      },
+      "taTimer": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10240"
+      },
+      "taTimerMargin": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "2000.0"
+      },
+      "tac": {
+        "req": 1,
+        "ishow": 1,
+        "soam": 1,
+        "value": "59455.0"
+      },
+      "targetSelMethod": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "SIB_based"
+      },
+      "threshold1": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-50.0"
+      },
+      "threshold2InterFreq": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-114.0"
+      },
+      "threshold2a": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-111.0"
+      },
+      "threshold2aQci1": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-111.0"
+      },
+      "threshold3": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-140.0"
+      },
+      "threshold3a": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-43.0"
+      },
+      "threshold4": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-140.0"
+      },
+      "timeToTriggerSfHigh": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.5"
+      },
+      "timeToTriggerSfMedium": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.5"
+      },
+      "tmpActFeat1": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0"
+      },
+      "tmpActFeat2": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0"
+      },
+      "tmpParam15": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "tmpParam16": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "tmpParam19": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "957.0"
+      },
+      "tmpParam4": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "tmpParam5": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "tmpParam6": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "ttiBundlingBlerTarget": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "6.0"
+      },
+      "ttiBundlingBlerThreshold": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "20.0"
+      },
+      "ttiBundlingSinrThreshold": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.0"
+      },
+      "ul256QamDeactChQualThr": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "22.0"
+      },
+      "ul256QamReactChQualThr": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "25.0"
+      },
+      "ulRsCs": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "ulTargetBler": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10.0"
+      },
+      "ulamcAllTbEn": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "ulamcSwitchPer": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "30.0"
+      },
+      "ulatbEventPer": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.0"
+      },
+      "ulpcAlpha": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "alpha 0.9"
+      },
+      "ulpcReadPeriod": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "50.0"
+      },
+      "ulsFdPrbAssignAlg": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "MixedFD"
+      },
+      "ulsMaxPacketAgg": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "2.0"
+      },
+      "ulsMinRbPerUe": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "3.0"
+      },
+      "ulsMinTbs": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "104.0"
+      },
+      "ulsSchedMethod": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "channel unaware"
+      },
+      "upperMarginCio": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10.0"
+      },
+      "dFListPucch": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "dFpucchF1": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "0"
+            },
+            "dFpucchF1b": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "1"
+            },
+            "dFpucchF2": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "0"
+            },
+            "dFpucchF2a": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "0"
+            },
+            "dFpucchF2b": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "0"
+            }
+          }
+        ]
+      },
+      "dlIshConfig": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "actDlIsh": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "false"
+            },
+            "amountBlankedRes": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "0.0"
+            },
+            "ishPrId": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "0.0"
+            }
+          }
+        ]
+      },
+      "drxProfile101": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "drxInactivityT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "10"
+            },
+            "drxLongCycle": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "160ms"
+            },
+            "drxOnDuratT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "8"
+            },
+            "drxProfileIndex": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "101"
+            },
+            "drxProfilePriority": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "50.0"
+            },
+            "drxRetransT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "4"
+            }
+          }
+        ]
+      },
+      "drxProfile102": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "drxInactivityT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "2560"
+            },
+            "drxLongCycle": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "1280ms"
+            },
+            "drxOnDuratT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "10"
+            },
+            "drxProfileIndex": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "102"
+            },
+            "drxProfilePriority": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "30.0"
+            },
+            "drxRetransT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "16"
+            }
+          }
+        ]
+      },
+      "drxProfile103": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "drxInactivityT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "10"
+            },
+            "drxLongCycle": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "160ms"
+            },
+            "drxOnDuratT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "6"
+            },
+            "drxProfileIndex": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "103"
+            },
+            "drxProfilePriority": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "50.0"
+            },
+            "drxRetransT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "16"
+            }
+          }
+        ]
+      },
+      "drxProfile105": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "drxInactivityT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "20"
+            },
+            "drxLongCycle": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "320ms"
+            },
+            "drxOnDuratT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "10"
+            },
+            "drxProfileIndex": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "105"
+            },
+            "drxProfilePriority": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "30.0"
+            },
+            "drxRetransT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "16"
+            }
+          }
+        ]
+      },
+      "qci1eVTTConfig": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "qci1DlTargetBler": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "3.0"
+            },
+            "qci1HarqMaxTrDl": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "7.0"
+            },
+            "qci1HarqMaxTrUl": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "7.0"
+            },
+            "qci1ReconStopTimer": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "1.0"
+            },
+            "qci1ThroughputFactorDl": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "4.0"
+            },
+            "qci1ThroughputFactorUl": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "4.0"
+            },
+            "qci1UlTargetBler": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "3.0"
+            }
+          }
+        ]
+      },
+      "redBwRbUlConfig": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "redBwMaxRbUl": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "50.0"
+            },
+            "redBwMinRbUl": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "1.0"
+            }
+          }
+        ]
+      },
+      "ulpcPucchConfig": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "ulpcLowlevCch": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "-111.0"
+            },
+            "ulpcLowqualCch": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "9.0"
+            },
+            "ulpcUplevCch": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "-108.0"
+            },
+            "ulpcUpqualCch": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "11.0"
+            }
+          }
+        ]
+      },
+      "ulpcPuschConfig": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "ulpcLowlevSch": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "-103.0"
+            },
+            "ulpcLowqualSch": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "18.0"
+            },
+            "ulpcUplevSch": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "-78.0"
+            },
+            "ulpcUpqualSch": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "27.0"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "CAPR": {
+    "0": {
+      "a3Offset": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-3.0"
+      },
+      "a3TimeToTrigger": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "ms320"
+      },
+      "a3TriggerQuantity": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "RSRP"
+      },
+      "a6Offset": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "3.0"
+      },
+      "a6ReportInterval": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "640ms"
+      },
+      "a6TimeToTrigger": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "320ms"
+      },
+      "earfcnDL": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "3050.0"
+      },
+      "enableA3Event": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "enableA6Event": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "enableFreqPrioSwap": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "disabled"
+      },
+      "hysA3Offset": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.0"
+      },
+      "hysA6Offset": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "maxNumScellSwaps": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "sFreqPrio": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.0"
+      },
+      "scellMeasThreshRsrp": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-110.0"
+      },
+      "scellMeasThreshRsrq": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-12.0"
+      },
+      "scellPdcchOlLa": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "enabledScellBased"
+      }
+    }
+  },
+  "CATMCEL": {
+    "0": {
+      "a2TimeToTriggerCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "480ms"
+      },
+      "actAcBarringCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actAmcCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "Both Downlink and Uplink enabled"
+      },
+      "actCatMSpecMeas": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actConvVoiceCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "actDlPciBasedNarBandCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "actDrxCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actDynamicRepMpdcchCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actDynamicRepMpdschCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actDynamicRepMpuschCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actDynamicRepVoLTECatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actEDrxIdleCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actEabCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "None"
+      },
+      "actHARQBundlingCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actHighHarqCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "disabled"
+      },
+      "actIMSEmerSessCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actIdleLBCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actInterFreqHoCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "disabled"
+      },
+      "actIntraFreqHoCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "actLoadbasedNBSelectionCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actMultiHarqCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "actPuschMaxTbsCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actQci1CatMSpecMeas": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actRLFbasedRCRCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actRaiCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actRelaxMoCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actSchedBypassCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "disabled"
+      },
+      "actSelMobPrfCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "disabled"
+      },
+      "actSf9InvalidLVRBCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "actUeDataInactivityCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "cellReSelPrioCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "7.0"
+      },
+      "dFpucchF1CatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "deltaPreMsg3CatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "4.0"
+      },
+      "dl3HarqMcsCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "MCS12"
+      },
+      "hysThreshold2CatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "idleLBPercentageOfUesCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "immediateS1ReleaseCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "numCELevelCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "2.0"
+      },
+      "numNarBandModeACatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.0"
+      },
+      "p0NomPucchCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-104.0"
+      },
+      "p0NomPuschCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-80.0"
+      },
+      "prachPwrRampCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "4.0"
+      },
+      "prachRsrpThrCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-117.0"
+      },
+      "qRxLevMinCeCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-128.0"
+      },
+      "qRxLevMinIntraFCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-128.0"
+      },
+      "tReselEutrCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.0"
+      },
+      "threshSrvLowCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "4.0"
+      },
+      "threshold2CatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-70.0"
+      },
+      "ulpcAlphaCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "alpha 1"
+      },
+      "ulpcIniPrePwrCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-104.0"
+      },
+      "ulpcRarespTpcCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "4.0"
+      }
+    }
+  },
+  "CDFIM": {
+    "1": {
+      "acBarring0To9Adapt": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "searchWinSize": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10.0"
+      },
+      "tResHrpd": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "2.0"
+      },
+      "hrpdBdClList": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "hrpdBdClBcl": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "4bc"
+            },
+            "hrpdFrqThrH": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "10.0"
+            },
+            "hrpdFrqThrL": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "10.0"
+            }
+          }
+        ]
+      },
+      "hrpdNCList": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "hrpdArfcn": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "500.0"
+            },
+            "hrpdBdClNcl": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "4bc"
+            },
+            "hrpdCellId": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "4.0"
+            },
+            "hrpdExSel": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "R9ExtensionPartPossible"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "BBPOOLALLOC": {
+    "__default__": {
+      "bbPoolAllocMode": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "automatic"
+      }
+    },
+    "0": {
+      "bbPoolAllocMode": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "automatic"
+      }
+    }
+  },
+  "DRX": {
+    "000": {
+      "applyOutOfSyncState": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "extendedDrxOnly"
+      },
+      "drxApplyDeviceType": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "stInactFactor": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10.0"
+      },
+      "drxProfile1": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "drxProfileIndex": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "1"
+            },
+            "drxProfilePriority": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "45.0"
+            }
+          }
+        ]
+      },
+      "drxProfile2": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "drxInactivityT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "4"
+            },
+            "drxLongCycle": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "20ms"
+            },
+            "drxOnDuratT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "6"
+            },
+            "drxProfileIndex": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "2"
+            },
+            "drxProfilePriority": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "40.0"
+            },
+            "drxRetransT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "4"
+            }
+          }
+        ]
+      },
+      "drxProfile3": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "drxInactivityT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "80"
+            },
+            "drxLongCycle": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "80ms"
+            },
+            "drxOnDuratT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "10"
+            },
+            "drxProfileIndex": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "3"
+            },
+            "drxProfilePriority": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "30.0"
+            },
+            "drxRetransT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "8"
+            }
+          }
+        ]
+      },
+      "drxProfile4": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "drxInactivityT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "500"
+            },
+            "drxLongCycle": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "320ms"
+            },
+            "drxOnDuratT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "20"
+            },
+            "drxProfileIndex": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "4"
+            },
+            "drxProfilePriority": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "20.0"
+            },
+            "drxRetransT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "16"
+            }
+          }
+        ]
+      },
+      "drxProfile5": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "drxInactivityT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "2560"
+            },
+            "drxLongCycle": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "2560ms"
+            },
+            "drxOnDuratT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "20"
+            },
+            "drxProfileIndex": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "5"
+            },
+            "drxProfilePriority": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "10.0"
+            },
+            "drxRetransT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "16"
+            }
+          }
+        ]
+      },
+      "drxProfile6": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "drxInactivityT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "4"
+            },
+            "drxLongCycle": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "20ms"
+            },
+            "drxOnDuratT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "6"
+            },
+            "drxProfileIndex": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "6"
+            },
+            "drxProfilePriority": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "40.0"
+            },
+            "drxRetransT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "4"
+            }
+          }
+        ]
+      }
+    },
+    "999": {
+      "applyOutOfSyncState": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "extendedDrxOnly"
+      },
+      "drxApplyDeviceType": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "qci1DrxOffThreshold": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "7.0"
+      },
+      "qci1DrxOnThreshold": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "9.0"
+      },
+      "stInactFactor": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.0"
+      },
+      "drxProfile1": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "drxProfileIndex": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "1"
+            },
+            "drxProfilePriority": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "45.0"
+            }
+          }
+        ]
+      },
+      "drxProfile2": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "drxInactivityT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "4"
+            },
+            "drxLongCycle": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "20ms"
+            },
+            "drxOnDuratT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "6"
+            },
+            "drxProfileIndex": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "2"
+            },
+            "drxProfilePriority": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "40.0"
+            },
+            "drxRetransT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "4"
+            }
+          }
+        ]
+      },
+      "drxProfile3": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "drxInactivityT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "80"
+            },
+            "drxLongCycle": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "80ms"
+            },
+            "drxOnDuratT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "10"
+            },
+            "drxProfileIndex": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "3"
+            },
+            "drxProfilePriority": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "30.0"
+            },
+            "drxRetransT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "8"
+            }
+          }
+        ]
+      },
+      "drxProfile4": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "drxInactivityT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "500"
+            },
+            "drxLongCycle": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "320ms"
+            },
+            "drxOnDuratT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "10"
+            },
+            "drxProfileIndex": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "4"
+            },
+            "drxProfilePriority": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "20.0"
+            },
+            "drxRetransT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "8"
+            }
+          }
+        ]
+      },
+      "drxProfile5": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "drxInactivityT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "2560"
+            },
+            "drxLongCycle": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "2560ms"
+            },
+            "drxOnDuratT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "20"
+            },
+            "drxProfileIndex": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "5"
+            },
+            "drxProfilePriority": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "10.0"
+            },
+            "drxRetransT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "16"
+            }
+          }
+        ]
+      },
+      "drxProfile6": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "drxInactivityT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "4"
+            },
+            "drxLongCycle": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "20ms"
+            },
+            "drxOnDuratT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "6"
+            },
+            "drxProfileIndex": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "6"
+            },
+            "drxProfilePriority": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "40.0"
+            },
+            "drxRetransT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "4"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "IAFIM": {
+    "1": {
+      "intrFrNCList": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "physCellIdNcl": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "0.0"
+            },
+            "qOffsetCell": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "0 dB"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "IFGDPR": {
+    "0": {
+      "algSelection": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "weighted probability randomization"
+      },
+      "groupPrio": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "12.0"
+      },
+      "groupSize": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      }
+    }
+  },
+  "IFGPR": {
+    "0": {
+      "algSelection": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "weighted probability randomization"
+      }
+    }
+  },
+  "LNCEL_FDD": {
+    "0": {
+      "act1TxIn2Tx": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actAperPmiPolling": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actAutoPucchAlloc": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "actCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "actCombSuperCell": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actDlMuMimo": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actDlSlimCarrier": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actDonutCell": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actFastMimoSwitch": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actLiquidCell": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actMMimo": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actOran": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actPdcchLoadGen": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actPuschMask": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actRedFreqOffset": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actRepeaterMode": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "none"
+      },
+      "actSdlc": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actShutdownTxPath": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actSlimCoexCatM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actSrs14Pos": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actSuperCell": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actTmSwitchMMimo": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actUciOnlyGrants": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actUlMultiCluster": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actUlPwrRestrScn": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "none"
+      },
+      "addNumDrbRadioReasHo": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "35.0"
+      },
+      "addNumDrbTimeCriticalHo": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "60.0"
+      },
+      "addNumQci1DrbRadioReasHo": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "15.0"
+      },
+      "addNumQci1DrbTimeCriticalHo": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "20.0"
+      },
+      "blankedPucch": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "2.0"
+      },
+      "catMProfId": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "cqiAperPollT": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "3.0"
+      },
+      "dlChBw": {
+        "req": 0,
+        "ishow": 1,
+        "soam": 1,
+        "value": "10 MHz"
+      },
+      "dlMimoMode": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "Dynamic Open Loop MIMO"
+      },
+      "dlRsBoost": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "3dB"
+      },
+      "dlSrbMimoMode": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "SpatialMultiplexing"
+      },
+      "dlpcMimoComp": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "earfcnDL": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "2600"
+      },
+      "earfcnUL": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "20600"
+      },
+      "maxNrSymPdcch": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "3.0"
+      },
+      "maxNumActDrb": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1200.0"
+      },
+      "maxNumActUE": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "400.0"
+      },
+      "maxNumCaConfUe": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "100.0"
+      },
+      "maxNumCaConfUe3c": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "100.0"
+      },
+      "maxNumCaConfUeDc": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "100.0"
+      },
+      "maxNumQci1Drb": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "300.0"
+      },
+      "maxNumUeDl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10.0"
+      },
+      "maxNumUeUl": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10.0"
+      },
+      "prachCS": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "12.0"
+      },
+      "prachConfIndex": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "3.0"
+      },
+      "prachFreqOff": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "6.0"
+      },
+      "prachHsFlag": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "prsConfigurationIndex": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "151"
+      },
+      "prsNumDlFrames": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.0"
+      },
+      "pucchNAnCs": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "rootSeqIndex": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "600.0"
+      },
+      "selectOuterPuschRegion": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "None"
+      },
+      "slimRfFilterDL": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "Nominal"
+      },
+      "slimRfFilterUL": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "Nominal"
+      },
+      "srsActivation": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "srsPwrOffset": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "7.0"
+      },
+      "syncSigTxMode": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "TxDiv"
+      },
+      "twoLayerMimoAvSpectralEff": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.5"
+      },
+      "ulChBw": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10 MHz"
+      },
+      "ulCombinationMode": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "IRC"
+      },
+      "ulpcRarespTpc": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "8.0"
+      },
+      "mimoClConfig": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "mimoClCqiThD": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "7.0"
+            },
+            "mimoClCqiThU": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "8.0"
+            },
+            "mimoClRiThD": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "1.4"
+            },
+            "mimoClRiThU": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "1.6"
+            }
+          }
+        ]
+      },
+      "mimoOlConfig": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "mimoOlCqiThD": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "7.0"
+            },
+            "mimoOlCqiThU": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "8.0"
+            },
+            "mimoOlRiThD": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "1.4"
+            },
+            "mimoOlRiThU": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "1.6"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "APUCCH_FDD": {
+    "0": {
+      "aPucchAddAUeRrHo": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10.0"
+      },
+      "aPucchAddAUeTcHo": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10.0"
+      },
+      "aPucchMinNumEmergencySessions": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "5.0"
+      },
+      "aPucchMinNumRrc": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "100.0"
+      },
+      "aPucchMinNumRrcNoDrb": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "5.0"
+      },
+      "aPucchSrPeriodUpperLimit": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "20"
+      },
+      "actLbPucchReg": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "pucchArRateEvalWinLength": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "3.0"
+      },
+      "selectPrachRegion": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "InnerLowerEdge"
+      }
+    }
+  },
+  "MPUCCH_FDD": {
+    "0": {
+      "addAUeRrHo": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "15.0"
+      },
+      "addAUeTcHo": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "20.0"
+      },
+      "addEmergencySessions": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "20.0"
+      },
+      "cellSrPeriod": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "20ms"
+      },
+      "cqiPerNp": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "40ms"
+      },
+      "deltaPucchShift": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.0"
+      },
+      "maxNumRrc": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "400.0"
+      },
+      "maxNumRrcEmergency": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "420.0"
+      },
+      "minNumEmergencySessions": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10.0"
+      },
+      "minNumRrc": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10.0"
+      },
+      "minNumRrcNoDrb": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "5.0"
+      },
+      "n1PucchAn": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "72.0"
+      },
+      "nCqiRb": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "5.0"
+      },
+      "nPucchF3Prbs": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.0"
+      },
+      "phichDur": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "Normal"
+      },
+      "phichRes": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "N = 1/6"
+      },
+      "riEnable": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "riPerM": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1"
+      },
+      "riPerOffset": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-1.0"
+      }
+    }
+  },
+  "REDRT": {
+    "0": {
+      "redirFreqEutra": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "2850.0"
+      },
+      "redirRat": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "eutra"
+      },
+      "redirectPrio": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.0"
+      }
+    }
+  },
+  "SDRX": {
+    "000": {
+      "drxSmartProfile2": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "drxInactivityT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "4"
+            },
+            "drxLongCycle": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "20ms"
+            },
+            "drxOnDuratT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "6"
+            },
+            "drxProfileIndex": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "2"
+            },
+            "drxProfilePriority": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "40.0"
+            },
+            "drxRetransT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "4"
+            },
+            "drxShortCycle": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "20ms"
+            },
+            "drxShortCycleT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "1.0"
+            },
+            "smartStInactFactor": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "124.0"
+            }
+          }
+        ]
+      },
+      "drxSmartProfile3": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "drxInactivityT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "10"
+            },
+            "drxLongCycle": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "80ms"
+            },
+            "drxOnDuratT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "6"
+            },
+            "drxProfileIndex": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "3"
+            },
+            "drxProfilePriority": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "30.0"
+            },
+            "drxRetransT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "4"
+            },
+            "drxShortCycle": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "40ms"
+            },
+            "drxShortCycleT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "5.0"
+            },
+            "smartStInactFactor": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "6.0"
+            }
+          }
+        ]
+      },
+      "drxSmartProfile4": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "drxInactivityT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "50"
+            },
+            "drxLongCycle": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "320ms"
+            },
+            "drxOnDuratT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "10"
+            },
+            "drxProfileIndex": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "4"
+            },
+            "drxProfilePriority": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "20.0"
+            },
+            "drxRetransT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "16"
+            },
+            "drxShortCycle": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "80ms"
+            },
+            "drxShortCycleT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "4.0"
+            },
+            "smartStInactFactor": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "4.0"
+            }
+          }
+        ]
+      },
+      "drxSmartProfile5": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "drxInactivityT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "50"
+            },
+            "drxLongCycle": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "2560ms"
+            },
+            "drxOnDuratT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "10"
+            },
+            "drxProfileIndex": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "5"
+            },
+            "drxProfilePriority": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "10.0"
+            },
+            "drxRetransT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "16"
+            },
+            "drxShortCycle": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "80ms"
+            },
+            "drxShortCycleT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "16.0"
+            },
+            "smartStInactFactor": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "32.0"
+            }
+          }
+        ]
+      },
+      "drxSmartProfile6": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "drxInactivityT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "4"
+            },
+            "drxLongCycle": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "20ms"
+            },
+            "drxOnDuratT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "6"
+            },
+            "drxProfileIndex": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "6"
+            },
+            "drxProfilePriority": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "40.0"
+            },
+            "drxRetransT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "4"
+            },
+            "drxShortCycle": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "20ms"
+            },
+            "drxShortCycleT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "1.0"
+            },
+            "smartStInactFactor": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "124.0"
+            }
+          }
+        ]
+      }
+    },
+    "999": {
+      "drxSmartProfile2": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "drxInactivityT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "4"
+            },
+            "drxLongCycle": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "20ms"
+            },
+            "drxOnDuratT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "6"
+            },
+            "drxProfileIndex": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "2"
+            },
+            "drxProfilePriority": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "40.0"
+            },
+            "drxRetransT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "4"
+            },
+            "drxShortCycle": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "20ms"
+            },
+            "drxShortCycleT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "1.0"
+            },
+            "smartStInactFactor": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "124.0"
+            }
+          }
+        ]
+      },
+      "drxSmartProfile3": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "drxInactivityT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "10"
+            },
+            "drxLongCycle": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "80ms"
+            },
+            "drxOnDuratT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "6"
+            },
+            "drxProfileIndex": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "3"
+            },
+            "drxProfilePriority": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "30.0"
+            },
+            "drxRetransT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "4"
+            },
+            "drxShortCycle": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "40ms"
+            },
+            "drxShortCycleT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "5.0"
+            },
+            "smartStInactFactor": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "6.0"
+            }
+          }
+        ]
+      },
+      "drxSmartProfile4": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "drxInactivityT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "50"
+            },
+            "drxLongCycle": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "320ms"
+            },
+            "drxOnDuratT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "10"
+            },
+            "drxProfileIndex": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "4"
+            },
+            "drxProfilePriority": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "20.0"
+            },
+            "drxRetransT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "16"
+            },
+            "drxShortCycle": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "80ms"
+            },
+            "drxShortCycleT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "4.0"
+            },
+            "smartStInactFactor": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "4.0"
+            }
+          }
+        ]
+      },
+      "drxSmartProfile5": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "drxInactivityT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "50"
+            },
+            "drxLongCycle": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "2560ms"
+            },
+            "drxOnDuratT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "10"
+            },
+            "drxProfileIndex": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "5"
+            },
+            "drxProfilePriority": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "10.0"
+            },
+            "drxRetransT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "16"
+            },
+            "drxShortCycle": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "80ms"
+            },
+            "drxShortCycleT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "16.0"
+            },
+            "smartStInactFactor": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "32.0"
+            }
+          }
+        ]
+      },
+      "drxSmartProfile6": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "drxInactivityT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "4"
+            },
+            "drxLongCycle": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "20ms"
+            },
+            "drxOnDuratT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "6"
+            },
+            "drxProfileIndex": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "6"
+            },
+            "drxProfilePriority": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "40.0"
+            },
+            "drxRetransT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "4"
+            },
+            "drxShortCycle": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "20ms"
+            },
+            "drxShortCycleT": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "1.0"
+            },
+            "smartStInactFactor": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "124.0"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "SIB": {
+    "000": {
+      "acbProfileId": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "autoAcBarringStartTimer": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "300.0"
+      },
+      "autoAcbPlmnRmvlStopTimer": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "3600.0"
+      },
+      "autoPlmnRmvlStartTimer": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "300.0"
+      },
+      "cellBarred": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "notBarred"
+      },
+      "cellReSelPrio": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "2.0"
+      },
+      "intrFrqCelRes": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "allowed"
+      },
+      "intraPresAntP": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "modPeriodCoeff": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "4"
+      },
+      "n310": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "n20"
+      },
+      "n311": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "n1"
+      },
+      "pMaxOwnCell": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "23.0"
+      },
+      "prachPwrRamp": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "2dB"
+      },
+      "preambTxMax": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10"
+      },
+      "primPlmnCellres": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "Not Reserved"
+      },
+      "primPlmnUpperLayerIndicationR15": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.0"
+      },
+      "qHyst": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "2dB"
+      },
+      "qrxlevmin": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-128.0"
+      },
+      "qrxlevminintraF": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-128.0"
+      },
+      "sIntrasearch": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "62.0"
+      },
+      "sNonIntrsearch": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "62.0"
+      },
+      "siWindowLen": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "20ms"
+      },
+      "sib2xTransmit": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "t300": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "400ms"
+      },
+      "t301": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "400ms"
+      },
+      "t310": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "2000ms"
+      },
+      "t311": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "3000ms"
+      },
+      "tReselEutr": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.0"
+      },
+      "threshSrvLow": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "14.0"
+      },
+      "ulpcIniPrePwr": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-104 dBm"
+      },
+      "celResTiF": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "celResTiFHM": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "0.5"
+            },
+            "celResTiFMM": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "0.5"
+            }
+          }
+        ]
+      },
+      "sib2Scheduling": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "siMessagePeriodicity": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "160ms"
+            },
+            "siMessageRepetition": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "1.0"
+            },
+            "siMessageSibType": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "SIB2"
+            }
+          }
+        ]
+      },
+      "sib3Scheduling": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "siMessagePeriodicity": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "320ms"
+            },
+            "siMessageRepetition": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "1.0"
+            },
+            "siMessageSibType": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "SIB3"
+            }
+          }
+        ]
+      },
+      "sibSchedulingList": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "siMessagePeriodicity": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "320ms"
+            },
+            "siMessageRepetition": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "1.0"
+            },
+            "siMessageSibType": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "SIB12"
+            }
+          },
+          {
+            "siMessagePeriodicity": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "640ms"
+            },
+            "siMessageRepetition": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "1.0"
+            },
+            "siMessageSibType": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "SIB5"
+            }
+          },
+          {
+            "siMessagePeriodicity": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "5120ms"
+            },
+            "siMessageRepetition": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "1.0"
+            },
+            "siMessageSibType": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "SIB4"
+            }
+          }
+        ]
+      }
+    },
+    "999": {
+      "acbNumRrcConnCellStart": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "90.0"
+      },
+      "acbNumRrcConnCellStop": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "80.0"
+      },
+      "acbNumRrcReqStart": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "7.5"
+      },
+      "acbNumRrcReqStop": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "5.0"
+      },
+      "acbProfileId": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "acbRrcConnCellStartTimer": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "30.0"
+      },
+      "acbRrcConnCellStopTimer": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "30.0"
+      },
+      "acbRrcReqFactor": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.5"
+      },
+      "autoAcBarringStartTimer": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "300.0"
+      },
+      "autoAcbPlmnRmvlStopTimer": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "3600.0"
+      },
+      "autoPlmnRmvlStartTimer": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "300.0"
+      },
+      "cellBarred": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "notBarred"
+      },
+      "cellReSelPrio": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "2.0"
+      },
+      "intrFrqCelRes": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "allowed"
+      },
+      "intraPresAntP": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "mbmsNeighCellConfigIntraF": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "00"
+      },
+      "modPeriodCoeff": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "4"
+      },
+      "n310": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "n20"
+      },
+      "n311": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "n1"
+      },
+      "pMaxOwnCell": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "23.0"
+      },
+      "prachPwrRamp": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "6dB"
+      },
+      "preambTxMax": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10"
+      },
+      "primPlmnCellres": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "Not Reserved"
+      },
+      "qHyst": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "2dB"
+      },
+      "qrxlevmin": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-128.0"
+      },
+      "qrxlevminintraF": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-128.0"
+      },
+      "sIntrasearch": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "62.0"
+      },
+      "sNonIntrsearch": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "62.0"
+      },
+      "siWindowLen": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "20ms"
+      },
+      "sib2xTransmit": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "t300": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "400ms"
+      },
+      "t301": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "400ms"
+      },
+      "t310": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "2000ms"
+      },
+      "t311": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "3000ms"
+      },
+      "tReselEutr": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.0"
+      },
+      "threshSrvLow": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "12.0"
+      },
+      "ulpcIniPrePwr": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-104 dBm"
+      },
+      "celResTiF": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "celResTiFHM": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "0.5"
+            },
+            "celResTiFMM": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "0.5"
+            }
+          }
+        ]
+      },
+      "cellSelectionInfoV920": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "qQualMinR9": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "-34.0"
+            }
+          }
+        ]
+      },
+      "sib2Scheduling": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "siMessagePeriodicity": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "160ms"
+            },
+            "siMessageRepetition": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "1.0"
+            },
+            "siMessageSibType": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "SIB2"
+            }
+          }
+        ]
+      },
+      "sib3Scheduling": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "siMessagePeriodicity": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "320ms"
+            },
+            "siMessageRepetition": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "1.0"
+            },
+            "siMessageSibType": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "SIB3"
+            }
+          }
+        ]
+      },
+      "sibSchedulingList": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "siMessagePeriodicity": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "320ms"
+            },
+            "siMessageRepetition": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "1.0"
+            },
+            "siMessageSibType": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "SIB12"
+            }
+          },
+          {
+            "siMessagePeriodicity": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "640ms"
+            },
+            "siMessageRepetition": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "1.0"
+            },
+            "siMessageSibType": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "SIB5"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "LCELL": {
+    "5": {
+      "actAsiDistMimo": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actDynamicSharedSpectrum": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actWcdmaLteSharedSpectrum": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      }
+    },
+    "105": {
+      "actAsiDistMimo": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actDynamicSharedSpectrum": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actWcdmaLteSharedSpectrum": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      }
+    }
+  },
+  "CHANNELGROUP": {
+    "1": {}
+  },
+  "CHANNEL": {
+    "1": {
+      "antlDN": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "MRBTS-130126/EQM-1/APEQM-1/RMOD-5/ANTL-1"
+      },
+      "direction": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "RX"
+      }
+    },
+    "2": {
+      "antlDN": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "MRBTS-130126/EQM-1/APEQM-1/RMOD-5/ANTL-2"
+      },
+      "direction": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "RX"
+      }
+    },
+    "3": {
+      "antlDN": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "MRBTS-130126/EQM-1/APEQM-1/RMOD-5/ANTL-1"
+      },
+      "direction": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "TX"
+      }
+    },
+    "4": {
+      "antlDN": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "MRBTS-130126/EQM-1/APEQM-1/RMOD-5/ANTL-2"
+      },
+      "direction": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "TX"
+      }
+    }
+  },
+  "NBIOT_FDD": {
+    "999": {
+      "actAcBarringNB": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "None"
+      },
+      "actDssNrOptPrbBlankingGb": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "disabled"
+      },
+      "actEarlyContResoNB": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actExtendedNPRACH": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actHighTbsNB2": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actIdleLBNB": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actMultiHarqNB2": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "Disabled"
+      },
+      "actMultiTones": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actRaiNB": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actSepMFBI": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "actStatusRepSNGap": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "carrSelectMode": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "AllCarriers"
+      },
+      "cyclicShiftMt6": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "dlChBw": {
+        "req": 0,
+        "ishow": 1,
+        "soam": 1,
+        "value": "0.2 MHz"
+      },
+      "dlMimoMode": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "TXDiv"
+      },
+      "dlPwrBoost": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "6.0"
+      },
+      "inbandPRBIndexDL": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "19.0"
+      },
+      "inbandPRBIndexUL": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "loadWeightMode": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "Automatic"
+      },
+      "loadWeightNBCL1": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10.0"
+      },
+      "loadWeightNBCL2": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "100.0"
+      },
+      "maxCoverageMCL": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "164"
+      },
+      "maxNumRrcNB": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "200.0"
+      },
+      "maxNumRrcNBCL1": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10.0"
+      },
+      "maxNumRrcNBCL2": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "4.0"
+      },
+      "minNumRrcNB": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "5.0"
+      },
+      "nbIoTProfId": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "nprachConfigIndex": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "Manual Configuration"
+      },
+      "nprachRsrpThreshold1": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-110.0"
+      },
+      "nprachRsrpThreshold2": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-120.0"
+      },
+      "nprachTAThreshold": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "100.0"
+      },
+      "numCoverageLevels": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.0"
+      },
+      "numDlNonAnchCarrierNB": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "numUlNonAnchCarrierNB": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "p0NomNpusch": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-85.0"
+      },
+      "standaloneEarfcnDL": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "standaloneEarfcnUL": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "startingCovLevelPagingOptNB": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "Coverage Level 0"
+      },
+      "syncSigTxMode": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "TxDiv"
+      },
+      "tCellDelNB": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "10.0"
+      },
+      "tInterReselNB": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "3.0"
+      },
+      "tReselNB": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "3.0"
+      },
+      "ulChBw": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.2 MHz"
+      },
+      "ulpcIniPrePwrNB": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-104 dBm"
+      }
+    }
+  }
+}

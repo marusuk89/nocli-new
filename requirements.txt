@@ -1,0 +1,7 @@
+cmd2
+grpcio
+grpcio-tools
+ping3
+openpyxl
+python-dotenv
+toml

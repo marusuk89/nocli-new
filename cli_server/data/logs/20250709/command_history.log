@@ -1,0 +1,142 @@
+2025-07-09 16:38:08 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-09 16:38:08 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-09 16:38:08 | config > | init_stp | RESULT: OK
+2025-07-09 16:38:08 | config/init-bts(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-09 16:38:08 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-09 16:38:09 | MRBTS(130126) > | exec_script DU10_INITBTS_FILTER_SCRIPT_V0.7.5.cli | RESULT: OK
+2025-07-09 16:38:34 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-09 16:38:34 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-09 16:38:34 | config > | init_stp | RESULT: OK
+2025-07-09 16:38:34 | config/init-bts(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-09 16:38:34 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-09 16:38:35 | MRBTS(130126) > | exec_script DU10_INITBTS_FILTER_SCRIPT_V0.7.5.cli | RESULT: OK
+2025-07-09 17:25:03 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-09 17:25:03 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-09 17:25:03 | config > | init_stp | RESULT: OK
+2025-07-09 17:25:03 | config > | init_bts -r 4G -v 24R2 -i 65534 | RESULT: OK
+2025-07-09 17:26:39 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-09 17:26:39 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-09 17:26:40 | config > | init_stp | RESULT: OK
+2025-07-09 17:26:40 | config/init-bts(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-09 17:26:40 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-09 17:26:41 | MRBTS(130126) > | exec_script DU10_INITBTS_FILTER_SCRIPT_V0.7.5.cli | RESULT: OK
+2025-07-09 17:30:23 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-09 17:30:23 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-09 17:30:23 | config > | init_stp | RESULT: OK
+2025-07-09 17:30:24 | config/init-bts(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-09 17:30:24 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-09 17:31:59 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-09 17:31:59 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-09 17:31:59 | config > | init_stp | RESULT: OK
+2025-07-09 17:31:59 | config/init-bts(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-09 17:31:59 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-09 17:32:05 | MRBTS(130126) > | exec_script DU10_INITBTS_FILTER_SCRIPT_V0.7.5.cli | RESULT: OK
+2025-07-09 17:35:26 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-09 17:35:26 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-09 17:35:26 | config > | init_stp | RESULT: OK
+2025-07-09 17:35:26 | config/init-bts(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-09 17:35:26 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-09 17:35:28 | MRBTS(130126) > | exec_script DU10_INITBTS_FILTER_SCRIPT_V0.7.5.cli | RESULT: OK
+2025-07-09 17:40:48 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-09 17:40:48 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-09 17:40:48 | config > | init_stp | RESULT: OK
+2025-07-09 17:40:48 | config/init-bts(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-09 17:40:48 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-09 17:40:50 | MRBTS(130126) > | exec_script DU10_INITBTS_FILTER_SCRIPT_V0.7.5.cli | RESULT: OK
+2025-07-09 17:48:26 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-09 17:48:26 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-09 17:48:26 | config > | init_stp | RESULT: OK
+2025-07-09 17:48:26 | config/init-bts(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-09 17:48:26 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-09 17:48:27 | MRBTS(130126) > | exec_script DU10_INITBTS_FILTER_SCRIPT_V0.7.5.cli | RESULT: OK
+2025-07-09 17:48:27 | MRBTS(130126) > | exec_script du10_bts130126_userinput.cli | RESULT: OK
+2025-07-09 17:48:27 | MRBTS(130126) > | commit_all -t 1 | RESULT: OK
+2025-07-09 17:50:35 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-09 17:50:35 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-09 17:50:35 | config > | init_stp | RESULT: OK
+2025-07-09 17:50:35 | config/init-bts(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-09 17:50:36 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-09 17:50:37 | MRBTS(130126) > | exec_script DU10_INITBTS_FILTER_SCRIPT_V0.7.5.cli | RESULT: OK
+2025-07-09 17:50:48 | MRBTS(130126) > | exec_script du10_bts130126_userinput.cli | RESULT: OK
+2025-07-09 17:50:49 | MRBTS(130126) > | commit_all -t 1 | RESULT: OK
+2025-07-09 17:51:09 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-09 17:51:09 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-09 17:51:09 | config > | init_stp | RESULT: OK
+2025-07-09 17:51:10 | config/init-bts(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-09 17:51:10 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-09 17:51:11 | MRBTS(130126) > | exec_script DU10_INITBTS_FILTER_SCRIPT_V0.7.5.cli | RESULT: OK
+2025-07-09 17:51:11 | MRBTS(130126) > | exec_script du10_bts130126_userinput.cli | RESULT: OK
+2025-07-09 17:51:11 | MRBTS(130126) > | commit_all -t 1 | RESULT: OK
+2025-07-09 17:56:21 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-09 17:56:21 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-09 17:56:21 | config > | init_stp | RESULT: OK
+2025-07-09 17:56:22 | config/init-bts(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-09 17:56:22 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-09 17:56:23 | MRBTS(130126) > | exec_script DU10_INITBTS_FILTER_SCRIPT_V0.7.5.cli | RESULT: OK
+2025-07-09 17:56:23 | MRBTS(130126) > | exec_script du10_bts130126_userinput.cli | RESULT: OK
+2025-07-09 17:56:23 | MRBTS(130126) > | commit_all -t 1 | RESULT: OK
+2025-07-09 17:58:25 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-09 17:58:25 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-09 17:58:25 | config > | init_stp | RESULT: OK
+2025-07-09 17:58:25 | config/init-bts(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-09 17:58:25 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-09 17:58:26 | MRBTS(130126) > | exec_script DU10_INITBTS_FILTER_SCRIPT_V0.7.5.cli | RESULT: OK
+2025-07-09 17:58:26 | MRBTS(130126) > | exec_script du10_bts130126_userinput.cli | RESULT: OK
+2025-07-09 17:58:27 | MRBTS(130126) > | commit_all -t 1 | RESULT: OK
+2025-07-09 18:00:41 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-09 18:00:41 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-09 18:00:41 | config > | init_stp | RESULT: OK
+2025-07-09 18:00:41 | config/init-bts(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-09 18:00:41 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-09 18:00:42 | MRBTS(130126) > | exec_script DU10_INITBTS_FILTER_SCRIPT_V0.7.5.cli | RESULT: OK
+2025-07-09 18:00:42 | MRBTS(130126) > | exec_script du10_bts130126_userinput.cli | RESULT: OK
+2025-07-09 18:00:42 | MRBTS(130126) > | commit_all -t 1 | RESULT: OK
+2025-07-09 18:10:25 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-09 18:10:25 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-09 18:10:25 | config > | init_stp | RESULT: OK
+2025-07-09 18:10:25 | config/init-bts(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-09 18:10:25 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-09 18:10:27 | MRBTS(130126) > | exec_script DU10_INITBTS_FILTER_SCRIPT_V0.7.5.cli | RESULT: OK
+2025-07-09 18:10:27 | MRBTS(130126) > | exec_script du10_bts130126_userinput.cli | RESULT: OK
+2025-07-09 18:10:27 | MRBTS(130126) > | commit_all -t 1 | RESULT: OK
+2025-07-09 18:12:12 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-09 18:12:12 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-09 18:12:12 | config > | init_stp | RESULT: OK
+2025-07-09 18:12:12 | config/init-bts(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-09 18:12:13 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-09 18:12:13 | MRBTS(130126) > | exec_script DU10_INITBTS_FILTER_SCRIPT_V0.7.5.cli | RESULT: OK
+2025-07-09 18:12:14 | MRBTS(130126) > | exec_script du10_bts130126_userinput.cli | RESULT: OK
+2025-07-09 18:12:14 | MRBTS(130126) > | commit_all -t 1 | RESULT: OK
+2025-07-09 18:14:36 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-09 18:14:36 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-09 18:14:36 | config > | init_stp | RESULT: OK
+2025-07-09 18:14:37 | config/init-bts(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-09 18:14:37 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-09 18:14:38 | MRBTS(130126) > | exec_script DU10_INITBTS_FILTER_SCRIPT_V0.7.5.cli | RESULT: OK
+2025-07-09 18:14:38 | MRBTS(130126) > | exec_script du10_bts130126_userinput.cli | RESULT: OK
+2025-07-09 18:14:38 | MRBTS(130126) > | commit_all -t 1 | RESULT: OK
+2025-07-09 18:20:30 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-09 18:20:30 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-09 18:20:30 | config > | init_stp | RESULT: OK
+2025-07-09 18:20:31 | config/init-bts(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-09 18:20:31 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-09 18:20:32 | MRBTS(130126) > | exec_script DU10_INITBTS_FILTER_SCRIPT_V0.7.5.cli | RESULT: OK
+2025-07-09 18:20:32 | MRBTS(130126) > | exec_script du10_bts130126_userinput.cli | RESULT: OK
+2025-07-09 18:20:32 | MRBTS(130126) > | commit_all -t 1 | RESULT: OK
+2025-07-09 18:23:44 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-09 18:23:44 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-09 18:23:44 | config > | init_stp | RESULT: OK
+2025-07-09 18:23:44 | config/init-bts(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-09 18:23:45 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-09 18:23:46 | MRBTS(130126) > | exec_script DU10_INITBTS_FILTER_SCRIPT_V0.7.5.cli | RESULT: OK
+2025-07-09 18:23:46 | MRBTS(130126) > | exec_script du10_bts130126_userinput.cli | RESULT: OK
+2025-07-09 18:23:46 | MRBTS(130126) > | commit_all -t 1 | RESULT: OK
+2025-07-09 18:24:49 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-09 18:24:49 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-09 18:24:49 | config > | init_stp | RESULT: OK
+2025-07-09 18:24:50 | config/init-bts(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-09 18:24:50 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-09 18:24:51 | MRBTS(130126) > | exec_script DU10_INITBTS_FILTER_SCRIPT_V0.7.5.cli | RESULT: OK
+2025-07-09 18:24:51 | MRBTS(130126) > | exec_script du10_bts130126_userinput.cli | RESULT: OK
+2025-07-09 18:24:51 | MRBTS(130126) > | commit_all -t 1 | RESULT: OK
+2025-07-09 18:25:14 | MRBTS(130126) > | apply_bts_cfg_commission | RESULT: OK

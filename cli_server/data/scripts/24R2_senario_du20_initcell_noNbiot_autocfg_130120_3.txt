@@ -1,0 +1,32 @@
+#du10과의 차이점 
+# - nbiot LNCEL : BBPOOLALLOC 0 추가
+# - macro LNCEL auto-config : LNHOIF 1 대신 BBPOOLALLOC 0
+
+EQM 1
+  APEQM 1
+    RMOD 9
+    auto-config ANTL *
+  exit
+exit
+HWTOP 1
+CABLINK 10
+firstEndpointDN MRBTS-130120/EQM-1/APEQM-1/FHS-1
+firstEndpointLabel OPT
+firstEndpointPortId 7
+secondEndpointDN MRBTS-130120/EQM-1/APEQM-1/RMOD-9
+secondEndpointLabel OPT
+secondEndpointPortId 1
+exit-all
+LNBTS 130120
+LNCEL 500
+lcrId 50
+tac 334
+phyCellId 500
+nbIoTMode disabled
+auto-config
+exit-all
+MNL 1
+MNLENT 1
+CELLMAPPING 1
+auto-config LCELL 50
+exit-all

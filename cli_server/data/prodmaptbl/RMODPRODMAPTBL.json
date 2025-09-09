@@ -1,0 +1,168 @@
+{
+  "RMODPRODMAPTBL":
+    {
+    "type": "rddict",
+    "value": {
+      "AEQN": {
+        "CODE": "474736A",
+        "TYPE": "PHYANT"
+      },
+      "AEQY": {
+        "CODE": "475538A",
+        "TYPE": "PHYANT"
+      },
+      "AQQA": {
+        "CODE": "475573A",
+        "TYPE": "PHYANT"
+      },
+      "AQQL": {
+        "CODE": "475732A",
+        "TYPE": "PHYANT"
+      },
+      "AQQS": {
+        "CODE": "475989A",
+        "TYPE": "PHYANT"
+      },
+      "AQQT": {
+        "CODE": "476339A",
+        "TYPE": "PHYANT"
+      },
+      "AVQL": {
+        "CODE": "475976A",
+        "TYPE": "PHYANT"
+      },
+      "AZQG": {
+        "CODE": "474994A",
+        "TYPE": "8TX8RX"
+      },
+      "AZQL": {
+        "CODE": "475130A",
+        "TYPE": "8TX8RX"
+      },
+      "AZQH": {
+        "CODE": "475074A",
+        "TYPE": "8TX8RX"
+      },
+      "AZQS": {
+        "CODE": "475664A",
+        "TYPE": "8TX8RX"
+      },
+      "AHQK": {
+        "CODE": "474919A",
+        "TYPE": "8T8R"
+      },
+      "FRPB": {
+        "CODE": "472752A",
+        "TYPE": "6TX6RX"
+      },
+      "FRGT": {
+        "CODE": "472810A",
+        "TYPE": "3TX6RX"
+      },
+      "FXEA": {
+        "CODE": "472084A",
+        "TYPE": "3TX6RX"
+      },
+      "FXCA": {
+        "CODE": "472142A",
+        "TYPE": "3TX6RX"
+      },
+      "FXEB": {
+        "CODE": "472501A",
+        "TYPE": "3TX6RX"
+      },
+      "FRHA": {
+        "CODE": "471894A",
+        "TYPE": "3TX6RX"
+      },
+      "AHEGG": {
+        "CODE": "476123A",
+        "TYPE": "4TX4RX"
+      },
+      "AHEGA": {
+        "CODE": "473995A",
+        "TYPE": "4TX4RX"
+      },
+      "AHCA": {
+        "CODE": "473966A",
+        "TYPE": "4TX4RX"
+      },
+      "FRHG": {
+        "CODE": "473225A",
+        "TYPE": "4TX4RX"
+      },
+      "FXCC": {
+        "CODE": "472661A",
+        "TYPE": "4TX4RX"
+      },
+      "AHDB": {
+        "CODE": "474257A",
+        "TYPE": "2TX4RX"
+      },
+      "FHDB": {
+        "CODE": "472649A",
+        "TYPE": "2TX2RX"
+      },
+      "FHEA": {
+        "CODE": "472168A",
+        "TYPE": "2TX2RX"
+      },
+      "FHEB": {
+        "CODE": "472650A",
+        "TYPE": "2TX2RX"
+      },
+      "FHEL": {
+        "CODE": "473475A",
+        "TYPE": "2TX2RX"
+      },
+      "FRCG": {
+        "CODE": "473224A",
+        "TYPE": "2TX2RX"
+      },
+      "FHCA": {
+        "CODE": "472169A",
+        "TYPE": "2TX2RX"
+      },
+      "FHCC": {
+        "CODE": "472662A",
+        "TYPE": "2TX2RX"
+      },
+      "FRHB": {
+        "CODE": "472292A",
+        "TYPE": "2TX2RX"
+      },
+      "FHCB": {
+        "CODE": "00065698",
+        "TYPE": "2TX2RX"
+      },
+      "FRGY": {
+        "CODE": "472854A",
+        "TYPE": "2TX2RX"
+      },
+      "FRGP": {
+        "CODE": "472100B",
+        "TYPE": "2TX2RX"
+      },
+      "FXFA": {
+        "CODE": "472166A",
+        "TYPE": "2TX2RX"
+      },
+      "FHEC": {
+        "CODE": "00068817",
+        "TYPE": "2T2R"
+      },
+      "FHCG": {
+        "CODE": "473377A",
+        "TYPE": "2TX2RX"
+      },
+      "AHGA": {
+        "CODE": "474254A",
+        "TYPE": "4TX4RX"
+      },
+      "FRGQ": {
+        "CODE": "472261A",
+        "TYPE": "2TX2RX"
+      }
+    }
+  }
+}

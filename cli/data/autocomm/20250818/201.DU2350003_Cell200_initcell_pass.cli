@@ -1,0 +1,81 @@
+### HEADER ###
+dest-bts 2350003
+check-ping 2350003
+set-mode cell
+set-mo-version 25R2
+set-rat-type 5G
+set-iot-lncel-id 22113
+set-du-type du10
+set-allow-commit-diff true
+
+### BODY ###
+set-ru-type AEQY
+tgt-bts 2350003
+dnload-bts-cfg
+set-ru-type AEQY
+EQM 1
+APEQM 1
+RMOD 8
+exit-all
+EQM 1
+HWTOP 1
+CABLINK 11
+firstEndpointDN MRBTS-2350003/EQM-1/APEQM-1/CABINET-1/BBMOD-2
+firstEndpointLabel SFP
+firstEndpointPortId 2
+linkSpeed eCpri10
+radioProtocolType 10eCPRI
+secondEndpointDN MRBTS-2350003/EQM-1/APEQM-1/RMOD-8
+secondEndpointLabel SFP
+secondEndpointPortId 1
+exit-all
+NRBTS 2350003
+NRCELL 200
+cellName NR_TEST1
+lcrId 8
+physCellId 112
+prachRootSequenceIndex 100
+configuredEpsTac 59455
+exit-all
+
+MNL 1
+MNLENT 1
+CELLMAPPING 1
+auto-config LCELNR 8
+exit-all
+
+# 더미 제거 시작
+EQM 1
+APEQM 1
+no-mo-scf RMOD 31
+exit-all
+MNL 1
+MNLENT 1
+SYNC 2
+no-list targetDNList "MRBTS-2350003/EQM-1/APEQM-1/RMOD-31"
+exit-all
+NRBTS 2350003
+NRDU 1
+no-list refNrCellGroup 0
+no-mo-scf NRCELLGRP 0
+exit
+no-mo-scf NRPGRP 31
+exit-all
+EQM 1
+HWTOP 1
+no-mo-scf CABLINK 65535
+exit-all
+LNBTS 2350003
+no-mo-scf NRCELL 6144
+no-mo-scf NRCELL 6144
+exit-all
+MNL 1
+MNLENT 1
+CELLMAPPING 1
+no-mo-scf LCELNR 31
+exit-all
+# 더미 제거 끝
+
+commit
+apply-bts-cfg
+#act-bts-cfg

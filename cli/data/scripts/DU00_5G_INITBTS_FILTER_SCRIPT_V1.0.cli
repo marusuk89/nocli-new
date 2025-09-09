@@ -1,0 +1,401 @@
+##### FILTER SCRIPT for 5G INIT-BTS #####
+## ASIK 과 ASIL의 차이는 CABLINK 생성 시에 SFP/QSFP 레이블을 잘 붙여주는 것임 ##
+## NRDU가 NRCELL보다 먼저 만들어져야함
+####
+EQM 1
+    APEQM 1
+        CABINET 1
+            BBMOD 1
+            exit
+            BBMOD 2
+            exit
+            BBMOD 3
+            exit
+            SMOD 1
+                EAC_IN 1
+                exit
+                EAC_IN 2
+                exit          
+                EAC_IN 3
+                exit        
+                EAC_IN 4
+                exit
+                EAC_IN 5
+                exit
+                EAC_IN 6
+                exit
+                EAC_IN 7
+                exit
+                EAC_IN 8
+                exit
+            exit
+        exit-all
+
+
+EQM 1
+    APEQM 1
+        RMOD 31
+            EAC_IN 1
+            exit
+            EAC_IN 2
+            exit
+            EAC_IN 3
+            exit
+            EAC_IN 4
+            exit
+            PHYANT 1
+            exit
+        exit
+    exit
+
+HWTOP 1
+    CABLINK 1
+    exit
+    CABLINK 2
+    exit
+    CABLINK 3
+    exit
+exit-all
+
+MNL 1
+    AMGR 1
+        LUAC 1
+        exit
+    exit
+    
+    CERTH 1
+        CMP 1
+        exit
+        CMPECDSA 1
+        exit
+        CMPFH 1
+        exit
+        CMPFHEXT 1
+        exit
+        CRLH 1
+        exit
+    exit
+
+    CMD 1
+    exit
+
+    MNLENT 1
+        CELLMAPPING 1
+            auto-config LCELNR 31
+            exit-all
+
+MNL 1
+    MNLENT 1
+        CERTHENT 1
+        exit
+        CUPLANEFHNW 1
+        exit
+        FEATCADM 1
+        exit
+        FMCADM 1
+        exit
+    
+        MPLANENW 1
+        exit
+        PMCADM 1
+        exit
+        PMMNL 1
+        exit
+        SECADM 1
+        exit
+        SYNC 1
+            CLOCK 1
+            list syncInputList 2 syncInputPrio 2
+            list syncInputList 2 syncInputType "TOPP"
+                GNSSE 1
+                exit
+                TOP 1
+                    TOPP 1
+                    exit
+                exit
+            exit
+            TIME 1
+            exit
+                    
+            ECPRIMASTER 1
+            exit
+        exit
+    
+        SYNC 2
+            CLOCK 1
+                TOP 1
+                    TOPP 1
+                    exit
+                exit
+            exit      
+            TIME 1
+            exit
+        exit
+
+        TAC 1
+            LTAC 1
+            exit
+        exit
+    
+        TEST 1
+        exit
+        TRBLCADM 1
+            SLCELLDRCONF 1
+            exit
+        exit
+    exit
+
+    TCEADM 1
+        TCE 1
+        exit
+    exit
+exit-all
+
+
+##### NRBTS #####
+MRBTSDESC 0
+exit
+
+#####
+NRBTS 000
+    BWP_PROFILE 0
+        PDCCH 1
+            PDCCH_CONFIG_COMMON 1
+            exit
+        exit
+    exit
+    BWP_PROFILE 44
+        PDCCH 1
+            PDCCH_CONFIG_COMMON 1
+            exit
+            PDCCH_CONFIG_DEDICATED 1
+            exit
+        exit
+
+        PDSCH 1
+        exit
+    exit
+
+    NRANR 1
+    exit
+    NRANRPR 1
+    exit
+    NRDU 1
+        NRCTRLTSDU 1
+        exit
+    exit
+    
+    NRCELL 6144
+        #NRULMUMIMO 0
+        #exit
+    exit
+
+    NRCELLGRP 0
+    exit
+    
+    NRCTRLTS 1
+        NRMTRACECU 1
+        exit
+    exit
+    
+    NRCUUP 1
+    exit
+    NRDRB 1
+    exit
+    NRDRB 2
+    exit
+    NRDRB 3
+    exit
+    NRDRB 4
+    exit
+    NRDRB 5
+    exit
+    NRDRB 6
+    exit
+    NRDRB 7
+    exit
+    NRDRB 8
+    exit
+    NRDRB 9
+    exit
+    NRDRB 10
+    exit
+    NRDRB 11
+    exit
+    NRDRB 12
+    exit
+    NRDRB 13
+    exit
+    NRDRB 14
+    exit
+    NRDRB 15
+    exit
+    NRDRB_5QI 1
+    exit
+    NRDRB_5QI 2
+    exit
+    NRDRB_5QI 3
+    exit
+    NRDRB_5QI 4
+    exit
+    NRDRB_5QI 5
+    exit
+    NRDRB_MAC 1
+    exit
+    NRDRB_MAC 2
+    exit
+    NRDRB_PDCP 1
+    exit
+    NRDRB_PDCP 2
+    exit
+    NRDRB_QCI 1
+    exit
+    NRDRB_QCI 2
+    exit
+    NRDRB_QCI 3
+    exit
+    NRDRB_QCI 4
+    exit
+    NRDRB_QCI 5
+    exit
+    NRDRB_QCI 6
+    exit
+    NRDRB_QCI 7
+    exit
+    NRDRB_QCI 8
+    exit
+    NRDRB_QCI 9
+    exit
+    NRDRB_RLC_AM 1
+    exit
+    NRDRB_RLC_AM 2
+    exit
+    NRPLMN 1
+    exit
+    NRPMRNL 1
+    exit
+    NRSCTP 1
+    exit
+    NRULCLPC_PROFILE 0
+    exit
+    SERVEDAMF 1
+    exit
+    TRACKINGAREA 1
+    exit
+exit-all
+
+
+TNLSVC 1
+    PMTNLINT 1
+    exit
+    TNL 1
+        ETHSVC 1
+            ETHIF 1
+                VLANIF 1
+                exit
+            exit
+            L2SWI 1
+                BRGPRT 1
+                exit
+                IBRGPRT 1
+                exit
+            exit
+            ETHLK 1
+            exit
+        exit
+        
+        IPAPP 1
+            IPSECC 1
+                SECPOL 1
+                exit
+                SECPOL 2
+                exit
+                SECPOL 3
+                exit
+                SECPOL 4
+                exit
+            exit
+        exit
+        
+        IPNO 1
+            IPIF 1
+                IPADDRESSV4 1
+                exit
+            exit
+            IPRT 1
+            exit
+            IPRTV6 1
+            exit
+            QOS 1
+                DSCP2QMAP 1
+                exit
+                ##FSTSCH -> FSTSCH 1
+                FSTSCH 1
+                exit
+            exit
+        exit
+    exit
+    
+    TNL 2
+        ETHSVC 1
+            ETHIF 1
+                VLANIF 1
+                exit
+            exit
+            ETHIF 2
+                VLANIF 1
+                exit
+            exit
+            ETHLK 1
+            exit
+            ETHLK 2
+            exit
+        exit
+        
+        IPNO 1
+        exit
+    exit
+
+    TNL 3
+        ETHSVC 1
+            ETHIF 1
+                VLANIF 1
+                exit
+            exit
+            ETHIF 2
+                VLANIF 1
+                exit
+            exit
+            ETHLK 1
+            exit
+            ETHLK 2
+            exit
+        exit
+        
+        IPNO 1
+        exit
+    exit
+
+    TNL 4
+        ETHSVC 1
+            ETHIF 1
+                VLANIF 1
+                exit
+            exit
+            ETHIF 2
+                VLANIF 1
+                exit
+            exit
+            ETHLK 1
+            exit
+            ETHLK 2
+            exit
+        exit
+        
+        IPNO 1
+        exit
+    exit           
+exit-all
+
+#### END OF FILE ####
+#####################

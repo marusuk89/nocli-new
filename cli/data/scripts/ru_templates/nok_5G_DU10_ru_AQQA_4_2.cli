@@ -1,0 +1,14 @@
+EQM 1
+APEQM 1
+RMOD 000
+prodCodePlanned 475695A
+exit-all
+NRBTS 000
+NRCELL 000
+nrCellType 4DL2UL
+pMax 40.0
+dlMimoMode "8x4 Closed Loop Spatial Multiplexing"
+numOfSubSectors 0sub-sector
+list beamSet 1 basicBeamSet beamSet_6
+actBeamforming true
+exit-all

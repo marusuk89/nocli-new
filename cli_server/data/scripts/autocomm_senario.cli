@@ -1,0 +1,19 @@
+## DU10 - 130126 ##
+config-x
+auto-comm
+list-tmpl 20250703
+gen-script CLI 개통탬플릿_V0.9.0.xlsx
+list-script 20250704
+autocomm-run-script 201.DU130126_Cell48291_initcell_pass.cli
+#autocomm-run-script 202.DU130126_Cell48291_initcell_pass.cli
+#autocomm-run-script 200.DU130126_x_initbts_pass.cli
+
+## DU20 - 130120 ##
+config-x
+auto-comm
+list-tmpl 20250703
+gen-script CLI 개통탬플릿_V0.9.0.xlsx
+list-script 20250704
+#autocomm-run-script 301.DU130120_Cell24320_initcell_pass.cli
+autocomm-run-script 302.DU130120_Cell24320_initcell_pass.cli
+#autocomm-run-script 300.DU130120_x_initbts_pass.cli

@@ -1,0 +1,50 @@
+### HEADER ###
+dest-bts 2350003
+check-ping 2350003
+set-mode cell
+set-mo-version 25R2
+set-rat-type 5G
+set-iot-lncel-id 22113
+set-du-type du10
+set-allow-commit-diff true
+
+### BODY ###
+set-ru-type APHA
+tgt-bts 2350003
+dnload-bts-cfg
+set-ru-type APHA
+set-cell-type APHA_4_2
+EQM 1
+APEQM 1
+RMOD 1
+exit-all
+EQM 1
+HWTOP 1
+CABLINK 4
+firstEndpointDN MRBTS-2350003/EQM-1/APEQM-1/CABINET-1/BBMOD-1
+firstEndpointLabel SFP
+firstEndpointPortId 1
+linkSpeed eCpri10
+radioProtocolType 10eCPRI
+secondEndpointDN MRBTS-2350003/EQM-1/APEQM-1/RMOD-1
+secondEndpointLabel SFP
+secondEndpointPortId 1
+exit-all
+NRBTS 2350003
+NRCELL 100
+cellName NR_TEST1
+lcrId 1
+physCellId 100
+prachRootSequenceIndex 100
+configuredEpsTac 59456
+exit-all
+
+MNL 1
+MNLENT 1
+CELLMAPPING 1
+auto-config LCELNR 1
+exit-all
+
+commit
+apply-bts-cfg
+#act-bts-cfg

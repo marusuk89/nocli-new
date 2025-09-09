@@ -1,0 +1,29 @@
+#######################################
+############ 룰북 세팅 시나리오 ###########
+#######################################
+
+config
+init-stp
+dest-bts 130126
+check-ping 130126
+exit
+init-bts -r 4G -v 24R2 -i 65534
+set-du-type du10
+tgt-bts 130126
+set-cfg-scf 25R2_NOKIA_CLI_Rulebook_SCF_DU10_InitCell_LTE_V1.0.xml
+commit-t 1
+rulebook-to-dict 25R2_NOKIA_CLI_Rulebook_SCF_DU10_InitCell_LTE_V1.0_t1.xml
+
+#############################################
+## mo_param_dict / formula_dict 세팅 시나리오 ##
+#############################################
+config
+init-stp
+dest-bts 130126
+check-ping 130126
+exit
+init-bts -r 4G -v 24R2 -i 65534
+set-du-type du10
+tgt-bts 130126
+excel-to-dict-formula 엑셀파일명.xlsx
+excel-to-dict-mo 엑셀파일명.xlsx

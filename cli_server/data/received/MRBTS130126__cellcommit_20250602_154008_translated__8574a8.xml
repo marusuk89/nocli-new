@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<raml xmlns="raml21.xsd" version="2.1">
+  <cmData type="plan">
+    <managedObject class="com.nokia.srbts:MRBTS" distName="MRBTS-130126" version="SBTS24R2FSM3_2402_100" operation="create">
+      <p name="btsName">NL_DGhwanggeumilD7</p>
+    </managedObject>
+    <managedObject class="com.nokia.srbts.eqm:EQM" distName="MRBTS-130126/EQM-1" version="EQM24R2FSM3_2322_100" operation="create"/>
+    <managedObject class="com.nokia.srbts.eqm:APEQM" distName="MRBTS-130126/EQM-1/APEQM-1" version="EQM24R2FSM3_2322_100" operation="create">
+      <p name="aldScanningInterval">30 sec</p>
+      <p name="allowBbPoolRecoveryReset">true</p>
+      <p name="berMajorAlarmThreshold">-12</p>
+      <p name="berMinorAlarmThreshold">-13</p>
+      <p name="sfpOperatorMode">false</p>
+    </managedObject>
+    <managedObject class="com.nokia.srbts.eqm:CABINET" distName="MRBTS-130126/EQM-1/APEQM-1/CABINET-1" version="EQM24R2FSM3_2322_100" operation="create"/>
+    <managedObject class="com.nokia.srbts.eqm:BBMOD" distName="MRBTS-130126/EQM-1/APEQM-1/CABINET-1/BBMOD-1" version="EQM24R2FSM3_2322_100" operation="create">
+      <p name="administrativeState">Locked</p>
+      <p name="fddNrCellConfigTradeoff">not used</p>
+      <p name="prodCodePlanned">472797A</p>
+      <p name="useFullCapacity">true</p>
+      <list name="srioConnectionList">
+        <item>
+          <p name="linkId">4</p>
+          <p name="mode">RF</p>
+        </item>
+      </list>
+    </managedObject>
+    <managedObject class="com.nokia.srbts.eqm:BBMOD" distName="MRBTS-130126/EQM-1/APEQM-1/CABINET-1/BBMOD-2" version="EQM24R2FSM3_2322_100" operation="create">
+      <p name="administrativeState">Locked</p>
+      <p name="fddNrCellConfigTradeoff">not used</p>
+      <p name="prodCodePlanned">472797A</p>
+      <p name="useFullCapacity">true</p>
+      <list name="srioConnectionList">
+        <item>
+          <p name="linkId">4</p>
+          <p name="mode">RF</p>
+        </item>
+      </list>
+    </managedObject>
+    <managedObject class="com.nokia.srbts.eqm:SMOD" distName="MRBTS-130126/EQM-1/APEQM-1/CABINET-1/SMOD-1" version="EQM24R2FSM3_2322_100" operation="create">
+      <p name="climateControlOcxoTemperatureLearning">false</p>
+      <p name="moduleLocation">NL_DGhwanggeumilD7</p>
+      <p name="portMode">RF</p>
+      <p name="prodCodePlanned">472181A</p>
+    </managedObject>
+    <managedObject class="com.nokia.srbts.eqm:EAC_IN" distName="MRBTS-130126/EQM-1/APEQM-1/CABINET-1/SMOD-1/EAC_IN-1" version="EQM24R2FSM3_2322_100" operation="create">
+      <p name="cancelDelay">0</p>
+      <p name="descr">Low Temperature</p>
+      <p name="inUse">true</p>
+      <p name="polarity">Normally_open</p>
+      <p name="portId">3</p>
+      <p name="severity">Critical</p>
+      <p name="startDelay">0</p>
+    </managedObject>
+    <managedObject class="com.nokia.srbts.eqm:EAC_IN" distName="MRBTS-130126/EQM-1/APEQM-1/CABINET-1/SMOD-1/EAC_IN-2" version="EQM24R2FSM3_2322_100" operation="create">
+      <p name="cancelDelay">0</p>
+      <p name="descr">Low Temperature</p>
+      <p name="inUse">true</p>
+      <p name="polarity">Normally_open</p>
+      <p name="portId">3</p>
+      <p name="severity">Critical</p>
+      <p name="startDelay">0</p>
+    </managedObject>
+    <managedObject class="com.nokia.srbts.eqm:EAC_IN" distName="MRBTS-130126/EQM-1/APEQM-1/CABINET-1/SMOD-1/EAC_IN-3" version="EQM24R2FSM3_2322_100" operation="create">
+      <p name="cancelDelay">0</p>
+      <p name="descr">Low Temperature</p>
+      <p name="inUse">true</p>
+      <p name="polarity">Normally_open</p>
+      <p name="portId">3</p>
+      <p name="severity">Critical</p>
+      <p name="startDelay">0</p>
+    </managedObject>
+    <managedObject class="com.nokia.srbts.eqm:EAC_IN" distName="MRBTS-130126/EQM-1/APEQM-1/CABINET-1/SMOD-1/EAC_IN-4" version="EQM24R2FSM3_2322_100" operation="create">
+      <p name="cancelDelay">0</p>
+      <p name="descr">Low Temperature</p>
+      <p name="inUse">true</p>
+      <p name="polarity">Normally_open</p>
+      <p name="portId">3</p>
+      <p name="severity">Critical</p>
+      <p name="startDelay">0</p>
+    </managedObject>
+    <managedObject class="com.nokia.srbts.eqm:EAC_IN" distName="MRBTS-130126/EQM-1/APEQM-1/CABINET-1/SMOD-1/EAC_IN-5" version="EQM24R2FSM3_2322_100" operation="create">
+      <p name="cancelDelay">0</p>
+      <p name="descr">Low Temperature</p>
+      <p name="inUse">true</p>
+      <p name="polarity">Normally_open</p>
+      <p name="portId">3</p>
+      <p name="severity">Critical</p>
+      <p name="startDelay">0</p>
+    </managedObject>
+    <managedObject class="com.nokia.srbts.eqm:EAC_IN" distName="MRBTS-130126/EQM-1/APEQM-1/CABINET-1/SMOD-1/EAC_IN-6" version="EQM24R2FSM3_2322_100" operation="create">
+      <p name="cancelDelay">0</p>
+      <p name="descr">Low Temperature</p>
+      <p name="inUse">true</p>
+      <p name="polarity">Normally_open</p>
+      <p name="portId">3</p>
+      <p name="severity">Critical</p>
+      <p name="startDelay">0</p>
+    </managedObject>
+    <managedObject class="com.nokia.srbts.eqm:EAC_IN" distName="MRBTS-130126/EQM-1/APEQM-1/CABINET-1/SMOD-1/EAC_IN-7" version="EQM24R2FSM3_2322_100" operation="create">
+      <p name="cancelDelay">0</p>
+      <p name="descr">Low Temperature</p>
+      <p name="inUse">true</p>
+      <p name="polarity">Normally_open</p>
+      <p name="portId">3</p>
+      <p name="severity">Critical</p>
+      <p name="startDelay">0</p>
+    </managedObject>
+    <managedObject class="com.nokia.srbts.eqm:TRMOD" distName="MRBTS-130126/EQM-1/APEQM-1/CABINET-1/TRMOD-1" version="EQM24R2FSM3_2322_100" operation="create">
+      <p name="prodCodePlanned">472311A</p>
+    </managedObject>
+    <managedObject class="com.nokia.srbts.eqm:HWTOP" distName="MRBTS-130126/EQM-1/HWTOP-1" version="EQM24R2FSM3_2322_100" operation="create"/>
+    <managedObject class="com.nokia.srbts.eqm:CABLINK" distName="MRBTS-130126/EQM-1/HWTOP-1/CABLINK-1" version="EQM24R2FSM3_2322_100" operation="create">
+      <p name="firstEndpointDN">MRBTS-141137/EQM-1/APEQM-1/CABINET-1/SMOD-1</p>
+      <p name="firstEndpointLabel">BB_EXT</p>
+      <p name="firstEndpointPortId">1</p>
+      <p name="secondEndpointDN">MRBTS-141137/EQM-1/APEQM-1/CABINET-1/BBMOD-1</p>
+      <p name="secondEndpointLabel">BB_EXT</p>
+      <p name="secondEndpointPortId">1</p>
+    </managedObject>
+    <managedObject class="com.nokia.srbts.eqm:CABLINK" distName="MRBTS-130126/EQM-1/HWTOP-1/CABLINK-2" version="EQM24R2FSM3_2322_100" operation="create">
+      <p name="firstEndpointDN">MRBTS-141137/EQM-1/APEQM-1/CABINET-1/SMOD-1</p>
+      <p name="firstEndpointLabel">BB_EXT</p>
+      <p name="firstEndpointPortId">2</p>
+      <p name="secondEndpointDN">MRBTS-141137/EQM-1/APEQM-1/CABINET-1/BBMOD-2</p>
+      <p name="secondEndpointLabel">BB_EXT</p>
+      <p name="secondEndpointPortId">1</p>
+    </managedObject>
+    <managedObject class="com.nokia.srbts.eqm:CABLINK" distName="MRBTS-130126/EQM-1/HWTOP-1/CABLINK-3" version="EQM24R2FSM3_2322_100" operation="create">
+      <p name="firstEndpointDN">MRBTS-141137/EQM-1/APEQM-1/CABINET-1/SMOD-1</p>
+      <p name="firstEndpointLabel">OPT</p>
+      <p name="firstEndpointPortId">1</p>
+      <p name="secondEndpointDN">MRBTS-141137/EQM-1/APEQM-1/RMOD-1</p>
+      <p name="secondEndpointLabel">OPT</p>
+      <p name="secondEndpointPortId">1</p>
+    </managedObject>
+  </cmData>
+</raml>

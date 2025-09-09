@@ -1,0 +1,21 @@
+{
+  "PRODMAPTBL": {
+    "type": "rddict",
+    "value": {
+      "FSMF": "472181A",
+      "ASIA": "473095A",
+      "ASIK": "474021A",
+      "ASIB": "473764A",
+      "ASIL": "474767A",
+      "ASIM": "475765A",
+      "FBBA": "472182A",
+      "FBBC": "472797A",
+      "ABIA": "473096A",
+      "ABIL": "474020A",
+      "ABIN": "474824A",
+      "ABIO": "475266A",
+      "ABIP": "475792A",
+      "ABIQ": "476397A"
+    }
+  }
+}

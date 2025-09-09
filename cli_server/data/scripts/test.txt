@@ -1,0 +1,20 @@
+tgt-bts 12345
+action-cmd init
+rat-type 4g
+bts-id 40000
+btsName NN001234567
+LNMME 1
+mme-ip 39.18.70.49
+mme-gi 10
+exit
+LNMME 2
+mme-ip 39.18.134.65
+mme-gi 20
+exit
+LNMME 3
+mme-ip 39.18.71.65
+mme-gi 30
+exit
+AAA 1
+aaa aaa
+exit

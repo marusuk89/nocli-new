@@ -1,0 +1,16 @@
+allow-iot-cell
+##2tx2RX 참조용
+EQM 1
+APEQM 1
+RMOD 000
+prodCodePlanned 472169A
+exit-all
+LNBTS 000
+LNCEL 000
+pMax 43.0
+LNCEL_FDD 0
+dlChBw "10 MHz"
+ulChBw "10 MHz"
+earfcnDL 2600
+earfcnUL 20600
+exit-all

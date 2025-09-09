@@ -1,0 +1,14 @@
+[[ems]]
+alias = "DVT_5G"
+lbwas = "4.5.12.137"
+user = "omc"
+password = "Passw0rd+1"
+default_mr = "MRC-5G/MR-LGU+5G"
+
+[[ems]]
+alias = "DVT_LTE"
+lbwas = "4.5.1.111"
+user = "omc"
+password = "Passw0rd+1"
+default_mr = "MRC-MRC/MR-LTE"
+

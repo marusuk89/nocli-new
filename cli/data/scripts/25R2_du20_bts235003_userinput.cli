@@ -1,0 +1,126 @@
+EQM  1  
+  HWTOP  1  
+    CABLINK  1    
+      firstEndpointDN  MRBTS-2350003/EQM-1/APEQM-1/CABINET-1/SMOD-1
+      firstEndpointLabel  BACKPLANE
+      firstEndpointPortId  1
+      secondEndpointDN  MRBTS-2350003/EQM-1/APEQM-1/CABINET-1/BBMOD-1
+      secondEndpointLabel  BACKPLANE
+      secondEndpointPortId  1
+      exit
+    CABLINK  2    
+      firstEndpointDN  MRBTS-2350003/EQM-1/APEQM-1/CABINET-1/SMOD-1  
+      firstEndpointLabel  BACKPLANE  
+      firstEndpointPortId  2  
+      secondEndpointDN  MRBTS-2350003/EQM-1/APEQM-1/CABINET-1/BBMOD-2  
+      secondEndpointLabel  BACKPLANE  
+      secondEndpointPortId  1  
+      exit    
+    CABLINK  3
+      firstEndpointDN  MRBTS-2350003/EQM-1/APEQM-1/CABINET-1/SMOD-1  
+      firstEndpointLabel  BACKPLANE  
+      firstEndpointPortId  3 
+      secondEndpointDN  MRBTS-2350003/EQM-1/APEQM-1/CABINET-1/BBMOD-3
+      secondEndpointLabel  BACKPLANE  
+      secondEndpointPortId  1  
+      exit    
+    CABLINK  65535
+      firstEndpointDN  MRBTS-2350003/EQM-1/APEQM-1/CABINET-1/BBMOD-1  
+      firstEndpointLabel  SFP  
+      firstEndpointPortId  1
+      iqCompression "eCPRI IQ9_E7"
+      linkSpeed eCpri10
+      radioProtocolType 10eCPRI
+      secondEndpointDN  MRBTS-2350003/EQM-1/APEQM-1/RMOD-32767  
+      secondEndpointLabel  SFP  
+      secondEndpointPortId  1  
+      exit
+    exit-all
+
+NRBTS 2350003
+  NRCELL 6144
+    # [PDL] 비-ABIO계열 BBMOD 또는 SMOD≠ASOx/ABIL단독연결 조건일 때 false 강제
+    # - 이전 로그에서 isallocatedtoABIL=true 조건이 있었음 → false 유지 필요
+    actLongPucchPhase2 false
+
+    # [PDL] ABIL/ABILL에 RMOD/ASIRMOD가 단독 연결(공유 아님, 다중 BBMOD 아님)일 때 false 강제
+    # - UL MU‑MIMO가 켜지면 다른 규칙에서 actUlSrsBm=true를 요구하니 충돌 발생 → 본 스크립트는 false 유지
+    actUlSrsBm false
+
+    # [PDL] ABIL/ABIA/ABIC 단독 연결 조건일 때 아래 3개가 모두 false 강제
+    # - actCsirsMultiplexing = false
+    # - actUeCsirsCoexistCellCsirs = false  (현재 값이 이미 false라서 명령은 생략)
+    # - actDlSrsBm = false  (위에서 이미 false 설정)
+    actCsirsMultiplexing false
+
+    # [PDL] PdschBeamPowerBalance를 켜면 actDlSrsBm=true가 필수이므로 충돌 방지를 위해 끔
+    # - 장비 정책상 Beam Power Balance가 필요하면 토폴로지를 '단독 연결' 조건에서 벗기고 actDlSrsBm=true로 전환해야 함(엔지니어 확인 필요)
+    actDlSrsBm false
+    # [연쇄효과] DlSrsBm=false일 때 하위/연동 옵션들 비활성 유지 (벤더 가이드)
+    actDlSrsSubbandBm false
+    actPdschBeamPowerBalance false
+    
+    # [충돌회피] ABIL 단독 연결 조건에서 UL MU‑MIMO를 켜면 actUlSrsBm=true 요구와 충돌 → 의도적으로 끔
+    # - UL MU‑MIMO가 필요하면: isShared=true(공유) 등으로 토폴로지 바꿔 '단독 연결' 규칙에서 벗긴 뒤 재검토
+    actUlMuMimo false
+    # [연쇄효과] MU‑MIMO off일 때 SRS fallback 옵션도 off 유지
+    actSrsUlBeamFallbackByRetrx false
+
+    # [PDL] 5G TDD FR1(= nrarfcn ≤ 800000) + ABIL/ABILL 연결 시 dlDmrsType=Type1 강제
+    # - 현재 cellTechnology=TDD, nrarfcn=630000 → 조건 충족, Type1로 조정
+    dlDmrsType Type1
+
+    # [PDL] NRCELL이 BBMOD(ABIA/ABIAL/ABIL/ABILL/ABIR) 계열에 연결된 경우
+    # - PDCCH-PDSCH 공유 기능은 금지 → actPdcchSharingWithPdsch = false 강제
+    # - 조건: temporary isallocatedtoBBmod = true AND (isallocatedtoAbia|ABIL|Abir 중 하나 true)
+    actPdcchSharingWithPdsch false
+
+    # [PDL] 이 NRCELL이 하나의 HW 타입(BBMOD)에만 연결된 상태(sharedToBbmodsOfOnlyOneHWType=true)에서
+    # - Long PUCCH Resource Optimization 기능(actLongPucchResourceOpt)을 켜려면
+    #   연결된 BBMOD가 ABIL/ABILL이 아니어야 함.
+    # - 현재는 ABIL/ABILL 연결 상태이므로 기능을 꺼야 함.
+    actLongPucchResourceOpt false
+
+    # [PDL] ABIL/ABILL 계열 BBMOD에 연결된 NRCELL에서는
+    # - Per CSI Report Bundling for TDD FR1 기능(actPerCsiReportBundlingTddFr1)을 켜면 안 됨
+    # - 현재 true 상태 → 규칙 위반 → false로 수정
+    actPerCsiReportBundlingTddFr1 false
+
+    lcrId 16383
+    exit-all
+
+
+TNLSVC 1
+  TNL 1
+    ETHSVC 1
+      ETHIF 1
+        VLANIF 1
+            vlanId 1000
+            exit-all
+
+TNLSVC 1
+  TNL 1
+    IPNO  1
+        IPIF 1
+            IPADDRESSV4  1
+                localIpAddr 4.5.13.5
+                localIpPrefixLength 26
+                exit
+            exit
+        IPRT 1
+            list staticRoutes 1 gateway 4.5.13.1
+            exit-all
+
+TNLSVC 1
+  TNL 1
+    ETHSVC 1
+      ETHLK 1
+        connectorLabel EIF1
+        exit-all
+
+MNL 1
+  MNLENT 1
+    FEATCADM 1
+      # bbmod의 특수한 경우 / 확인 필요
+      actDisableEcpriUlScalingEnh true
+      exit-all

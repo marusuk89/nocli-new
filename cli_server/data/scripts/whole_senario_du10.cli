@@ -1,0 +1,65 @@
+config
+init-stp
+dest-bts 130126
+check-ping 130126
+exit
+init-bts -r 4G -v 24R2 -i 65534
+set-du-type du10
+tgt-bts 130126
+#exec-script INITBTS_BASE.SCRIPT.cli
+exec-script DU10_INITBTS_FILTER_SCRIPT_V0.7.5.cli
+exec-script du10_bts130126_userinput.cli
+commit
+apply-bts-cfg-commission
+act-bts-cfg-commission
+exit
+yes
+
+init-cell -v 24R2 -r 4G -i 350
+set-du-type du10
+set-ru-type FHCA
+#set-ru-type AHCA
+#set-ru-type FXCA
+tgt-bts 130126
+dnload-bts-cfg
+exec-script senario_du10_initcell_autocfg_130126.txt
+set-cfg-tmpl GONGDONG1.cli
+commit
+apply-bts-cfg
+act-bts-cfg
+exit
+yes
+
+init-cell -v 24R2 -r 4G -i 450
+set-du-type du10
+#set-ru-type FHCA
+set-ru-type AHCA
+#set-ru-type FXCA
+tgt-bts 130126
+dnload-bts-cfg
+exec-script senario_du10_initcell_autocfg_130126_2.txt
+set-cfg-tmpl GONGDONG1.cli
+commit
+apply-bts-cfg
+act-bts-cfg
+exit
+yes
+
+init-cell -v 24R2 -r 4G -i 550
+set-du-type du10
+#set-ru-type FHCA
+#set-ru-type AHCA
+set-ru-type FXCA
+tgt-bts 130126
+dnload-bts-cfg
+exec-script senario_du10_initcell_autocfg_130126_3.txt
+set-cfg-tmpl GONGDONG1.cli
+commit
+apply-bts-cfg
+act-bts-cfg
+
+dnload-bts-cfg
+exec-script senario_kill_dummy.cli
+commit
+apply-bts-cfg
+act-bts-cfg

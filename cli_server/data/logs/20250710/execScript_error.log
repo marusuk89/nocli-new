@@ -1,0 +1,3 @@
+[16:02:11] [오류] [경고] 스크립트 파일이 존재하지 않습니다: antl_4_trx_2.cli
+[16:02:11] [오류] RMOD-32767 하위에서 ANTL-1을 찾을 수 없습니다.
+[16:02:11] [오류] LCELL 자동 생성은 CELLMAPPING 내부에서만 가능합니다.[16:58:24] [오류] [서버 오류] (cfgTmpl) GONGDONG1__script.cli → [handle_save_file] 정의되지 않은 purpose: cfgTmpl

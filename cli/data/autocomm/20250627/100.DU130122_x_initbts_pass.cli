@@ -1,0 +1,138 @@
+### HEADER ###
+dest-bts 130122
+check-ping 130122
+set-mode bts
+set-mo-version 24R2
+set-rat-type 4G
+set-allow-commit-diff true
+
+### BODY ###
+set-du-type du10
+tgt-bts 130122
+exec-script DU20_INITBTS_FILTER_SCRIPT_V0.7.5.cli
+# 진입 단계 종료
+
+btsName NL_GumiOkgye
+# MRBTS 단계 종료
+
+LNBTS 130122
+enbName NL_GumiOkgye
+exit-all
+# LNBTS 단계 종료
+
+# 더미 설정 시작
+EQM 1
+HWTOP 1
+CABLINK 65535
+firstEndpointDN  MRBTS-130126/EQM-1/APEQM-1/CABINET-1/SMOD-1
+firstEndpointLabel  OPT
+firstEndpointPortId  6
+secondEndpointDN  MRBTS-130120/EQM-1/APEQM-1/RMOD-32767
+secondEndpointLabel  OPT
+secondEndpointPortId  1
+LNBTS 130122
+LNCEL 65535
+lcrId 255
+nbIotLinkedCellId 254
+exit
+LNCEL 65534
+lcrId 254
+nbIotLinkedCellId 255
+exit-all
+#더미 설정 끝
+
+EQM 1
+APEQM 1
+CABINET 1
+SMOD 1
+prodCodePlanned FSMF
+exit-all
+# SMOD 단계 종료
+
+# TNLSVC → IPIF 설정
+TNLSVC 1
+TNL 1
+IPNO 1
+IPIF 1
+IPADDRESSV4 1
+localIpAddr 172.20.198.218
+localIpPrefixLength 29
+exit
+exit
+IPRT 1
+list staticRoutes 1 gateway 172.20.198.217
+list staticRoutes 1 routeIpMtu 1510
+list staticRoutes 1 destIpAddr 0.0.0.0
+exit-all
+# TNLSVC 설정 종료
+
+# TNLSVC → ETHSVC 설정
+TNLSVC 1
+TNL 1
+ETHSVC 1
+ETHIF 1
+VLANIF 1
+vlanId 100
+exit-all
+# ETHSVC 설정 종료
+
+# SYNC-1/CLOCK 구성
+MNL 1
+MNLENT 1
+SYNC 1
+CLOCK 1
+list syncInputList 1 syncInputPrio 1
+list syncInputList 1 syncInputType "1pps/ToD from external GNSS receiver"
+list syncInputList 2 syncInputPrio 2
+list syncInputList 2 syncInputType "1pps/ToD from external GNSS receiver"
+list syncInputList 3 syncInputPrio 3
+list syncInputList 3 syncInputType "TOPP"
+GNSSE 1
+gnssLineDelay 519
+exit
+TOP
+TOPP 1
+masterIpAddr 100.99.255.65
+exit
+exitNTP 1
+list ntpServerIpAddrList 1 val 4.5.1.99
+list ntpServerIpAddrList 2 val 4.6.1.2
+maxNtpTimeError 200
+ntpAlarmingThreshold 300
+ntpDscp 46
+exit-all
+
+# CABLINK 설정
+EQM 1
+HWTOP 1
+### CABLINK_1 ###
+CABLINK  1
+    firstEndpointDN  MRBTS-130112/EQM-1/APEQM-1/CABINET-1/SMOD-1
+    firstEndpointLabel  BB_EXT
+    firstEndpointPortId  1
+    secondEndpointDN  MRBTS-130112/EQM-1/APEQM-1/CABINET-1/BBMOD-1
+    secondEndpointLabel  BB_EXT
+    secondEndpointPortId  1
+    exit
+### CABLINK_2 ###
+CABLINK  2
+    firstEndpointDN  MRBTS-130112/EQM-1/APEQM-1/CABINET-1/SMOD-1
+    firstEndpointLabel  BB_EXT
+    firstEndpointPortId  2
+    secondEndpointDN  MRBTS-130112/EQM-1/APEQM-1/CABINET-1/BBMOD-2
+    secondEndpointLabel  BB_EXT
+    secondEndpointPortId  1
+    exit
+exit-all
+# CABLINK 설정 종료
+
+LNBTS 130122
+CTRLTS 1
+netActIpAddr 10.113.252.58
+MTRACE 0
+tceIpAddress 10.113.246.69
+exit
+MTRACE 1
+tceIpAddress 10.113.246.69
+exit
+exit-all

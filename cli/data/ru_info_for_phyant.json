@@ -1,0 +1,184 @@
+{
+  "AEQN_4_2": {
+    "CODE": "474736A",
+    "ANT_TYPE": "PHYANT",
+    "CHANNEL_TEMPLATE": {
+      "DU10": { "4DL2UL": ["TX", "TX", "TX", "TX", "RX", "RX"] }
+    }
+  },
+  "AEQN_4_4": {
+    "CODE": "474736A",
+    "ANT_TYPE": "PHYANT",
+    "CHANNEL_TEMPLATE": {
+      "DU20": { "4DL4UL": ["TX", "TX", "TX", "TX", "RX", "RX", "RX", "RX"] }
+    }
+  },
+  "AEQY_4_2": {
+    "CODE": "475538A",
+    "ANT_TYPE": "PHYANT",
+    "CHANNEL_TEMPLATE": {
+      "DU10": { "4DL2UL": ["TX", "TX", "TX", "TX", "RX", "RX"] }
+    }
+  },
+  "AEQY_4_4": {
+    "CODE": "475538A",
+    "ANT_TYPE": "PHYANT",
+    "CHANNEL_TEMPLATE": {
+      "DU20": { "4DL4UL": ["TX", "TX", "TX", "TX", "RX", "RX", "RX", "RX"] }
+    }
+  },
+  "AQQA_4_2": {
+    "CODE": "475695A",
+    "ANT_TYPE": "PHYANT",
+    "CHANNEL_TEMPLATE": {
+      "DU10": { "4DL2UL": ["TX", "TX", "TX", "TX", "RX", "RX"] }
+    }
+  },
+  "AQQA_4_4": {
+    "CODE": "475695A",
+    "ANT_TYPE": "PHYANT",
+    "CHANNEL_TEMPLATE": {
+      "DU20": { "4DL4UL": ["TX", "TX", "TX", "TX", "RX", "RX", "RX", "RX"] }
+    }
+  },
+  "AHQK_2_2": {
+    "CODE": "474919A",
+    "ANT_TYPE": "ANTL",
+    "CHANNEL_TEMPLATE": {
+      "DU10": { "2DL2UL": ["TX", "TX", "RX", "RX"] },
+      "DU20": { "2DL2UL": ["TX", "TX", "RX", "RX"] }
+    }
+  },
+  "AHQK_4_2": {
+    "CODE": "474919A",
+    "ANT_TYPE": "ANTL",
+    "CHANNEL_TEMPLATE": {
+      "DU10": { "4DL2UL": ["TX", "TX", "TX", "TX", "RX", "RX"] },
+      "DU20": { "4DL2UL": ["TX", "TX", "TX", "TX", "RX", "RX"] }
+    }
+  },
+  "AHQK_4_4": {
+    "CODE": "474919A",
+    "ANT_TYPE": "ANTL",
+    "CHANNEL_TEMPLATE": {
+      "DU10": { "4DL2UL": ["TX", "TX", "TX", "TX", "RX", "RX", "RX", "RX"] },
+      "DU20": { "4DL2UL": ["TX", "TX", "TX", "TX", "RX", "RX", "RX", "RX"] }
+    }
+  },
+  "APHA_4_2": {
+    "CODE": "474657A",
+    "ANT_TYPE": "ANTL",
+    "CHANNEL_TEMPLATE": {
+      "DU10": { "4DL2UL": ["TX", "TX", "TX", "TX", "RX", "RX"] },
+      "DU20": { "4DL2UL": ["TX", "TX", "TX", "TX", "RX", "RX"] }
+    }
+  },
+  "AZQG_2_2_0": {
+    "CODE": "474994A",
+    "ANT_TYPE": "ANTL",
+    "CHANNEL_TEMPLATE": {
+      "DU10": { "2DL2UL": ["TX", "TX", "RX", "RX"] },
+      "DU20": { "2DL2UL": ["TX", "TX", "RX", "RX"] }
+    }
+  },
+  "AZQG_2_2_4": {
+    "CODE": "474994A",
+    "ANT_TYPE": "ANTL",
+    "CHANNEL_TEMPLATE": {
+      "DU10": { "2DL2UL": ["TX", "TX", "RX", "RX"] },
+      "DU20": { "2DL2UL": ["TX", "TX", "RX", "RX"] }
+    }
+  },
+  "AZQG_4_2_0": {
+    "CODE": "474994A",
+    "ANT_TYPE": "ANTL",
+    "CHANNEL_TEMPLATE": {
+      "DU10": { "4DL2UL": ["TX", "TX", "TX", "TX", "RX", "RX"] },
+      "DU20": { "4DL2UL": ["TX", "TX", "TX", "TX", "RX", "RX"] }
+    }
+  },
+  "AZQG_4_2_2": {
+    "CODE": "474994A",
+    "ANT_TYPE": "ANTL",
+    "CHANNEL_TEMPLATE": {
+      "DU10": { "4DL2UL": ["TX", "TX", "TX", "TX", "RX", "RX"] },
+      "DU20": { "4DL2UL": ["TX", "TX", "TX", "TX", "RX", "RX"] }
+    }
+  },
+  "AZQG_4_4": {
+    "CODE": "474994A",
+    "ANT_TYPE": "ANTL",
+    "CHANNEL_TEMPLATE": {
+      "DU10": { "4DL4UL": ["TX", "TX", "TX", "TX", "RX", "RX", "RX", "RX"] },
+      "DU20": { "4DL4UL": ["TX", "TX", "TX", "TX", "RX", "RX", "RX", "RX"] }
+    }
+  },
+  "AZQS_2_2_0": {
+    "CODE": "475664A",
+    "ANT_TYPE": "ANTL",
+    "CHANNEL_TEMPLATE": {
+      "DU10": { "2DL2UL": ["TX", "TX", "RX", "RX"] },
+      "DU20": { "2DL2UL": ["TX", "TX", "RX", "RX"] }
+    }
+  },
+  "AZQS_2_2_4": {
+    "CODE": "475664A",
+    "ANT_TYPE": "ANTL",
+    "CHANNEL_TEMPLATE": {
+      "DU10": { "2DL2UL": ["TX", "TX", "RX", "RX"] },
+      "DU20": { "2DL2UL": ["TX", "TX", "RX", "RX"] }
+    }
+  },
+  "AZQS_4_2_0": {
+    "CODE": "475664A",
+    "ANT_TYPE": "ANTL",
+    "CHANNEL_TEMPLATE": {
+      "DU10": { "4DL2UL": ["TX", "TX", "TX", "TX", "RX", "RX"] },
+      "DU20": { "4DL2UL": ["TX", "TX", "TX", "TX", "RX", "RX"] }
+    }
+  },
+  "AZQS_4_2_2": {
+    "CODE": "475664A",
+    "ANT_TYPE": "ANTL",
+    "CHANNEL_TEMPLATE": {
+      "DU10": { "4DL2UL": ["TX", "TX", "TX", "TX", "RX", "RX"] },
+      "DU20": { "4DL2UL": ["TX", "TX", "TX", "TX", "RX", "RX"] }
+    }
+  },
+  "AZQS_4_4": {
+    "CODE": "475664A",
+    "ANT_TYPE": "ANTL",
+    "CHANNEL_TEMPLATE": {
+      "DU10": { "4DL4UL": ["TX", "TX", "TX", "TX", "RX", "RX", "RX", "RX"] },
+      "DU20": { "4DL4UL": ["TX", "TX", "TX", "TX", "RX", "RX", "RX", "RX"] }
+    }
+  },
+  "AQQL_8_4": {
+    "CODE": "475732A",
+    "ANT_TYPE": "PHYANT",
+    "CHANNEL_TEMPLATE": {
+      "DU10": { "8DL4UL": ["TX","TX","TX","TX","TX","TX","TX","TX",
+                            "RX","RX","RX","RX"] },
+      "DU20": { "8DL4UL": ["TX","TX","TX","TX","TX","TX","TX","TX",
+                            "RX","RX","RX","RX"] }
+    }
+  },
+  "AVQL_8_4": {
+    "CODE": "475976A",
+    "ANT_TYPE": "PHYANT",
+    "CHANNEL_TEMPLATE": {
+      "DU10": { "8DL4UL": ["TX","TX","TX","TX","TX","TX","TX","TX",
+                            "RX","RX","RX","RX"] },
+      "DU20": { "8DL4UL": ["TX","TX","TX","TX","TX","TX","TX","TX",
+                            "RX","RX","RX","RX"] }
+    }
+  },
+  "OSQA_4_4": {
+    "CODE": "SJEOSQA",
+    "ANT_TYPE": "PHYANT",
+    "CHANNEL_TEMPLATE": {
+      "DU10": { "4DL4UL": ["TX","TX","TX","TX","RX","RX","RX","RX"] },
+      "DU20": { "4DL4UL": ["TX","TX","TX","TX","RX","RX","RX","RX"] }
+    }
+  }
+}

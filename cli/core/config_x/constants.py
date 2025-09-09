@@ -1,0 +1,5 @@
+VALID_RADIO_TYPES = {"4G", "5G"}
+VALID_RADIO_VERSIONS = {
+    "24R1", "24R2", "24R3",
+    "25R1", "25R2", "25R3"
+}

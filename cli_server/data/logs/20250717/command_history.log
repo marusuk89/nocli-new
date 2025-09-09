@@ -1,0 +1,52 @@
+2025-07-17 17:15:04 | config-x > | auto_comm | RESULT: NOK
+2025-07-17 17:37:21 | config-x > | auto_comm | RESULT: NOK
+2025-07-17 17:50:43 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-17 17:50:43 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-17 17:50:43 | config > | init_stp | RESULT: OK
+2025-07-17 17:50:43 | config > | init_bts -r 4G -v 24R2 -i 65534 | RESULT: OK
+2025-07-17 17:51:12 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-17 17:51:12 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-17 17:51:12 | config > | init_stp | RESULT: OK
+2025-07-17 17:51:16 | config > | init_bts -r 4G -v 24R2 -i 65534 | RESULT: OK
+2025-07-17 17:52:56 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-17 17:52:56 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-17 17:52:56 | config > | init_stp | RESULT: OK
+2025-07-17 17:52:57 | config/init-bts(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-17 17:52:57 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-17 17:52:58 | MRBTS(130126) > | exec_script DU10_INITBTS_FILTER_SCRIPT_V0.7.5.cli | RESULT: OK
+2025-07-17 17:52:58 | MRBTS(130126) > | exec_script du10_bts130126_userinput.cli | RESULT: OK
+2025-07-17 17:52:58 | MRBTS(130126) > | commit_all -t 1 | RESULT: OK
+2025-07-17 17:52:58 | MRBTS(130126) > | apply_bts_cfg_commission | RESULT: OK
+2025-07-17 17:56:49 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-17 17:56:49 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-17 17:56:49 | config > | init_stp | RESULT: OK
+2025-07-17 17:56:50 | config/init-bts(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-17 17:56:50 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-17 17:56:51 | MRBTS(130126) > | exec_script DU10_INITBTS_FILTER_SCRIPT_V0.7.5.cli | RESULT: OK
+2025-07-17 17:56:51 | MRBTS(130126) > | exec_script du10_bts130126_userinput.cli | RESULT: OK
+2025-07-17 17:56:51 | MRBTS(130126) > | commit_all -t 1 | RESULT: OK
+2025-07-17 17:57:08 | MRBTS(130126) > | apply_bts_cfg_commission | RESULT: OK
+2025-07-17 18:00:27 | config-x/auto-comm > | list_tmpl 20250710 | RESULT: NOK
+2025-07-17 18:00:27 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-17 18:00:27 | config-x/auto-comm > | list_script 20250710 | RESULT: NOK
+2025-07-17 18:01:40 | config-x/auto-comm > | list_tmpl 20250710 | RESULT: NOK
+2025-07-17 18:01:40 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-17 18:01:40 | config-x/auto-comm > | list_script 20250710 | RESULT: NOK
+2025-07-17 18:01:41 | config-x/auto-comm > | autocomm_run_script 200.DU130126_x_initbts_pass.cli | RESULT: NOK
+2025-07-17 18:02:25 | config-x/auto-comm > | list_tmpl 20250710 | RESULT: NOK
+2025-07-17 18:02:26 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-17 18:02:26 | config-x/auto-comm > | list_script 20250710 | RESULT: NOK
+2025-07-17 18:02:27 | config-x/auto-comm > | autocomm_run_script 100.DU130126_x_initbts_pass.cli | RESULT: OK
+2025-07-17 18:03:58 | config-x/auto-comm > | list_tmpl 20250710 | RESULT: NOK
+2025-07-17 18:03:59 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-17 18:03:59 | config-x/auto-comm > | list_script 20250710 | RESULT: NOK
+2025-07-17 18:03:59 | config-x/auto-comm > | autocomm_run_script 100.DU130126_x_initbts_pass.cli | RESULT: OK
+2025-07-17 18:07:58 | config-x > | auto_comm | RESULT: NOK
+2025-07-17 18:08:39 | config-x/auto-comm > | list_tmpl 20250710 | RESULT: NOK
+2025-07-17 18:08:40 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-17 18:08:40 | config-x/auto-comm > | list_script 20250710 | RESULT: NOK
+2025-07-17 18:08:56 | MRBTS(130126) > | autocomm_run_script 100.DU130126_x_initbts_pass.cli | RESULT: OK
+2025-07-17 18:19:27 | config-x/auto-comm > | excel_to_dict_formula ref_bts_parameters_25R1_24R3_FSFM_FSIH.xlsx | RESULT: NOK
+2025-07-17 18:20:14 | config-x/auto-comm > | excel_to_dict_formula ref_bts_parameters_25R1_24R3_FSFM_FSIH.xlsx | RESULT: NOK
+2025-07-17 18:22:05 | config-x/auto-comm > | excel_to_dict_formula ref_bts_parameters_25R1_24R3_FSFM_FSIH.xlsx | RESULT: NOK
+2025-07-17 18:22:46 | config-x/auto-comm > | excel_to_dict_formula ref_bts_parameters_25R1_24R3_FSFM_FSIH.xlsx | RESULT: NOK

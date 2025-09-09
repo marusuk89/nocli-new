@@ -1,0 +1,15 @@
+# 시작
+config
+init-stp
+dest-bts 130122
+check-ping 130122
+exit
+init-cell -r 4G -v 24R2
+set-du-type du10
+tgt-bts 130122
+dnload-bts-cfg
+# 진입 단계 종료
+
+3-sector TRUE
+exit-all
+

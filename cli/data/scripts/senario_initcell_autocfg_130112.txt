@@ -1,0 +1,44 @@
+EQM 1
+  APEQM 1
+    RMOD 7
+    auto-config ANTL *
+  exit
+exit
+HWTOP 1
+CABLINK 7
+firstEndpointDN MRBTS-130112/EQM-1/APEQM-1/CABINET-1/SMOD-1
+firstEndpointLabel OPT
+firstEndpointPortId 4
+secondEndpointDN MRBTS-130112/EQM-1/APEQM-1/RMOD-7
+secondEndpointLabel OPT
+secondEndpointPortId 1
+exit-all
+LNBTS 130112
+LNCEL 300
+lcrId 30
+tac 334
+phyCellId 300
+nbIotLinkedCellId 35
+auto-config
+LNCEL 350
+lcrId 35
+phyCellId 300
+tac 2
+nbIotLinkedCellId 30
+NBIOT_FDD 0
+dlChBw "0.2 MHz"
+exit
+REDRT 0
+exit
+DRX 0
+exit
+SDRX 0
+exit
+SIB 0
+exit-all
+MNL 1
+MNLENT 1
+CELLMAPPING 1
+auto-config LCELL 30
+auto-config LCELL 35
+exit-all

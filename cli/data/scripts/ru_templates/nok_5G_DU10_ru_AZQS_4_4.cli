@@ -1,0 +1,14 @@
+EQM 1
+APEQM 1
+RMOD 000
+prodCodePlanned 475664A
+exit-all
+NRBTS 000
+NRCELL 000
+nrCellType 4DL4UL
+pMax 46.0
+dlMimoMode "4x4 or 4x2 Open Loop Spatial Multiplexing"
+numOfSubSectors 0sub-sector
+list beamSet 1 basicBeamSet beamSet_1
+actBeamforming false
+exit-all

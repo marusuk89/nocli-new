@@ -1,0 +1,14 @@
+EQM 1
+APEQM 1
+RMOD 000
+prodCodePlanned 472292A
+exit-all
+LNBTS 000
+LNCEL 000
+pMax 46.0
+LNCEL_FDD 0
+dlChBw "20 MHz"
+ulChBw "20 MHz"
+earfcnDL 3050
+earfcnUL 21050
+exit-all

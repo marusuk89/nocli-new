@@ -1,0 +1,103 @@
+### HEADER ###
+set-bts 2350001 1
+dest-bts 2350001
+check-ping 2350001
+set-mode bts
+set-mo-version 25R2
+set-rat-type 5G
+set-allow-commit-diff true
+
+### BODY ###
+set-du-type du20
+tgt-bts 2350001
+exec-script DU00_5G_INITBTS_FILTER_SCRIPT_V1.0.cli
+exec-script DU10_5G_INITBTS_FILTER_SCRIPT_V1.0.cli
+# 진입 단계 종료
+
+btsName NFOTEST3(옥외)
+# MRBTS 단계 종료
+
+NRBTS 2350001
+exit-all
+# LNBTS 단계 종료
+
+# 더미 설정 시작
+#더미 설정 끝
+
+EQM 1
+APEQM 1
+CABINET 1
+SMOD 1
+prodCodePlanned 474767A
+exit-all
+# SMOD 단계 종료
+
+# TNLSVC → IPIF 설정
+TNLSVC 1
+TNL 1
+IPNO 1
+IPIF 1
+IPADDRESSV4 1
+localIpAddr 4.5.13.3
+localIpPrefixLength 26
+exit
+exit
+IPRT 1
+list staticRoutes 1 gateway 4.5.13.1
+exit-all
+# TNLSVC 설정 종료
+
+# TNLSVC → ETHSVC 설정
+TNLSVC 1
+TNL 1
+ETHSVC 1
+ETHIF 1
+VLANIF 1
+vlanId 1000
+exit-all
+# ETHSVC 설정 종료
+
+# SYNC-1/CLOCK 구성
+MNL 1
+MNLENT 1
+SYNC 1
+CLOCK 1
+list syncInputList 1 syncInputPrio 1
+list syncInputList 1 syncInputType "1pps/ToD from external GNSS receiver"
+GNSSE 1
+exit-all
+
+# BBMOD 설정
+EQM 1
+APEQM 1
+CABINET 1
+BBMOD 1
+prodCodePlanned 474020A
+exit
+BBMOD 2
+prodCodePlanned 474020A
+exit
+BBMOD 2
+prodCodePlanned 474020A
+exit
+BBMOD 3
+prodCodePlanned 474020A
+exit
+BBMOD 3
+prodCodePlanned 474020A
+exit
+exit-all
+MNL 1
+TCEADM 1
+TCE 1
+tceIpAddress 10.113.246.69
+exit-all
+MNL 1
+TCEADM 1
+TCE 1
+tceIpAddress 10.113.246.69
+exit-all
+exit-all
+commit
+apply-bts-cfg-commission
+#act-bts-cfg-commission

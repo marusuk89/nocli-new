@@ -1,0 +1,10 @@
+LNBTS 130126
+LNCEL 300
+a5ReportInterval 640ms
+exit
+LNCEL 65535
+IRFIM 1
+eutCelResPrio 4
+exit
+exit
+exit

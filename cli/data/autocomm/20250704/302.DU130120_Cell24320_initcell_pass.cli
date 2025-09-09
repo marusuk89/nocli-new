@@ -1,0 +1,51 @@
+### HEADER ###
+dest-bts 130120
+check-ping 130120
+set-mode cell
+set-mo-version 24R2
+set-rat-type 4G
+set-iot-lncel-id None
+set-du-type du10
+set-allow-commit-diff true
+
+### BODY ###
+set-ru-type FRHB
+tgt-bts 130120
+dnload-bts-cfg
+set-ru-type FRHB
+EQM 1
+APEQM 1
+RMOD 4
+auto-config ANTL *
+moduleLocation NL_BSdeokposageoriL2G10A_1600166522
+exit-all
+EQM 1
+HWTOP 1
+CABLINK 6
+firstEndpointDN MRBTS-130120/EQM-1/APEQM-1/FHS-1
+firstEndpointLabel OPT
+firstEndpointPortId 6
+secondEndpointDN MRBTS-130120/EQM-1/APEQM-1/RMOD-4
+secondEndpointLabel OPT
+secondEndpointPortId 1
+exit-all
+LNBTS 130120
+LNCEL 24320
+lcrId 5
+phyCellId 318
+tac 5
+nbIoTMode disabled
+LNCEL_FDD 0
+rootSeqIndex 600
+exit
+auto-config
+exit-all
+MNL 1
+MNLENT 1
+CELLMAPPING 1
+auto-config LCELL 5
+exit-all
+
+commit
+apply-bts-cfg
+#act-bts-cfg

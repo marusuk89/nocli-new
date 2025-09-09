@@ -1,0 +1,52 @@
+### HEADER ###
+set-bts 130126 4.4.0.116
+dest-bts 130126
+check-ping 130126
+set-mode cell
+set-mo-version 24R2
+set-rat-type 4G
+set-iot-lncel-id None
+set-du-type FSMF
+set-allow-commit-diff true
+
+### BODY ###
+set-ru-type AHGA
+tgt-bts 130126
+dnload-bts-cfg
+set-ru-type AHGA
+EQM 1
+APEQM 1
+RMOD 6
+auto-config ANTL *
+moduleLocation NL_TEST2
+exit-all
+EQM 1
+HWTOP 1
+CABLINK 8
+firstEndpointDN MRBTS-130126/EQM-1/APEQM-1/CABINET-1/BBMOD-1
+firstEndpointLabel OPT
+firstEndpointPortId 2
+secondEndpointDN MRBTS-130126/EQM-1/APEQM-1/RMOD-6
+secondEndpointLabel OPT
+secondEndpointPortId 1
+exit-all
+LNBTS 130126
+LNCEL 101
+lcrId 11
+phyCellId 301
+tac 59455
+nbIoTMode disabled
+LNCEL_FDD 0
+rootSeqIndex 600
+exit
+auto-config
+exit-all
+MNL 1
+MNLENT 1
+CELLMAPPING 1
+auto-config LCELL 11
+exit-all
+
+commit
+apply-bts-cfg
+#act-bts-cfg

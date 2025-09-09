@@ -1,0 +1,24 @@
+LNBTS 130126
+LNCEL 2129
+IRFIM 1
+dlCarFrqEut 3050
+enableA4IMLB enabled
+eutCelResPrio 4
+incMonExSel R8ListPartPreferred
+interFrqThrH 4
+interFrqThrL 0
+interPresAntP true
+interTResEut 1
+mbmsNeighCellConfigInterF 00
+measBdw 50mbw
+minDeltaRsrpIMLB -20
+minRsrpIMLB -100
+pMaxInterF 23
+qOffFrq "0 dB"
+qRxLevMinInterF -110
+reducedMeasPerformance false
+list tResEutSF 1 eutResTiFHM 0.5
+list tResEutSF 1 eutResTiFMM 0.5
+exit
+exit
+exit

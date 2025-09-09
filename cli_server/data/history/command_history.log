@@ -1,0 +1,366 @@
+2025-04-11 09:46:07 | config/init-bts > | show | RESULT: NOK
+2025-04-11 09:47:44 | config/init-bts > | show | RESULT: NOK
+2025-04-11 09:47:49 | config/init-bts > | show | RESULT: NOK
+2025-04-11 09:53:58 | config/init-bts > | show | RESULT: OK
+2025-04-11 09:53:58 | config > | init_bts | RESULT: NOK
+2025-04-11 09:54:01 | config > | show | RESULT: NOK
+2025-04-11 09:54:31 | config > | set action_cmd init | RESULT: NOK
+2025-04-11 09:54:47 | config > | set action_cmd init | RESULT: NOK
+2025-04-11 09:55:38 | config/init-bts > | show | RESULT: OK
+2025-04-11 09:55:38 | config > | init_bts | RESULT: NOK
+2025-04-11 10:01:46 | config/init-bts > | show | RESULT: NOK
+2025-04-11 10:03:09 | config/init-bts > | show | RESULT: NOK
+2025-04-11 10:04:09 | config/init-bts > | show | RESULT: NOK
+2025-04-11 10:05:00 | config/init-bts > | show | RESULT: NOK
+2025-04-11 10:05:31 | config/init-bts > | show | RESULT: NOK
+2025-04-11 10:06:03 | config/init-bts > | show | RESULT: NOK
+2025-04-11 10:07:02 | config/init-bts > | show | RESULT: OK
+2025-04-11 10:07:02 | config > | init_bts | RESULT: NOK
+2025-04-11 10:08:31 | config/init-bts > | show | RESULT: OK
+2025-04-11 10:08:31 | config > | init_bts | RESULT: NOK
+2025-04-11 10:10:34 | config > | init_btrs | RESULT: NOK
+2025-04-11 10:10:34 | # nocli > | config | RESULT: NOK
+2025-04-11 10:10:46 | config/init-bts > | dd | RESULT: NOK
+2025-04-11 10:10:46 | config > | init_bts | RESULT: NOK
+2025-04-11 10:10:46 | # nocli > | config | RESULT: NOK
+2025-04-11 10:11:02 | config/init-bts > | show | RESULT: OK
+2025-04-11 10:11:02 | config > | init_bts | RESULT: NOK
+2025-04-11 10:11:02 | # nocli > | config | RESULT: NOK
+2025-04-11 10:13:14 | config/init-bts > | show | RESULT: OK
+2025-04-11 10:15:40 | config/init-bts > | exit | RESULT: OK
+2025-04-11 10:15:41 | config/init-bts > | exit | RESULT: OK
+2025-04-11 10:15:52 | config/init-bts > | show | RESULT: OK
+2025-04-11 10:16:06 | config/init-bts > | set action_cmd init | RESULT: NOK
+2025-04-11 10:16:12 | config/init-bts > | set rat_type 5g | RESULT: NOK
+2025-04-11 10:16:17 | config/init-bts > | set tgt_bts 131297 | RESULT: NOK
+2025-04-11 10:16:22 | config/init-bts > | show_xml_list | RESULT: NOK
+2025-04-11 10:16:28 | config/init-bts > | load 5G_DU30_Ref_20240705.xml | RESULT: NOK
+2025-04-11 10:17:01 | config/init-bts/cfg-bts(131297) > | exit | RESULT: OK
+2025-04-11 10:23:18 | config/init-bts > | show | RESULT: OK
+2025-04-11 10:23:18 | config > | init_bts | RESULT: NOK
+2025-04-11 10:23:24 | config > | set action_cmd init | RESULT: NOK
+2025-04-11 10:45:54 | config/init-bts > | exit | RESULT: OK
+2025-04-11 10:45:54 | config > | init_bts | RESULT: NOK
+2025-04-11 10:45:59 | config/init-bts > | show | RESULT: OK
+2025-04-11 10:46:06 | config/init-bts > | set action_cmd init | RESULT: NOK
+2025-04-11 10:46:12 | config/init-bts > | show | RESULT: OK
+2025-04-11 10:46:18 | config/init-bts > | set rat_type 5g | RESULT: NOK
+2025-04-11 10:46:27 | config/init-bts > | set tgt_bts 131297 | RESULT: NOK
+2025-04-11 10:46:37 | config/init-bts > | show_xml_list | RESULT: NOK
+2025-04-11 10:46:42 | config/init-bts > | load 5G_DU30_Ref_20240705.xml | RESULT: NOK
+2025-04-11 10:47:03 | config/init-bts/cfg-bts(131297) > | show | RESULT: NOK
+2025-04-11 10:49:04 | config/init-bts > | set action_cmd init | RESULT: NOK
+2025-04-11 13:28:37 | config/init-bts > | set action_cmd init | RESULT: NOK
+2025-04-11 13:30:13 | # nocli > | coinfig | RESULT: NOK
+2025-04-11 13:30:47 | config/init-bts > | set action-cmd init | RESULT: NOK
+2025-04-11 13:31:04 | config/init-bts > | show | RESULT: OK
+2025-04-11 13:31:14 | config/init-bts > | set action_cmd init | RESULT: NOK
+2025-04-11 13:31:23 | config/init-bts > | set action_cmd init | RESULT: NOK
+2025-04-11 13:34:42 | config/init-bts > | set action_cmd init | RESULT: OK
+2025-04-11 13:34:53 | config/init-bts > | exit | RESULT: OK
+2025-04-11 13:34:53 | config > | init_bts | RESULT: NOK
+2025-04-11 13:37:55 | config/init-bts > | set action_cmd init | RESULT: OK
+2025-04-11 13:37:57 | config > | init_bts | RESULT: NOK
+2025-04-11 13:38:27 | config > | init_bts | RESULT: NOK
+2025-04-11 13:39:35 | config/init-bts > | set action_cmd init | RESULT: NOK
+2025-04-11 13:40:44 | config/init-bts > | set action_cmd init | RESULT: NOK
+2025-04-11 13:41:51 | config/init-bts > | set action_cmd init | RESULT: OK
+2025-04-11 13:41:54 | config > | init_bts | RESULT: NOK
+2025-04-11 13:44:09 | config/init-bts > | set action_cmd init | RESULT: NOK
+2025-04-11 13:48:28 | config/init-bts > | set action_cmd init | RESULT: OK
+2025-04-11 13:48:34 | config > | init_bts | RESULT: NOK
+2025-04-11 13:48:34 | # nocli > | config | RESULT: NOK
+2025-04-11 13:49:42 | config/init-bts > | set action_cmd init | RESULT: OK
+2025-04-11 13:49:47 | config > | init_bts | RESULT: NOK
+2025-04-11 13:49:47 | # nocli > | config | RESULT: NOK
+2025-04-11 13:51:58 | config/init-bts > | set action_cmd init | RESULT: OK
+2025-04-11 13:52:00 | config > | init_bts | RESULT: NOK
+2025-04-11 13:52:00 | # nocli > | config | RESULT: NOK
+2025-04-11 13:52:52 | config/init-bts > | set action_cmd init | RESULT: OK
+2025-04-11 13:52:53 | config > | init_bts | RESULT: NOK
+2025-04-11 13:52:53 | # nocli > | config | RESULT: NOK
+2025-04-11 13:56:34 | config/init-bts > | exit | RESULT: OK
+2025-04-11 13:56:34 | config > | init_bts | RESULT: NOK
+2025-04-11 13:57:17 | config > | exit | RESULT: OK
+2025-04-11 13:57:17 | # nocli > | config | RESULT: NOK
+2025-04-11 13:57:23 | config/init-bts > | exit | RESULT: OK
+2025-04-11 13:57:23 | config > | init_bts | RESULT: NOK
+2025-04-11 13:58:03 | config/init-bts > | set action_cmd init | RESULT: OK
+2025-04-11 13:58:15 | config/init-bts > | exit | RESULT: OK
+2025-04-11 13:58:15 | config > | init_bts | RESULT: NOK
+2025-04-11 14:01:39 | config > | init_bts | RESULT: NOK
+2025-04-11 14:01:49 | config/init-bts > | set action_cmd init | RESULT: OK
+2025-04-11 14:02:05 | config > | init_bts | RESULT: NOK
+2025-04-11 14:02:52 | config/init-bts > | exit | RESULT: OK
+2025-04-11 14:02:52 | config > | init_bts | RESULT: NOK
+2025-04-11 14:03:05 | config > | exit | RESULT: OK
+2025-04-11 14:03:05 | # nocli > | config | RESULT: NOK
+2025-04-11 14:03:28 | # nocli > | init_bts | RESULT: NOK
+2025-04-11 14:03:46 | config/init-bts > | set action_cmd init | RESULT: OK
+2025-04-11 14:03:55 | config/init-bts > | exit | RESULT: OK
+2025-04-11 14:03:55 | config > | init_bts | RESULT: NOK
+2025-04-11 14:08:12 | # nocli > | config | RESULT: NOK
+2025-04-11 14:08:22 | # nocli > | config | RESULT: NOK
+2025-04-11 14:09:55 | config/init-bts > | set action_cmd init | RESULT: OK
+2025-04-11 14:10:03 | config/init-bts > | set action_cmd init | RESULT: OK
+2025-04-11 14:13:06 | config/init-bts > | show | RESULT: OK
+2025-04-11 14:13:12 | config/init-bts > | set action_cmd init | RESULT: OK
+2025-04-11 14:13:19 | config/init-bts > | set rat_type 5g | RESULT: OK
+2025-04-11 14:13:24 | config/init-bts > | set tgt_bts 131297 | RESULT: OK
+2025-04-11 14:13:39 | config/init-bts > | show | RESULT: OK
+2025-04-11 14:17:14 | config > | set action_cmd init | RESULT: OK
+2025-04-11 14:17:23 | config/init-bts > | set action_cmd init | RESULT: OK
+2025-04-11 14:17:27 | config/init-bts > | set rat_type 5g | RESULT: OK
+2025-04-11 14:17:33 | config/init-bts > | set tgt_bts 131297 | RESULT: OK
+2025-04-11 14:19:20 | config/init-bts > | set action_cmd init | RESULT: OK
+2025-04-11 14:19:23 | config/init-bts > | set rat_type 5g | RESULT: OK
+2025-04-11 14:24:58 | config/init-bts > | set action_cmd init | RESULT: OK
+2025-04-11 14:25:03 | config/init-bts > | set rat_type 5g | RESULT: OK
+2025-04-11 14:25:10 | config/init-bts > | set tgt_bts 131297 | RESULT: OK
+2025-04-11 14:26:39 | config/init-bts > | set action_cmd init | RESULT: OK
+2025-04-11 14:26:43 | config/init-bts > | set rat_type 5g | RESULT: OK
+2025-04-11 14:26:51 | config/init-bts > | set tgt_bts 131297 | RESULT: OK
+2025-04-11 14:27:55 | config/init-bts > | set action_cmd init | RESULT: OK
+2025-04-11 14:27:59 | config/init-bts > | set rat_type 5g | RESULT: OK
+2025-04-11 14:28:25 | config/init-bts > | set tgt_bts 131297 | RESULT: OK
+2025-04-11 14:28:28 | config/init-bts > | show | RESULT: OK
+2025-04-11 14:48:12 | config/init-bts/cfg-bts(131297)/apeqm(1) > | show_xml | RESULT: OK
+2025-04-11 14:49:19 | config/init-bts/cfg-bts(131297)/apeqm(1) > | set aa dd | RESULT: OK
+2025-04-11 14:49:24 | config/init-bts/cfg-bts(131297)/apeqm(1) > | show_xml | RESULT: OK
+2025-04-11 14:58:54 | config/init-bts/cfg-bts(131297)/apeqm(1) > | show_xml | RESULT: OK
+2025-04-11 15:01:51 | config/init-bts/cfg-bts(131297)/apeqm(1) > | show_xml | RESULT: OK
+2025-04-11 15:02:48 | config/init-bts/cfg-bts(131297)/apeqm(1) > | show_xml | RESULT: OK
+2025-04-11 15:06:12 | config/init-bts/cfg-bts(131297)/apeqm(1) > | show_xml | RESULT: OK
+2025-04-11 15:25:42 | config/init-bts/cfg-bts(131297)/apeqm(1) > | show_xml | RESULT: OK
+2025-04-11 15:27:30 | config/init-bts/cfg-bts(131297)/apeqm(1) > | show_xml | RESULT: OK
+2025-04-11 15:58:56 | config/init-bts/cfg-bts(131297)/apeqm(1) > | show_xml | RESULT: OK
+2025-04-11 16:00:12 | config/init-bts/cfg-bts(131297)/apeqm(1) > | show_xml | RESULT: OK
+2025-04-11 16:00:50 | config/init-bts/cfg-bts(131297)/apeqm(1) > | show_xml | RESULT: OK
+2025-04-11 16:01:14 | config/init-bts/cfg-bts(131297)/apeqm(1) > | show_xml | RESULT: OK
+2025-04-11 16:01:46 | config/init-bts/cfg-bts(131297)/apeqm(1) > | show_xml | RESULT: OK
+2025-04-11 16:03:19 | config/init-bts/cfg-bts(131297) ::para > | show_xml | RESULT: OK
+2025-04-11 16:03:26 | config/init-bts/cfg-bts(131297)/apeqm(1) > | show_xml | RESULT: OK
+2025-04-11 16:03:38 | config/init-bts/cfg-bts(131297)/apeqm(1) > | show_xml | RESULT: OK
+2025-04-11 18:09:53 | config/init-bts/cfg-bts(131297)/sync(1) > | show_xml | RESULT: OK
+2025-04-11 18:10:15 | config/init-bts/cfg-bts(131297)/sync(1)/clock(1) > | show_xml | RESULT: OK
+2025-04-11 18:13:22 | config/init-bts/cfg-bts(131297)/sync(1)/clock(1) > | show_xml | RESULT: OK
+2025-04-11 18:15:30 | # nocli > | config | RESULT: OK
+2025-04-11 18:15:30 | config > | init_bts | RESULT: OK
+2025-04-11 18:15:30 | config/init-bts > | enter mrbts | RESULT: OK
+2025-04-11 18:15:30 | # nocli > | config | RESULT: NOK
+2025-04-11 18:15:30 | # nocli > | config | RESULT: OK
+2025-04-11 18:15:30 | # nocli > | config | RESULT: OK
+2025-04-11 18:15:30 | # nocli > | config | RESULT: OK
+2025-04-11 18:15:30 | config/init-bts > | enter mrbts | RESULT: OK
+2025-04-11 18:15:30 | # nocli > | config | RESULT: OK
+2025-04-11 18:15:30 | config/init-bts > | set tgt_bts 131297 | RESULT: OK
+2025-04-11 18:15:30 | config > | init_bts | RESULT: OK
+2025-04-11 18:15:30 | config > | init_bts | RESULT: OK
+2025-04-11 18:15:30 | # nocli > | config | RESULT: OK
+2025-04-11 18:15:30 | config > | init_bts | RESULT: OK
+2025-04-11 18:15:30 | # nocli > | config | RESULT: OK
+2025-04-11 18:15:30 | config > | init_bts | RESULT: OK
+2025-04-11 18:15:30 | # nocli > | config | RESULT: NOK
+2025-04-11 18:15:30 | # nocli > | config | RESULT: OK
+2025-04-11 18:15:30 | # nocli > | config | RESULT: NOK
+2025-04-11 18:15:30 | # nocli > | config | RESULT: OK
+2025-04-11 18:15:30 | config > | init_bts | RESULT: OK
+2025-04-11 18:15:30 | # nocli > | config | RESULT: NOK
+2025-04-11 18:15:30 | # nocli > | config | RESULT: NOK
+2025-04-11 18:15:30 | # nocli > | config | RESULT: OK
+2025-04-11 18:15:30 | config > | init_bts | RESULT: OK
+2025-04-11 18:15:30 | # nocli > | config | RESULT: NOK
+2025-04-11 18:15:30 | config > | init_bts | RESULT: OK
+2025-04-11 18:15:30 | config > | init_bts | RESULT: OK
+2025-04-11 18:15:30 | # nocli > | config | RESULT: NOK
+2025-04-11 18:15:30 | # nocli > | config | RESULT: NOK
+2025-04-14 09:57:23 | config/init-bts/cfg-bts(131297)/sync(1)/clock(1) > | show_xml | RESULT: OK
+2025-04-14 10:03:43 | config/init-bts/cfg-bts(131297)/sync(1)/clock(1) > | show_xml | RESULT: OK
+2025-04-14 10:06:31 | config/init-bts > | show_xml | RESULT: OK
+2025-04-14 10:06:34 | config/init-bts > | show | RESULT: OK
+2025-04-14 10:43:49 | config/init-bts/cfg-bts(131297)/sync(1)/clock(1) > | show_xml | RESULT: OK
+2025-04-14 10:45:54 | config/init-bts/cfg-bts(131297)/sync(1)/clock(1) > | flush | RESULT: OK
+2025-04-14 10:51:19 | config/init-bts/cfg-bts(131297)/sync(1)/clock(1) > | show_xml | RESULT: OK
+2025-04-14 10:51:54 | config/init-bts/cfg-bts(131297)/sync(1)/clock(1) > | show_xml | RESULT: OK
+2025-04-14 11:01:39 | config/init-bts/cfg-bts(131297)/sync(1)/clock(1) > | show_xml | RESULT: OK
+2025-04-14 11:07:19 | config/init-bts/cfg-bts(131297)/sync(1)/clock(1) > | show_xml | RESULT: OK
+2025-04-14 11:07:40 | config/init-bts/cfg-bts(131297)/sync(1)/clock(1) > | flush | RESULT: OK
+2025-04-14 11:08:51 | config/init-bts/cfg-bts(131297)/sync(1)/clock(1) > | show_xml | RESULT: OK
+2025-04-14 11:13:25 | config/init-bts/cfg-bts(131297)/sync(1)/clock(1) > | show_xml | RESULT: OK
+2025-04-14 11:17:22 | config/init-bts/cfg-bts(131297)/sync(1)/clock(1) > | show_xml | RESULT: OK
+2025-04-14 11:24:52 | config/init-bts/cfg-bts(131297)/sync(1)/clock(1) > | show_xml | RESULT: OK
+2025-04-14 11:26:13 | config/init-bts/cfg-bts(131297)/sync(1)/clock(1) > | flush | RESULT: OK
+2025-04-14 11:32:25 | config/init-bts/cfg-bts(131297)/sync(1)/clock(1) > | show_xml | RESULT: OK
+2025-04-14 11:32:38 | config/init-bts/cfg-bts(131297)/sync(1)/clock(1) > | flush | RESULT: OK
+2025-04-14 11:38:33 | config/init-bts/cfg-bts(131297)/sync(1)/clock(1) > | show_xml | RESULT: OK
+2025-04-14 11:38:41 | config/init-bts/cfg-bts(131297)/sync(1)/clock(1) > | flush | RESULT: OK
+2025-04-14 11:41:24 | config/init-bts/cfg-bts(131297)/sync(1)/clock(1) > | show_xml | RESULT: OK
+2025-04-14 11:41:35 | config/init-bts/cfg-bts(131297)/sync(1)/clock(1) > | flush | RESULT: OK
+2025-04-14 11:47:38 | config/init-bts/cfg-bts(131297)/sync(1)/clock(1) > | show_xml | RESULT: OK
+2025-04-14 13:14:37 | config/init-bts/cfg-bts(131297)/sync(1)/clock(1)/gnsse(1) > | show_xml | RESULT: OK
+2025-04-14 13:18:46 | config/init-bts/cfg-bts(131297)/sync(1)/clock(1)/gnsse(1) > | show_xml | RESULT: OK
+2025-04-14 13:22:08 | config/init-bts/cfg-bts(131297)/sync(1)/clock(1)/gnsse(1) > | show_xml | RESULT: OK
+2025-04-14 14:19:18 | config/init-bts/cfg-bts(131297)/bbmod(1) > | show_xml | RESULT: OK
+2025-04-14 14:22:33 | config/init-bts/cfg-bts(131297)/bbmod(1) > | show_xml | RESULT: OK
+2025-04-14 15:07:39 | config/init-bts/cfg-bts(131297)/cablink(16) > | show_xml | RESULT: OK
+2025-04-14 15:30:57 | config/init-bts/cfg-bts(131297)/lnbts(4000) > | show_xml | RESULT: OK
+2025-04-14 15:31:03 | config/init-bts/cfg-bts(131297)/lnbts(40000) > | show_xml | RESULT: OK
+2025-04-14 15:41:50 | config/init-bts/cfg-bts(131297)/ln(40000/lncel(123) > | show_xml | RESULT: OK
+2025-04-14 16:04:36 | config/init-bts/cfg-bts(131297)/ln(40000)/lncel(123)/carel(1) > | show_xml | RESULT: OK
+2025-04-14 16:18:35 | config/init-bts/cfg-bts(131297)/ethsvc(1) > | show_xml | RESULT: OK
+2025-04-14 16:18:57 | config/init-bts/cfg-bts(131297)/ipno(1) > | show_xml | RESULT: OK
+2025-04-14 16:23:56 | config/init-bts/cfg-bts(131297)/ethsvc(1)/ethif(1) > | show_xml | RESULT: OK
+2025-04-14 16:26:56 | config/init-bts/cfg-bts(131297)/ethsvc(1)/vlanif(1) > | show_xml | RESULT: OK
+2025-04-14 16:27:04 | config/init-bts/cfg-bts(131297)/ethsvc(1)/vlanif(1) > | show_xml | RESULT: OK
+2025-04-14 16:27:07 | config/init-bts/cfg-bts(131297)/ethsvc(1)/ethif(1) > | show_xml | RESULT: OK
+2025-04-14 16:45:52 | config/init-bts/cfg-bts(131297)/ethsvc(1)/l2swi(1) > | show_xml | RESULT: OK
+2025-04-14 16:46:28 | config/init-bts/cfg-bts(131297)/ibrgprt(1) > | show_xml | RESULT: OK
+2025-04-14 16:46:42 | config/init-bts/cfg-bts(131297)/pcp2qmap(1) > | show_xml | RESULT: OK
+2025-04-14 17:08:33 | config/init-bts/cfg-bts(131297)/ntp(1) > | show_xml | RESULT: OK
+2025-04-14 17:14:49 | config/init-bts/cfg-bts(131297)/cellmapping(1) > | show_xml | RESULT: OK
+2025-04-14 17:24:58 | config/init-bts/cfg-bts(131297)/cellmapping(1)/lcell(1) > | show_xml | RESULT: OK
+2025-04-14 17:34:47 | config/init-bts/cfg-bts(131297)/cellmapping(1) > | show_xml | RESULT: OK
+2025-04-14 17:36:16 | config/init-bts/cfg-bts(131297)/lcell(1)/channelgroup(1) > | show_xml | RESULT: OK
+2025-04-14 17:40:08 | config/init-bts/cfg-bts(131297)/channel(1) > | show_xml | RESULT: OK
+2025-04-14 17:53:09 | config/init-bts/cfg-bts(131297)/cellmapping(1) > | show_xml | RESULT: NOK
+2025-04-14 17:53:14 | config/init-bts/cfg-bts(131297)/cellmapping(1) > | ee ee | RESULT: NOK
+2025-04-14 17:53:16 | config/init-bts/cfg-bts(131297)/cellmapping(1) > | ee ee | RESULT: NOK
+2025-04-14 17:54:08 | config/init-bts/cfg-bts(131297)/cellmapping(1)/lcell(1) > | show_xml | RESULT: NOK
+2025-04-14 17:54:27 | nocli-cfg> | cheat | RESULT: NOK
+2025-04-14 17:54:50 | config/init-bts/cfg-bts(131297) ::para > | show_xml | RESULT: NOK
+2025-04-14 17:55:01 | config/init-bts/cfg-bts(131297)/apeqm(1) > | show_xml | RESULT: NOK
+2025-04-14 17:57:14 | config/init-bts/cfg-bts(131297) > | show_xml | RESULT: OK
+2025-04-14 17:57:31 | config/init-bts/cfg-bts(131297) ::para > | show_xml | RESULT: OK
+2025-04-14 17:57:55 | config/init-bts/cfg-bts(131297)/apeqm(1) > | show | RESULT: OK
+2025-04-14 18:05:13 | config/init-bts > | show | RESULT: OK
+2025-04-14 18:05:21 | config/init-bts > | set action-cmd init | RESULT: OK
+2025-04-14 18:05:48 | config/init-bts > | show | RESULT: OK
+2025-04-14 18:07:35 | config/init-bts/cfg-bts(131297)/lnbts(40000)/lnmme(1) > | show_xml | RESULT: OK
+2025-04-14 18:09:03 | config/init-bts > | show_xml_list | RESULT: OK
+2025-04-14 18:09:07 | config/init-bts > | show | RESULT: OK
+2025-04-14 18:09:12 | config/init-bts > | set action-cmd init | RESULT: OK
+2025-04-14 18:09:35 | config/init-bts/cfg-bts(131297) > | show_xml | RESULT: OK
+2025-04-14 18:09:47 | config/init-bts/cfg-bts(131297)/lnbts(40000) > | show_xml | RESULT: OK
+2025-04-14 18:13:24 | config/init-bts/cfg-bts(131297) ::para > | eqm 1 apeqm 1 | RESULT: OK
+2025-04-14 18:28:47 | config/init-bts > | show | RESULT: OK
+2025-04-14 18:29:17 | config/init-bts/cfg-bts(131297) > | show_xml | RESULT: OK
+2025-04-14 18:29:30 | config/init-bts/cfg-bts(131297)/apeqm(1) > | show_xml | RESULT: OK
+2025-04-15 17:31:57 | config/init-bts > | show | RESULT: OK
+2025-04-15 17:33:12 | config/init-bts > | show | RESULT: OK
+2025-04-15 17:43:14 | config/init-bts > | show | RESULT: OK
+2025-04-15 17:43:34 | config/init-bts > | show | RESULT: OK
+2025-04-15 17:43:54 | config/init-bts/cfg-bts(147568) > | show_xml | RESULT: OK
+2025-04-15 17:44:05 | config/init-bts/cfg-bts(147568)/apeqm(1) > | show_xml | RESULT: OK
+2025-04-15 17:47:48 | config/init-bts/cfg-bts(147568) > | show_xml | RESULT: OK
+2025-04-15 17:47:51 | config/init-bts/cfg-bts(147568) ::para > | show_xml | RESULT: OK
+2025-04-15 17:48:17 | config/init-bts/cfg-bts(147568)/apeqm(1) > | show_xml | RESULT: OK
+2025-04-15 17:50:06 | config/init-bts > | set action-cmd init | RESULT: OK
+2025-04-15 17:50:24 | config/init-bts/cfg-bts(131297) > | show_xml | RESULT: OK
+2025-04-15 17:50:27 | config/init-bts/cfg-bts(131297) ::para > | show_xml | RESULT: OK
+2025-04-15 17:50:37 | config/init-bts/cfg-bts(131297)/apeqm(1) > | show_xml | RESULT: OK
+2025-04-15 17:51:14 | config/init-bts > | show_xml | RESULT: OK
+2025-04-15 17:53:15 | config/init-bts > | show_xml | RESULT: OK
+2025-04-15 17:53:54 | config/init-bts/cfg-bts(147568) > | show_xml | RESULT: OK
+2025-04-15 17:54:25 | config/init-bts/cfg-bts(147568)/apeqm(1) > | show_xml | RESULT: OK
+2025-04-16 13:05:32 | config/init-bts > | show | RESULT: OK
+2025-04-16 13:08:19 | config/init-bts > | show | RESULT: OK
+2025-04-16 13:11:50 | config/init-bts > | show | RESULT: OK
+2025-04-16 13:29:32 | config/init-cell > | show | RESULT: OK
+2025-04-16 13:46:35 | config/init-cell > | show | RESULT: OK
+2025-04-16 14:56:52 | config/init-cell/cfg-bts(147568)/eqm-1/apeqm-1 > | show_xml | RESULT: OK
+2025-04-16 14:57:08 | config/init-cell/cfg-bts(147568)/eqm-1/apeqm-1/rmod-1 > | show_xml | RESULT: OK
+2025-04-16 14:57:58 | config/init-cell/cfg-bts(147568)/eqm-1/apeqm-1/rmod-11 > | show_xml | RESULT: OK
+2025-04-16 14:58:35 | config/init-cell/cfg-bts(147568)/eqm-1/hwtop-1 > | show_xml | RESULT: OK
+2025-04-16 14:58:48 | config/init-cell/cfg-bts(147568)/eqm-1/hwtop-1/cablink-1 > | show_xml | RESULT: OK
+2025-04-16 15:25:02 | config/init-cell/cfg-bts(147568)/ln(40000) > | show_xml | RESULT: OK
+2025-04-16 15:26:00 | config/init-cell/cfg-bts(147568)/ln(4000) > | show_xml | RESULT: OK
+2025-04-16 15:26:08 | config/init-cell/cfg-bts(147568)/ln(4000)/lncel(3000) > | show_xml | RESULT: OK
+2025-04-16 16:30:13 | config/init-cell/cfg-bts(147568)/tnlsvc(1)/tnl(1)/ethsvc(1)/ethif(1) > | show_xml | RESULT: OK
+2025-04-16 16:30:25 | config/init-cell/cfg-bts(147568)/vlanif(1) > | show_xml | RESULT: OK
+2025-04-17 11:02:09 | config/init-cell/cfg-bts(147568)/mnl(1)/mnlent(1)/sync(1) > | show_xml | RESULT: OK
+2025-04-17 11:02:15 | config/init-cell/cfg-bts(147568)/mnl(1)/mnlent(1)/sync(1)/clock(1) > | show_xml | RESULT: OK
+2025-04-17 11:02:21 | config/init-cell/cfg-bts(147568)/mnl(1)/mnlent(1)/sync(1)/clock(1)/ntp(1) > | show_xml | RESULT: OK
+2025-04-17 13:20:23 | config/init-cell/cfg-bts(147568)/mnl(1)/mnlent(1)/cellmapping(1) > | show_xml | RESULT: OK
+2025-04-17 13:20:56 | config/init-cell/cfg-bts(147568)/cellmapping(1)/lcell(1) > | show_xml | RESULT: OK
+2025-04-17 15:52:07 | config/init-cell/cfg-bts(147568)/eqm-1/apeqm-1/rmod-1 > | show_xml | RESULT: OK
+2025-04-17 16:45:20 | config/init-cell/cfg-bts(147568) > | show_xml | RESULT: OK
+2025-04-17 16:46:45 | config/init-cell/cfg-bts(147568) ::para > | show_xml | RESULT: OK
+2025-04-17 16:47:17 | config/init-cell/cfg-bts(147568) ::para > | show_xml | RESULT: OK
+2025-04-17 16:50:41 | config/init-bts > | show | RESULT: OK
+2025-04-17 16:54:22 | config/init-bts/cfg-bts(147568)/lnbts(40000) > | show_xml | RESULT: OK
+2025-04-17 16:55:45 | config/init-bts/cfg-bts(147568)/lnbts(40000) > | show_xml | RESULT: OK
+2025-04-17 16:55:52 | config/init-bts/cfg-bts(147568)/lnbts(40000)/lnmme(1) > | show_xml | RESULT: OK
+2025-04-17 16:56:26 | config/init-bts/cfg-bts(147568) > | show_xml | RESULT: OK
+2025-04-17 16:57:31 | config/init-bts/cfg-bts(147568)/lnbts(40000) > | show_xml | RESULT: OK
+2025-04-17 16:57:59 | config/init-bts/cfg-bts(147568)/lnbts(40000)/lnmme(1) > | show_xml | RESULT: OK
+2025-04-17 17:06:10 | config/init-bts/cfg-bts(147568)/lnbts(40000)/lnmme(1) > | show_xml | RESULT: OK
+2025-04-17 17:11:08 | config/init-bts/cfg-bts(147568)/lnbts(40000)/lnmme(1) > | show_xml | RESULT: OK
+2025-04-17 17:11:28 | config/init-bts/cfg-bts(147568)/lnbts(40000) > | show_xml | RESULT: OK
+2025-04-17 17:14:11 | config/init-bts/cfg-bts(147568) > | show_xml | RESULT: OK
+2025-04-17 17:14:25 | config/init-bts/cfg-bts(147568)/lnbts(40000) > | show_xml | RESULT: OK
+2025-04-17 17:15:45 | config/init-bts/cfg-bts(147568)/lnbts(40000)/lnmme(1) > | show_xml | RESULT: OK
+2025-04-17 17:26:30 | config/init-bts/smod(1) > | show_xml | RESULT: OK
+2025-04-18 10:09:28 | config/init-cell/cfg-bts(147568)/eqm-1/apeqm-1 > | show_xml | RESULT: OK
+2025-04-18 10:11:14 | config/init-cell/cfg-bts(147568)/eqm-1/apeqm-1 > | show_xml | RESULT: OK
+2025-04-18 13:24:18 | config/init-cell/cfg-bts(147568)/eqm-1/apeqm-1 > | show_xml | RESULT: OK
+2025-04-18 13:25:59 | config/init-cell/cfg-bts(147568)/eqm-1/apeqm-1 > | show_xml | RESULT: OK
+2025-04-18 13:26:16 | config/init-cell/cfg-bts(147568)/eqm-1/apeqm-1 > | show_xml -r | RESULT: OK
+2025-04-18 13:26:35 | config/init-cell/cfg-bts(147568)/eqm-1/apeqm-1 > | show_xml -a | RESULT: OK
+2025-04-18 13:26:39 | config/init-cell/cfg-bts(147568)/eqm-1/apeqm-1 > | show_xml -o | RESULT: OK
+2025-04-18 13:34:39 | config/init-cell/cfg-bts(147568)/eqm-1/apeqm-1 > | show_xml | RESULT: OK
+2025-04-18 13:36:40 | config/init-cell/cfg-bts(147568)/eqm-1/apeqm-1 > | show_xml | RESULT: OK
+2025-04-18 13:36:48 | config/init-cell/cfg-bts(147568)/eqm-1/apeqm-1 > | show_xml -r | RESULT: OK
+2025-04-18 13:36:53 | config/init-cell/cfg-bts(147568)/eqm-1/apeqm-1 > | show_xml -a | RESULT: OK
+2025-04-18 13:36:56 | config/init-cell/cfg-bts(147568)/eqm-1/apeqm-1 > | show_xml -o | RESULT: OK
+2025-04-18 15:20:27 | config/init-bts/cfg-bts(147568) > | show_xml | RESULT: OK
+2025-04-18 15:20:37 | config/init-bts/cfg-bts(147568)/apeqm(1) > | show_xml | RESULT: OK
+2025-04-18 15:31:37 | config/init-cell/cfg-bts(147568)/eqm-1/apeqm-1 > | show_xml -r | RESULT: OK
+2025-04-18 15:31:40 | config/init-cell/cfg-bts(147568)/eqm-1/apeqm-1 > | show_xml | RESULT: OK
+2025-04-18 15:31:48 | config/init-cell/cfg-bts(147568)/eqm-1/apeqm-1 > | show_xml -a | RESULT: OK
+2025-04-18 15:56:45 | config/init-bts > | show_xml_list | RESULT: OK
+2025-04-18 15:57:13 | config/init-bts > | show_xml_list | RESULT: OK
+2025-04-18 17:10:51 | config/init-bts > | show_xml_list | RESULT: OK
+2025-04-18 17:11:27 | config/init-bts > | show_xml | RESULT: OK
+2025-04-18 17:19:17 | config/init-bts > | show_xml | RESULT: OK
+2025-04-18 18:25:37 | config/init-cell > | show_xml_list | RESULT: OK
+2025-04-18 18:25:38 | config/init-cell > | show | RESULT: OK
+2025-04-18 18:27:24 | config/init-cell > | show_xml_list | RESULT: OK
+2025-04-18 18:28:32 | config/init-cell > | show_xml_list | RESULT: OK
+2025-04-18 18:28:35 | config/init-cell > | show | RESULT: OK
+2025-04-18 18:30:36 | config/init-cell/cfg-bts(147568)/eqm-1/apeqm-1 > | flush | RESULT: OK
+2025-04-21 10:02:06 | config/init-bts > | show | RESULT: OK
+2025-04-21 10:14:43 | # nocli > | load setup_bts.txt | RESULT: OK
+2025-04-21 10:15:15 | # nocli > | load setup_bts.txt | RESULT: OK
+2025-04-21 10:15:26 | # nocli > | load setup_bts.txt | RESULT: OK
+2025-04-21 10:21:00 | config/init-bts > | show | RESULT: OK
+2025-04-21 10:22:16 | config/init-bts > | show | RESULT: OK
+2025-04-21 10:53:48 | config/init-bts > | show | RESULT: OK
+2025-04-21 10:56:16 | config/init-bts/cfg-bts(147568)/apeqm(1) > | flush | RESULT: OK
+2025-04-21 11:07:40 | config/init-bts > | show | RESULT: OK
+2025-04-21 11:08:20 | config/init-bts > | show | RESULT: OK
+2025-04-21 11:19:17 | config/init-bts > | show | RESULT: OK
+2025-04-21 11:26:56 | config/init-bts > | show | RESULT: OK
+2025-04-21 13:12:37 | config > | flush | RESULT: OK
+2025-04-21 13:12:53 | config/init-bts/cfg-bts(147568) > | flush -m "test" | RESULT: OK
+2025-04-21 15:16:51 | config/init-bts/cfg-bts(147568)/apeqm(1) > | flush -m tojson1 | RESULT: OK
+2025-04-21 15:49:33 | config/init-bts/cfg-bts(147568)/apeqm(1) > | flush -m "test123" | RESULT: OK
+2025-04-21 15:52:42 | config/init-bts/cfg-bts(147568)/apeqm(1) > | flush | RESULT: OK
+2025-04-21 16:31:58 | config/init-bts/cfg-bts(147568)/apeqm(1) > | flush | RESULT: OK
+2025-04-21 17:04:19 | config/init-bts > | show | RESULT: OK
+2025-04-21 17:11:07 | config/init-bts/cfg-bts(147568)/apeqm(1) > | flush | RESULT: OK
+2025-04-21 17:11:25 | config/init-bts/cfg-bts(147568)/apeqm(1) > | flush -m "test 123" | RESULT: OK
+2025-04-22 13:37:06 | cfg-bts(12345)-lnmme(1)> | flush -m "test new" | RESULT: OK
+2025-04-22 13:39:29 | cfg-bts(12345)-lnmme(1)> | flush -m "test new" | RESULT: OK
+2025-04-22 13:43:52 | cfg-bts(12345)> | flush | RESULT: OK
+2025-04-22 13:45:21 | cfg-bts(12345)-lnmme(1)> | flush | RESULT: OK
+2025-04-22 14:03:47 | cfg-bts(12345)-lnmme(1)> | flush | RESULT: OK
+2025-04-22 14:09:09 | cfg-bts(12345)-lnmme(1)> | flush | RESULT: OK
+2025-04-22 14:16:02 | cfg-bts(12345)-lnmme(1)> | flush | RESULT: OK
+2025-04-22 15:01:46 | cfg-bts(123)-lnmme(1)> | flush | RESULT: OK
+2025-04-22 15:06:16 | cfg-bts(123)-lnmme(1)> | flush | RESULT: OK
+2025-04-22 15:06:33 | nocli-cfg> | flush | RESULT: OK
+2025-04-22 15:31:24 | config/init-bts > | commit | RESULT: OK
+2025-04-22 15:51:40 | cfg-bts(12345)> | commit | RESULT: OK
+2025-04-22 15:59:52 | cfg-bts(12345)-lnmme(1)> | commit | RESULT: OK
+2025-04-22 18:25:59 | cfg-bts(12345)-lnmme(1)> | commit | RESULT: OK
+2025-04-22 18:43:49 | cfg-bts(12345)> | commit | RESULT: OK

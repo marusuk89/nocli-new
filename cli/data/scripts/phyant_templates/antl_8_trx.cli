@@ -1,0 +1,95 @@
+ANTL 1
+  antPortId 1
+  antennaPathDelayDL 20
+  antennaPathDelayUL 20
+  cwaThreshold 215
+  dcVoltage OFF
+  hdlcCommunicationAllowed false
+  totalLoss 30
+  useMeasuredRoundTripDelay false
+  repeaterDelay 75
+  exit
+
+ANTL 2
+  antPortId 2
+  antennaPathDelayDL 20
+  antennaPathDelayUL 20
+  cwaThreshold 215
+  dcVoltage OFF
+  hdlcCommunicationAllowed false
+  totalLoss 30
+  useMeasuredRoundTripDelay false
+  repeaterDelay 75
+  exit
+
+ANTL 3
+  antPortId 3
+  antennaPathDelayDL 20
+  antennaPathDelayUL 20
+  cwaThreshold 215
+  dcVoltage OFF
+  hdlcCommunicationAllowed false
+  totalLoss 30
+  useMeasuredRoundTripDelay false
+  repeaterDelay 75
+  exit
+
+ANTL 4
+  antPortId 4
+  antennaPathDelayDL 20
+  antennaPathDelayUL 20
+  cwaThreshold 215
+  dcVoltage OFF
+  hdlcCommunicationAllowed false
+  totalLoss 30
+  useMeasuredRoundTripDelay false
+  repeaterDelay 75
+  exit
+
+ANTL 5
+  antPortId 5
+  antennaPathDelayDL 20
+  antennaPathDelayUL 20
+  cwaThreshold 215
+  dcVoltage OFF
+  hdlcCommunicationAllowed false
+  totalLoss 30
+  useMeasuredRoundTripDelay false
+  repeaterDelay 75
+  exit
+
+ANTL 6
+  antPortId 6
+  antennaPathDelayDL 20
+  antennaPathDelayUL 20
+  cwaThreshold 215
+  dcVoltage OFF
+  hdlcCommunicationAllowed false
+  totalLoss 30
+  useMeasuredRoundTripDelay false
+  repeaterDelay 75
+  exit
+
+ANTL 7
+  antPortId 7
+  antennaPathDelayDL 20
+  antennaPathDelayUL 20
+  cwaThreshold 215
+  dcVoltage OFF
+  hdlcCommunicationAllowed false
+  totalLoss 30
+  useMeasuredRoundTripDelay false
+  repeaterDelay 75
+  exit
+
+ANTL 8
+  antPortId 8
+  antennaPathDelayDL 20
+  antennaPathDelayUL 20
+  cwaThreshold 215
+  dcVoltage OFF
+  hdlcCommunicationAllowed false
+  totalLoss 30
+  useMeasuredRoundTripDelay false
+  repeaterDelay 75
+  exit

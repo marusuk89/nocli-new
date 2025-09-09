@@ -1,0 +1,25 @@
+### HEADER ###
+exit
+yes
+dest-bts 4G
+check-ping 4G
+set-mode mod
+set-mo-version -r 
+set-rat-type None
+set-allow-commit-diff true
+
+### BODY ###
+set-du-type du10
+set-ru-type AHCA
+tgt-bts 4G
+dnload-bts-cfg
+exit-all
+# BBMOD 설정
+EQM 1
+APEQM 1
+BBMOD -v  
+prodCodePlanned 24R2
+exit-all
+# BBMOD 설정 종료
+
+

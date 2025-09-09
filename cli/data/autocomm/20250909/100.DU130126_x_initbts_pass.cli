@@ -1,0 +1,119 @@
+### HEADER ###
+set-bts 130126 1
+dest-bts 130126
+check-ping 130126
+set-mode bts
+set-mo-version 25R2
+set-rat-type 4G
+set-iot-lncel-id 65534
+set-allow-commit-diff true
+
+### BODY ###
+set-du-type FSMF
+tgt-bts 130126
+exec-script 25R2_FSMF_INITBTS_FILTER_SCRIPT_V0.7.5.cli
+# 진입 단계 종료
+
+btsName NLGumiOkgye
+# MRBTS 단계 종료
+
+LNBTS 130126
+enbName NLGumiOkgye
+exit-all
+# LNBTS 단계 종료
+
+# 더미 설정 시작
+EQM 1
+HWTOP 1
+CABLINK 65535
+firstEndpointDN  MRBTS-130126/EQM-1/APEQM-1/CABINET-1/SMOD-1
+firstEndpointLabel  OPT
+firstEndpointPortId  6
+secondEndpointDN  MRBTS-130126/EQM-1/APEQM-1/RMOD-32767
+secondEndpointLabel  OPT
+secondEndpointPortId  1
+exit-all
+LNBTS 130126
+LNCEL 65535
+lcrId 255
+nbIotLinkedCellId 254
+exit
+LNCEL 65534
+lcrId 254
+nbIotLinkedCellId 255
+exit-all
+#더미 설정 끝
+
+EQM 1
+APEQM 1
+CABINET 1
+SMOD 1
+prodCodePlanned 472181A
+exit-all
+# SMOD 단계 종료
+
+# TNLSVC → IPIF 설정
+TNLSVC 1
+TNL 1
+IPNO 1
+IPIF 1
+IPADDRESSV4 1
+localIpAddr 4.4.0.116
+localIpPrefixLength 29
+exit
+exit
+IPRT 1
+list staticRoutes 1 gateway 4.4.0.113
+list staticRoutes 1 routeIpMtu 1510
+list staticRoutes 1 destIpAddr 0.0.0.0
+exit-all
+# TNLSVC 설정 종료
+
+# TNLSVC → ETHSVC 설정
+TNLSVC 1
+TNL 1
+ETHSVC 1
+ETHIF 1
+VLANIF 1
+vlanId 229
+exit-all
+# ETHSVC 설정 종료
+
+# SYNC-1/CLOCK 구성
+MNL 1
+MNLENT 1
+SYNC 1
+CLOCK 1
+list syncInputList 1 syncInputPrio 1
+list syncInputList 1 syncInputType "1pps/ToD from external GNSS receiver"
+GNSSE 1
+exit
+NTP 1
+list ntpServerIpAddrList 1 val 4.5.1.99
+list ntpServerIpAddrList 2 val 4.6.1.2
+maxNtpTimeError 200
+ntpAlarmingThreshold 300
+ntpDscp 46
+exit-all
+
+# BBMOD 설정
+EQM 1
+APEQM 1
+CABINET 1
+BBMOD 1
+prodCodePlanned 472797A
+exit
+exit-all
+LNBTS 130126
+CTRLTS 1
+netActIpAddr 10.113.252.58
+MTRACE 0
+tceIpAddress 10.113.246.69
+exit
+MTRACE 1
+tceIpAddress 10.113.246.69
+exit
+exit-all
+commit-all -t 1
+apply-bts-cfg-commission
+#act-bts-cfg-commission

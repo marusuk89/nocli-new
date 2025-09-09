@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<raml version="2.0">
+  <cmData type="plan">
+    <managedObject class="NOKLTE:IRFIM" distName="MRBTS-130126/LNBTS-130126/LNCEL-2129/IRFIM-1" version="EQM25R2FSM3_2522_100" operation="create">
+      <p name="dlCarFrqEut">3050</p>
+      <p name="enableA4IMLB">enabled</p>
+      <p name="eutCelResPrio">4</p>
+      <p name="incMonExSel">R8ListPartPreferred</p>
+      <p name="interFrqThrH">4</p>
+      <p name="interFrqThrL">0</p>
+      <p name="interPresAntP">true</p>
+      <p name="interTResEut">1</p>
+      <p name="mbmsNeighCellConfigInterF">00</p>
+      <p name="measBdw">50mbw</p>
+      <p name="minDeltaRsrpIMLB">-20</p>
+      <p name="minRsrpIMLB">-100</p>
+      <p name="pMaxInterF">23</p>
+      <p name="qOffFrq">0 dB</p>
+      <p name="qRxLevMinInterF">-110</p>
+      <p name="reducedMeasPerformance">false</p>
+      <list name="tResEutSF">
+        <item>
+          <p name="eutResTiFHM">0.5</p>
+          <p name="eutResTiFMM">0.5</p>
+        </item>
+      </list>
+    </managedObject>
+  </cmData>
+</raml>

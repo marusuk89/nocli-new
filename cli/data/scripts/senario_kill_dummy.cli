@@ -1,0 +1,21 @@
+#LNMME의 10,11번이 nbiot용으로 설정되어 같이 지움
+EQM 1
+APEQM 1
+no-mo-scf RMOD 32767
+exit-all
+EQM 1
+HWTOP 1
+no-mo-scf CABLINK 65535
+exit-all
+LNBTS 000
+no-mo-scf LNCEL 65535
+no-mo-scf LNCEL 65534
+exit-all
+MNL 1
+MNLENT 1
+CELLMAPPING 1
+no-mo-scf LCELL 254
+no-mo-scf LCELL 255
+no-mo-scf LNMME 10
+no-mo-scf LNMME 11
+exit-all

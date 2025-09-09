@@ -1,0 +1,390 @@
+## 순서 규칙 - ETHLK의 경우 TRMOD의 선언이 우선되어야 한다
+set-iot-lncel-id 65534
+
+EQM 1
+  APEQM 1
+    CABINET 1
+      BBMOD 1
+      exit
+      BBMOD 2
+      exit
+      SMOD 1
+        EAC_IN  1    
+        exit
+        EAC_IN  2    
+        exit
+        EAC_IN  3    
+        exit
+        EAC_IN  4    
+        exit
+        EAC_IN  5    
+        exit
+        EAC_IN  6    
+        exit
+        EAC_IN  7    
+        exit
+      exit
+
+      TRMOD  1
+      exit
+    exit
+
+    RMOD  32767
+      administrativeState Locked
+      RSL  1
+      exit
+    exit-all
+
+EQM  1  
+  HWTOP  1  
+    CABLINK  1    
+    exit
+    CABLINK  2    
+    exit    
+    CABLINK  65535
+    exit
+  exit-all
+
+LNBTS  000
+  ACBPR  0
+  exit
+  ACBPR  1
+  exit
+  ANR  0
+  exit
+  ANRPRL  0
+  exit
+  CADPR  0
+  exit
+  CAGENB  0
+  exit
+  CATMPR  0
+  exit
+  CTRLTS  1
+  exit
+  CTRLTS  1  
+    MTRACE  0
+    exit
+    MTRACE  1
+    exit
+  exit
+  DPCLPC  0
+  exit
+  GTPU  1
+  exit
+  ISHPR  0
+  exit
+  LBPUCCHRDPR  0
+  exit
+  LNBTS_FDD  0
+  exit
+  LNHENB  0  
+  exit
+  LNHENB  1
+  exit
+  LNHENB  2
+  exit
+  LNMME  0
+  exit
+  LNMME  1
+  exit
+  LNMME  10
+  exit
+  LNMME  11
+  exit
+  LNMME  14
+  exit
+  LNMME  16
+  exit
+  LNMME  2
+  exit
+  LNMME  20
+  exit
+  LNMME  21
+  exit
+  LNMME  22
+  exit
+  LNMME  23
+  exit
+  LNMME  25
+  exit
+  LNMME  26
+  exit
+  LNMME  27
+  exit
+  LNMME  28
+  exit
+  LNMME  29
+  exit
+  LNMME  30
+  exit
+  LNMME  31
+  exit
+  MODPR  0
+  exit
+  MOPR  1
+    MORED  1
+    exit
+  exit
+  NBIOTPR  0
+  exit
+  NRDCDPR  0
+    ENDCDMEASCONF  0
+    exit
+  exit
+  NRMEASDPR  0
+  exit
+  PMRNL 1
+    PMCCP 1
+    exit
+    PMPLM 1
+    exit
+  exit
+  SCTP 1
+  exit
+  TRSNW 0
+  exit-all
+
+LNBTS 000
+  LNCEL  65535 
+    CAPR  0
+    exit
+    CATMCEL  0
+    exit
+    CDFIM  1
+    exit
+    DRX  0
+    exit
+    IAFIM  1
+    exit
+    IFGDPR  0
+    exit
+    IFGPR  0
+    exit
+    IRFIM  1
+    exit
+    IRFIM  2
+    exit
+    REDRT  0
+    exit
+    SDRX  0
+    exit
+    SIB  0
+    exit
+    LNCEL_FDD  0
+      APUCCH_FDD  0
+      exit
+      MPUCCH_FDD  0
+      exit
+    exit-all
+
+LNBTS  000  
+  LNCEL  65534
+    DRX  0
+    exit
+    NBIOT_FDD  0
+    exit
+    SDRX  0
+    exit
+    SIB  0
+    exit
+  exit-all
+
+MNL  1
+  MNLENT  1
+    CELLMAPPING  1
+      auto-config LCELL 255
+      auto-config LCELL 254
+      exit-all
+
+MNL  1
+  CERTH 1
+  exit
+  AMGR  1
+    LUAC  1
+    exit
+  exit
+  CERTH  1 
+    CMP  1
+    exit
+    CMPECDSA  1
+    exit
+    CRLH  1
+    exit
+  exit
+  CMD  1
+  exit
+exit-all
+  
+
+MNL  1
+  MNLENT  1  
+    CERTHENT  1
+    exit
+    CUPLANEFHNW  1
+    exit
+    DHCP  1
+    exit
+    DNS  1
+    exit
+    FEATCADM  1
+      FEATLADM  1
+      exit
+    exit
+    FMCADM  1
+    exit
+    MPLANENW  1
+    exit
+    PMCADM  1
+    exit
+    PMMNL  1
+    exit
+    SECADM  1
+    exit
+    SYNC  1
+      CLOCK  1
+        NTP  1
+        exit
+      exit     
+      TIME  1
+      exit
+    exit
+  
+    TAC  1
+      LTAC  1
+      exit
+    exit
+    
+    TEST 1
+      RFTHLD  1
+      exit
+    exit
+    
+    TRBLCADM  1
+    exit
+  exit-all
+
+  # ETh configuration (Layer 2)
+TNLSVC  1
+  PMTNLINT  1
+  exit
+  TNL  1
+    ETHAPP  1
+    exit
+    ETHSVC  1
+      ETHIF  1
+        VLANIF  1
+        exit
+      exit
+      ETHIF  2
+      exit
+      
+      ETHLK  1
+      exit
+      L2SWI  1
+        BRGPRT  1
+        exit
+        DSCPTOQMAP  1
+        exit
+        IBRGPRT  1
+        exit
+      exit-all
+      
+
+# IP configuration (Layer 3)
+TNLSVC  1   
+  TNL  1  
+    IPAPP  1
+      FIREWALL  1
+        PKTFLTR  1
+        exit
+      exit
+      IPSECC  1
+        SECPOL  1
+        exit
+        SECPOL  2
+        exit
+        SECPOL  3
+        exit
+        SECPOL  4
+        exit
+      exit
+    exit
+    
+    IPNO  1
+      IPIF  1
+        IPADDRESSV4  1
+        exit
+      exit        
+      IPRT  1
+      exit
+      IPRTV6  1
+      exit
+      QOS  1
+        DSCP2PCPMAP  1
+        exit
+        DSCP2QMAP  1
+        exit
+        FSTSCH  1
+        exit
+      exit
+        
+      RTPOL  1
+      exit
+    exit
+      
+    PPTT  1
+    exit
+    PPTT  2
+    exit
+    PPTT  3
+    exit
+    PPTT  4
+    exit
+    PPTT  5
+    exit
+    PPTT  6
+    exit
+    PPTT  7
+    exit
+    PPTT  8
+    exit
+  exit-all
+
+EQM  1  
+  HWTOP  1  
+    CABLINK  1    
+      firstEndpointDN  MRBTS-130126/EQM-1/APEQM-1/CABINET-1/SMOD-1
+      firstEndpointLabel  BB_EXT
+      firstEndpointPortId  1
+      secondEndpointDN  MRBTS-130126/EQM-1/APEQM-1/CABINET-1/BBMOD-1
+      secondEndpointLabel  BB_EXT
+      secondEndpointPortId  1
+      exit
+    CABLINK  2    
+      firstEndpointDN  MRBTS-130126/EQM-1/APEQM-1/CABINET-1/SMOD-1  
+      firstEndpointLabel  BB_EXT  
+      firstEndpointPortId  2  
+      secondEndpointDN  MRBTS-130126/EQM-1/APEQM-1/CABINET-1/BBMOD-2  
+      secondEndpointLabel  BB_EXT  
+      secondEndpointPortId  1  
+      exit    
+    CABLINK  65535
+      firstEndpointDN  MRBTS-130126/EQM-1/APEQM-1/CABINET-1/SMOD-1  
+      firstEndpointLabel  OPT  
+      firstEndpointPortId  6
+      secondEndpointDN  MRBTS-130126/EQM-1/APEQM-1/RMOD-32767  
+      secondEndpointLabel  OPT  
+      secondEndpointPortId  1  
+      exit
+    exit-all
+
+LNBTS 130126
+  LNCEL 65535
+    lcrId 255
+    nbIotLinkedCellId 254
+    exit
+  LNCEL 65534
+    lcrId 254
+    nbIotLinkedCellId 255
+    exit-all

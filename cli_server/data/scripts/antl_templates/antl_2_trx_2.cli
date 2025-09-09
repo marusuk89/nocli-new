@@ -1,0 +1,26 @@
+ANTL 1
+  antPortId 1
+  antennaPathDelayDL 220
+  antennaPathDelayUL 220
+  cwaThreshold 215
+  dcVoltage OFF
+  hdlcCommunicationAllowed false
+  totalLoss 3
+  ulDelay 0
+  vswrMajorThreshold 3.5
+  vswrMinorThreshold 2.9
+  exit
+
+ANTL 2
+  antPortId 2
+  antennaPathDelayDL 220
+  antennaPathDelayUL 220
+  cwaThreshold 215
+  dcVoltage OFF
+  hdlcCommunicationAllowed false
+  totalLoss 3
+  ulDelay 0
+  vswrMajorThreshold 3.5
+  vswrMinorThreshold 2.9
+  exit
+

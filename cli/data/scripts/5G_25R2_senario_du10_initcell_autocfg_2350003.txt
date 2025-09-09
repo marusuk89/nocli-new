@@ -1,0 +1,32 @@
+EQM 1
+  APEQM 1
+    RMOD 7
+  exit
+exit
+HWTOP 1
+CABLINK  7
+      firstEndpointDN  MRBTS-2350003/EQM-1/APEQM-1/CABINET-1/BBMOD-1  
+      firstEndpointLabel  SFP  
+      firstEndpointPortId  2
+      iqCompression "eCPRI IQ9_E7"
+      linkSpeed eCpri10
+      radioProtocolType 10eCPRI
+      secondEndpointDN  MRBTS-2350003/EQM-1/APEQM-1/RMOD-7  
+      secondEndpointLabel  SFP  
+      secondEndpointPortId  1
+      exit
+    exit-all
+
+NRBTS 2350003
+  NRCELL 100
+    lcrId 7
+    physCellId 111
+    prachRootSequenceIndex 0
+    configuredEpsTac 65535
+    exit-all
+
+MNL 1
+MNLENT 1
+CELLMAPPING 1
+  auto-config LCELNR 7
+exit-all

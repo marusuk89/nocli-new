@@ -1,0 +1,47 @@
+EQM 1
+APEQM 1
+RMOD 32767
+actPimCancellation false
+actSharedRUIndControl false
+actSnapshotCollection false
+administrativeState Unlocked
+alVoltHighThreshold 5800
+alVoltLowThreshold 4050
+alVoltUnstableThreshold 5
+energySavingMode NORMAL
+legacyWideCarrierMode false
+linkSpeed Auto
+moduleLocation "DGhwanggeumilD7_C00A [G] [1506] [2403873699]"
+pimCancellingEnabled true
+prodCodePlanned 472169A
+ANTL 1
+antPortId 1
+antennaPathDelayDL 20000
+antennaPathDelayUL 20000
+cwaThreshold 215
+dcVoltage OFF
+hdlcCommunicationAllowed false
+totalLoss 3000
+ulDelay 0
+vswrMajorThreshold 350
+vswrMinorThreshold 290
+exit
+ANTL 2
+antPortId 2
+antennaPathDelayDL 20000
+antennaPathDelayUL 20000
+cwaThreshold 215
+dcVoltage OFF
+hdlcCommunicationAllowed false
+totalLoss 3000
+ulDelay 0
+vswrMajorThreshold 350
+vswrMinorThreshold 290
+exit
+RSL 1
+dcVoltageEnabled false
+hdlcCommunicationAllowed false
+exit
+exit
+exit
+exit

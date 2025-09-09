@@ -1,0 +1,77 @@
+EQM  1  
+  HWTOP  1  
+    CABLINK  1    
+      firstEndpointDN  MRBTS-130120/EQM-1/APEQM-1/CABINET-1/SMOD-1
+      firstEndpointLabel  BACKPLANE
+      firstEndpointPortId  1
+      secondEndpointDN  MRBTS-130120/EQM-1/APEQM-1/CABINET-1/BBMOD-1
+      secondEndpointLabel  BACKPLANE
+      secondEndpointPortId  1
+      exit
+    CABLINK  4
+      firstEndpointDN  MRBTS-130120/EQM-1/APEQM-1/CABINET-1/BBMOD-1
+      firstEndpointLabel  OPT  
+      firstEndpointPortId  1
+      linkSpeed Cpri7
+      radioProtocolType CPRI
+      secondEndpointDN  MRBTS-130120/EQM-1/APEQM-1/FHS-1
+      secondEndpointLabel  OPT  
+      secondEndpointPortId  1  
+      exit   
+    CABLINK  5
+      firstEndpointDN  MRBTS-130120/EQM-1/APEQM-1/CABINET-1/BBMOD-1
+      firstEndpointLabel  OPT  
+      firstEndpointPortId  2
+      linkSpeed Cpri7
+      radioProtocolType CPRI
+      secondEndpointDN  MRBTS-130120/EQM-1/APEQM-1/FHS-1
+      secondEndpointLabel  OPT  
+      secondEndpointPortId  2
+      exit   
+    CABLINK  65535
+      firstEndpointDN  MRBTS-130120/EQM-1/APEQM-1/FHS-1
+      firstEndpointLabel  OPT  
+      firstEndpointPortId  12
+      secondEndpointDN  MRBTS-130120/EQM-1/APEQM-1/RMOD-32767 
+      secondEndpointLabel  OPT  
+      secondEndpointPortId  1  
+      exit
+    exit-all
+
+LNBTS 130120
+  LNCEL 65535
+    lcrId 255
+    nbIotLinkedCellId 254
+    exit
+  LNCEL 65534
+    lcrId 254
+    nbIotLinkedCellId 255
+    exit-all
+
+TNLSVC 1
+  TNL 1
+    ETHSVC 1
+      ETHIF 1
+        VLANIF 1
+        vlanId 222
+        exit-all
+
+TNLSVC 1
+  TNL 1
+    IPNO  1
+        IPIF 1
+            IPADDRESSV4  1
+                localIpAddr 4.4.0.18
+                localIpPrefixLength 30
+                exit
+            exit
+        IPRT 1
+            list staticRoutes 1 gateway 4.4.0.17
+            exit-all
+
+TNLSVC 1
+  TNL 1
+    ETHSVC 1
+      ETHLK 1
+        connectorLabel EIF1
+        exit-all

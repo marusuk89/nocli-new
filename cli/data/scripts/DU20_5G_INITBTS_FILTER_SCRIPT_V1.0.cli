@@ -1,0 +1,35 @@
+
+MNL 1
+    MNLENT 1
+        FMCADM 1
+            ALARMSUPP 1
+            exit-all
+
+NRBTS 000
+    NRDRB_TCP_BOOST 1
+    exit
+    NRDRX 0
+    exit
+    NRDRX 1
+    exit
+    NRDRX 2
+    exit
+    NRDRX 3
+    exit
+    NRDRX 4
+    exit
+    NRDRX 5
+    exit
+    NRPMRNL 1
+        NRPMCCP 1
+        exit
+    exit
+    NRRFSP_PROFILE 1
+    exit
+    NRSPID_PROFILE 1
+    exit
+    NRSYSINFO_PROFILE 1
+    exit
+    NRSYSINFO_PROFILE_NSA 1
+    exit
+    exit-all

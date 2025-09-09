@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<raml xmlns="raml21.xsd" version="2.1">
+  <cmData type="plan">
+    <header>
+      <log dateTime="2025-04-22T15:51:40+09:00" action="created"/>
+    </header>
+    <managedObject class="MRBTS" version="S10.2024" distName="MRBTS-12345" operation="create">
+      <p name="rat_type">4g</p>
+      <p name="action_cmd">init</p>
+    </managedObject>
+  </cmData>
+</raml>

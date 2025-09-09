@@ -1,0 +1,17 @@
+### HEADER ###
+exit
+yes
+dest-bts 130120
+check-ping 130120
+set-mode mod
+set-mo-version 24R2
+set-rat-type 4G
+set-allow-commit-diff true
+
+### BODY ###
+set-du-type du10
+set-ru-type AHCA
+tgt-bts 130120
+dnload-bts-cfg
+exit-all
+

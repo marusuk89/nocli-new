@@ -1,0 +1,28 @@
+
+TNLSVC 1
+  TNL 1
+    ETHSVC 1
+      ETHIF 1
+        VLANIF 1
+        vlanId 229
+        exit-all
+
+TNLSVC 1
+  TNL 1
+    IPNO  1
+        IPIF 1
+            IPADDRESSV4  1
+                localIpAddr 4.4.0.116
+                localIpPrefixLength 29
+                exit
+            exit
+        IPRT 1
+            list staticRoutes 1 gateway 4.4.0.113
+            exit-all
+
+TNLSVC 1
+  TNL 1
+    ETHSVC 1
+      ETHLK 1
+        connectorLabel EIF4
+        exit-all

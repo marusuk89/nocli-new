@@ -1,0 +1,18 @@
+### HEADER ###
+exit
+yes
+init-cell -r 4G -v 24R2
+autocomm-run-script 100.DU130122_Cell24320_initcell_pass.cli
+### BODY ###
+set-du-type du10
+set-ru-type FHCA
+tgt-bts 130122
+dnload-bts-cfg
+EQM 1
+APEQM 1
+RMOD 6
+auto-config
+moduleLocation 
+# 진입 단계 종료
+exit-all
+

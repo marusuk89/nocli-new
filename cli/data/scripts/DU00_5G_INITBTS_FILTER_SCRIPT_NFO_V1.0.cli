@@ -1,0 +1,14 @@
+EQM 1
+    APEQM 1
+        CABINET 1
+            SMOD 1
+                EAC_IN 9
+                exit
+                EAC_IN 10
+                exit          
+                EAC_IN 11
+                exit        
+                EAC_IN 12
+                exit
+            exit
+        exit-all

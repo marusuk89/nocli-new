@@ -1,0 +1,76 @@
+EQM  1  
+  HWTOP  1  
+    CABLINK  1    
+      firstEndpointDN  MRBTS-2350003/EQM-1/APEQM-1/CABINET-1/SMOD-1
+      firstEndpointLabel  BACKPLANE
+      firstEndpointPortId  1
+      secondEndpointDN  MRBTS-2350003/EQM-1/APEQM-1/CABINET-1/BBMOD-1
+      secondEndpointLabel  BACKPLANE
+      secondEndpointPortId  1
+      exit
+    CABLINK  2    
+      firstEndpointDN  MRBTS-2350003/EQM-1/APEQM-1/CABINET-1/SMOD-1  
+      firstEndpointLabel  BACKPLANE  
+      firstEndpointPortId  2  
+      secondEndpointDN  MRBTS-2350003/EQM-1/APEQM-1/CABINET-1/BBMOD-2  
+      secondEndpointLabel  BACKPLANE  
+      secondEndpointPortId  1  
+      exit    
+    CABLINK  3
+      firstEndpointDN  MRBTS-2350003/EQM-1/APEQM-1/CABINET-1/SMOD-1  
+      firstEndpointLabel  BACKPLANE  
+      firstEndpointPortId  3 
+      secondEndpointDN  MRBTS-2350003/EQM-1/APEQM-1/CABINET-1/BBMOD-3
+      secondEndpointLabel  BACKPLANE  
+      secondEndpointPortId  1  
+      exit    
+    CABLINK  65535
+      firstEndpointDN  MRBTS-2350003/EQM-1/APEQM-1/CABINET-1/BBMOD-1  
+      firstEndpointLabel  SFP  
+      firstEndpointPortId  1
+      iqCompression "eCPRI IQ9_E7"
+      linkSpeed eCpri10
+      radioProtocolType 10eCPRI
+      secondEndpointDN  MRBTS-2350003/EQM-1/APEQM-1/RMOD-31
+      secondEndpointLabel  SFP  
+      secondEndpointPortId  1  
+      exit
+    exit-all
+
+NRBTS 2350003
+  NRCELL 6144
+    lcrId 31
+    exit-all
+
+TNLSVC 1
+  TNL 1
+    ETHSVC 1
+      ETHIF 1
+        VLANIF 1
+            vlanId 1000
+            exit-all
+
+TNLSVC 1
+  TNL 1
+    IPNO  1
+        IPIF 1
+            IPADDRESSV4  1
+                localIpAddr 4.5.13.5
+                localIpPrefixLength 26
+                exit
+            exit
+        IPRT 1
+            list staticRoutes 1 gateway 4.5.13.1
+            exit-all
+
+TNLSVC 1
+  TNL 1
+    ETHSVC 1
+      ETHLK 1
+        connectorLabel EIF1
+        exit-all
+
+MNL 1
+  MNLENT 1
+    FEATCADM 1
+      exit-all

@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<raml xmlns="raml21.xsd" version="2.1">
+  <cmData type="plan">
+    <header>
+      <log dateTime="2025-04-22T15:06:33+09:00" action="created"/>
+    </header>
+  </cmData>
+</raml>

@@ -1,0 +1,44 @@
+######## KT 공동망 2주파수   ########
+MRBTS  000
+  LNBTS  000
+    CAGENB  0
+	  CAIMLBP  1
+	    IMLBNR  1
+		exit
+	  exit	
+	  CAIMLBP  2
+	    IMLBNR  1
+		exit
+	  exit
+    exit	
+	
+	LNBTS_FDD  0
+	exit
+	
+	LNCEL  000
+	  IRFIM  5
+	  exit
+	  IRFIM  6
+	  exit
+	  LNHOIF  5
+	  exit
+	  LNHOIF  6
+	  exit
+	  
+	  SIB 0
+	  exit
+	exit
+	
+	MODPR  0
+	exit
+	
+	MOPR  1
+	  MOIMP  1
+	  exit
+	  MORED  1
+	  exit
+	exit
+	
+	NRDCDPR  0
+	exit
+exit-all

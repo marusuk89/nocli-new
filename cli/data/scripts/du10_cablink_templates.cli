@@ -1,0 +1,119 @@
+### CABLINK_1 ###
+CABLINK  1    
+    firstEndpointDN  MRBTS-000/EQM-1/APEQM-1/CABINET-1/SMOD-1
+    firstEndpointLabel  BB_EXT
+    firstEndpointPortId  1
+    secondEndpointDN  MRBTS-000/EQM-1/APEQM-1/CABINET-1/BBMOD-1
+    secondEndpointLabel  BB_EXT
+    secondEndpointPortId  1
+    exit
+
+### CABLINK_2 ###
+CABLINK  2
+    firstEndpointDN  MRBTS-000/EQM-1/APEQM-1/CABINET-1/SMOD-1  
+    firstEndpointLabel  BB_EXT  
+    firstEndpointPortId  2  
+    secondEndpointDN  MRBTS-000/EQM-1/APEQM-1/CABINET-1/BBMOD-2  
+    secondEndpointLabel  BB_EXT  
+    secondEndpointPortId  1  
+    exit    
+      
+### CABLINK_3 ###
+CABLINK  3    
+    firstEndpointDN  MRBTS-000/EQM-1/APEQM-1/CABINET-1/SMOD-1  
+    firstEndpointLabel  OPT  
+    firstEndpointPortId  1  
+    secondEndpointDN  MRBTS-000/EQM-1/APEQM-1/RMOD-1
+    secondEndpointLabel  OPT  
+    secondEndpointPortId  1  
+    exit
+
+### CABLINK_4 ###
+CABLINK 4
+    firstEndpointDN  MRBTS-000/EQM-1/APEQM-1/CABINET-1/SMOD-1  
+    firstEndpointLabel  OPT  
+    firstEndpointPortId  2
+    secondEndpointDN  MRBTS-000/EQM-1/APEQM-1/RMOD-2
+    secondEndpointLabel  OPT  
+    secondEndpointPortId  1  
+    exit
+
+### CABLINK_5 ###
+CABLINK 5
+    firstEndpointDN  MRBTS-000/EQM-1/APEQM-1/CABINET-1/SMOD-1  
+    firstEndpointLabel  OPT  
+    firstEndpointPortId  3
+    secondEndpointDN  MRBTS-000/EQM-1/APEQM-1/RMOD-3
+    secondEndpointLabel  OPT  
+    secondEndpointPortId  1  
+    exit
+
+### CABLINK_6 ###
+CABLINK 6
+    firstEndpointDN  MRBTS-000/EQM-1/APEQM-1/CABINET-1/SMOD-1  
+    firstEndpointLabel  OPT  
+    firstEndpointPortId  6
+    secondEndpointDN  MRBTS-000/EQM-1/APEQM-1/RMOD-4
+    secondEndpointLabel  OPT  
+    secondEndpointPortId  1  
+    exit
+
+### CABLINK_7 ###
+CABLINK 7
+    firstEndpointDN  MRBTS-000/EQM-1/APEQM-1/CABINET-1/BBMOD-1  
+    firstEndpointLabel  OPT  
+    firstEndpointPortId  1
+    secondEndpointDN  MRBTS-000/EQM-1/APEQM-1/RMOD-5
+    secondEndpointLabel  OPT  
+    secondEndpointPortId  1  
+    exit
+
+### CABLINK_8 ###
+CABLINK 8
+    firstEndpointDN  MRBTS-000/EQM-1/APEQM-1/CABINET-1/BBMOD-1  
+    firstEndpointLabel  OPT  
+    firstEndpointPortId  2
+    secondEndpointDN  MRBTS-000/EQM-1/APEQM-1/RMOD-6
+    secondEndpointLabel  OPT  
+    secondEndpointPortId  1  
+    exit
+
+### CABLINK_9 ###
+CABLINK 9
+    firstEndpointDN  MRBTS-000/EQM-1/APEQM-1/CABINET-1/BBMOD-1  
+    firstEndpointLabel  OPT  
+    firstEndpointPortId  3
+    secondEndpointDN  MRBTS-000/EQM-1/APEQM-1/RMOD-7
+    secondEndpointLabel  OPT  
+    secondEndpointPortId  1  
+    exit
+
+### CABLINK_10 ###
+CABLINK 10
+    firstEndpointDN  MRBTS-000/EQM-1/APEQM-1/CABINET-1/BBMOD-2
+    firstEndpointLabel  OPT  
+    firstEndpointPortId  1
+    secondEndpointDN  MRBTS-000/EQM-1/APEQM-1/RMOD-8
+    secondEndpointLabel  OPT  
+    secondEndpointPortId  1  
+    exit
+
+### CABLINK_11 ###
+CABLINK 11
+    firstEndpointDN  MRBTS-000/EQM-1/APEQM-1/CABINET-1/BBMOD-2
+    firstEndpointLabel  OPT  
+    firstEndpointPortId  2
+    secondEndpointDN  MRBTS-000/EQM-1/APEQM-1/RMOD-9
+    secondEndpointLabel  OPT  
+    secondEndpointPortId  1  
+    exit
+
+### CABLINK_12 ###
+CABLINK 12
+    firstEndpointDN  MRBTS-000/EQM-1/APEQM-1/CABINET-1/BBMOD-2
+    firstEndpointLabel  OPT  
+    firstEndpointPortId  3
+    secondEndpointDN  MRBTS-000/EQM-1/APEQM-1/RMOD-10
+    secondEndpointLabel  OPT  
+    secondEndpointPortId  1  
+    exit

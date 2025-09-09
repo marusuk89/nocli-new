@@ -1,0 +1,58 @@
+### HEADER ###
+set-mode cell
+set-mo-version 24R2
+set-rat-type 4G
+set-iot-lncel-id 22111
+set-allow-commit-diff true
+
+### BODY ###
+set-du-type du10
+set-ru-type FHCA
+tgt-bts 130120
+dnload-bts-cfg
+EQM 1
+APEQM 1
+RMOD 6
+auto-config
+moduleLocation NL_TEST2
+exit-all
+EQM 1
+HWTOP 1
+CABLINK 8
+firstEndpointDN MRBTS-130120/EQM-1/APEQM-1/CABINET-1/bbmod-1
+firstEndpointLabel OPT
+firstEndpointPortId 2
+secondEndpointDN MRBTS-130120/EQM-1/APEQM-1/CABINET-1/RMOD-6
+secondEndpointLabel OPT
+secondEndpointPortId 1
+exit-all
+LNBTS 130120
+LNCEL 24320
+auto-config
+lcrId 7
+phyCellId 320
+tac 59455
+nbIotLinkedCellId 107
+LNCEL_FDD 0
+rootSeqIndex 600
+exit-all
+MNL 1
+MNLENT 1
+CELLMAPPING 1
+auto-config LCELL 7
+exit-all
+LNBTS 130120
+LNCEL 22111
+auto-config
+lcrId 107
+phyCellId 320
+tac 59455
+nbIotLinkedCellId 7
+exit-all
+MNL 1
+MNLENT 1
+CELLMAPPING 1
+auto-config LCELL 107
+exit-all
+exit-all
+

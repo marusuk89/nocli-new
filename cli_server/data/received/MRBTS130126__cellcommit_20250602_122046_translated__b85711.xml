@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<raml xmlns="raml21.xsd" version="2.1">
+  <cmData type="plan">
+    <managedObject class="com.nokia.srbts.eqm:TRMOD" distName="MRBTS-130126/EQM-1/APEQM-1/CABINET-1/TRMOD-32767" version="EQM24R2FSM3_2322_100" operation="create">
+      <p name="prodCodePlanned">472311A</p>
+    </managedObject>
+    <managedObject class="com.nokia.srbts.eqm:RMOD" distName="MRBTS-130126/EQM-1/APEQM-1/RMOD-32767" version="EQM24R2FSM3_2322_100" operation="create">
+      <p name="actPimCancellation">false</p>
+      <p name="actSharedRUIndControl">false</p>
+      <p name="actSnapshotCollection">false</p>
+      <p name="administrativeState">Unlocked</p>
+      <p name="alVoltHighThreshold">580</p>
+      <p name="alVoltLowThreshold">405</p>
+      <p name="alVoltUnstableThreshold">5</p>
+      <p name="energySavingMode">NORMAL</p>
+      <p name="legacyWideCarrierMode">false</p>
+      <p name="linkSpeed">Auto</p>
+      <p name="moduleLocation">DGhwanggeumilD7_C00A [G] [1506] [2403873699]</p>
+      <p name="pimCancellingEnabled">true</p>
+      <p name="prodCodePlanned">473966B</p>
+    </managedObject>
+    <managedObject class="com.nokia.srbts.eqm:ANTL" distName="MRBTS-130126/EQM-1/APEQM-1/RMOD-32767/ANTL-1" version="EQM24R2FSM3_2322_100" operation="create">
+      <p name="antPortId">4</p>
+      <p name="antennaPathDelayDL">20</p>
+      <p name="antennaPathDelayUL">20</p>
+      <p name="cwaThreshold">215</p>
+      <p name="dcVoltage">OFF</p>
+      <p name="hdlcCommunicationAllowed">false</p>
+      <p name="totalLoss">30</p>
+      <p name="ulDelay">0</p>
+      <p name="vswrMajorThreshold">35</p>
+      <p name="vswrMinorThreshold">29</p>
+    </managedObject>
+    <managedObject class="com.nokia.srbts.eqm:ANTL" distName="MRBTS-130126/EQM-1/APEQM-1/RMOD-32767/ANTL-2" version="EQM24R2FSM3_2322_100" operation="create">
+      <p name="antPortId">4</p>
+      <p name="antennaPathDelayDL">20</p>
+      <p name="antennaPathDelayUL">20</p>
+      <p name="cwaThreshold">215</p>
+      <p name="dcVoltage">OFF</p>
+      <p name="hdlcCommunicationAllowed">false</p>
+      <p name="totalLoss">30</p>
+      <p name="ulDelay">0</p>
+      <p name="vswrMajorThreshold">35</p>
+      <p name="vswrMinorThreshold">29</p>
+    </managedObject>
+    <managedObject class="com.nokia.srbts.eqm:ANTL" distName="MRBTS-130126/EQM-1/APEQM-1/RMOD-32767/ANTL-3" version="EQM24R2FSM3_2322_100" operation="create">
+      <p name="antPortId">4</p>
+      <p name="antennaPathDelayDL">20</p>
+      <p name="antennaPathDelayUL">20</p>
+      <p name="cwaThreshold">215</p>
+      <p name="dcVoltage">OFF</p>
+      <p name="hdlcCommunicationAllowed">false</p>
+      <p name="totalLoss">30</p>
+      <p name="ulDelay">0</p>
+      <p name="vswrMajorThreshold">35</p>
+      <p name="vswrMinorThreshold">29</p>
+    </managedObject>
+    <managedObject class="com.nokia.srbts.eqm:ANTL" distName="MRBTS-130126/EQM-1/APEQM-1/RMOD-32767/ANTL-4" version="EQM24R2FSM3_2322_100" operation="create">
+      <p name="antPortId">4</p>
+      <p name="antennaPathDelayDL">20</p>
+      <p name="antennaPathDelayUL">20</p>
+      <p name="cwaThreshold">215</p>
+      <p name="dcVoltage">OFF</p>
+      <p name="hdlcCommunicationAllowed">false</p>
+      <p name="totalLoss">30</p>
+      <p name="ulDelay">0</p>
+      <p name="vswrMajorThreshold">35</p>
+      <p name="vswrMinorThreshold">29</p>
+    </managedObject>
+    <managedObject class="com.nokia.srbts.eqm:RSL" distName="MRBTS-130126/EQM-1/APEQM-1/RMOD-32767/RSL-1" version="EQM24R2FSM3_2322_100" operation="create">
+      <p name="dcVoltageEnabled">false</p>
+      <p name="hdlcCommunicationAllowed">false</p>
+    </managedObject>
+  </cmData>
+</raml>

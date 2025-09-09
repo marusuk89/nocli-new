@@ -1,0 +1,73 @@
+##rulebook-to-dict NOKIA_CLI_Ruulbook_SCF_DU10_InitBts_V0.7.xml
+## 첫 시나리오
+config
+init-stp
+dest-bts 130126
+check-ping 130126
+exit
+init-bts -r 4G -v 24R2
+tgt-bts 130126
+rulebook-to-dict NOKIA_CLI_Ruulbook_SCF_DU10_InitBts_V0.7_t1.xml
+
+##메인 시나리오
+config
+init-stp
+dest-bts 130126
+check-ping 130126
+exit
+init-bts -r 4G -v 24R2 -i 65534
+tgt-bts 130126
+exec-script initbts_AHCH_part1.cli
+exec-script du10_bts130126_userinput.cli
+commit
+apply-bts-cfg-commission
+act-bts-cfg-commission
+
+##메인 시나리오 130112
+config
+init-stp
+dest-bts 130112
+check-ping 130112
+exit
+init-bts -r 4G -v 24R2 -i 65534
+tgt-bts 130112
+#exec-script INITBTS_BASE.SCRIPT.cli
+exec-script initbts_AHCH_part1.cli
+exec-script du10_bts130112_userinput.cli
+commit
+apply-bts-cfg-commission
+act-bts-cfg-commission
+
+##commission 테스트
+config
+init-stp
+dest-bts 130126
+check-ping 130126
+exit
+init-bts -r 4G -v 24R2 -i -65534
+tgt-bts 130126
+dnload-bts-cfg
+commit
+apply-bts-cfg
+
+config
+init-stp
+dest-bts 130126
+check-ping 130126
+exit
+init-bts -r 4G -v 24R2 -i -65534
+tgt-bts 130126
+excel-to-dict-mo ref_bts_parameters_24R2_24R1_FSFM_FSIH_P8.xlsx
+#excel-to-dict-range ref_bts_parameters_24R2_24R1_FSFM_FSIH_P8.xlsx mo_param_dict.json
+
+config-x
+auto-comm
+excel-to-dict-formula ref_bts_parameters_25R1_24R3_FSFM_FSIH.xlsx
+excel-to-dict-mo ref_bts_parameters_25R1_24R3_FSFM_FSIH.xlsx
+excel-to-dict-mo ref_bts_parameters_25R1_24R3_du20.xlsx
+
+config-x
+auto-comm
+excel-to-dict-formula ref_bts_parameters_25R2_25R1_FSFM_FSIH.xlsx
+excel-to-dict-mo ref_bts_parameters_25R2_25R1_FSFM_FSIH.xlsx
+excel-to-dict-mo ref_bts_parameters_25R2_25R1_du20.xlsx

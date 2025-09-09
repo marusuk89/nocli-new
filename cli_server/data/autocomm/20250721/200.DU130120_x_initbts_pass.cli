@@ -1,0 +1,104 @@
+### HEADER ###
+dest-bts 130120
+check-ping 130120
+set-mode bts
+set-mo-version 24R3
+set-rat-type 4G
+set-iot-lncel-id 65534
+set-allow-commit-diff true
+
+### BODY ###
+set-du-type du20
+tgt-bts 130120
+exec-script 24R3_DU20_INITBTS_FILTER_SCRIPT_V0.7.5.cli
+# 진입 단계 종료
+
+btsName NL-TEST3
+# MRBTS 단계 종료
+
+LNBTS 130120
+enbName NL-TEST3
+exit-all
+# LNBTS 단계 종료
+
+# 더미 설정 시작
+EQM 1
+HWTOP 1
+CABLINK 65535
+firstEndpointDN  MRBTS-130120/EQM-1/APEQM-1/FHS-1
+firstEndpointLabel  OPT
+firstEndpointPortId  12
+secondEndpointDN  MRBTS-130120/EQM-1/APEQM-1/RMOD-32767
+secondEndpointLabel  OPT
+secondEndpointPortId  1
+exit-all
+LNBTS 130120
+LNCEL 65535
+lcrId 255
+nbIotLinkedCellId 254
+exit
+LNCEL 65534
+lcrId 254
+nbIotLinkedCellId 255
+exit-all
+#더미 설정 끝
+
+EQM 1
+APEQM 1
+CABINET 1
+SMOD 1
+prodCodePlanned 474767A
+exit-all
+# SMOD 단계 종료
+
+# TNLSVC → IPIF 설정
+TNLSVC 1
+TNL 1
+IPNO 1
+IPIF 1
+IPADDRESSV4 1
+localIpAddr 20.20.20.20
+localIpPrefixLength 29
+exit
+exit
+IPRT 1
+list staticRoutes 1 gateway 172.20.198.217
+list staticRoutes 1 routeIpMtu 1510
+list staticRoutes 1 destIpAddr 0.0.0.0
+exit-all
+# TNLSVC 설정 종료
+
+# TNLSVC → ETHSVC 설정
+TNLSVC 1
+TNL 1
+ETHSVC 1
+ETHIF 1
+VLANIF 1
+vlanId 200
+exit-all
+# ETHSVC 설정 종료
+
+# SYNC-1/CLOCK 구성
+MNL 1
+MNLENT 1
+SYNC 1
+CLOCK 1
+list syncInputList 1 syncInputPrio 1
+list syncInputList 1 syncInputType "TOPP"
+NTP None
+list ntpServerIpAddrOrFqdnList 1 val 4.5.1.99
+list ntpServerIpAddrOrFqdnList 2 val 4.6.1.2
+maxNtpTimeError 200
+ntpAlarmingThreshold 300
+ntpDscp 46
+exit-all
+
+# BBMOD 설정
+EQM 1
+APEQM 1
+CABINET 1
+exit-all
+exit-all
+commit
+apply-bts-cfg-commission
+#act-bts-cfg-commission

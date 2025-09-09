@@ -1,0 +1,79 @@
+### HEADER ###
+exit
+yes
+init-bts -r 4G -v 25R1
+autocomm-run-script 300.DU80000_x_pass.cli
+
+### BODY ###
+set-du-type du20
+tgt-bts 80000
+exec-script initbts_AHCH_part1.cli
+# 진입 단계 종료
+
+btsName NL_TEST3
+# MRBTS 단계 종료
+
+LNBTS 80000
+enbName NL_TEST3
+exit-all
+# LNBTS 단계 종료
+
+EQM 1
+APEQM 1
+SMOD 1
+prod-name ASIL
+exit-all
+# SMOD 단계 종료
+
+# TNLSVC → IPIF 설정
+TNLSVC 1
+TNL 1
+IPNO 1
+IPIF 1
+IPADDRESSV4 1
+localIpAddr 20.20.20.20
+localIpPrefixLength 29
+exit
+IPRT 1
+list staticRoutes 1 gateway 172.20.198.217
+list staticRoutes 1 routeIpMtu 1510
+list staticRoutes 1 destIpAddr 0.0.0.0
+exit-all
+# TNLSVC 설정 종료
+
+# TNLSVC → ETHSVC 설정
+TNLSVC 1
+TNL 1
+ETHSVC 1
+ETHIF 1
+VLANIF 1
+vlanId 200
+exit-all
+# ETHSVC 설정 종료
+
+# SYNC-1/CLOCK 구성
+MNL 1
+MNLENT 1
+SYNC 1
+CLOCK 1
+list syncInputList 1 syncInputPrio 1
+list syncInputList 1 syncInputType "TOPP"
+list syncInputList 2 syncInputPrio 2
+list syncInputList 2 syncInputType "1pps/ToD from external GNSS receiver"
+list syncInputList 3 syncInputPrio 3
+list syncInputList 3 syncInputType "TOPP"
+exit
+GNSSE 1
+gnssLineDelay 519
+exit
+TOPP 1
+masterIpAddr
+exit
+NTP None
+list ntpServerIpAddrList 1 val 4.5.1.99
+list ntpServerIpAddrList 2 val 4.6.1.2
+maxNtpTimeError 200
+ntpAlarmingThreshold 300
+ntpDscp 46
+exit-all
+

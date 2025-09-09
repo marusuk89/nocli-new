@@ -1,0 +1,68 @@
+2025-07-15 10:30:45 | config-x/auto-comm > | update_sw_ver 130126 --file SBTS24R2_FSM3_0000_000161_000000.zip --no-activate --no-override | RESULT: NOK
+2025-07-15 10:35:07 | config-x/auto-comm > | dest_bts 130126 | RESULT: OK
+2025-07-15 10:35:13 | config-x/auto-comm > | update_sw_ver 130126 --file SBTS24R2_FSM3_0000_000161_000000.zip --no-activate --no-override | RESULT: OK
+2025-07-15 10:39:50 | config-x/auto-comm > | update_sw_ver 130126 --file SBTS24R2_FSM3_0000_000161_000000.zip --no-override | RESULT: OK
+2025-07-15 10:42:09 | config-x/auto-comm > | dest_bts 130126 | RESULT: OK
+2025-07-15 10:42:09 | config-x/auto-comm > | update_sw_ver 130126 --file SBTS24R2_FSM3_0000_000161_000000.zip --no-activate --no-override | RESULT: NOK
+2025-07-15 10:43:06 | config-x/auto-comm > | dest_bts 130126 | RESULT: OK
+2025-07-15 10:43:09 | config-x/auto-comm > | update_sw_ver 130126 --file SBTS24R2_FSM3_0000_000161_000000.zip --no-activate --no-override | RESULT: OK
+2025-07-15 10:44:13 | config-x/auto-comm > | dest_bts 130126 | RESULT: OK
+2025-07-15 10:44:16 | config-x/auto-comm > | update_sw_ver 130126 --file SBTS24R2_FSM3_0000_000161_000000.zip | RESULT: OK
+2025-07-15 10:55:05 | config-x/auto-comm > | dest_bts 130126 | RESULT: OK
+2025-07-15 10:55:09 | config-x/auto-comm > | update_sw_ver 130126 --file SBTS24R2_FSM3_0000_000161_000000.zip | RESULT: OK
+2025-07-15 10:57:49 | config-x/auto-comm > | dest_bts 130126 | RESULT: OK
+2025-07-15 10:57:52 | config-x/auto-comm > | update_sw_ver 130126 --file SBTS24R2_FSM3_0000_000161_000000.zip | RESULT: OK
+2025-07-15 11:09:22 | config-x/auto-comm > | dest_bts 130126 | RESULT: OK
+2025-07-15 11:09:25 | config-x/auto-comm > | update_sw_ver 130126 --file SBTS24R2_FSM3_0000_000161_000000.zip | RESULT: OK
+2025-07-15 11:22:07 | config-x/auto-comm > | update_sw_ver 130126 --file SBTS24R2_FSM3_0000_000161_000000.zip | RESULT: OK
+2025-07-15 11:22:44 | config-x/auto-comm > | dest_bts 130126 | RESULT: OK
+2025-07-15 11:22:44 | config-x/auto-comm > | update_sw_ver 130126 --file SBTS24R2_FSM3_0000_000161_000000.zip | RESULT: NOK
+2025-07-15 11:33:48 | config-x/auto-comm > | update_sw_ver 130126 --file SBTS24R2_FSM3_0000_000161_000000.zip | RESULT: NOK
+2025-07-15 11:34:09 | config-x/auto-comm > | dest_bts 130126 | RESULT: OK
+2025-07-15 11:34:09 | config-x/auto-comm > | update_sw_ver 130126 --file SBTS24R2_FSM3_0000_000161_000000.zip | RESULT: NOK
+2025-07-15 11:35:36 | config-x/auto-comm > | dest_bts 130126 | RESULT: OK
+2025-07-15 11:37:28 | config-x/auto-comm > | update_sw_ver 130126 --file SBTS24R2_FSM3_0000_000161_000000.zip | RESULT: OK
+2025-07-15 14:22:24 | config-x/auto-comm > | init_sw_ver CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-15 14:27:08 | config-x/auto-comm > | init_sw_ver CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-15 14:27:50 | config-x/auto-comm > | init_sw_ver CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-15 14:31:39 | config-x > | auto_comm | RESULT: OK
+2025-07-15 14:31:39 | config-x > | auto_comm | RESULT: NOK
+2025-07-15 14:31:39 | config-x > | auto_comm | RESULT: NOK
+2025-07-15 14:31:39 | config-x > | auto_comm | RESULT: NOK
+2025-07-15 14:31:39 | config-x > | auto_comm | RESULT: NOK
+2025-07-15 14:31:39 | config-x > | auto_comm | RESULT: NOK
+2025-07-15 14:31:39 | config-x > | auto_comm | RESULT: NOK
+2025-07-15 14:31:39 | config-x > | auto_comm | RESULT: NOK
+2025-07-15 14:31:39 | config-x > | auto_comm | RESULT: NOK
+2025-07-15 14:31:39 | config-x > | auto_comm | RESULT: NOK
+2025-07-15 14:31:39 | config-x > | auto_comm | RESULT: NOK
+2025-07-15 14:31:42 | config-x > | auto_comm | RESULT: NOK
+2025-07-15 14:44:17 | config-x/auto-comm > | dest_bts 130126 | RESULT: OK
+2025-07-15 14:44:20 | config-x/auto-comm > | init_sw_ver CLI 개통탬플릿_V0.9.0.xlsx | RESULT: OK
+2025-07-15 14:46:56 | config-x/auto-comm > | dest_bts 130126 | RESULT: OK
+2025-07-15 14:46:57 | config-x/auto-comm > | init_sw_ver CLI 개통탬플릿_V0.9.0.xlsx | RESULT: OK
+2025-07-15 14:47:28 | config-x/auto-comm > | set debug true | RESULT: OK
+2025-07-15 14:47:35 | config-x/auto-comm > | init_sw_ver CLI 개통탬플릿_V0.9.0.xlsx | RESULT: OK
+2025-07-15 14:53:00 | config-x/auto-comm > | dest_bts 130126 | RESULT: OK
+2025-07-15 14:53:01 | config-x/auto-comm > | init_sw_ver CLI 개통탬플릿_V0.9.0.xlsx | RESULT: OK
+2025-07-15 14:57:59 | config-x/auto-comm > | init_sw_ver CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-15 15:08:56 | config-x/auto-comm > | dest_bts 130126 | RESULT: OK
+2025-07-15 15:10:09 | config-x/auto-comm > | update_sw_ver 130126 --file SBTS24R2_FSM3_0000_000161_000000.zip | RESULT: OK
+2025-07-15 15:28:37 | config-x/auto-comm > | init_sw_ver CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-15 15:29:13 | config-x/auto-comm > | init_sw_ver CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-15 15:30:28 | config-x/auto-comm > | init_sw_ver CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-15 15:30:53 | config-x/auto-comm > | init_sw_ver CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-15 15:31:31 | config-x/auto-comm > | init_sw_ver CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-15 15:40:53 | config-x/auto-comm > | init_sw_ver CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-15 15:57:24 | config-x/auto-comm > | init_sw_ver CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-15 16:01:16 | config-x/auto-comm > | init_sw_ver CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-15 16:07:44 | config-x/auto-comm > | init_sw_ver CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-15 16:12:29 | config-x/auto-comm > | init_sw_ver CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-15 16:19:19 | config-x/auto-comm > | init_sw_ver CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-15 16:24:52 | config-x/auto-comm > | init_sw_ver CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-15 16:29:47 | config-x/auto-comm > | init_sw_ver CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-15 16:37:39 | config-x/auto-comm > | init_sw_ver CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-15 16:52:08 | config-x/auto-comm > | init_sw_ver CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-15 16:57:37 | config-x/auto-comm > | init_sw_ver CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-15 17:02:20 | config-x/auto-comm > | init_sw_ver CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-15 17:09:28 | config-x/auto-comm > | init_sw_ver CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK

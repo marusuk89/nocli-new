@@ -1,0 +1,126 @@
+btsName NL_DGhwanggeumilD7
+EQM 1
+APEQM 1
+aldScanningInterval "30 sec"
+allowBbPoolRecoveryReset true
+berMajorAlarmThreshold -12
+berMinorAlarmThreshold -13
+sfpOperatorMode false
+CABINET 1
+BBMOD 1
+administrativeState Locked
+fddNrCellConfigTradeoff "not used"
+prodCodePlanned 472797A
+useFullCapacity true
+list srioConnectionList 1 linkId 4
+list srioConnectionList 1 mode RF
+exit
+BBMOD 2
+administrativeState Locked
+fddNrCellConfigTradeoff "not used"
+prodCodePlanned 472797A
+useFullCapacity true
+list srioConnectionList 1 linkId 4
+list srioConnectionList 1 mode RF
+exit
+SMOD 1
+climateControlOcxoTemperatureLearning false
+moduleLocation NL_DGhwanggeumilD7
+portMode RF
+prodCodePlanned 472181A
+EAC_IN 1
+cancelDelay 0
+descr "Low Temperature"
+inUse true
+polarity Normally_open
+portId 3
+severity Critical
+startDelay 0
+exit
+EAC_IN 2
+cancelDelay 0
+descr "Low Temperature"
+inUse true
+polarity Normally_open
+portId 3
+severity Critical
+startDelay 0
+exit
+EAC_IN 3
+cancelDelay 0
+descr "Low Temperature"
+inUse true
+polarity Normally_open
+portId 3
+severity Critical
+startDelay 0
+exit
+EAC_IN 4
+cancelDelay 0
+descr "Low Temperature"
+inUse true
+polarity Normally_open
+portId 3
+severity Critical
+startDelay 0
+exit
+EAC_IN 5
+cancelDelay 0
+descr "Low Temperature"
+inUse true
+polarity Normally_open
+portId 3
+severity Critical
+startDelay 0
+exit
+EAC_IN 6
+cancelDelay 0
+descr "Low Temperature"
+inUse true
+polarity Normally_open
+portId 3
+severity Critical
+startDelay 0
+exit
+EAC_IN 7
+cancelDelay 0
+descr "Low Temperature"
+inUse true
+polarity Normally_open
+portId 3
+severity Critical
+startDelay 0
+exit
+exit
+TRMOD 1
+prodCodePlanned 472311A
+exit
+exit
+exit
+HWTOP 1
+CABLINK 1
+firstEndpointDN MRBTS-141137/EQM-1/APEQM-1/CABINET-1/SMOD-1
+firstEndpointLabel BB_EXT
+firstEndpointPortId 1
+secondEndpointDN MRBTS-141137/EQM-1/APEQM-1/CABINET-1/BBMOD-1
+secondEndpointLabel BB_EXT
+secondEndpointPortId 1
+exit
+CABLINK 2
+firstEndpointDN MRBTS-141137/EQM-1/APEQM-1/CABINET-1/SMOD-1
+firstEndpointLabel BB_EXT
+firstEndpointPortId 2
+secondEndpointDN MRBTS-141137/EQM-1/APEQM-1/CABINET-1/BBMOD-2
+secondEndpointLabel BB_EXT
+secondEndpointPortId 1
+exit
+CABLINK 3
+firstEndpointDN MRBTS-141137/EQM-1/APEQM-1/CABINET-1/SMOD-1
+firstEndpointLabel OPT
+firstEndpointPortId 1
+secondEndpointDN MRBTS-141137/EQM-1/APEQM-1/RMOD-1
+secondEndpointLabel OPT
+secondEndpointPortId 1
+exit
+exit
+exit

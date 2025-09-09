@@ -1,0 +1,525 @@
+2025-07-10 11:27:34 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 11:27:34 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 11:27:35 | config > | init_stp | RESULT: OK
+2025-07-10 11:27:40 | config/init-cell(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-10 11:27:40 | config/init-cell(24R2, 4G) > | set_ru_type FHCA | RESULT: OK
+2025-07-10 11:27:40 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-10 11:27:49 | MRBTS(130126) > | dnload_bts_cfg | RESULT: OK
+2025-07-10 11:27:50 | MRBTS(130126) > | exec_script senario_du10_initcell_autocfg_130126.txt | RESULT: OK
+2025-07-10 11:27:50 | MRBTS(130126) > | set_cfg_tmpl GONGDONG1.cli | RESULT: OK
+2025-07-10 11:35:53 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 11:35:53 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 11:35:53 | config > | init_stp | RESULT: OK
+2025-07-10 11:35:58 | config/init-cell(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-10 11:35:58 | config/init-cell(24R2, 4G) > | set_ru_type FHCA | RESULT: OK
+2025-07-10 11:35:58 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-10 11:36:06 | MRBTS(130126) > | dnload_bts_cfg | RESULT: OK
+2025-07-10 11:36:07 | MRBTS(130126) > | exec_script senario_du10_initcell_autocfg_130126.txt | RESULT: OK
+2025-07-10 11:36:07 | MRBTS(130126) > | set_cfg_tmpl GONGDONG1.cli | RESULT: OK
+2025-07-10 11:37:52 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 11:37:52 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 11:37:52 | config > | init_stp | RESULT: OK
+2025-07-10 11:37:58 | config/init-cell(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-10 11:37:58 | config/init-cell(24R2, 4G) > | set_ru_type FHCA | RESULT: OK
+2025-07-10 11:37:58 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-10 11:38:09 | MRBTS(130126) > | dnload_bts_cfg | RESULT: OK
+2025-07-10 11:38:10 | MRBTS(130126) > | exec_script senario_du10_initcell_autocfg_130126.txt | RESULT: OK
+2025-07-10 11:38:10 | MRBTS(130126) > | set_cfg_tmpl GONGDONG1.cli | RESULT: OK
+2025-07-10 11:41:43 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 11:41:44 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 11:41:44 | config > | init_stp | RESULT: OK
+2025-07-10 11:41:50 | config/init-cell(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-10 11:41:50 | config/init-cell(24R2, 4G) > | set_ru_type FHCA | RESULT: OK
+2025-07-10 11:41:51 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-10 11:41:59 | MRBTS(130126) > | dnload_bts_cfg | RESULT: OK
+2025-07-10 11:42:00 | MRBTS(130126) > | exec_script senario_du10_initcell_autocfg_130126.txt | RESULT: OK
+2025-07-10 11:42:00 | MRBTS(130126) > | set_cfg_tmpl GONGDONG1.cli | RESULT: OK
+2025-07-10 12:11:17 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 12:11:17 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 12:11:18 | config > | init_stp | RESULT: OK
+2025-07-10 12:11:23 | config/init-cell(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-10 12:11:23 | config/init-cell(24R2, 4G) > | set_ru_type FHCA | RESULT: OK
+2025-07-10 12:11:23 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-10 12:11:32 | MRBTS(130126) > | dnload_bts_cfg | RESULT: OK
+2025-07-10 12:11:33 | MRBTS(130126) > | exec_script senario_du10_initcell_autocfg_130126.txt | RESULT: OK
+2025-07-10 12:11:44 | MRBTS(130126) > | set_cfg_tmpl GONGDONG1.cli | RESULT: OK
+2025-07-10 12:12:33 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 12:12:33 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 12:12:34 | config > | init_stp | RESULT: OK
+2025-07-10 12:12:39 | config/init-cell(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-10 12:12:39 | config/init-cell(24R2, 4G) > | set_ru_type FHCA | RESULT: OK
+2025-07-10 12:12:39 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-10 12:12:49 | MRBTS(130126) > | dnload_bts_cfg | RESULT: OK
+2025-07-10 12:12:58 | MRBTS(130126) > | exec_script senario_du10_initcell_autocfg_130126.txt | RESULT: OK
+2025-07-10 12:13:06 | MRBTS(130126) > | set_cfg_tmpl GONGDONG1.cli | RESULT: OK
+2025-07-10 12:16:20 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 12:16:20 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 12:16:20 | config > | init_stp | RESULT: OK
+2025-07-10 12:16:24 | config/init-cell(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-10 12:16:24 | config/init-cell(24R2, 4G) > | set_ru_type FHCA | RESULT: OK
+2025-07-10 12:16:24 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-10 12:16:33 | MRBTS(130126) > | dnload_bts_cfg | RESULT: OK
+2025-07-10 12:16:34 | MRBTS(130126) > | exec_script senario_du10_initcell_autocfg_130126.txt | RESULT: OK
+2025-07-10 12:16:34 | MRBTS(130126) > | set_cfg_tmpl GONGDONG1.cli | RESULT: OK
+2025-07-10 12:23:06 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 12:23:06 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 12:23:07 | config > | init_stp | RESULT: OK
+2025-07-10 12:23:13 | config/init-cell(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-10 12:23:13 | config/init-cell(24R2, 4G) > | set_ru_type FHCA | RESULT: OK
+2025-07-10 12:23:13 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-10 12:23:22 | MRBTS(130126) > | dnload_bts_cfg | RESULT: OK
+2025-07-10 12:23:23 | MRBTS(130126) > | exec_script senario_du10_initcell_autocfg_130126.txt | RESULT: OK
+2025-07-10 12:23:25 | MRBTS(130126) > | set_cfg_tmpl GONGDONG1.cli | RESULT: OK
+2025-07-10 12:26:40 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 12:26:40 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 12:26:40 | config > | init_stp | RESULT: OK
+2025-07-10 12:26:45 | config/init-cell(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-10 12:26:45 | config/init-cell(24R2, 4G) > | set_ru_type FHCA | RESULT: OK
+2025-07-10 12:26:45 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-10 12:26:54 | MRBTS(130126) > | dnload_bts_cfg | RESULT: OK
+2025-07-10 12:26:55 | MRBTS(130126) > | exec_script senario_du10_initcell_autocfg_130126.txt | RESULT: OK
+2025-07-10 12:26:55 | MRBTS(130126) > | set_cfg_tmpl GONGDONG1.cli | RESULT: OK
+2025-07-10 12:28:46 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 12:28:46 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 12:28:46 | config > | init_stp | RESULT: OK
+2025-07-10 12:28:50 | config/init-cell(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-10 12:28:50 | config/init-cell(24R2, 4G) > | set_ru_type FHCA | RESULT: OK
+2025-07-10 12:28:50 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-10 12:28:58 | MRBTS(130126) > | dnload_bts_cfg | RESULT: OK
+2025-07-10 12:29:00 | MRBTS(130126) > | exec_script senario_du10_initcell_autocfg_130126.txt | RESULT: OK
+2025-07-10 12:29:00 | MRBTS(130126) > | set_cfg_tmpl GONGDONG1.cli | RESULT: OK
+2025-07-10 12:39:22 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 12:39:22 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 12:39:22 | config > | init_stp | RESULT: OK
+2025-07-10 12:39:28 | config/init-cell(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-10 12:39:28 | config/init-cell(24R2, 4G) > | set_ru_type FHCA | RESULT: OK
+2025-07-10 12:39:28 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-10 12:39:36 | MRBTS(130126) > | dnload_bts_cfg | RESULT: OK
+2025-07-10 12:39:38 | MRBTS(130126) > | exec_script senario_du10_initcell_autocfg_130126.txt | RESULT: OK
+2025-07-10 12:39:38 | MRBTS(130126) > | set_cfg_tmpl GONGDONG1.cli | RESULT: OK
+2025-07-10 12:46:16 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 12:46:16 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 12:46:25 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 12:46:25 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 12:46:25 | config > | init_stp | RESULT: OK
+2025-07-10 12:46:29 | config/init-cell(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-10 12:46:29 | config/init-cell(24R2, 4G) > | set_ru_type FHCA | RESULT: OK
+2025-07-10 12:46:29 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-10 12:46:37 | MRBTS(130126) > | dnload_bts_cfg | RESULT: OK
+2025-07-10 12:46:38 | MRBTS(130126) > | exec_script senario_du10_initcell_autocfg_130126.txt | RESULT: OK
+2025-07-10 12:46:38 | MRBTS(130126) > | set_cfg_tmpl GONGDONG1.cli | RESULT: OK
+2025-07-10 12:51:36 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 12:51:36 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 12:51:36 | config > | init_stp | RESULT: OK
+2025-07-10 12:51:42 | config/init-cell(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-10 12:51:42 | config/init-cell(24R2, 4G) > | set_ru_type FHCA | RESULT: OK
+2025-07-10 12:51:42 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-10 12:51:51 | MRBTS(130126) > | dnload_bts_cfg | RESULT: OK
+2025-07-10 12:51:52 | MRBTS(130126) > | exec_script senario_du10_initcell_autocfg_130126.txt | RESULT: OK
+2025-07-10 12:51:52 | MRBTS(130126) > | set_cfg_tmpl GONGDONG1.cli | RESULT: OK
+2025-07-10 13:01:01 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 13:01:01 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 13:01:01 | config > | init_stp | RESULT: OK
+2025-07-10 13:01:06 | config/init-cell(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-10 13:01:06 | config/init-cell(24R2, 4G) > | set_ru_type FHCA | RESULT: OK
+2025-07-10 13:01:06 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-10 13:01:14 | MRBTS(130126) > | dnload_bts_cfg | RESULT: OK
+2025-07-10 13:01:15 | MRBTS(130126) > | exec_script senario_du10_initcell_autocfg_130126.txt | RESULT: OK
+2025-07-10 13:01:15 | MRBTS(130126) > | set_cfg_tmpl GONGDONG1.cli | RESULT: OK
+2025-07-10 13:02:41 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 13:02:41 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 13:02:41 | config > | init_stp | RESULT: OK
+2025-07-10 13:02:45 | config/init-cell(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-10 13:02:45 | config/init-cell(24R2, 4G) > | set_ru_type FHCA | RESULT: OK
+2025-07-10 13:02:45 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-10 13:02:53 | MRBTS(130126) > | dnload_bts_cfg | RESULT: OK
+2025-07-10 13:02:54 | MRBTS(130126) > | exec_script senario_du10_initcell_autocfg_130126.txt | RESULT: OK
+2025-07-10 13:02:55 | MRBTS(130126) > | set_cfg_tmpl GONGDONG1.cli | RESULT: OK
+2025-07-10 13:04:49 | MRBTS(130126) > lnbts(130126) > lncel(65534) > irfim(1) > | show_cfg | RESULT: OK
+2025-07-10 13:05:25 | MRBTS(130126) > lnbts(130126) > lncel(65535) > irfim(1) > | show_cfg | RESULT: OK
+2025-07-10 13:06:12 | MRBTS(130126) > lnbts(130126) > lncel(65535) > | show_cfg | RESULT: OK
+2025-07-10 13:07:31 | MRBTS(130126) > lnbts(130126) > lncel(65535) > | commit_all | RESULT: OK
+2025-07-10 13:13:48 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 13:13:48 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 13:13:49 | config > | init_stp | RESULT: OK
+2025-07-10 13:13:54 | config/init-cell(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-10 13:13:54 | config/init-cell(24R2, 4G) > | set_ru_type FHCA | RESULT: OK
+2025-07-10 13:13:54 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-10 13:14:03 | MRBTS(130126) > | dnload_bts_cfg | RESULT: OK
+2025-07-10 13:14:04 | MRBTS(130126) > | exec_script senario_du10_initcell_autocfg_130126.txt | RESULT: OK
+2025-07-10 13:14:05 | MRBTS(130126) > | set_cfg_tmpl GONGDONG1.cli | RESULT: OK
+2025-07-10 13:26:04 | config-x/auto-comm > | list_tmpl 20250703 | RESULT: NOK
+2025-07-10 13:26:04 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 13:30:32 | config-x/auto-comm > | list_tmpl 20250703 | RESULT: NOK
+2025-07-10 13:30:33 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 13:30:33 | config-x/auto-comm > | list_script 20250704 | RESULT: NOK
+2025-07-10 13:31:44 | config-x/auto-comm > | list_tmpl 20250703 | RESULT: NOK
+2025-07-10 13:31:44 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 13:31:44 | config-x/auto-comm > | list_script 20250704 | RESULT: NOK
+2025-07-10 13:33:29 | config-x/auto-comm > | list_tmpl 20250703 | RESULT: NOK
+2025-07-10 13:33:29 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 13:33:29 | config-x/auto-comm > | list_script 20250704 | RESULT: NOK
+2025-07-10 13:33:52 | config-x/auto-comm > | list_tmpl 20250703 | RESULT: NOK
+2025-07-10 13:33:53 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 13:33:53 | config-x/auto-comm > | list_script 20250704 | RESULT: NOK
+2025-07-10 13:40:00 | config-x/auto-comm > | list_tmpl 20250703 | RESULT: NOK
+2025-07-10 13:40:01 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 13:40:01 | config-x/auto-comm > | list_script 20250704 | RESULT: NOK
+2025-07-10 13:40:25 | MRBTS(130126) > | autocomm_run_script 200.DU130126_x_initbts_pass.cli | RESULT: OK
+2025-07-10 13:45:32 | config-x/auto-comm > | list_tmpl 20250703 | RESULT: NOK
+2025-07-10 13:45:32 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 13:45:32 | config-x/auto-comm > | list_script 20250704 | RESULT: NOK
+2025-07-10 13:45:52 | MRBTS(130126) > | autocomm_run_script 200.DU130126_x_initbts_pass.cli | RESULT: OK
+2025-07-10 13:46:27 | config-x/auto-comm > | list_tmpl 20250703 | RESULT: NOK
+2025-07-10 13:46:27 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 13:46:27 | config-x/auto-comm > | list_script 20250704 | RESULT: NOK
+2025-07-10 13:46:50 | MRBTS(130126) > | autocomm_run_script 200.DU130126_x_initbts_pass.cli | RESULT: OK
+2025-07-10 14:04:17 | config-x/auto-comm > | list_tmpl 20250703 | RESULT: NOK
+2025-07-10 14:04:18 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 14:04:18 | config-x/auto-comm > | list_script 20250704 | RESULT: NOK
+2025-07-10 14:06:01 | config-x/auto-comm > | list_tmpl 20250703 | RESULT: NOK
+2025-07-10 14:06:01 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 14:06:01 | config-x/auto-comm > | list_script 20250704 | RESULT: NOK
+2025-07-10 14:06:38 | config-x/auto-comm > | list_tmpl 20250703 | RESULT: NOK
+2025-07-10 14:06:38 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 14:06:38 | config-x/auto-comm > | list_script 20250704 | RESULT: NOK
+2025-07-10 14:07:36 | config-x/auto-comm > | list_tmpl 20250703 | RESULT: NOK
+2025-07-10 14:07:37 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 14:07:37 | config-x/auto-comm > | list_script 20250704 | RESULT: NOK
+2025-07-10 14:08:01 | MRBTS(130126) > | autocomm_run_script 200.DU130126_x_initbts_pass.cli | RESULT: OK
+2025-07-10 14:15:08 | config-x/auto-comm > | list_tmpl 20250703 | RESULT: NOK
+2025-07-10 14:15:08 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 14:15:08 | config-x/auto-comm > | list_script 20250704 | RESULT: NOK
+2025-07-10 14:15:09 | config-x/auto-comm > | autocomm_run_script 200.DU130126_x_initbts_pass.cli | RESULT: OK
+2025-07-10 14:16:10 | config-x/auto-comm > | list_tmpl 20250703 | RESULT: NOK
+2025-07-10 14:16:10 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 14:16:10 | config-x/auto-comm > | list_script 20250704 | RESULT: NOK
+2025-07-10 14:16:25 | MRBTS(130126) > | autocomm_run_script 200.DU130126_x_initbts_pass.cli | RESULT: OK
+2025-07-10 14:16:41 | config-x/auto-comm > | list_tmpl 20250703 | RESULT: NOK
+2025-07-10 14:16:41 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 14:16:41 | config-x/auto-comm > | list_script 20250704 | RESULT: NOK
+2025-07-10 14:17:38 | config-x/auto-comm > | list_tmpl 20250703 | RESULT: NOK
+2025-07-10 14:17:39 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 14:17:39 | config-x/auto-comm > | list_script 20250704 | RESULT: NOK
+2025-07-10 14:18:02 | MRBTS(130126) > | autocomm_run_script 200.DU130126_x_initbts_pass.cli | RESULT: OK
+2025-07-10 14:19:37 | config-x/auto-comm > | list_tmpl 20250703 | RESULT: NOK
+2025-07-10 14:19:37 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 14:19:37 | config-x/auto-comm > | list_script 20250704 | RESULT: NOK
+2025-07-10 14:44:16 | config-x/auto-comm > | list_tmpl 20250703 | RESULT: NOK
+2025-07-10 14:44:16 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 14:55:38 | config-x/auto-comm > | list_tmpl 20250703 | RESULT: NOK
+2025-07-10 14:55:38 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 14:57:02 | config-x/auto-comm > | list_tmpl 20250703 | RESULT: NOK
+2025-07-10 14:57:02 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 14:57:28 | config-x/auto-comm > | list_tmpl 20250703 | RESULT: NOK
+2025-07-10 14:57:28 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 15:05:26 | config-x/auto-comm > | list_tmpl 20250703 | RESULT: NOK
+2025-07-10 15:05:26 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 15:06:04 | config-x/auto-comm > | list_tmpl 20250703 | RESULT: NOK
+2025-07-10 15:06:05 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 15:32:05 | config-x/auto-comm > | list_tmpl 20250703 | RESULT: NOK
+2025-07-10 15:32:05 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 15:41:05 | config-x/auto-comm > | list_tmpl 20250703 | RESULT: NOK
+2025-07-10 15:41:05 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 15:42:06 | config-x/auto-comm > | list_tmpl 20250703 | RESULT: NOK
+2025-07-10 15:42:06 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 15:42:07 | config-x/auto-comm > | list_script 20250704 | RESULT: NOK
+2025-07-10 15:42:25 | config-x/auto-comm > | list_tmpl 202507010 | RESULT: NOK
+2025-07-10 15:42:25 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 15:42:45 | config-x/auto-comm > | list_tmpl 20250710 | RESULT: NOK
+2025-07-10 15:42:46 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 15:42:47 | config-x/auto-comm > | list_script 20250710 | RESULT: NOK
+2025-07-10 15:45:20 | config-x/auto-comm > | list_tmpl 20250710 | RESULT: NOK
+2025-07-10 15:45:20 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 15:45:21 | config-x/auto-comm > | list_script 20250710 | RESULT: NOK
+2025-07-10 15:49:12 | config-x/auto-comm > | list_tmpl 20250710 | RESULT: NOK
+2025-07-10 15:49:13 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 15:49:14 | config-x/auto-comm > | list_script 20250710 | RESULT: NOK
+2025-07-10 15:49:23 | config-x/auto-comm > | list_tmpl 20250710 | RESULT: NOK
+2025-07-10 15:49:23 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 15:49:24 | config-x/auto-comm > | list_script 20250710 | RESULT: NOK
+2025-07-10 15:50:28 | config-x/auto-comm > | list_tmpl 20250710 | RESULT: NOK
+2025-07-10 15:50:28 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 15:50:29 | config-x/auto-comm > | list_script 20250710 | RESULT: NOK
+2025-07-10 15:56:43 | config-x/auto-comm > | list_tmpl 20250710 | RESULT: NOK
+2025-07-10 15:56:43 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 15:57:20 | config-x/auto-comm > | list_tmpl 20250710 | RESULT: NOK
+2025-07-10 15:57:20 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 15:59:09 | config-x/auto-comm > | list_tmpl 20250710 | RESULT: NOK
+2025-07-10 15:59:09 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 15:59:52 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 16:00:26 | config-x/auto-comm > | list_tmpl 20250710 | RESULT: NOK
+2025-07-10 16:00:26 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 16:00:28 | config-x/auto-comm > | list_script 20250710 | RESULT: NOK
+2025-07-10 16:00:49 | MRBTS(130126) > | autocomm_run_script 200.DU130126_x_initbts_pass.cli | RESULT: OK
+2025-07-10 16:02:08 | config-x/auto-comm > | list_tmpl 20250710 | RESULT: NOK
+2025-07-10 16:02:08 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 16:02:08 | config-x/auto-comm > | list_script 20250710 | RESULT: NOK
+2025-07-10 16:04:04 | config-x/auto-comm > | list_tmpl 20250710 | RESULT: NOK
+2025-07-10 16:04:05 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 16:04:05 | config-x/auto-comm > | list_script 20250710 | RESULT: NOK
+2025-07-10 16:04:29 | MRBTS(130126) > | autocomm_run_script 200.DU130126_x_initbts_pass.cli | RESULT: OK
+2025-07-10 16:06:34 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 16:06:34 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 16:06:35 | config > | init_stp | RESULT: OK
+2025-07-10 16:06:35 | config/init-bts(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-10 16:06:35 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-10 16:06:36 | MRBTS(130126) > | exec_script DU10_INITBTS_FILTER_SCRIPT_V0.7.5.cli | RESULT: OK
+2025-07-10 16:06:36 | MRBTS(130126) > | exec_script du10_bts130126_userinput.cli | RESULT: OK
+2025-07-10 16:06:36 | MRBTS(130126) > | commit_all -t 1 | RESULT: OK
+2025-07-10 16:06:58 | MRBTS(130126) > | apply_bts_cfg_commission | RESULT: OK
+2025-07-10 16:07:09 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 16:07:09 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 16:07:10 | config > | init_stp | RESULT: OK
+2025-07-10 16:07:18 | config/init-cell(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-10 16:07:18 | config/init-cell(24R2, 4G) > | set_ru_type FHCA | RESULT: OK
+2025-07-10 16:07:18 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-10 16:07:27 | MRBTS(130126) > | dnload_bts_cfg | RESULT: OK
+2025-07-10 16:07:28 | MRBTS(130126) > | exec_script senario_du10_initcell_autocfg_130126.txt | RESULT: OK
+2025-07-10 16:07:28 | MRBTS(130126) > | set_cfg_tmpl GONGDONG1.cli | RESULT: OK
+2025-07-10 16:07:28 | MRBTS(130126) > | commit | RESULT: OK
+2025-07-10 16:07:42 | MRBTS(130126) > | apply_bts_cfg | RESULT: OK
+2025-07-10 16:23:35 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 16:23:35 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 16:23:35 | config > | init_stp | RESULT: OK
+2025-07-10 16:23:42 | config/init-cell(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-10 16:23:42 | config/init-cell(24R2, 4G) > | set_ru_type FHCA | RESULT: OK
+2025-07-10 16:23:42 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-10 16:23:53 | MRBTS(130126) > | dnload_bts_cfg | RESULT: OK
+2025-07-10 16:23:54 | MRBTS(130126) > | exec_script senario_du10_initcell_autocfg_130126.txt | RESULT: OK
+2025-07-10 16:23:54 | MRBTS(130126) > | set_cfg_tmpl GONGDONG1.cli | RESULT: OK
+2025-07-10 16:23:54 | MRBTS(130126) > | commit | RESULT: OK
+2025-07-10 16:25:12 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 16:25:12 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 16:25:12 | config > | init_stp | RESULT: OK
+2025-07-10 16:25:18 | config/init-cell(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-10 16:25:19 | config/init-cell(24R2, 4G) > | set_ru_type FHCA | RESULT: OK
+2025-07-10 16:25:19 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-10 16:25:27 | MRBTS(130126) > | dnload_bts_cfg | RESULT: OK
+2025-07-10 16:25:28 | MRBTS(130126) > | exec_script senario_du10_initcell_autocfg_130126.txt | RESULT: OK
+2025-07-10 16:25:28 | MRBTS(130126) > | set_cfg_tmpl GONGDONG1.cli | RESULT: OK
+2025-07-10 16:25:28 | MRBTS(130126) > | commit | RESULT: OK
+2025-07-10 16:25:42 | MRBTS(130126) > | apply_bts_cfg | RESULT: OK
+2025-07-10 16:29:24 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 16:29:24 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 16:29:25 | config > | init_stp | RESULT: OK
+2025-07-10 16:29:31 | config/init-cell(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-10 16:29:31 | config/init-cell(24R2, 4G) > | set_ru_type FHCA | RESULT: OK
+2025-07-10 16:29:31 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-10 16:29:40 | MRBTS(130126) > | dnload_bts_cfg | RESULT: OK
+2025-07-10 16:29:41 | MRBTS(130126) > | exec_script senario_du10_initcell_autocfg_130126.txt | RESULT: OK
+2025-07-10 16:29:41 | MRBTS(130126) > | set_cfg_tmpl GONGDONG1.cli | RESULT: OK
+2025-07-10 16:29:41 | MRBTS(130126) > | commit | RESULT: OK
+2025-07-10 16:36:58 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 16:36:58 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 16:36:59 | config > | init_stp | RESULT: OK
+2025-07-10 16:37:07 | config/init-cell(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-10 16:37:08 | config/init-cell(24R2, 4G) > | set_ru_type FHCA | RESULT: OK
+2025-07-10 16:37:08 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-10 16:37:16 | MRBTS(130126) > | dnload_bts_cfg | RESULT: OK
+2025-07-10 16:37:17 | MRBTS(130126) > | exec_script senario_du10_initcell_autocfg_130126.txt | RESULT: OK
+2025-07-10 16:37:17 | MRBTS(130126) > | set_cfg_tmpl GONGDONG1.cli | RESULT: OK
+2025-07-10 16:37:17 | MRBTS(130126) > | commit | RESULT: OK
+2025-07-10 16:37:31 | MRBTS(130126) > | apply_bts_cfg | RESULT: OK
+2025-07-10 16:39:09 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 16:39:09 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 16:39:09 | config > | init_stp | RESULT: OK
+2025-07-10 16:39:15 | config/init-cell(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-10 16:39:15 | config/init-cell(24R2, 4G) > | set_ru_type FHCA | RESULT: OK
+2025-07-10 16:39:15 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-10 16:39:27 | MRBTS(130126) > | dnload_bts_cfg | RESULT: OK
+2025-07-10 16:39:28 | MRBTS(130126) > | exec_script senario_du10_initcell_autocfg_130126.txt | RESULT: OK
+2025-07-10 16:39:28 | MRBTS(130126) > | set_cfg_tmpl GONGDONG1.cli | RESULT: OK
+2025-07-10 16:39:28 | MRBTS(130126) > | commit | RESULT: OK
+2025-07-10 16:39:42 | MRBTS(130126) > | apply_bts_cfg | RESULT: OK
+2025-07-10 16:39:58 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 16:39:58 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 16:39:58 | config > | init_stp | RESULT: OK
+2025-07-10 16:40:04 | config/init-cell(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-10 16:40:04 | config/init-cell(24R2, 4G) > | set_ru_type FHCA | RESULT: OK
+2025-07-10 16:40:04 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-10 16:40:13 | MRBTS(130126) > | dnload_bts_cfg | RESULT: OK
+2025-07-10 16:40:14 | MRBTS(130126) > | exec_script senario_du10_initcell_autocfg_130126.txt | RESULT: OK
+2025-07-10 16:40:14 | MRBTS(130126) > | set_cfg_tmpl GONGDONG1.cli | RESULT: OK
+2025-07-10 16:40:14 | MRBTS(130126) > | commit | RESULT: OK
+2025-07-10 16:40:29 | MRBTS(130126) > | apply_bts_cfg | RESULT: OK
+2025-07-10 16:44:00 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 16:44:00 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 16:44:00 | config > | init_stp | RESULT: OK
+2025-07-10 16:44:06 | config/init-cell(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-10 16:44:06 | config/init-cell(24R2, 4G) > | set_ru_type FHCA | RESULT: OK
+2025-07-10 16:44:06 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-10 16:44:15 | MRBTS(130126) > | dnload_bts_cfg | RESULT: OK
+2025-07-10 16:44:15 | MRBTS(130126) > | exec_script senario_du10_initcell_autocfg_130126.txt | RESULT: OK
+2025-07-10 16:44:16 | MRBTS(130126) > | set_cfg_tmpl GONGDONG1.cli | RESULT: OK
+2025-07-10 16:44:23 | MRBTS(130126) > | commit | RESULT: OK
+2025-07-10 16:47:32 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 16:47:32 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 16:47:32 | config > | init_stp | RESULT: OK
+2025-07-10 16:47:42 | config/init-cell(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-10 16:47:42 | config/init-cell(24R2, 4G) > | set_ru_type FHCA | RESULT: OK
+2025-07-10 16:47:42 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-10 16:47:50 | MRBTS(130126) > | dnload_bts_cfg | RESULT: OK
+2025-07-10 16:47:51 | MRBTS(130126) > | exec_script senario_du10_initcell_autocfg_130126.txt | RESULT: OK
+2025-07-10 16:47:51 | MRBTS(130126) > | commit | RESULT: OK
+2025-07-10 16:50:19 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 16:50:19 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 16:50:19 | config > | init_stp | RESULT: OK
+2025-07-10 16:50:26 | config/init-cell(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-10 16:50:26 | config/init-cell(24R2, 4G) > | set_ru_type FHCA | RESULT: OK
+2025-07-10 16:50:26 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-10 16:50:35 | MRBTS(130126) > | dnload_bts_cfg | RESULT: OK
+2025-07-10 16:50:35 | MRBTS(130126) > | exec_script senario_du10_initcell_autocfg_130126.txt | RESULT: OK
+2025-07-10 16:50:41 | MRBTS(130126) > | commit | RESULT: OK
+2025-07-10 16:50:53 | MRBTS(130126) > | set_cfg_tmpl GONGDONG1.cli | RESULT: OK
+2025-07-10 16:53:54 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 16:53:54 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 16:53:54 | config > | init_stp | RESULT: OK
+2025-07-10 16:54:06 | config/init-cell(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-10 16:54:06 | config/init-cell(24R2, 4G) > | set_ru_type FHCA | RESULT: OK
+2025-07-10 16:54:06 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-10 16:54:15 | MRBTS(130126) > | dnload_bts_cfg | RESULT: OK
+2025-07-10 16:54:16 | MRBTS(130126) > | exec_script senario_du10_initcell_autocfg_130126.txt | RESULT: OK
+2025-07-10 16:54:16 | MRBTS(130126) > | set_cfg_tmpl GONGDONG1.cli | RESULT: OK
+2025-07-10 16:58:04 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 16:58:04 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 16:58:04 | config > | init_stp | RESULT: OK
+2025-07-10 16:58:15 | config/init-cell(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-10 16:58:15 | config/init-cell(24R2, 4G) > | set_ru_type FHCA | RESULT: OK
+2025-07-10 16:58:15 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-10 16:58:23 | MRBTS(130126) > | dnload_bts_cfg | RESULT: OK
+2025-07-10 16:58:24 | MRBTS(130126) > | exec_script senario_du10_initcell_autocfg_130126.txt | RESULT: OK
+2025-07-10 16:58:24 | MRBTS(130126) > | set_cfg_tmpl GONGDONG1.cli | RESULT: OK
+2025-07-10 16:58:24 | MRBTS(130126) > | commit | RESULT: OK
+2025-07-10 16:59:21 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 16:59:21 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 16:59:22 | config > | init_stp | RESULT: OK
+2025-07-10 16:59:32 | config/init-cell(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-10 16:59:32 | config/init-cell(24R2, 4G) > | set_ru_type FHCA | RESULT: OK
+2025-07-10 16:59:32 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-10 16:59:40 | MRBTS(130126) > | dnload_bts_cfg | RESULT: OK
+2025-07-10 16:59:42 | MRBTS(130126) > | exec_script senario_du10_initcell_autocfg_130126.txt | RESULT: OK
+2025-07-10 16:59:42 | MRBTS(130126) > | set_cfg_tmpl GONGDONG1.cli | RESULT: OK
+2025-07-10 16:59:42 | MRBTS(130126) > | commit | RESULT: OK
+2025-07-10 17:00:09 | MRBTS(130126) > | apply_bts_cfg | RESULT: OK
+2025-07-10 17:00:42 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 17:00:42 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 17:00:42 | config > | init_stp | RESULT: OK
+2025-07-10 17:00:49 | config/init-cell(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-10 17:00:49 | config/init-cell(24R2, 4G) > | set_ru_type FHCA | RESULT: OK
+2025-07-10 17:00:49 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-10 17:01:01 | MRBTS(130126) > | dnload_bts_cfg | RESULT: OK
+2025-07-10 17:01:03 | MRBTS(130126) > | exec_script senario_du10_initcell_autocfg_130126.txt | RESULT: OK
+2025-07-10 17:01:03 | MRBTS(130126) > | commit | RESULT: OK
+2025-07-10 17:01:18 | MRBTS(130126) > | apply_bts_cfg | RESULT: OK
+2025-07-10 17:02:23 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 17:02:23 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 17:02:24 | config > | init_stp | RESULT: OK
+2025-07-10 17:02:36 | config/init-cell(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-10 17:02:36 | config/init-cell(24R2, 4G) > | set_ru_type FHCA | RESULT: OK
+2025-07-10 17:02:36 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-10 17:02:47 | MRBTS(130126) > | dnload_bts_cfg | RESULT: OK
+2025-07-10 17:02:48 | MRBTS(130126) > | exec_script senario_du10_initcell_autocfg_130126.txt | RESULT: OK
+2025-07-10 17:02:49 | MRBTS(130126) > | commit | RESULT: OK
+2025-07-10 17:06:03 | MRBTS(130126) > | apply_bts_cfg | RESULT: OK
+2025-07-10 17:12:57 | MRBTS(130126) > | apply_bts_cfg | RESULT: OK
+2025-07-10 17:15:59 | MRBTS(130126) > | apply_bts_cfg | RESULT: OK
+2025-07-10 17:16:22 | MRBTS(130126) > | apply_bts_cfg | RESULT: OK
+2025-07-10 17:17:18 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 17:17:18 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 17:17:18 | config > | init_stp | RESULT: OK
+2025-07-10 17:17:18 | config/init-bts(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-10 17:17:18 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-10 17:17:19 | MRBTS(130126) > | exec_script DU10_INITBTS_FILTER_SCRIPT_V0.7.5.cli | RESULT: OK
+2025-07-10 17:17:19 | MRBTS(130126) > | exec_script du10_bts130126_userinput.cli | RESULT: OK
+2025-07-10 17:17:20 | MRBTS(130126) > | commit_all -t 1 | RESULT: OK
+2025-07-10 17:17:42 | MRBTS(130126) > | apply_bts_cfg_commission | RESULT: OK
+2025-07-10 17:17:54 | config > | init_bts -r 4G -v 24R2 -i 65534 | RESULT: OK
+2025-07-10 17:17:55 | config/init-cell(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-10 17:17:55 | config/init-cell(24R2, 4G) > | set_ru_type FHCA | RESULT: OK
+2025-07-10 17:17:55 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-10 17:18:03 | MRBTS(130126) > | dnload_bts_cfg | RESULT: OK
+2025-07-10 17:18:05 | MRBTS(130126) > | exec_script senario_du10_initcell_autocfg_130126.txt | RESULT: OK
+2025-07-10 17:18:05 | MRBTS(130126) > | commit | RESULT: OK
+2025-07-10 17:18:19 | MRBTS(130126) > | apply_bts_cfg | RESULT: OK
+2025-07-10 17:21:14 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 17:21:14 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 17:21:14 | config > | init_stp | RESULT: OK
+2025-07-10 17:21:20 | config/init-cell(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-10 17:21:20 | config/init-cell(24R2, 4G) > | set_ru_type FHCA | RESULT: OK
+2025-07-10 17:21:20 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-10 17:21:29 | MRBTS(130126) > | dnload_bts_cfg | RESULT: OK
+2025-07-10 17:21:29 | MRBTS(130126) > | exec_script senario_du10_initcell_autocfg_130126.txt | RESULT: OK
+2025-07-10 17:21:30 | MRBTS(130126) > | commit | RESULT: OK
+2025-07-10 17:21:44 | MRBTS(130126) > | apply_bts_cfg | RESULT: OK
+2025-07-10 17:27:50 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 17:27:50 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 17:27:50 | config > | init_stp | RESULT: OK
+2025-07-10 17:28:06 | config/init-cell(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-10 17:28:06 | config/init-cell(24R2, 4G) > | set_ru_type FHCA | RESULT: OK
+2025-07-10 17:28:06 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-10 17:28:14 | MRBTS(130126) > | dnload_bts_cfg | RESULT: OK
+2025-07-10 17:28:15 | MRBTS(130126) > | exec_script senario_du10_initcell_autocfg_130126.txt | RESULT: OK
+2025-07-10 17:28:15 | MRBTS(130126) > | set_cfg_tmpl GONGDONG1.cli | RESULT: OK
+2025-07-10 17:28:15 | MRBTS(130126) > | commit | RESULT: OK
+2025-07-10 17:29:01 | MRBTS(130126) > | apply_bts_cfg | RESULT: OK
+2025-07-10 17:29:36 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 17:29:36 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 17:29:36 | config > | init_stp | RESULT: OK
+2025-07-10 17:29:51 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 17:29:51 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 17:29:51 | config > | init_stp | RESULT: OK
+2025-07-10 17:29:58 | config/init-cell(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-10 17:29:58 | config/init-cell(24R2, 4G) > | set_ru_type FHCA | RESULT: OK
+2025-07-10 17:29:58 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-10 17:30:06 | MRBTS(130126) > | dnload_bts_cfg | RESULT: OK
+2025-07-10 17:30:07 | MRBTS(130126) > | exec_script senario_du10_initcell_autocfg_130126.txt | RESULT: OK
+2025-07-10 17:30:07 | MRBTS(130126) > | set_cfg_tmpl GONGDONG1.cli | RESULT: OK
+2025-07-10 17:30:07 | MRBTS(130126) > | commit | RESULT: OK
+2025-07-10 17:30:21 | MRBTS(130126) > | apply_bts_cfg | RESULT: OK
+2025-07-10 17:31:25 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 17:31:25 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 17:31:25 | config > | init_stp | RESULT: OK
+2025-07-10 17:31:31 | config/init-cell(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-10 17:31:31 | config/init-cell(24R2, 4G) > | set_ru_type FHCA | RESULT: OK
+2025-07-10 17:31:31 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-10 17:31:40 | MRBTS(130126) > | dnload_bts_cfg | RESULT: OK
+2025-07-10 17:31:41 | MRBTS(130126) > | exec_script senario_du10_initcell_autocfg_130126.txt | RESULT: OK
+2025-07-10 17:31:41 | MRBTS(130126) > | set_cfg_tmpl GONGDONG1.cli | RESULT: OK
+2025-07-10 17:31:41 | MRBTS(130126) > | commit | RESULT: OK
+2025-07-10 17:31:55 | MRBTS(130126) > | apply_bts_cfg | RESULT: OK
+2025-07-10 17:33:47 | config/init-stp > | dest_bts 130120 | RESULT: OK
+2025-07-10 17:33:48 | config/init-stp > | check_ping 130120 | RESULT: OK
+2025-07-10 17:33:48 | config > | init_stp | RESULT: OK
+2025-07-10 17:33:48 | config/init-bts(24R2, 4G) > | set_du_type du20 | RESULT: OK
+2025-07-10 17:33:48 | MRBTS(130120) > | tgt_bts 130120 | RESULT: OK
+2025-07-10 17:33:50 | MRBTS(130120) > | exec_script DU20_INITBTS_FILTER_SCRIPT_V0.7.5.cli | RESULT: OK
+2025-07-10 17:33:50 | MRBTS(130120) > | exec_script du20_bts130120_userinput.cli | RESULT: OK
+2025-07-10 17:33:50 | MRBTS(130120) > | commit_all -t 1 | RESULT: OK
+2025-07-10 17:34:18 | MRBTS(130120) > | apply_bts_cfg_commission | RESULT: OK
+2025-07-10 17:34:23 | config > | init_bts -r 4G -v 24R2 | RESULT: OK
+2025-07-10 17:34:23 | config/init-cell(24R2, 4G) > | set_du_type du20 | RESULT: OK
+2025-07-10 17:34:23 | config/init-cell(24R2, 4G) > | set_ru_type FRHB | RESULT: OK
+2025-07-10 17:34:23 | MRBTS(130120) > | tgt_bts 130120 | RESULT: OK
+2025-07-10 17:34:33 | MRBTS(130120) > | dnload_bts_cfg | RESULT: OK
+2025-07-10 17:34:35 | MRBTS(130120) > | exec_script senario_du20_initcell_noNbiot_autocfg_130120.txt | RESULT: OK
+2025-07-10 17:34:35 | MRBTS(130120) > | set_cfg_tmpl GONGDONG1.cli | RESULT: OK
+2025-07-10 17:34:36 | MRBTS(130120) > | commit | RESULT: OK
+2025-07-10 17:34:53 | MRBTS(130120) > | apply_bts_cfg | RESULT: OK
+2025-07-10 17:38:50 | config-x/auto-comm > | list_tmpl 20250710 | RESULT: NOK
+2025-07-10 17:38:50 | config-x/auto-comm > | gen_script CLI 개통탬플릿_V0.9.0.xlsx | RESULT: NOK
+2025-07-10 17:38:52 | config-x/auto-comm > | list_script 20250710 | RESULT: NOK
+2025-07-10 17:39:16 | MRBTS(130126) > | autocomm_run_script 200.DU130126_x_initbts_pass.cli | RESULT: OK
+2025-07-10 17:44:17 | MRBTS(130126) > | autocomm_run_script 200.DU130126_x_initbts_pass.cli | RESULT: OK
+2025-07-10 18:09:19 | MRBTS(130126) > | autocomm_run_script 200.DU130126_x_initbts_pass.cli | RESULT: OK
+2025-07-10 18:09:53 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-10 18:09:53 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-10 18:09:53 | config > | init_stp | RESULT: OK
+2025-07-10 18:10:02 | config/init-cell(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-10 18:10:02 | config/init-cell(24R2, 4G) > | set_ru_type FHCA | RESULT: OK
+2025-07-10 18:10:02 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-10 18:10:11 | MRBTS(130126) > | dnload_bts_cfg | RESULT: OK
+2025-07-10 18:10:12 | MRBTS(130126) > | exec_script senario_du10_initcell_autocfg_130126.txt | RESULT: OK
+2025-07-10 18:10:12 | MRBTS(130126) > | set_cfg_tmpl GONGDONG1.cli | RESULT: OK
+2025-07-10 18:10:12 | MRBTS(130126) > | commit | RESULT: OK
+2025-07-10 18:10:26 | MRBTS(130126) > | apply_bts_cfg | RESULT: OK

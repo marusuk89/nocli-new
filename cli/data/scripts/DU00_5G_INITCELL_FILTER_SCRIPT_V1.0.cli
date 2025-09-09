@@ -1,0 +1,65 @@
+##### FILTER SCRIPT for 5G INIT-CELL #####
+## ASIK 과 ASIL의 차이는 특별이 없음. 따라서 ASIK/ASIL 통합본임 ##
+####
+
+MRBTS 000
+    EQM 1
+        APEQM 1
+            RMOD 000
+                EAC_IN 1
+                exit
+                EAC_IN 2
+                exit
+                EAC_IN 3
+                exit
+                EAC_IN 4
+                exit
+                PHYANT 1
+                exit
+            exit
+        exit
+    
+    HWTOP 1
+        CABLINK 000
+        exit
+    exit-all
+
+
+MRBTS 000
+    MNL 1
+        MNLENT 1
+            CELLMAPPING 1
+                LCELNR 000
+                    CHANNELGROUP 1
+                        CHANNEL 000
+                        exit
+                    exit
+                exit-all
+
+
+##### NRBTS #####
+MRBTS 000
+    NRBTS 000      
+        NRCELL 000
+            #NRULMUMIMO 0
+            #exit
+        exit
+
+        NRCELLGRP 000
+        exit
+        
+        NRPGRP 000
+        exit
+    exit-all
+
+
+MRBTS 000
+    MNL 1
+        MNLENT 1
+            SYNC 2
+                list targetDNList  1  MRBTS-000/EQM-1/APEQM-1/RMOD-000  
+            exit
+        exit-all
+
+#### END OF FILE ####
+#####################

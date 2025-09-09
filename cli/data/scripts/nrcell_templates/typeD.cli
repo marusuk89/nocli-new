@@ -1,0 +1,5 @@
+no-list csirsResourceSet
+no-list periodicCsiAcquisition csirsPower
+no-list periodicCsiAcquisition csirsNumberWithinReportPeriod_Set1
+no-list periodicCsiAcquisition maxCsirsNumber
+list beamSet 1 basicBeamSet beamSet_4SS

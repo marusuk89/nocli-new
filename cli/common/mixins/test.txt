@@ -1,0 +1,691 @@
+## 새로운 버전, radio등이 나오면 fail/pass에 따라서 업데이트 되어야함 
+    def _parse_excel_rows_init_bts_old(self, ws, du_seq_map):
+        script_entries = []
+
+        prod_map = load_prod_code_maps()
+
+        scenario_row_idx = None
+        for row_idx in range(1, ws.max_row + 1):
+            val = ws.cell(row=row_idx, column=4).value
+            if val and str(val).strip().upper() == "CLI SCENARIO":
+                scenario_row_idx = row_idx
+                break
+        if scenario_row_idx is None:
+            self.perror("엑셀 시트에서 'CLI SCENARIO' 셀을 찾을 수 없습니다.")
+            return []
+
+        mo_row_idx = scenario_row_idx
+        key_row_idx = mo_row_idx + 1
+        data_start_row_idx = mo_row_idx + 2
+        max_col = ws.max_column
+
+        mo_headers = [ws.cell(row=mo_row_idx, column=c).value for c in range(1, max_col + 1)]
+        param_keys = [ws.cell(row=key_row_idx, column=c).value for c in range(1, max_col + 1)]
+
+        for i in range(len(mo_headers)):
+            if mo_headers[i] is None and i > 0:
+                mo_headers[i] = mo_headers[i - 1]
+
+        radiover_col = radiotype_col = None
+        for col in range(max_col):
+            if mo_headers[col] == "Radio" and param_keys[col] == "Type":
+                radiotype_col = col
+            elif mo_headers[col] == "Radio" and param_keys[col] == "Version":
+                radiover_col = col
+        if radiover_col is None or radiotype_col is None:
+            self.perror("Radio/Type 또는 Radio/Version 열을 찾을 수 없습니다.")
+            return []
+
+        mo_columns = {}
+        current_mo = None
+        for col in range(max_col):
+            mo = mo_headers[col]
+            param = param_keys[col]
+            if mo:
+                current_mo = mo
+                if current_mo not in mo_columns:
+                    mo_columns[current_mo] = []
+            if current_mo and param:
+                mo_columns[current_mo].append((param, col))
+
+        data_end_row_idx = ws.max_row + 1
+        for row_idx in range(data_start_row_idx, ws.max_row + 1):
+            val = ws.cell(row=row_idx, column=4).value
+            if val and str(val).strip().startswith("#####"):
+                data_end_row_idx = row_idx
+                break
+
+        try:
+            action_col = mo_headers.index("CLI Scenario")
+        except ValueError:
+            self.perror("'CLI Scenario' 열이 존재하지 않습니다.")
+            return []
+
+        for row_idx in range(data_start_row_idx, data_end_row_idx):
+            row = [ws.cell(row=row_idx, column=c + 1).value for c in range(max_col)]
+            action_val = row[action_col]
+            if str(action_val).strip().upper() != "INIT-BTS":
+                continue
+
+            mrbts_id = enb_name = prod_name = None
+            ip_id = ip_addr = prefix_len = iprt_gateway = None
+            vlanif_id = vlan_id = None
+            sync_id_col = sync_prio_col = sync_type_col = None
+            ntp_id = ntp_server_ip_addr = None
+            fhs_1_id = fhs_2_id = fhs_3_id = fhs_4_id = fhs_5_id = fhs_6_id = None
+            netact_id = netact_ip_addr = None
+            ctrlts1_mtrace_ids = []
+            ctrlts1_mtrace_addrs = []
+
+            bbmod_list = []
+            bbmod_id_temp = bbmod_prod_temp = None
+
+            for mo, key_list in mo_columns.items():
+                for param, col in key_list:
+                    val = row[col]
+                    if mo == "MRBTS" and param == "id":
+                        mrbts_id = val
+                    elif mo == "LNBTS" and param == "enbName":
+                        enb_name = val.replace("_", "")
+                    elif mo == "SMOD" and param == "prod-name":
+                        prod_name = val
+                    elif "IPIF" in mo:
+                        if param == "id":
+                            ip_id = val
+                        elif param == "localIpAddr":
+                            ip_addr = val
+                        elif param == "localIpPrefixLength":
+                            prefix_len = val
+                    elif "IPRT" in mo and param.endswith("gateway"):
+                        iprt_gateway = val
+                    elif "VLANIF" in mo:
+                        if param == "id":
+                            vlanif_id = val
+                        elif param == "vlanId":
+                            vlan_id = val
+                    elif "SYNC-1" in mo:
+                        if param == "id":
+                            sync_id_col = val
+                        elif param.endswith("syncInputPrio"):
+                            sync_prio_col = val
+                        elif param.endswith("syncInputType"):
+                            sync_type_col = val
+                    elif "NTP" in mo:
+                        if param == "id":
+                            ntp_id = val
+                        elif param == "ntpServerIpAddrList[]":
+                            ntp_server_ip_addr = val
+                    elif mo == "BBMOD":
+                        if param == "id":
+                            bbmod_id_temp = val
+                        elif param == "prod-name":
+                            bbmod_prod_temp = val
+                        if bbmod_id_temp and bbmod_prod_temp:
+                            bbmod_list.append((bbmod_id_temp, bbmod_prod_temp))
+                            bbmod_id_temp = bbmod_prod_temp = None
+                    elif mo == "FHS_1" and param == "id":
+                        fhs_1_id = val
+                    elif mo == "FHS_2" and param == "id":
+                        fhs_2_id = val
+                    elif mo == "FHS_3" and param == "id":
+                        fhs_3_id = val
+                    elif mo == "FHS_4" and param == "id":
+                        fhs_4_id = val
+                    elif mo == "FHS_5" and param == "id":
+                        fhs_5_id = val
+                    elif mo == "FHS_6" and param == "id":
+                        fhs_6_id = val
+                    
+                    elif mo == "CTRLTS-1":
+                        if param == "id":
+                            netact_id = val
+                        elif param == "netActIpAddr":
+                            netact_ip_addr = val
+
+                    elif mo == "CTRLTS-1/MTRACE":
+                        if param == "id":
+                            ctrlts1_mtrace_ids.append(val)
+                        elif param == "tceIpAddress":
+                            ctrlts1_mtrace_addrs.append(val)
+
+            ##du_type 결정 로직
+            if isinstance(prod_name, str):
+                prod_name_upper = prod_name.strip().upper()
+                if prod_name_upper.startswith("AS"):
+                    du_type = "du20"
+                elif prod_name_upper.startswith("FS"):
+                    du_type = "du10"
+
+            radio_type = row[radiotype_col]
+            radio_ver = row[radiover_col]
+            if not (mrbts_id and radio_ver and radio_type):
+                continue
+
+            script = []
+            script += ["### HEADER ###"]
+            iot_lncel_id = "65534" #for dummy
+            if iot_lncel_id :
+                # 이제 계층 이동 없이 직접 환경을 세팅하는 명령어만 삽입
+                script += [
+                    f"dest-bts {mrbts_id}",
+                    f"check-ping {mrbts_id}",
+                    f"set-mode bts",
+                    f"set-mo-version {radio_ver}",
+                    f"set-rat-type {radio_type}",
+                    f"set-iot-lncel-id {iot_lncel_id}", # 엑셀의 어떤 값에서 받아와야 할지 모름
+                    "set-allow-commit-diff true",  # 필요 시 설정
+                    ""
+                ]
+            else :
+                script += [
+                    f"dest-bts {mrbts_id}",
+                    f"check-ping {mrbts_id}",
+                    f"set-mode bts",
+                    f"set-mo-version {radio_ver}",
+                    f"set-rat-type {radio_type}",
+                    "set-allow-commit-diff true",  # 필요 시 설정
+                    ""
+                ]
+
+            # 이후 기존 script 추가 (본문)
+            script += [
+                "### BODY ###",
+                f"set-du-type {du_type}",
+                f"tgt-bts {mrbts_id}",
+                f"exec-script {radio_ver}_{du_type.upper()}_INITBTS_FILTER_SCRIPT_V0.7.5.cli",
+                "# 진입 단계 종료", "",
+                f"btsName {enb_name}", "# MRBTS 단계 종료", "",
+                f"LNBTS {mrbts_id}", f"enbName {enb_name}",
+                "exit-all", "# LNBTS 단계 종료", ""
+            ]
+
+            ## 더미 설정
+            if du_type == "du10":
+                script += ["# 더미 설정 시작", "EQM 1", "HWTOP 1", "CABLINK 65535",
+                        f"firstEndpointDN  MRBTS-{mrbts_id}/EQM-1/APEQM-1/CABINET-1/SMOD-1",
+                        "firstEndpointLabel  OPT", "firstEndpointPortId  6",
+                        f"secondEndpointDN  MRBTS-{mrbts_id}/EQM-1/APEQM-1/RMOD-32767",
+                        "secondEndpointLabel  OPT", "secondEndpointPortId  1",
+                        "exit-all",
+                        f"LNBTS {mrbts_id}", "LNCEL 65535", "lcrId 255", "nbIotLinkedCellId 254", "exit",
+                        "LNCEL 65534", "lcrId 254", "nbIotLinkedCellId 255", "exit-all",
+                        "#더미 설정 끝", ""]
+            elif du_type == "du20":
+                script += ["# 더미 설정 시작", "EQM 1", "HWTOP 1", "CABLINK 65535",
+                        f"firstEndpointDN  MRBTS-{mrbts_id}/EQM-1/APEQM-1/FHS-1",
+                        "firstEndpointLabel  OPT", "firstEndpointPortId  12",
+                        f"secondEndpointDN  MRBTS-{mrbts_id}/EQM-1/APEQM-1/RMOD-32767",
+                        "secondEndpointLabel  OPT", "secondEndpointPortId  1",
+                        "exit-all",
+                        f"LNBTS {mrbts_id}", "LNCEL 65535", "lcrId 255", "nbIotLinkedCellId 254", "exit",
+                        "LNCEL 65534", "lcrId 254", "nbIotLinkedCellId 255", "exit-all",
+                        "#더미 설정 끝", ""]
+
+            #SMOD의 prodCodePlanned값 파싱해서 설정
+            if prod_name:
+                mapped_prod_name = prod_map.get(prod_name.upper(), prod_name)
+                script += [
+                    "EQM 1", "APEQM 1", "CABINET 1", "SMOD 1",
+                    f"prodCodePlanned {mapped_prod_name}", "exit-all", "# SMOD 단계 종료", ""
+                ]
+            if ip_id and ip_addr and prefix_len and iprt_gateway:
+                script += [
+                    "# TNLSVC → IPIF 설정", "TNLSVC 1", "TNL 1", "IPNO 1", "IPIF 1",
+                    f"IPADDRESSV4 {ip_id}", f"localIpAddr {ip_addr}",
+                    f"localIpPrefixLength {prefix_len}", "exit", "exit",
+                    f"IPRT {ip_id}", f"list staticRoutes {ip_id} gateway {iprt_gateway}",
+                    f"list staticRoutes {ip_id} routeIpMtu 1510",
+                    f"list staticRoutes {ip_id} destIpAddr 0.0.0.0",
+                    "exit-all", "# TNLSVC 설정 종료", ""
+                ]
+            if vlanif_id and vlan_id:
+                script += [
+                    "# TNLSVC → ETHSVC 설정", "TNLSVC 1", "TNL 1", "ETHSVC 1", "ETHIF 1",
+                    f"VLANIF {vlanif_id}", f"vlanId {vlan_id}",
+                    "exit-all", "# ETHSVC 설정 종료", ""
+                ]
+
+            SYNC_TYPE_MAP = {
+                "Master": "1pps/ToD from external GNSS receiver",
+                "Slave": "1pps/ToD from Sync Hub Master",
+                "Backplane": "1pps/ToD from backplane",
+                "TOPP": "TOPP"
+            }
+
+            if sync_id_col and sync_prio_col and sync_type_col:
+                sync_type_key = str(sync_type_col).strip()
+                sync_type_value = SYNC_TYPE_MAP.get(sync_type_key, sync_type_key)
+
+                if sync_type_value == "1pps/ToD from external GNSS receiver" :
+                    script += [
+                        "# SYNC-1/CLOCK 구성", "MNL 1", "MNLENT 1", "SYNC 1",
+                        f"CLOCK {sync_id_col}",
+                        f"list syncInputList 1 syncInputPrio {sync_prio_col}",
+                        f'list syncInputList 1 syncInputType "{sync_type_value}"',
+                        "GNSSE 1", "exit",
+                        f"NTP {ntp_id}",
+                    ]
+                else :
+                    script += [
+                        "# SYNC-1/CLOCK 구성", "MNL 1", "MNLENT 1", "SYNC 1",
+                        f"CLOCK {sync_id_col}",
+                        f"list syncInputList 1 syncInputPrio {sync_prio_col}",
+                        f'list syncInputList 1 syncInputType "{sync_type_value}"',
+                        f"NTP {ntp_id}",
+                    ]
+
+                ntp_ip_list = [ip.strip() for ip in str(ntp_server_ip_addr).split(";") if ip.strip()]
+                for i, ip in enumerate(ntp_ip_list, 1):
+                    if du_type == "du10":
+                        script += [f"list ntpServerIpAddrList {i} val {ip}"]
+                    elif du_type == "du20":
+                        script += [f"list ntpServerIpAddrOrFqdnList {i} val {ip}"]
+
+                script += [
+                    "maxNtpTimeError 200",
+                    "ntpAlarmingThreshold 300",
+                    "ntpDscp 46",
+                    "exit-all", ""
+                ]
+            
+            cablink_ids = []
+
+            # BBMOD의 prodCodePlanned값 파싱해서 설정
+            script += ["# BBMOD 설정", "EQM 1", "APEQM 1", "CABINET 1"]
+            
+            for bb_id, bb_prod in bbmod_list:
+                if bb_prod == "FBBC" :
+                    mapped_bb_code = prod_map.get(bb_prod.upper(), bb_prod)
+                    script += [f"BBMOD {bb_id}", f"prodCodePlanned {mapped_bb_code}", "exit"]
+                elif bb_prod == "FBBA" :
+                    mapped_bb_code = prod_map.get(bb_prod.upper(), bb_prod)
+                    script += [f"BBMOD {bb_id}", f"prodCodePlanned {mapped_bb_code}", "no-list srioConnectionList", "exit"]
+            script += ["exit-all"]
+            
+            if bbmod_list and du_type == "du20":
+                script += ["# FHS 설정", "EQM 1", "APEQM 1"]
+                if fhs_1_id:
+                    script += [f"FHS 1", "exit"]
+                if fhs_2_id:
+                    script += [f"FHS 2", "exit"]
+                if fhs_3_id:
+                    script += [f"FHS 3", "exit"]
+                if fhs_4_id:
+                    script += [f"FHS 4", "exit"]
+                if fhs_5_id:
+                    script += [f"FHS 5", "exit"]
+                if fhs_6_id:
+                    script += [f"FHS 6", "exit"]
+                script += ["exit-all", "# FHS 설정 끝", ""]
+
+                # du20용 CABLINK 처리
+                cablink_ids += list(range(1, len(bbmod_list) + 1))
+                for bb_id, _ in bbmod_list:
+                    if bb_id == 1 and fhs_1_id == 1:
+                        cablink_ids += [4, 5]
+                    if bb_id == 1 and fhs_2_id == 2:
+                        cablink_ids += [6, 7]
+                    if bb_id == 2 and fhs_3_id == 3:
+                        cablink_ids += [8, 9]
+                    if bb_id == 2 and fhs_4_id == 4:
+                        cablink_ids += [10, 11]
+                    if bb_id == 3 and fhs_5_id == 5:
+                        cablink_ids += [12, 13]
+                    if bb_id == 3 and fhs_6_id == 6:
+                        cablink_ids += [14, 15]
+
+                    # CABLINK 템플릿 로딩 및 스크립트 삽입
+                    base_dir = os.path.dirname(os.path.abspath(__file__))
+                    script_path = os.path.join(base_dir, "..", "..", "data", "scripts", "du20_cablink_templates.cli")
+                    cablink_blocks = load_cablink_blocks(script_path, cablink_ids)
+
+                # du10용 CABLINK 처리 (du20과 동일 구조)
+            elif du_type == "du10" and prod_name:
+                cablink_ids += [1, 2]  # BBMOD 2개 기본, 10의 경우 RMOD와의 연관성으로 CABLINK쪽과 연관됨으로 인해서 init-cell쪽에서 CABLINK가 구성됨
+
+                # CABLINK 템플릿 로딩 및 스크립트 삽입
+                base_dir = os.path.dirname(os.path.abspath(__file__))
+                script_path = os.path.join(base_dir, "..", "..", "data", "scripts", "du10_cablink_templates.cli")
+                cablink_blocks = load_cablink_blocks(script_path, cablink_ids)
+
+            if cablink_ids:
+                script += ["# CABLINK 설정", "EQM 1", "HWTOP 1"]
+                for cab_id in cablink_ids:
+                    if cab_id in cablink_blocks:
+                        # MRBTS-000 → 실제 bts_id로 치환
+                        for line in cablink_blocks[cab_id]:
+                            script.append(line.replace("MRBTS-000", f"MRBTS-{mrbts_id}"))
+                    else:
+                        print(f"[경고] CABLINK ID {cab_id}의 템플릿 블록이 존재하지 않습니다.")
+                script += ["exit-all", "# CABLINK 설정 종료", ""]
+
+            if netact_id and netact_ip_addr:
+                script += [f"LNBTS {mrbts_id}", f"CTRLTS {netact_id}", f"netActIpAddr {netact_ip_addr}"]
+
+            for mtrace_id, mtrace_addr in zip(ctrlts1_mtrace_ids, ctrlts1_mtrace_addrs):
+                if mtrace_id is not None and mtrace_addr:
+                    script += [f"MTRACE {mtrace_id}"]
+                    script += [f"tceIpAddress {mtrace_addr}"]
+                    script += ["exit"]
+            script += ["exit-all"]
+
+            script += ["commit-all -t 1", "apply-bts-cfg-commission", "#act-bts-cfg-commission"]
+
+            script_entries.append((str(mrbts_id), script, "bts"))
+        return script_entries
+
+def _parse_excel_rows_init_cell_old(self, ws):
+        script_entries = []
+
+        # [1] CLI SCENARIO 행 탐색
+        scenario_row_idx = None
+        for row_idx in range(1, ws.max_row + 1):
+            val = ws.cell(row=row_idx, column=4).value
+            if val and str(val).strip().upper() == "CLI SCENARIO":
+                scenario_row_idx = row_idx
+                break
+        if scenario_row_idx is None:
+            self.perror("엑셀 시트에서 'CLI SCENARIO' 셀을 찾을 수 없습니다.")
+            return []
+
+        mo_row_idx = scenario_row_idx
+        key_row_idx = mo_row_idx + 1
+        data_start_row_idx = mo_row_idx + 2
+        max_col = ws.max_column
+
+        mo_headers = [ws.cell(row=mo_row_idx, column=c).value for c in range(1, max_col + 1)]
+        param_keys = [ws.cell(row=key_row_idx, column=c).value for c in range(1, max_col + 1)]
+
+        for i in range(len(mo_headers)):
+            if mo_headers[i] is None and i > 0:
+                mo_headers[i] = mo_headers[i - 1]
+
+        du_type = "du10"
+        radiover_col = radiotype_col = None
+        for col in range(max_col):
+            if mo_headers[col] == "Radio" and param_keys[col] == "Type":
+                radiotype_col = col
+            elif mo_headers[col] == "Radio" and param_keys[col] == "Version":
+                radiover_col = col
+        if radiover_col is None or radiotype_col is None:
+            self.perror("Radio/Type 또는 Radio/Version 열을 찾을 수 없습니다.")
+            return []
+
+        mo_columns = {}
+        current_mo = None
+        for col in range(max_col):
+            mo = mo_headers[col]
+            param = param_keys[col]
+            if mo:
+                current_mo = mo
+                if current_mo not in mo_columns:
+                    mo_columns[current_mo] = []
+            if current_mo and param:
+                mo_columns[current_mo].append((param, col))
+
+        data_end_row_idx = ws.max_row + 1
+        for row_idx in range(data_start_row_idx, ws.max_row + 1):
+            val = ws.cell(row=row_idx, column=4).value
+            if val and str(val).strip().startswith("#####"):
+                data_end_row_idx = row_idx
+                break
+
+        try:
+            action_col = mo_headers.index("CLI Scenario")
+        except ValueError:
+            self.perror("'CLI Scenario' 열이 존재하지 않습니다.")
+            return []
+        
+        du_dummy_killed = set()
+
+        for row_idx in range(data_start_row_idx, data_end_row_idx):
+            row = [ws.cell(row=row_idx, column=c + 1).value for c in range(max_col)]
+            action_val = row[action_col]
+            if not action_val or str(action_val).strip().upper() != "INIT-CELL":
+                continue
+
+            mrbts_id = rmod_id = prod_name = sector_3 = None
+            cablink_id = dest_mod = first_endpoint_label = first_endpoint_port_id = first_endpoint_port_id = second_endpoint_port_id = None
+            lncel_id = cell_name = lcr_id = phy_cell_id = tac = nbiot_linked_cell_id = lncel_fdd_id = root_seq_index = None
+            iot_lncel_id = iot_lcr_id = iot_nbiot_linked_cell_id = None
+            iot_tac = "5" ## 수정 필요 엑셀에 적용이 된후에 다시 None으로 교체
+            for mo, key_list in mo_columns.items():
+                for param, col in key_list:
+                    val = row[col]
+                    if mo == "MRBTS" and param == "id":
+                        mrbts_id = val
+                    ### RMOD ###
+                    elif mo == "RMOD" and param == "id":
+                        rmod_id = val
+                    elif mo == "RMOD" and param == "prod-name":
+                        prod_name = val
+                    elif mo == "RMOD" and param == "3-sector":
+                        sector_3 = val
+                    elif mo == "CABLINK_L1" and param == "id":
+                        cablink_id = val
+                    elif mo == "CABLINK_L1" and param == "dest-mod":
+                        dest_mod = val.upper()
+                    elif mo == "CABLINK_L1" and param == "firstEndpointLabel":
+                        first_endpoint_label = val
+                    elif mo == "CABLINK_L1" and param == "firstEndpointPortId":
+                        first_endpoint_port_id = val
+                    elif mo == "CABLINK_L1" and param == "secondEndpointLabel":
+                        second_endpoint_label = val
+                    elif mo == "CABLINK_L1" and param == "secondEndpointPortId":
+                        second_endpoint_port_id = val
+                    ### CELL ###
+                    elif mo == "LNCEL" and param == "id":
+                        lncel_id = val
+                    elif mo == "LNCEL" and param == "cellName":
+                        cell_name = val
+                    elif mo == "LNCEL" and param == "lcrId":
+                        lcr_id = val
+                    elif mo == "LNCEL" and param == "phyCellId":
+                        phy_cell_id = val
+                    elif mo == "LNCEL" and param == "tac":
+                        tac = val
+                    elif mo == "LNCEL" and param == "nbIotLinkedCellId":
+                        nbiot_linked_cell_id = val
+                    elif mo == "LNCEL_FDD" and param == "id":
+                        lncel_fdd_id = val
+                    elif mo == "LNCEL_FDD" and param == "rootSeqIndex":
+                        root_seq_index = val
+                    ### NBIOT ###
+                    elif mo == "LNCEL_IOT" and param == "id":
+                        iot_lncel_id = val
+                    elif mo == "LNCEL_IOT" and param == "lcrId":
+                        iot_lcr_id = val
+                    elif mo == "LNCEL_IOT" and param == "nbIotLinkedCellId":
+                        iot_nbiot_linked_cell_id = val
+                    elif mo == "LNCEL_IOT" and param == "tac":
+                        iot_tac = val
+
+            radio_type = row[radiotype_col]
+            radio_ver = row[radiover_col]
+            if not (mrbts_id and rmod_id and prod_name and lncel_id):
+                continue
+
+            mrbts_id_str = str(mrbts_id)
+            lncel_id_str = str(lncel_id)
+
+            ## kill dummy 플래그를 위한 다운로드 실행
+            self.do_dest_bts(mrbts_id_str)
+            self.prepare_dummy_flag(mrbts_id_str)
+
+            script = []
+            script += ["### HEADER ###"]
+            script += [
+                f"dest-bts {mrbts_id}",
+                f"check-ping {mrbts_id}",
+                f"set-mode cell",
+                f"set-mo-version {radio_ver}",
+                f"set-rat-type {radio_type}",
+                f"set-iot-lncel-id {iot_lncel_id}", # 엑셀의 어떤 값에서 받아와야 할지 모름
+                f"set-du-type {du_type}", # 임시 du_type
+                "set-allow-commit-diff true",  # 필요 시 설정
+                ""
+            ]
+            if str(prod_name).strip().upper() == "FXCA" and str(sector_3).strip().upper() == "TRUE":
+                script += ["set-ru-para sector_3 true"]
+
+            script += [
+                "### BODY ###",
+                f"set-ru-type {prod_name}", ## tgt-bts를 통과하기 위한 임시 장치(auto-comm 한정 문법)
+                f"tgt-bts {mrbts_id_str}",
+                "dnload-bts-cfg", # du_type + kill_dummy_flag 세팅도 함께
+                f"set-ru-type {prod_name}",
+                "EQM 1",
+                "APEQM 1",
+                f"RMOD {rmod_id}",
+                "auto-config ANTL *",
+                f"moduleLocation {cell_name}", 
+                "exit-all"
+            ]
+            if dest_mod.startswith("FHS"):
+                script += [
+                    "EQM 1",
+                    "HWTOP 1",
+                    f"CABLINK {cablink_id}",
+                    f"firstEndpointDN MRBTS-{mrbts_id_str}/EQM-1/APEQM-1/{dest_mod}",
+                    f"firstEndpointLabel {first_endpoint_label}",
+                    f"firstEndpointPortId {first_endpoint_port_id}",
+                    f"secondEndpointDN MRBTS-{mrbts_id_str}/EQM-1/APEQM-1/RMOD-{rmod_id}",
+                    f"secondEndpointLabel {second_endpoint_label}",
+                    f"secondEndpointPortId {second_endpoint_port_id}",
+                    "exit-all"
+                ]
+            else :
+                script += [
+                    "EQM 1",
+                    "HWTOP 1",
+                    f"CABLINK {cablink_id}",
+                    f"firstEndpointDN MRBTS-{mrbts_id_str}/EQM-1/APEQM-1/CABINET-1/{dest_mod}",
+                    f"firstEndpointLabel {first_endpoint_label}",
+                    f"firstEndpointPortId {first_endpoint_port_id}",
+                    f"secondEndpointDN MRBTS-{mrbts_id_str}/EQM-1/APEQM-1/RMOD-{rmod_id}",
+                    f"secondEndpointLabel {second_endpoint_label}",
+                    f"secondEndpointPortId {second_endpoint_port_id}",
+                    "exit-all"
+                ]
+
+            script += [
+                f"LNBTS {mrbts_id_str}",
+                f"LNCEL {lncel_id}",
+                f"lcrId {lcr_id}",
+                f"phyCellId {phy_cell_id}",
+                f"tac {iot_tac}"
+            ]
+            if iot_lncel_id :
+                script += [
+                    f"nbIotLinkedCellId {nbiot_linked_cell_id}",
+                ]
+            else :
+                script += [
+                    "nbIoTMode disabled"
+                ]
+            script += [
+                "LNCEL_FDD 0",
+                f"rootSeqIndex {root_seq_index}",
+                "exit",
+                "auto-config",
+                "exit-all",
+            ]
+
+            if iot_lncel_id and du_type == "du10":
+                script += [
+                    f"LNBTS {mrbts_id_str}",
+                    f"LNCEL {iot_lncel_id}",
+                    f"lcrId {iot_lcr_id}",
+                    f"phyCellId {phy_cell_id}",
+                    f"tac {tac}",
+                    f"nbIotLinkedCellId {iot_nbiot_linked_cell_id}",
+                    "NBIOT_FDD 0",
+                    "dlChBw '0.2 MHz'", 
+                    "exit",
+                    "REDRT 0",
+                    "exit",
+                    "DRX 0",
+                    "exit",
+                    "SDRX 0",
+                    "exit",
+                    "SIB 0",
+                    "exit-all"
+                ]
+            elif iot_lncel_id and du_type == "du20":
+                script += [
+                    f"LNBTS {mrbts_id_str}",
+                    f"LNCEL {iot_lncel_id}",
+                    f"lcrId {iot_lcr_id}",
+                    f"phyCellId {phy_cell_id}",
+                    f"tac {tac}",
+                    f"nbIotLinkedCellId {iot_nbiot_linked_cell_id}",
+                    "NBIOT_FDD 0",
+                    "dlChBw '0.2 MHz'", 
+                    "exit",
+                    "BBPOOLALLOC 0",
+                    "exit",
+                    "REDRT 0",
+                    "exit",
+                    "DRX 0",
+                    "exit",
+                    "SDRX 0",
+                    "exit",
+                    "SIB 0",
+                    "exit-all"
+                ]
+
+            script += [
+                "MNL 1",
+                "MNLENT 1",
+                "CELLMAPPING 1",
+                f"auto-config LCELL {lcr_id}",
+            ]
+            if iot_lncel_id :
+                script += [f"auto-config LCELL {iot_lcr_id}"]
+            script += ["exit-all", ""]
+
+            if self.kill_dummy_flag and mrbts_id_str not in du_dummy_killed:
+                if du_type == "du10":
+                    script += [
+                        "# 더미 제거 시작",
+                        "EQM 1", "APEQM 1", "no-mo-scf RMOD 32767", "exit-all",
+                        "EQM 1", "HWTOP 1", "no-mo-scf CABLINK 65535", "exit-all",
+                        f"LNBTS {mrbts_id_str}",
+                        "no-mo-scf LNCEL 65535",
+                        "no-mo-scf LNCEL 65534",
+                        "exit-all",
+                        "MNL 1", "MNLENT 1", "CELLMAPPING 1",
+                        "no-mo-scf LCELL 254",
+                        "no-mo-scf LCELL 255",
+                        "no-mo-scf LNMME 10",
+                        "no-mo-scf LNMME 11",
+                        "exit-all",
+                        "# 더미 제거 끝",
+                        ""
+                    ]
+                elif du_type == "du20":
+                    script += [
+                        "# 더미 제거 시작",
+                        "EQM 1", "APEQM 1", "no-mo-scf RMOD 32767", "exit-all",
+                        "EQM 1", "HWTOP 1", "no-mo-scf CABLINK 65535", "exit-all",
+                        f"LNBTS {mrbts_id_str}",
+                        "no-mo-scf LNCEL 65535",
+                        "no-mo-scf LNCEL 65534",
+                        "exit-all",
+                        "MNL 1", "MNLENT 1", "CELLMAPPING 1",
+                        "no-mo-scf LCELL 254",
+                        "no-mo-scf LCELL 255",
+                        "no-mo-scf LNMME 10",
+                        "no-mo-scf LNMME 11",
+                        "exit-all",
+                        "# 더미 제거 끝",
+                        ""
+                    ]
+                du_dummy_killed.add(mrbts_id_str)
+            
+            script.append("")
+            script += ["commit", "apply-bts-cfg", "#act-bts-cfg"]
+
+            script_entries.append((mrbts_id_str, script, f"cell-{lncel_id_str}"))
+
+        return script_entries

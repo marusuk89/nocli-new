@@ -1,0 +1,39 @@
+2025-07-11 12:44:06 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-11 12:53:32 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-11 12:54:44 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-11 13:17:43 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-11 13:17:43 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-11 13:17:43 | config > | init_stp | RESULT: OK
+2025-07-11 13:17:44 | config/init-bts(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-11 13:17:44 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-11 13:17:45 | MRBTS(130126) > | exec_script DU10_INITBTS_FILTER_SCRIPT_V0.7.5.cli | RESULT: OK
+2025-07-11 13:17:45 | MRBTS(130126) > | exec_script du10_bts130126_userinput.cli | RESULT: OK
+2025-07-11 13:17:45 | MRBTS(130126) > | commit_all -t 1 | RESULT: OK
+2025-07-11 13:18:11 | MRBTS(130126) > | apply_bts_cfg_commission | RESULT: OK
+2025-07-11 13:21:38 | MRBTS(130126) > | check_ping 130126 | RESULT: OK
+2025-07-11 13:25:56 | MRBTS(130126) > | check_ping 130126 | RESULT: OK
+2025-07-11 13:26:08 | MRBTS(130126) > | check_ping 130126 | RESULT: OK
+2025-07-11 13:26:12 | MRBTS(130126) > | check_ping 130126 | RESULT: OK
+2025-07-11 13:26:13 | MRBTS(130126) > | check_ping 130126 | RESULT: OK
+2025-07-11 13:36:02 | config > | init_bts -r 4G -v 24R2 -i 65534 | RESULT: OK
+2025-07-11 13:36:03 | config/init-cell(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-11 13:36:03 | config/init-cell(24R2, 4G) > | set_ru_type FHCA | RESULT: OK
+2025-07-11 13:36:03 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-11 13:36:11 | MRBTS(130126) > | dnload_bts_cfg | RESULT: OK
+2025-07-11 13:36:12 | MRBTS(130126) > | exec_script senario_du10_initcell_autocfg_130126.txt | RESULT: OK
+2025-07-11 13:36:12 | MRBTS(130126) > | set_cfg_tmpl GONGDONG1.cli | RESULT: OK
+2025-07-11 13:36:12 | MRBTS(130126) > | commit | RESULT: OK
+2025-07-11 13:36:27 | MRBTS(130126) > | apply_bts_cfg | RESULT: OK
+2025-07-11 15:38:08 | config-x/auto-comm > | update_sw_ver 130126 --file swfile.zip | RESULT: NOK
+2025-07-11 15:39:39 | config-x/auto-comm > | update_sw_ver 130126 --file swfile.zip | RESULT: NOK
+2025-07-11 15:51:35 | config-x/auto-comm > | update_sw_ver 130126 --file SBTS24R2_FSM3_0000_000161_000000.zip | RESULT: NOK
+2025-07-11 15:52:11 | config-x/auto-comm > | update_sw_ver 130126 --file SBTS24R2_FSM3_0000_000161_000000.zip | RESULT: NOK
+2025-07-11 15:54:45 | config-x/auto-comm > | update_sw_ver 130126 --file SBTS24R2_FSM3_0000_000161_000000.zip | RESULT: NOK
+2025-07-11 16:02:04 | config-x/auto-comm > | update_sw_ver 130126 --file SBTS24R2_FSM3_0000_000161_000000.zip --no-activate --no-override | RESULT: NOK
+2025-07-11 16:02:26 | config-x/auto-comm > | update_sw_ver 130126 --file SBTS24R2_FSM3_0000_000161_000000.zip --no-activate --no-override | RESULT: NOK
+2025-07-11 16:04:30 | config-x/auto-comm > | update_sw_ver 130126 --file SBTS24R2_FSM3_0000_000161_000000.zip --no-activate --no-override | RESULT: NOK
+2025-07-11 16:04:43 | config-x/auto-comm > | update_sw_ver 130126 --file SBTS24R2_FSM3_0000_000161_000000.zip --no-activate --no-override | RESULT: NOK
+2025-07-11 16:04:57 | config-x/auto-comm > | update_sw_ver 130126 --file SBTS24R2_FSM3_0000_000161_000000.zip --no-activate --no-override | RESULT: NOK
+2025-07-11 16:06:30 | config-x/auto-comm > | update_sw_ver 130126 --file SBTS24R2_FSM3_0000_000161_000000.zip --no-activate --no-override | RESULT: NOK
+2025-07-11 16:11:03 | config-x/auto-comm > | update_sw_ver 130126 --file SBTS24R2_FSM3_0000_000161_000000.zip --no-activate --no-override | RESULT: NOK
+2025-07-11 16:12:12 | config-x/auto-comm > | update_sw_ver 130126 --file SBTS24R2_FSM3_0000_000161_000000.zip --no-activate --no-override | RESULT: NOK

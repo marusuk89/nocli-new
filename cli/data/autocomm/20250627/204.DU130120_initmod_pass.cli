@@ -1,0 +1,13 @@
+### HEADER ###
+exit
+yes
+init-mod -r 4G -v 24R2
+autocomm-run-script 200.DU130120_initmod_pass.cli
+
+### BODY ###
+set-du-type du10
+set-ru-type AHCA
+tgt-bts 130120
+dnload-bts-cfg
+exit-all
+

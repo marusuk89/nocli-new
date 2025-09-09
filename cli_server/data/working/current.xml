@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<raml version="2.0">
+  <cmData type="plan">
+    <managedObject class="com.nokia.srbts:MRBTS" distName="MRBTS-130126" version="SBTS24R2FSM3_2402_100" operation="create" />
+    <managedObject class="com.nokia.srbts.eqm:EQM" distName="MRBTS-130126/EQM-1" version="EQM24R2FSM3_2322_100" operation="create" />
+    <managedObject class="com.nokia.srbts.eqm:APEQM" distName="MRBTS-130126/EQM-1/APEQM-1" version="EQM24R2FSM3_2322_100" operation="create" />
+    <managedObject class="com.nokia.srbts.eqm:RMOD" distName="MRBTS-130126/EQM-1/APEQM-1/RMOD-5" version="EQM24R2FSM3_2322_100" operation="create">
+      <p name="alVoltHighThreshold">5800</p>
+    </managedObject>
+  </cmData>
+</raml>

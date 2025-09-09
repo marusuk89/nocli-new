@@ -1,0 +1,72 @@
+#init-bts -> 기존 du10 + fhs 추가
+
+#init-mod -> bbmod 추가 + fhs 추가 + rmod 추가 (3개로)
+#rmod의 타입은 AHGA, FRGQ, FRGP
+#fhs는 1,2번 포트로 bbmod와 fhs 1~2번 연결 3~4번은 예비용 
+#5~12번은 rmod와 연결용
+
+config
+init-stp
+dest-bts 130120
+check-ping 130120
+exit
+init-bts -r 4G -v 24R2
+set-du-type du20
+tgt-bts 130120
+exec-script DU20_INITBTS_FILTER_SCRIPT_V0.7.5.cli
+exec-script du20_bts130120_userinput.cli
+commit
+apply-bts-cfg-commission
+act-bts-cfg-commission
+exit
+yes
+
+init-cell -v 24R2 -r 4G
+set-du-type du20
+#set-ru-type FHCA
+set-ru-type FRHB
+#set-ru-type AHGA
+#set-ru-type FRGP
+tgt-bts 130120
+dnload-bts-cfg
+exec-script senario_du20_initcell_noNbiot_autocfg_130120.txt
+set-cfg-tmpl GONGDONG1.cli
+commit
+apply-bts-cfg
+act-bts-cfg
+exit
+yes
+
+init-cell -v 24R2 -r 4G
+set-du-type du20
+#set-ru-type FRGQ
+set-ru-type AHGA
+#set-ru-type FRGP
+tgt-bts 130120
+dnload-bts-cfg
+exec-script senario_du20_initcell_noNbiot_autocfg_130120_2.txt
+set-cfg-tmpl GONGDONG1.cli
+commit
+apply-bts-cfg
+act-bts-cfg
+exit
+yes
+
+init-cell -v 24R2 -r 4G
+set-du-type du20
+#set-ru-type FRGQ
+#set-ru-type AHGA
+set-ru-type FRGP
+tgt-bts 130120
+dnload-bts-cfg
+exec-script senario_du20_initcell_noNbiot_autocfg_130120_3.txt
+set-cfg-tmpl GONGDONG1.cli
+commit
+apply-bts-cfg
+act-bts-cfg
+
+dnload-bts-cfg
+exec-script senario_kill_dummy.cli
+commit
+apply-bts-cfg
+act-bts-cfg

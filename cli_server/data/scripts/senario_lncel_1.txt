@@ -1,0 +1,18 @@
+setup
+init-stp
+dest-bts 130112
+dest-bts-ip 4.4.0.140
+exit
+exit
+config
+init-cell -v 24R2 -r 4G
+set-ru-type FHCA
+tgt-bts 130112
+download-cfg-xml
+set-cfg-tmpl genScf
+commit -t 1
+#set-cfg-tmpl 커밋한 파일
+run-script senario_lncel_2.txt
+commit-cell
+#recommission 커밋한 파일
+#recommission 커밋한 파일 --activate

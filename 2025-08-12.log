@@ -1,0 +1,788 @@
+01:45:25.519  INFO src/main.rs:41: version=1.2.0
+01:45:25.519  INFO src/main.rs:42: Cli { config_file: "/home/nokia/nocli/bin/na_query/na_query.toml", command: GetBtsIp { bts_id: 2350003 } }
+01:45:25.520  INFO src/get_bts_ip.rs:22: try to get IP from EMS: DVT_5G, LBWAS: 4.5.12.137, user: omc
+01:45:25.520  INFO ems{alias="DVT_5G"}: src/get_bts_ip.rs:52: start to get IP
+01:45:25.690  INFO ems{alias="DVT_5G"}: src/get_bts_ip.rs:69: got IP: 4.5.13.5
+01:45:25.690  INFO src/get_bts_ip.rs:40: IP: Some("4.5.13.5")
+02:17:38.399  INFO src/main.rs:41: version=1.2.0
+02:17:38.399  INFO src/main.rs:42: Cli { config_file: "/home/nokia/nocli/bin/na_query/na_query.toml", command: ExeBtsInt { bts_id: 2350003, ver: "SBTS25R2", ems: "DVT_5G", mr: Some("MRC-MRC/MR-LGU+5G"), ne_ip: "4.5.13.5", ne_name: None, http: 8080, https: 8443, tls: false } }
+02:17:38.399  INFO src/cli.rs:83: exe-bts-int in EMS: DVT_5G
+02:17:38.406  INFO src/exe_bts_int.rs:153: importing plan: 
+[
+  {
+    "moType": "MRBTS",
+    "moVersion": "SBTS25R2",
+    "parameters": [
+      {
+        "name": "MR",
+        "value": "MRC-MRC/MR-LGU+5G"
+      },
+      {
+        "name": "MRBTS distinguished name",
+        "value": "PLMN-PLMN/MRBTS-2350003"
+      },
+      {
+        "name": "NE3SWS agent HTTP connection port",
+        "value": "8080"
+      },
+      {
+        "name": "NE3SWS agent HTTPS connection port",
+        "value": "8443"
+      },
+      {
+        "name": "NE3SWS IP version",
+        "value": "0"
+      },
+      {
+        "name": "MRBTS address",
+        "value": "4.5.13.5"
+      },
+      {
+        "name": "NE3SWS agent security mode",
+        "value": "0"
+      }
+    ],
+    "cnumParameters": [
+      {
+        "name": "cnumEnable",
+        "value": "false"
+      }
+    ]
+  }
+]
+02:17:38.406  INFO src/exe_bts_int.rs:106: post request:
+Request {
+    method: POST,
+    url: Url {
+        scheme: "https",
+        cannot_be_a_base: false,
+        username: "",
+        password: None,
+        host: Some(
+            Ipv4(
+                4.5.12.137,
+            ),
+        ),
+        port: None,
+        path: "/api/ne-integration/v1/plans",
+        query: None,
+        fragment: None,
+    },
+    headers: {
+        "authorization": Sensitive,
+        "accept": "application/json",
+        "content-type": "multipart/form-data; boundary=e6406f3ec4604497-f4c6f211f9b529bb-36d3d0cab83cf9dc-f1958fe520b6e91e",
+    },
+}
+02:17:39.116  INFO src/exe_bts_int.rs:110: post response:
+Response {
+    url: "https://4.5.12.137/api/ne-integration/v1/plans",
+    status: 400,
+    headers: {
+        "date": "Tue, 12 Aug 2025 02:20:18 GMT",
+        "strict-transport-security": "max-age=31536000;includeSubDomains;",
+        "content-disposition": "attachment; filename=\"temp_import_result_2023620192243359317.json\"",
+        "accept-ranges": "bytes",
+        "content-length": "203",
+        "set-cookie": "LtpaToken2=WGgrZUKJKzOXS83r8ILc0KwXQQ8yXG57mE/uFEZMOBVtUusLDHy+7y4wTBjdMPBW9B3ftL3jXs5nyobnfNEl77z1qRbLoPaVvE1vdTXwlNJxMxFi3LH+0LJIwW/h9l8rS0D4oP0Ugjjwc/UiNwcTibtk1Yz85eJliHVlsn04uv2GiyNcZHKI0dJvM5n4ZnJJocGXehWdQ3cCaZ5Robiw4HLK/H9N3OTAHxzEk7ej0zMV8cZ8543G2UXZh/LfkE99ta16cvxdfy67KPMXQ6penLar+7/w1ZTN/8pyjCsYHRotqivNFBR6AaabAfFr3oT6ahLD+caUW3L1+EhGhIiItQxhN6cQKiwVy8L0sUdtQ1ChHymemTaC2Pmtl2zzT2G+2DXkdZY6QpLTpzsQt4K64dpihMkouh/lu4boRCgAvIfF0dzeou5MzHORCHnUqZQrIrshXNvs9C1+3VitY60MUR5DM7/pO9TNhEzlXbYeZntHNBOCUzjUVK2qlIMQublQx/KjYKNJq6MZSkydXXmeMs11G7XBHb/RLLWHl6/3AxMBwqCKlFotg+voca9tTkqaJXLggFY8LOBtd3KrXSNAr9ny2MgddspDgHNxTlaardx31pLam/z7Y7WRnIawpwaHHGbiRfTiim1p1vuxjDmpTp+Iph0JDNY4idAVG5rEgQNPK+5BI/PXYxb0LCF/cJSORYhDZR7P8jyFRrVDplh3OQ==; Path=/; Secure; HttpOnly",
+        "expires": "Thu, 01 Dec 1994 16:00:00 GMT",
+        "cache-control": "no-cache=\"set-cookie, set-cookie2\"",
+        "x-frame-options": "SAMEORIGIN",
+        "x-xss-protection": "1; mode=block",
+        "x-content-type-options": "nosniff",
+        "content-security-policy": "default-src https: data: 'unsafe-inline' 'unsafe-eval'; worker-src self blob: https:",
+        "connection": "close",
+        "content-type": "application/octet-stream",
+        "content-language": "en-US",
+    },
+}
+02:17:39.116  INFO src/exe_bts_int.rs:113: response text:
+{
+  "failedPlans" : [ {
+    "dn" : "PLMN-PLMN/MRBTS-2350003",
+    "error" : "Failed to validate parameter: MR, Value: MRC-MRC/MR-LGU+5G, Reason: The input value does not exist in NetAct database"
+  } ]
+}
+02:17:39.116 ERROR src/main.rs:31: failed in importing plan
+
+Caused by:
+    0: post failed
+    1: post request failed, message:
+       {
+         "failedPlans" : [ {
+           "dn" : "PLMN-PLMN/MRBTS-2350003",
+           "error" : "Failed to validate parameter: MR, Value: MRC-MRC/MR-LGU+5G, Reason: The input value does not exist in NetAct database"
+         } ]
+       }
+02:18:00.509  INFO src/main.rs:41: version=1.2.0
+02:18:00.509  INFO src/main.rs:42: Cli { config_file: "/home/nokia/nocli/bin/na_query/na_query.toml", command: ExeBtsInt { bts_id: 2350003, ver: "SBTS25R2", ems: "DVT_5G", mr: Some("MRC-5G/MR-LGU+5G"), ne_ip: "4.5.13.5", ne_name: None, http: 8080, https: 8443, tls: false } }
+02:18:00.509  INFO src/cli.rs:83: exe-bts-int in EMS: DVT_5G
+02:18:00.511  INFO src/exe_bts_int.rs:153: importing plan: 
+[
+  {
+    "moType": "MRBTS",
+    "moVersion": "SBTS25R2",
+    "parameters": [
+      {
+        "name": "MR",
+        "value": "MRC-5G/MR-LGU+5G"
+      },
+      {
+        "name": "MRBTS distinguished name",
+        "value": "PLMN-PLMN/MRBTS-2350003"
+      },
+      {
+        "name": "NE3SWS agent HTTP connection port",
+        "value": "8080"
+      },
+      {
+        "name": "NE3SWS agent HTTPS connection port",
+        "value": "8443"
+      },
+      {
+        "name": "NE3SWS IP version",
+        "value": "0"
+      },
+      {
+        "name": "MRBTS address",
+        "value": "4.5.13.5"
+      },
+      {
+        "name": "NE3SWS agent security mode",
+        "value": "0"
+      }
+    ],
+    "cnumParameters": [
+      {
+        "name": "cnumEnable",
+        "value": "false"
+      }
+    ]
+  }
+]
+02:18:00.511  INFO src/exe_bts_int.rs:106: post request:
+Request {
+    method: POST,
+    url: Url {
+        scheme: "https",
+        cannot_be_a_base: false,
+        username: "",
+        password: None,
+        host: Some(
+            Ipv4(
+                4.5.12.137,
+            ),
+        ),
+        port: None,
+        path: "/api/ne-integration/v1/plans",
+        query: None,
+        fragment: None,
+    },
+    headers: {
+        "authorization": Sensitive,
+        "accept": "application/json",
+        "content-type": "multipart/form-data; boundary=bf00f6f937a57add-500986dbdd32fa7f-0f9dd5898eff4c07-3cdcfe0c55e18ca4",
+    },
+}
+02:18:00.732  INFO src/exe_bts_int.rs:110: post response:
+Response {
+    url: "https://4.5.12.137/api/ne-integration/v1/plans",
+    status: 201,
+    headers: {
+        "date": "Tue, 12 Aug 2025 02:20:40 GMT",
+        "strict-transport-security": "max-age=31536000;includeSubDomains;",
+        "content-disposition": "attachment; filename=\"temp_import_result_1189450226050420532.json\"",
+        "accept-ranges": "bytes",
+        "content-length": "50",
+        "set-cookie": "LtpaToken2=WGgrZUKJKzOXS83r8ILc0KwXQQ8yXG57mE/uFEZMOBVtUusLDHy+7y4wTBjdMPBW9B3ftL3jXs5nyobnfNEl77z1qRbLoPaVvE1vdTXwlNJxMxFi3LH+0LJIwW/h9l8rS0D4oP0Ugjjwc/UiNwcTibtk1Yz85eJliHVlsn04uv2GiyNcZHKI0dJvM5n4ZnJJocGXehWdQ3cCaZ5Robiw4HLK/H9N3OTAHxzEk7ej0zMV8cZ8543G2UXZh/LfkE99ta16cvxdfy67KPMXQ6penLar+7/w1ZTN/8pyjCsYHRotqivNFBR6AaabAfFr3oT6ahLD+caUW3L1+EhGhIiItQxhN6cQKiwVy8L0sUdtQ1ChHymemTaC2Pmtl2zzT2G+2DXkdZY6QpLTpzsQt4K64dpihMkouh/lu4boRCgAvIfF0dzeou5MzHORCHnUqZQrIrshXNvs9C1+3VitY60MUR5DM7/pO9TNhEzlXbYeZntHNBOCUzjUVK2qlIMQublQx/KjYKNJq6MZSkydXXmeMs11G7XBHb/RLLWHl6/3AxMBwqCKlFotg+voca9tTkqaJXLggFY8LOBtd3KrXSNAr9ny2MgddspDgHNxTlaardx31pLam/z7Y7WRnIawpwaHHGbiRfTiim1p1vuxjDmpTp+Iph0JDNY4idAVG5rEgQNPK+5BI/PXYxb0LCF/cJSORYhDZR7P8jyFRrVDplh3OQ==; Path=/; Secure; HttpOnly",
+        "expires": "Thu, 01 Dec 1994 16:00:00 GMT",
+        "cache-control": "no-cache=\"set-cookie, set-cookie2\"",
+        "x-frame-options": "SAMEORIGIN",
+        "x-xss-protection": "1; mode=block",
+        "x-content-type-options": "nosniff",
+        "content-security-policy": "default-src https: data: 'unsafe-inline' 'unsafe-eval'; worker-src self blob: https:",
+        "content-type": "application/octet-stream",
+        "content-language": "en-US",
+    },
+}
+02:18:00.732  INFO src/exe_bts_int.rs:113: response text:
+{
+  "savedPlans" : [ "PLMN-PLMN/MRBTS-2350003" ]
+}
+02:18:00.734 ERROR src/main.rs:31: failed in importing plan
+
+Caused by:
+    0: invalid response json
+    1: missing field `planNames` at line 3 column 1
+02:20:19.616  INFO src/main.rs:41: version=1.2.0
+02:20:19.616  INFO src/main.rs:42: Cli { config_file: "/home/nokia/nocli/bin/na_query/na_query.toml", command: ExeBtsInt { bts_id: 2350003, ver: "SBTS25R2", ems: "DVT_5G", mr: Some("MRC-5G/MR-LGU+5G"), ne_ip: "4.5.13.5", ne_name: None, http: 8080, https: 8443, tls: false } }
+02:20:19.616  INFO src/cli.rs:83: exe-bts-int in EMS: DVT_5G
+02:20:19.618  INFO src/exe_bts_int.rs:153: importing plan: 
+[
+  {
+    "moType": "MRBTS",
+    "moVersion": "SBTS25R2",
+    "parameters": [
+      {
+        "name": "MR",
+        "value": "MRC-5G/MR-LGU+5G"
+      },
+      {
+        "name": "MRBTS distinguished name",
+        "value": "PLMN-PLMN/MRBTS-2350003"
+      },
+      {
+        "name": "NE3SWS agent HTTP connection port",
+        "value": "8080"
+      },
+      {
+        "name": "NE3SWS agent HTTPS connection port",
+        "value": "8443"
+      },
+      {
+        "name": "NE3SWS IP version",
+        "value": "0"
+      },
+      {
+        "name": "MRBTS address",
+        "value": "4.5.13.5"
+      },
+      {
+        "name": "NE3SWS agent security mode",
+        "value": "0"
+      }
+    ],
+    "cnumParameters": [
+      {
+        "name": "cnumEnable",
+        "value": "false"
+      }
+    ]
+  }
+]
+02:20:19.618  INFO src/exe_bts_int.rs:106: post request:
+Request {
+    method: POST,
+    url: Url {
+        scheme: "https",
+        cannot_be_a_base: false,
+        username: "",
+        password: None,
+        host: Some(
+            Ipv4(
+                4.5.12.137,
+            ),
+        ),
+        port: None,
+        path: "/api/ne-integration/v1/plans",
+        query: None,
+        fragment: None,
+    },
+    headers: {
+        "authorization": Sensitive,
+        "accept": "application/json",
+        "content-type": "multipart/form-data; boundary=eeb97b68c5ee8d01-9ae97b8955063e98-10c96d6310a4f892-46ece34d6424f464",
+    },
+}
+02:20:19.830  INFO src/exe_bts_int.rs:110: post response:
+Response {
+    url: "https://4.5.12.137/api/ne-integration/v1/plans",
+    status: 201,
+    headers: {
+        "date": "Tue, 12 Aug 2025 02:22:59 GMT",
+        "strict-transport-security": "max-age=31536000;includeSubDomains;",
+        "content-disposition": "attachment; filename=\"temp_import_result_7061883968324316571.json\"",
+        "accept-ranges": "bytes",
+        "content-length": "50",
+        "set-cookie": "LtpaToken2=7ljya0ofAeqD2bVujQR497vdWb2AgHS744JETuJZA9vBU+Cr+7D+CSdpaN/SKN6df7IKEOmlu8qyoaRhgpfCrXJrUTuyOu0hiCybF9Ce2mOziUeoqw2QZVXvbWSZ/2hrrHG884ggnMxqnTYSTGMr3O5Cmhp2NUEASQzRMVD/ZwsTvXbbCS/a02V6B6HLwQ9LNrcMq7erbcizw6fI+xFdMZFLY6A4BkjR3F+QbLjHeiJndvC8+CLxrmGL4+S4MVvQ166v2je3PRkaT/G++yhf7kBtCObxYzksP9uM/UbExkUQcSdlcomapbaoxB3BR4q6aZ1KNTNMPiynaZGMGeBczaBZWaYmEy+SZXTtPTRgA0l6S/9rVPSJ44tcH9xpOwcSJYRUciPvYAGODRlz6+hJ66LpraC5UVR4+zjK95V1uVs3PBU6FBJHK3OCqFcyFkAovfmzwHwMtztX4MlTa7eOA9o4nW5Ryqa8QdJZqEP8v1EoHT/m+8fPKxhQfkn0+dtdvTL25MD2Ibo593Y8pbGuYjdQHj4aOQT7+RhkAaU78vLiqZ/rRKDv0NiQoeUflLCpqqArpU3Y3pXoHpvSAba08h6HldRKjcUH7XfHTPfIYrcT3NLy7SqxnMT/9Mpqc3l3ATZWW8lyP7STmlOAQMNLjfoWm/KxDQRvShFuuMLBFu29P3PQAWSF9ZM7otXp1MOwzYe8AXd6yEpZGoZRxjQK/A==; Path=/; Secure; HttpOnly",
+        "expires": "Thu, 01 Dec 1994 16:00:00 GMT",
+        "cache-control": "no-cache=\"set-cookie, set-cookie2\"",
+        "x-frame-options": "SAMEORIGIN",
+        "x-xss-protection": "1; mode=block",
+        "x-content-type-options": "nosniff",
+        "content-security-policy": "default-src https: data: 'unsafe-inline' 'unsafe-eval'; worker-src self blob: https:",
+        "content-type": "application/octet-stream",
+        "content-language": "en-US",
+    },
+}
+02:20:19.830  INFO src/exe_bts_int.rs:113: response text:
+{
+  "savedPlans" : [ "PLMN-PLMN/MRBTS-2350003" ]
+}
+02:20:19.831 ERROR src/main.rs:31: failed in importing plan
+
+Caused by:
+    0: invalid response json
+    1: missing field `planNames` at line 3 column 1
+02:20:39.600  INFO src/main.rs:41: version=1.2.0
+02:20:39.600  INFO src/main.rs:42: Cli { config_file: "/home/nokia/nocli/bin/na_query/na_query.toml", command: ExeBtsInt { bts_id: 2350003, ver: "SBTS25R2", ems: "DVT_5G", mr: Some("MRC-5G/MR-LGU+5G"), ne_ip: "4.5.13.5", ne_name: Some("Magok_Site100"), http: 8080, https: 8443, tls: false } }
+02:20:39.600  INFO src/cli.rs:83: exe-bts-int in EMS: DVT_5G
+02:20:39.602  INFO src/exe_bts_int.rs:153: importing plan: 
+[
+  {
+    "moType": "MRBTS",
+    "moVersion": "SBTS25R2",
+    "parameters": [
+      {
+        "name": "MR",
+        "value": "MRC-5G/MR-LGU+5G"
+      },
+      {
+        "name": "MRBTS distinguished name",
+        "value": "PLMN-PLMN/MRBTS-2350003"
+      },
+      {
+        "name": "NE3SWS agent HTTP connection port",
+        "value": "8080"
+      },
+      {
+        "name": "NE3SWS agent HTTPS connection port",
+        "value": "8443"
+      },
+      {
+        "name": "NE3SWS IP version",
+        "value": "0"
+      },
+      {
+        "name": "MRBTS address",
+        "value": "4.5.13.5"
+      },
+      {
+        "name": "NE3SWS agent security mode",
+        "value": "0"
+      },
+      {
+        "name": "NE presentation name",
+        "value": "Magok_Site100"
+      }
+    ],
+    "cnumParameters": [
+      {
+        "name": "cnumEnable",
+        "value": "false"
+      }
+    ]
+  }
+]
+02:20:39.602  INFO src/exe_bts_int.rs:106: post request:
+Request {
+    method: POST,
+    url: Url {
+        scheme: "https",
+        cannot_be_a_base: false,
+        username: "",
+        password: None,
+        host: Some(
+            Ipv4(
+                4.5.12.137,
+            ),
+        ),
+        port: None,
+        path: "/api/ne-integration/v1/plans",
+        query: None,
+        fragment: None,
+    },
+    headers: {
+        "authorization": Sensitive,
+        "accept": "application/json",
+        "content-type": "multipart/form-data; boundary=0fb1dc54880bd955-167fc94aedf52025-97428ef13414ce78-a4b2d53a7eeb9e23",
+    },
+}
+02:20:39.696  INFO src/exe_bts_int.rs:110: post response:
+Response {
+    url: "https://4.5.12.137/api/ne-integration/v1/plans",
+    status: 201,
+    headers: {
+        "date": "Tue, 12 Aug 2025 02:23:19 GMT",
+        "strict-transport-security": "max-age=31536000;includeSubDomains;",
+        "content-disposition": "attachment; filename=\"temp_import_result_8393722457003915675.json\"",
+        "accept-ranges": "bytes",
+        "content-length": "50",
+        "set-cookie": "LtpaToken2=7ljya0ofAeqD2bVujQR497vdWb2AgHS744JETuJZA9vBU+Cr+7D+CSdpaN/SKN6df7IKEOmlu8qyoaRhgpfCrXJrUTuyOu0hiCybF9Ce2mOziUeoqw2QZVXvbWSZ/2hrrHG884ggnMxqnTYSTGMr3O5Cmhp2NUEASQzRMVD/ZwsTvXbbCS/a02V6B6HLwQ9LNrcMq7erbcizw6fI+xFdMZFLY6A4BkjR3F+QbLjHeiJndvC8+CLxrmGL4+S4MVvQ166v2je3PRkaT/G++yhf7kBtCObxYzksP9uM/UbExkUQcSdlcomapbaoxB3BR4q6aZ1KNTNMPiynaZGMGeBczaBZWaYmEy+SZXTtPTRgA0l6S/9rVPSJ44tcH9xpOwcSJYRUciPvYAGODRlz6+hJ66LpraC5UVR4+zjK95V1uVs3PBU6FBJHK3OCqFcyFkAovfmzwHwMtztX4MlTa7eOA9o4nW5Ryqa8QdJZqEP8v1EoHT/m+8fPKxhQfkn0+dtdvTL25MD2Ibo593Y8pbGuYjdQHj4aOQT7+RhkAaU78vLiqZ/rRKDv0NiQoeUflLCpqqArpU3Y3pXoHpvSAba08h6HldRKjcUH7XfHTPfIYrcT3NLy7SqxnMT/9Mpqc3l3ATZWW8lyP7STmlOAQMNLjfoWm/KxDQRvShFuuMLBFu29P3PQAWSF9ZM7otXp1MOwzYe8AXd6yEpZGoZRxjQK/A==; Path=/; Secure; HttpOnly",
+        "expires": "Thu, 01 Dec 1994 16:00:00 GMT",
+        "cache-control": "no-cache=\"set-cookie, set-cookie2\"",
+        "x-frame-options": "SAMEORIGIN",
+        "x-xss-protection": "1; mode=block",
+        "x-content-type-options": "nosniff",
+        "content-security-policy": "default-src https: data: 'unsafe-inline' 'unsafe-eval'; worker-src self blob: https:",
+        "content-type": "application/octet-stream",
+        "content-language": "en-US",
+    },
+}
+02:20:39.696  INFO src/exe_bts_int.rs:113: response text:
+{
+  "savedPlans" : [ "PLMN-PLMN/MRBTS-2350003" ]
+}
+02:20:39.697 ERROR src/main.rs:31: failed in importing plan
+
+Caused by:
+    0: invalid response json
+    1: missing field `planNames` at line 3 column 1
+05:46:22.820  INFO src/main.rs:41: version=1.2.0
+05:46:22.821  INFO src/main.rs:42: Cli { config_file: "/home/nokia/nocli/bin/na_query/na_query.toml", command: GetBtsIp { bts_id: 2350003 } }
+05:46:22.822  INFO src/get_bts_ip.rs:22: try to get IP from EMS: DVT_5G, LBWAS: 4.5.12.137, user: omc
+05:46:22.822  INFO ems{alias="DVT_5G"}: src/get_bts_ip.rs:52: start to get IP
+05:46:22.868  INFO ems{alias="DVT_5G"}: src/get_bts_ip.rs:69: got IP: 4.5.13.5
+05:46:22.869  INFO src/get_bts_ip.rs:40: IP: Some("4.5.13.5")
+05:51:23.930  INFO src/main.rs:41: version=1.2.0
+05:51:23.930  INFO src/main.rs:42: Cli { config_file: "/home/nokia/nocli/bin/na_query/na_query.toml", command: GetBtsIp { bts_id: 2350003 } }
+05:51:23.931  INFO src/get_bts_ip.rs:22: try to get IP from EMS: DVT_5G, LBWAS: 4.5.12.137, user: omc
+05:51:23.931  INFO ems{alias="DVT_5G"}: src/get_bts_ip.rs:52: start to get IP
+05:51:23.972  INFO ems{alias="DVT_5G"}: src/get_bts_ip.rs:69: got IP: 4.5.13.5
+05:51:23.973  INFO src/get_bts_ip.rs:40: IP: Some("4.5.13.5")
+06:01:40.748  INFO src/main.rs:41: version=1.2.0
+06:01:40.748  INFO src/main.rs:42: Cli { config_file: "/home/nokia/nocli/bin/na_query/na_query.toml", command: GetBtsIp { bts_id: 2350003 } }
+06:01:40.748  INFO src/get_bts_ip.rs:22: try to get IP from EMS: DVT_5G, LBWAS: 4.5.12.137, user: omc
+06:01:40.749  INFO ems{alias="DVT_5G"}: src/get_bts_ip.rs:52: start to get IP
+06:01:40.857  INFO ems{alias="DVT_5G"}: src/get_bts_ip.rs:69: got IP: 4.5.13.5
+06:01:40.858  INFO src/get_bts_ip.rs:40: IP: Some("4.5.13.5")
+06:04:02.883  INFO src/main.rs:41: version=1.2.0
+06:04:02.884  INFO src/main.rs:42: Cli { config_file: "/home/nokia/nocli/bin/na_query/na_query.toml", command: GetBtsIp { bts_id: 2350003 } }
+06:04:02.884  INFO src/get_bts_ip.rs:22: try to get IP from EMS: DVT_5G, LBWAS: 4.5.12.137, user: omc
+06:04:02.884  INFO ems{alias="DVT_5G"}: src/get_bts_ip.rs:52: start to get IP
+06:04:02.912  INFO ems{alias="DVT_5G"}: src/get_bts_ip.rs:69: got IP: 4.5.13.5
+06:04:02.913  INFO src/get_bts_ip.rs:40: IP: Some("4.5.13.5")
+06:18:48.226  INFO src/main.rs:41: version=1.2.0
+06:18:48.227  INFO src/main.rs:42: Cli { config_file: "/home/nokia/nocli/bin/na_query/na_query.toml", command: GetBtsIp { bts_id: 2350003 } }
+06:18:48.227  INFO src/get_bts_ip.rs:22: try to get IP from EMS: DVT_5G, LBWAS: 4.5.12.137, user: omc
+06:18:48.227  INFO ems{alias="DVT_5G"}: src/get_bts_ip.rs:52: start to get IP
+06:18:48.332  INFO ems{alias="DVT_5G"}: src/get_bts_ip.rs:69: got IP: 4.5.13.5
+06:18:48.333  INFO src/get_bts_ip.rs:40: IP: Some("4.5.13.5")
+06:19:17.014  INFO src/main.rs:41: version=1.2.0
+06:19:17.014  INFO src/main.rs:42: Cli { config_file: "/home/nokia/nocli/bin/na_query/na_query.toml", command: GetBtsIp { bts_id: 2350003 } }
+06:19:17.014  INFO src/get_bts_ip.rs:22: try to get IP from EMS: DVT_5G, LBWAS: 4.5.12.137, user: omc
+06:19:17.014  INFO ems{alias="DVT_5G"}: src/get_bts_ip.rs:52: start to get IP
+06:19:17.039  INFO ems{alias="DVT_5G"}: src/get_bts_ip.rs:69: got IP: 4.5.13.5
+06:19:17.040  INFO src/get_bts_ip.rs:40: IP: Some("4.5.13.5")
+06:20:29.543  INFO src/main.rs:41: version=1.2.0
+06:20:29.544  INFO src/main.rs:42: Cli { config_file: "/home/nokia/nocli/bin/na_query/na_query.toml", command: GetBtsIp { bts_id: 2350003 } }
+06:20:29.544  INFO src/get_bts_ip.rs:22: try to get IP from EMS: DVT_5G, LBWAS: 4.5.12.137, user: omc
+06:20:29.545  INFO ems{alias="DVT_5G"}: src/get_bts_ip.rs:52: start to get IP
+06:20:29.573  INFO ems{alias="DVT_5G"}: src/get_bts_ip.rs:69: got IP: 4.5.13.5
+06:20:29.574  INFO src/get_bts_ip.rs:40: IP: Some("4.5.13.5")
+06:33:47.053  INFO src/main.rs:41: version=1.2.0
+06:33:47.053  INFO src/main.rs:42: Cli { config_file: "/home/nokia/nocli/bin/na_query/na_query.toml", command: GetBtsIp { bts_id: 2350003 } }
+06:33:47.054  INFO src/get_bts_ip.rs:22: try to get IP from EMS: DVT_5G, LBWAS: 4.5.12.137, user: omc
+06:33:47.054  INFO ems{alias="DVT_5G"}: src/get_bts_ip.rs:52: start to get IP
+06:33:47.094  INFO ems{alias="DVT_5G"}: src/get_bts_ip.rs:69: got IP: 4.5.13.5
+06:33:47.094  INFO src/get_bts_ip.rs:40: IP: Some("4.5.13.5")
+06:50:47.892  INFO src/main.rs:41: version=1.2.0
+06:50:47.892  INFO src/main.rs:42: Cli { config_file: "/home/nokia/nocli/bin/na_query/na_query.toml", command: GetBtsIp { bts_id: 2350003 } }
+06:50:47.893  INFO src/get_bts_ip.rs:22: try to get IP from EMS: DVT_5G, LBWAS: 4.5.12.137, user: omc
+06:50:47.893  INFO ems{alias="DVT_5G"}: src/get_bts_ip.rs:52: start to get IP
+06:50:47.941  INFO ems{alias="DVT_5G"}: src/get_bts_ip.rs:69: got IP: 4.5.13.5
+06:50:47.942  INFO src/get_bts_ip.rs:40: IP: Some("4.5.13.5")
+07:00:34.171  INFO src/main.rs:41: version=1.2.0
+07:00:34.171  INFO src/main.rs:42: Cli { config_file: "/home/nokia/nocli/bin/na_query/na_query.toml", command: GetBtsIp { bts_id: 2350003 } }
+07:00:34.172  INFO src/get_bts_ip.rs:22: try to get IP from EMS: DVT_5G, LBWAS: 4.5.12.137, user: omc
+07:00:34.172  INFO ems{alias="DVT_5G"}: src/get_bts_ip.rs:52: start to get IP
+07:00:34.200  INFO ems{alias="DVT_5G"}: src/get_bts_ip.rs:69: got IP: 4.5.13.5
+07:00:34.201  INFO src/get_bts_ip.rs:40: IP: Some("4.5.13.5")
+07:04:01.247  INFO src/main.rs:41: version=1.2.0
+07:04:01.247  INFO src/main.rs:42: Cli { config_file: "/home/nokia/nocli/bin/na_query/na_query.toml", command: GetBtsIp { bts_id: 2350003 } }
+07:04:01.248  INFO src/get_bts_ip.rs:22: try to get IP from EMS: DVT_5G, LBWAS: 4.5.12.137, user: omc
+07:04:01.248  INFO ems{alias="DVT_5G"}: src/get_bts_ip.rs:52: start to get IP
+07:04:01.290  INFO ems{alias="DVT_5G"}: src/get_bts_ip.rs:69: got IP: 4.5.13.5
+07:04:01.290  INFO src/get_bts_ip.rs:40: IP: Some("4.5.13.5")
+07:08:10.477  INFO src/main.rs:41: version=1.3.0
+07:08:10.477  INFO src/main.rs:42: Cli { config_file: "/home/nokia/nocli/bin/na_query/na_query.toml", command: ExeBtsInt { bts_id: 2350003, ver: "SBTS25R2", ems: "DVT_5G", mr: Some("MRC-5G/MR-LGU+5G"), ne_ip: "4.5.13.5", ne_name: Some("Magok_Site100"), http: 8080, https: 8443, tls: false } }
+07:08:10.477  INFO src/cli.rs:83: exe-bts-int in EMS: DVT_5G
+07:08:10.478  INFO src/exe_bts_int.rs:152: importing plan: 
+[
+  {
+    "moType": "MRBTS",
+    "moVersion": "SBTS25R2",
+    "parameters": [
+      {
+        "name": "MR",
+        "value": "MRC-5G/MR-LGU+5G"
+      },
+      {
+        "name": "MRBTS distinguished name",
+        "value": "PLMN-PLMN/MRBTS-2350003"
+      },
+      {
+        "name": "NE3SWS agent HTTP connection port",
+        "value": "8080"
+      },
+      {
+        "name": "NE3SWS agent HTTPS connection port",
+        "value": "8443"
+      },
+      {
+        "name": "NE3SWS IP version",
+        "value": "0"
+      },
+      {
+        "name": "MRBTS address",
+        "value": "4.5.13.5"
+      },
+      {
+        "name": "NE3SWS agent security mode",
+        "value": "0"
+      },
+      {
+        "name": "NE presentation name",
+        "value": "Magok_Site100"
+      }
+    ],
+    "cnumParameters": [
+      {
+        "name": "cnumEnable",
+        "value": "false"
+      }
+    ]
+  }
+]
+07:08:10.479  INFO src/exe_bts_int.rs:106: post request:
+Request {
+    method: POST,
+    url: Url {
+        scheme: "https",
+        cannot_be_a_base: false,
+        username: "",
+        password: None,
+        host: Some(
+            Ipv4(
+                4.5.12.137,
+            ),
+        ),
+        port: None,
+        path: "/api/ne-integration/v1/plans",
+        query: None,
+        fragment: None,
+    },
+    headers: {
+        "authorization": Sensitive,
+        "accept": "application/json",
+        "content-type": "multipart/form-data; boundary=d0deb0e59aa8792c-84aabf883baf6283-e61167aa8b8ee6dd-5f6ce7ff6281b3d1",
+    },
+}
+07:08:11.122  INFO src/exe_bts_int.rs:110: post response:
+Response {
+    url: "https://4.5.12.137/api/ne-integration/v1/plans",
+    status: 201,
+    headers: {
+        "date": "Tue, 12 Aug 2025 07:10:50 GMT",
+        "strict-transport-security": "max-age=31536000;includeSubDomains;",
+        "content-disposition": "attachment; filename=\"temp_import_result_7369622396185381619.json\"",
+        "accept-ranges": "bytes",
+        "content-length": "50",
+        "set-cookie": "LtpaToken2=gt/+9e3YsTQ7agwZ26vKf/8vDW+H15Ow9S9rnr1r6P2HjKQomwNJ+nvWyW2bd9W7ckzMiZPBPFIsjihixTIw5o6xHqro39DFBugGh08IpTNVP9tN3q2BeyFPsR/YrPWTMI1shvgUQ/+ep3r7mdDmRIrAM9vEOouZhqDGWEx2WgjDAFo276CPaT+lZ4GdQ1LTCXOeQvVtV5lURr/2U+O1FIjjwmv1mv/az6crcCYnD9yznyGAxLYT/718pqKITwScb+N2PMFjeueFlE9L4V3krr3vjoPBD10ZgyyaxuSLf/ewWziDfKrQxnv5RGQNMMVvhPssFWyckHdLPhOICXroXBRTrEoeJUf2im5iKdPSPKcotsGOl2CUV//WPF8YHKs2ozuguUYN0paPPyU6yToyeWydLeMUt8boQuaXfG0b5rGHM57ZcHq8A2ZYxA+dlzw9AWWDgAiqq7zIrNLTJ09eUrOm/Nj5xlQjxcscoBc/7Ojd2pRJTDCO4RSt9U4P9ql+pmJ1ztB1Pno7L/kMC3kKCfo+gzyXJUuCVludMdmGdDTbhShjH8Gc5H0587FtnRHuM55wyj2jCUH1SUMiOxrz5fKmMlBZ6ivHiWbtnTsU+cLfxjGTr9UBIILI6+zMetED88+RgWuNsuLNM1otYceRzHg8+gOewscyVUJraeHqduV3rt99R38n15o6++V9ooyLnUdjp+qgA8Dz1+5CVQwxrQ==; Path=/; Secure; HttpOnly",
+        "expires": "Thu, 01 Dec 1994 16:00:00 GMT",
+        "cache-control": "no-cache=\"set-cookie, set-cookie2\"",
+        "x-frame-options": "SAMEORIGIN",
+        "x-xss-protection": "1; mode=block",
+        "x-content-type-options": "nosniff",
+        "content-security-policy": "default-src https: data: 'unsafe-inline' 'unsafe-eval'; worker-src self blob: https:",
+        "content-type": "application/octet-stream",
+        "content-language": "en-US",
+    },
+}
+07:08:11.122  INFO src/exe_bts_int.rs:113: response text:
+{
+  "savedPlans" : [ "PLMN-PLMN/MRBTS-2350003" ]
+}
+07:08:11.123  INFO src/exe_bts_int.rs:106: post request:
+Request {
+    method: POST,
+    url: Url {
+        scheme: "https",
+        cannot_be_a_base: false,
+        username: "",
+        password: None,
+        host: Some(
+            Ipv4(
+                4.5.12.137,
+            ),
+        ),
+        port: None,
+        path: "/api/ne-integration/v1/operations/start",
+        query: Some(
+            "onlyVerification=false",
+        ),
+        fragment: None,
+    },
+    headers: {
+        "authorization": Sensitive,
+        "accept": "application/json",
+        "content-type": "application/json",
+    },
+}
+07:08:11.197  INFO src/exe_bts_int.rs:110: post response:
+Response {
+    url: "https://4.5.12.137/api/ne-integration/v1/operations/start?onlyVerification=false",
+    status: 202,
+    headers: {
+        "date": "Tue, 12 Aug 2025 07:10:51 GMT",
+        "strict-transport-security": "max-age=31536000;includeSubDomains;",
+        "set-cookie": "LtpaToken2=gt/+9e3YsTQ7agwZ26vKf/8vDW+H15Ow9S9rnr1r6P2HjKQomwNJ+nvWyW2bd9W7ckzMiZPBPFIsjihixTIw5o6xHqro39DFBugGh08IpTNVP9tN3q2BeyFPsR/YrPWTMI1shvgUQ/+ep3r7mdDmRIrAM9vEOouZhqDGWEx2WgjDAFo276CPaT+lZ4GdQ1LTCXOeQvVtV5lURr/2U+O1FIjjwmv1mv/az6crcCYnD9yznyGAxLYT/718pqKITwScb+N2PMFjeueFlE9L4V3krr3vjoPBD10ZgyyaxuSLf/ewWziDfKrQxnv5RGQNMMVvhPssFWyckHdLPhOICXroXBRTrEoeJUf2im5iKdPSPKcotsGOl2CUV//WPF8YHKs2ozuguUYN0paPPyU6yToyeWydLeMUt8boQuaXfG0b5rGHM57ZcHq8A2ZYxA+dlzw9AWWDgAiqq7zIrNLTJ09eUrOm/Nj5xlQjxcscoBc/7Ojd2pRJTDCO4RSt9U4P9ql+pmJ1ztB1Pno7L/kMC3kKCfo+gzyXJUuCVludMdmGdDTbhShjH8Gc5H0587FtnRHuM55wyj2jCUH1SUMiOxrz5fKmMlBZ6ivHiWbtnTsU+cLfxjGTr9UBIILI6+zMetED88+RgWuNsuLNM1otYceRzHg8+gOewscyVUJraeHqduV3rt99R38n15o6++V9ooyLnUdjp+qgA8Dz1+5CVQwxrQ==; Path=/; Secure; HttpOnly",
+        "expires": "Thu, 01 Dec 1994 16:00:00 GMT",
+        "cache-control": "no-cache=\"set-cookie, set-cookie2\"",
+        "x-frame-options": "SAMEORIGIN",
+        "x-xss-protection": "1; mode=block",
+        "x-content-type-options": "nosniff",
+        "content-security-policy": "default-src https: data: 'unsafe-inline' 'unsafe-eval'; worker-src self blob: https:",
+        "transfer-encoding": "chunked",
+        "content-type": "application/json",
+        "content-language": "en-US",
+    },
+}
+07:08:11.197  INFO src/exe_bts_int.rs:113: response text:
+{"status":"success","message":"Operation started successfully for all the plans. Use statusRefLink to get the individual plan's status","statusRefLink":"https://4.5.12.137/api/ne-integration/v1/status/Integration/{planName}"}
+07:34:02.943  INFO src/main.rs:41: version=1.3.0
+07:34:02.943  INFO src/main.rs:42: Cli { config_file: "/home/nokia/nocli/bin/na_query/na_query.toml", command: GetBtsIp { bts_id: 2350003 } }
+07:34:02.944  INFO src/get_bts_ip.rs:22: try to get IP from EMS: DVT_5G, LBWAS: 4.5.12.137, user: omc
+07:34:02.944  INFO ems{alias="DVT_5G"}: src/get_bts_ip.rs:52: start to get IP
+07:34:02.967  INFO src/get_bts_ip.rs:40: IP: None
+07:37:42.988  INFO src/main.rs:41: version=1.3.0
+07:37:42.988  INFO src/main.rs:42: Cli { config_file: "/home/nokia/nocli/bin/na_query/na_query.toml", command: GetBtsIp { bts_id: 2350003 } }
+07:37:42.988  INFO src/get_bts_ip.rs:22: try to get IP from EMS: DVT_5G, LBWAS: 4.5.12.137, user: omc
+07:37:42.989  INFO ems{alias="DVT_5G"}: src/get_bts_ip.rs:52: start to get IP
+07:37:43.006  INFO src/get_bts_ip.rs:40: IP: None
+07:37:48.466  INFO src/main.rs:41: version=1.3.0
+07:37:48.466  INFO src/main.rs:42: Cli { config_file: "/home/nokia/nocli/bin/na_query/na_query.toml", command: ExeBtsInt { bts_id: 2350003, ver: "SBTS25R2", ems: "DVT_5G", mr: Some("MRC-5G/MR-LGU+5G"), ne_ip: "0.0.0.0", ne_name: Some("CLI_Test"), http: 8080, https: 8443, tls: false } }
+07:37:48.466  INFO src/cli.rs:83: exe-bts-int in EMS: DVT_5G
+07:37:48.468  INFO src/exe_bts_int.rs:152: importing plan: 
+[
+  {
+    "moType": "MRBTS",
+    "moVersion": "SBTS25R2",
+    "parameters": [
+      {
+        "name": "MR",
+        "value": "MRC-5G/MR-LGU+5G"
+      },
+      {
+        "name": "MRBTS distinguished name",
+        "value": "PLMN-PLMN/MRBTS-2350003"
+      },
+      {
+        "name": "NE3SWS agent HTTP connection port",
+        "value": "8080"
+      },
+      {
+        "name": "NE3SWS agent HTTPS connection port",
+        "value": "8443"
+      },
+      {
+        "name": "NE3SWS IP version",
+        "value": "0"
+      },
+      {
+        "name": "MRBTS address",
+        "value": "0.0.0.0"
+      },
+      {
+        "name": "NE3SWS agent security mode",
+        "value": "0"
+      },
+      {
+        "name": "NE presentation name",
+        "value": "CLI_Test"
+      }
+    ],
+    "cnumParameters": [
+      {
+        "name": "cnumEnable",
+        "value": "false"
+      }
+    ]
+  }
+]
+07:37:48.468  INFO src/exe_bts_int.rs:106: post request:
+Request {
+    method: POST,
+    url: Url {
+        scheme: "https",
+        cannot_be_a_base: false,
+        username: "",
+        password: None,
+        host: Some(
+            Ipv4(
+                4.5.12.137,
+            ),
+        ),
+        port: None,
+        path: "/api/ne-integration/v1/plans",
+        query: None,
+        fragment: None,
+    },
+    headers: {
+        "authorization": Sensitive,
+        "accept": "application/json",
+        "content-type": "multipart/form-data; boundary=7652b9119768d0eb-b9a6d0cbf4ec6040-4b01154d50cc2a05-33108b83120597c1",
+    },
+}
+07:37:48.773  INFO src/exe_bts_int.rs:110: post response:
+Response {
+    url: "https://4.5.12.137/api/ne-integration/v1/plans",
+    status: 201,
+    headers: {
+        "date": "Tue, 12 Aug 2025 07:40:28 GMT",
+        "strict-transport-security": "max-age=31536000;includeSubDomains;",
+        "content-disposition": "attachment; filename=\"temp_import_result_5715091863165937367.json\"",
+        "accept-ranges": "bytes",
+        "content-length": "50",
+        "set-cookie": "LtpaToken2=t6H8ULYDFaEW8fjjhzW8qYZ9Dqc56PZsQfnugH0u8I2eFjLpD5tsM559UIvINj7ZruXnpWVscolpykuQEmT0DajtdCoNNwAuPfCulOd3HVDc4FLCYWp+96/6RsaKuIHX4VcV03tfQz3I72jipo+xJFBlO9CJTqhUL48jPLcE5vltqnTa3s4DJczKSc1rIUQjAL6QC70X2D0/Va+E6m4bevvN2xPNT1Llt4oq+Bl+IH0JTYe353DiPWx8kG1Sbz/VPLZYEd6Xq8UvHyl4anUcpaqttZDwdUxGnpDd1pT54P1lbdyTCxxBmeaKqQDgJNJxxkq0BCWQ53616W22h7dx38VPatebeK/i7NIrX3rrHITxCGCs+xYKkmnPWIOs0sjuoenC1zFtHtlnuFUDaf0hBtvoEkBG5RSCnsNdULT9Ww8S3ZlgeKenT5Rz4F4XO4ybUc3ZRexqAJEnA+mu8gLA017kCPvfRggFQrwv7l3QR6Hlv7F41ATlZJlZemahCdy2LjW6oulghlvKgLyPLZlMvnRkB2YdruJaV0qywRDb0/3toLOPzmhwHYy19WAbQdt/aDLdvGZ/8gDxP/dRWWgLEzU9PhqUuTmGWqPhlMw0GSiJuGFj/l9EO4z4FE+shIppaatb/KbkJhxxkfApetNV7R6nV3M24woOeRUJngjnqGHmrmVOiiM8nrfE6wq4VF/NLNevBooredS6pHPY6bdMtw==; Path=/; Secure; HttpOnly",
+        "expires": "Thu, 01 Dec 1994 16:00:00 GMT",
+        "cache-control": "no-cache=\"set-cookie, set-cookie2\"",
+        "x-frame-options": "SAMEORIGIN",
+        "x-xss-protection": "1; mode=block",
+        "x-content-type-options": "nosniff",
+        "content-security-policy": "default-src https: data: 'unsafe-inline' 'unsafe-eval'; worker-src self blob: https:",
+        "content-type": "application/octet-stream",
+        "content-language": "en-US",
+    },
+}
+07:37:48.774  INFO src/exe_bts_int.rs:113: response text:
+{
+  "savedPlans" : [ "PLMN-PLMN/MRBTS-2350003" ]
+}
+07:37:48.774  INFO src/exe_bts_int.rs:106: post request:
+Request {
+    method: POST,
+    url: Url {
+        scheme: "https",
+        cannot_be_a_base: false,
+        username: "",
+        password: None,
+        host: Some(
+            Ipv4(
+                4.5.12.137,
+            ),
+        ),
+        port: None,
+        path: "/api/ne-integration/v1/operations/start",
+        query: Some(
+            "onlyVerification=false",
+        ),
+        fragment: None,
+    },
+    headers: {
+        "authorization": Sensitive,
+        "accept": "application/json",
+        "content-type": "application/json",
+    },
+}
+07:37:48.813  INFO src/exe_bts_int.rs:110: post response:
+Response {
+    url: "https://4.5.12.137/api/ne-integration/v1/operations/start?onlyVerification=false",
+    status: 202,
+    headers: {
+        "date": "Tue, 12 Aug 2025 07:40:29 GMT",
+        "strict-transport-security": "max-age=31536000;includeSubDomains;",
+        "set-cookie": "LtpaToken2=t6H8ULYDFaEW8fjjhzW8qYZ9Dqc56PZsQfnugH0u8I2eFjLpD5tsM559UIvINj7ZruXnpWVscolpykuQEmT0DajtdCoNNwAuPfCulOd3HVDc4FLCYWp+96/6RsaKuIHX4VcV03tfQz3I72jipo+xJFBlO9CJTqhUL48jPLcE5vltqnTa3s4DJczKSc1rIUQjAL6QC70X2D0/Va+E6m4bevvN2xPNT1Llt4oq+Bl+IH0JTYe353DiPWx8kG1Sbz/VPLZYEd6Xq8UvHyl4anUcpaqttZDwdUxGnpDd1pT54P1lbdyTCxxBmeaKqQDgJNJxxkq0BCWQ53616W22h7dx38VPatebeK/i7NIrX3rrHITxCGCs+xYKkmnPWIOs0sjuoenC1zFtHtlnuFUDaf0hBtvoEkBG5RSCnsNdULT9Ww8S3ZlgeKenT5Rz4F4XO4ybUc3ZRexqAJEnA+mu8gLA017kCPvfRggFQrwv7l3QR6Hlv7F41ATlZJlZemahCdy2LjW6oulghlvKgLyPLZlMvnRkB2YdruJaV0qywRDb0/3toLOPzmhwHYy19WAbQdt/aDLdvGZ/8gDxP/dRWWgLEzU9PhqUuTmGWqPhlMw0GSiJuGFj/l9EO4z4FE+shIppaatb/KbkJhxxkfApetNV7R6nV3M24woOeRUJngjnqGHmrmVOiiM8nrfE6wq4VF/NLNevBooredS6pHPY6bdMtw==; Path=/; Secure; HttpOnly",
+        "expires": "Thu, 01 Dec 1994 16:00:00 GMT",
+        "cache-control": "no-cache=\"set-cookie, set-cookie2\"",
+        "x-frame-options": "SAMEORIGIN",
+        "x-xss-protection": "1; mode=block",
+        "x-content-type-options": "nosniff",
+        "content-security-policy": "default-src https: data: 'unsafe-inline' 'unsafe-eval'; worker-src self blob: https:",
+        "transfer-encoding": "chunked",
+        "content-type": "application/json",
+        "content-language": "en-US",
+    },
+}
+07:37:48.813  INFO src/exe_bts_int.rs:113: response text:
+{"status":"success","message":"Operation started successfully for all the plans. Use statusRefLink to get the individual plan's status","statusRefLink":"https://4.5.12.137/api/ne-integration/v1/status/Integration/{planName}"}

@@ -1,0 +1,556 @@
+import base64
+import cmd2
+import os
+import xml.etree.ElementTree as ET
+from io import BytesIO
+from xml.etree.ElementTree import ElementTree
+from datetime import datetime
+from proto import message_pb2
+from cli_server.core.workspace.ws_manager import getWorkspace
+from cli_server.common.utils.xml_utils import remove_empty_lines_from_str
+
+class ExecutionHelper(cmd2.Cmd):
+    is_debug = True
+
+    def __init__(self):
+        super().__init__()
+        self.xml_tree = None
+        self.mo_class = None
+        self.match_tail = None
+        self.bts_id = None
+        self.prompt = "nocli-cfg"
+
+    def handle_commit(self, arg):
+        try:
+            # payload: command_type||filename||message||translate_flag||translate_mode||xml_base64
+            command_type, orig_filename, message, translate_flag, translate_mode, xml_base64 = arg.split("||", 5)
+
+            ws = getWorkspace()
+            bts_id = ws.get("bts_id")
+
+            # XML 복원
+            xml_data = base64.b64decode(xml_base64.encode("utf-8")).decode("utf-8")
+            xml_data = remove_empty_lines_from_str(xml_data)
+            root = ET.fromstring(xml_data)
+            tree = ElementTree(root)
+            self.xml_tree = tree
+
+            # 경로 설정
+            base_dir = os.path.dirname(os.path.abspath(__file__))
+            save_dir = os.path.join(base_dir, "..", "data", "received")
+            os.makedirs(save_dir, exist_ok=True)
+
+            basename = f"MRBTS{bts_id}"
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            prefix = "cellcommit" if command_type == "commit-cell" else "commit"
+            suffix = "_translated" if translate_flag == "1" else ""
+            filename = f"{basename}__{prefix}_{timestamp}{suffix}.xml"
+            save_path = os.path.join(save_dir, filename)
+
+            # 💡 항상 포맷 강제 적용
+            stream = BytesIO()
+            tree.write(stream, encoding="utf-8", xml_declaration=True)
+            xml_str = stream.getvalue().decode("utf-8")
+
+            xml_str = xml_str.replace(
+                "<?xml version='1.0' encoding='utf-8'?>",
+                '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
+            )
+            xml_str = xml_str.replace(
+                '<raml version="2.0">',
+                '<raml xmlns="raml21.xsd" version="2.1">'
+            )
+
+            with open(save_path, "w", encoding="utf-8") as f:
+                f.write(xml_str)
+
+            self.poutput(f"[서버] XML 저장 완료: {save_path}")
+            ws.set('final_file', save_path)
+
+            # 설명 메시지 저장
+            if message:
+                meta_path = save_path.replace(".xml", ".meta.txt")
+                with open(meta_path, "w", encoding="utf-8") as f:
+                    f.write(message.strip() + "\n")
+
+            return message_pb2.Response(success=True, result=f"[서버 저장 완료] {filename}")
+
+        except Exception as e:
+            return message_pb2.Response(success=False, result=f"[서버 오류] {str(e)}")
+
+    def handle_set_cfg_template(self, filename: str) -> message_pb2.Response:
+        """
+        요청한 XML 템플릿 파일을 읽어서 클라이언트로 전달합니다.
+        (네임스페이스 처리 X, 원본 그대로 전달)
+        """
+        try:
+            base_dir = os.path.dirname(__file__)
+            tmpl_dir = os.path.abspath(os.path.join(base_dir, "..", "data", "received"))
+            xml_path = os.path.join(tmpl_dir, f"{filename}.xml")
+
+            print(xml_path)
+            if not os.path.exists(xml_path):
+                return message_pb2.Response(success=False, result=f"{filename}.xml 파일이 존재하지 않습니다.")
+
+            # 파일 그대로 읽기
+            with open(xml_path, "r", encoding="utf-8") as f:
+                xml_text = f.read()
+
+            return message_pb2.Response(success=True, result=xml_text)
+
+        except Exception as e:
+            return message_pb2.Response(success=False, result=f"서버 XML 전송 실패: {e}")
+        
+    # def _initialize_xml(self, bts_id: str):
+    #     """최초 XML 트리 구조 생성 및 cmData 세팅"""
+    #     print("[DEBUG] xml_setting_entered")
+    #     root = ET.Element("raml", {"version": "2.0"})
+    #     ET.SubElement(root, "cmData", {"type": "plan", "scope": "all", "id": "MRBTS"})
+
+    #     ws = getWorkspace()
+    #     ws.set("bts_id", bts_id)
+    #     ws.set("xml_tree", ET.ElementTree(root))
+
+    #     self.xml_tree = ET.ElementTree(root)
+
+    # def handle_tgt_bts(self, arg):
+    #     bts_id = arg.strip()
+
+    #     self._initialize_xml(bts_id)
+
+    #     self.bts_id = bts_id
+    #     self.mo_class = "MRBTS"
+    #     self.match_tail = f"MRBTS-{bts_id}"
+    #     self.prompt = f"cfg-bts({bts_id})> "
+
+    #     ws = getWorkspace()
+    #     ws.set("bts_id", bts_id)
+    #     ws.set("mo_class", self.mo_class)
+    #     ws.set("match_tail", self.match_tail)
+    #     ws.set("prompt", self.prompt)
+
+    #     return message_pb2.Response(
+    #         success=True,
+    #         result=f"MRBTS-{bts_id} 생성 및 진입 완료 [PROMPT:cfg-bts({bts_id})>]"
+    #     )
+    
+    # def handle_no_tgt_bts(self, bts_id: str):
+    #     ws = getWorkspace()
+
+    #     current_id = ws.get("bts_id")
+    #     if bts_id != current_id:
+    #         return message_pb2.Response(success=False, result=f"BTS ID 불일치: 현재 작업 중인 BTS는 {current_id}입니다.")
+
+    #     # XML 초기화 및 워크스페이스 초기화
+    #     ws.set("xml_tree", self._create_empty_xml())
+    #     ws.set("bts_id", None)
+    #     ws.set("mo_class", None)
+    #     ws.set("match_tail", None)
+
+    #     return message_pb2.Response(success=True, result=f"RESULT: OK; config workspace for bts-{bts_id} was removed.")
+
+    # def precmd(self, statement):
+    #     self._original_line = statement.raw
+    #     return super().precmd(statement)
+
+    # def handle_default(self, line):
+    #     line = getattr(self, "_original_line", line).strip()
+    #     tokens = shlex.split(line.strip())
+
+    #     if not tokens:
+    #         return message_pb2.Response(success=False, result="빈 명령입니다.")
+
+    #     # 리스트 파라미터
+    #     if tokens[0].lower() == "list":
+    #         if len(tokens) != 5:
+    #             return message_pb2.Response(success=False, result="사용법: list <listName> <index> <key> <value>")
+    #         _, list_name, index, key, value = tokens
+    #         return self._set_list_param(list_name, index, {key: value})
+
+    #     # MO 생성
+    #     if len(tokens) == 2 and tokens[0].isupper():
+    #         mo_name, mo_id = tokens
+    #         return self._enter_or_create_mo(mo_name, mo_id)
+
+    #     # 일반 파라미터 설정
+    #     if len(tokens) == 2:
+    #         key, value = tokens
+    #         return self._set_param(key, value)
+
+    #     return message_pb2.Response(success=False, result="인식할 수 없는 명령입니다.")
+
+    # def _enter_or_create_mo(self, mo_class: str, mo_id: str):
+    #     if not self.bts_id:
+    #         if mo_class == "MRBTS":
+    #             self.bts_id = mo_id
+    #         else:
+    #             return message_pb2.Response(success=False, result="먼저 MRBTS <ID>를 설정해주세요.")
+
+    #     target_dn = f"MRBTS-{self.bts_id}"
+    #     if mo_class != "MRBTS":
+    #         target_dn += f"/{mo_class}-{mo_id}"
+
+    #     cmdata = self.xml_tree.find(".//{*}cmData")
+    #     found = any(mo.attrib.get("distName") == target_dn for mo in cmdata.findall("{*}managedObject"))
+
+    #     if not found:
+    #         ET.SubElement(cmdata, "managedObject", {
+    #             "class": mo_class,
+    #             "version": "S10.2024",
+    #             "distName": target_dn
+    #         })
+    #         if self.is_debug:
+    #             self.poutput(f"[DEBUG] {target_dn} 생성됨")
+
+    #     self.mo_class = mo_class
+    #     self.match_tail = f"{mo_class}-{mo_id}" if mo_class != "MRBTS" else f"MRBTS-{mo_id}"
+    #     self.prompt = (
+    #         f"cfg-bts({self.bts_id})-{mo_class.lower()}({mo_id})> "
+    #         if mo_class != "MRBTS" else f"cfg-bts({mo_id})> "
+    #     )
+
+    #     ws = getWorkspace()
+    #     ws.set("mo_class", self.mo_class)
+    #     ws.set("match_tail", self.match_tail)
+    #     ws.set("prompt", self.prompt)
+
+    #     return message_pb2.Response(success=True, result=f"{target_dn} 진입 완료")
+
+    # def _set_param(self, key: str, value: str):
+    #     ws = getWorkspace()
+    #     xml_tree = ws.get("xml_tree")
+    #     mo_class = ws.get("mo_class")
+    #     match_tail = ws.get("match_tail")
+
+    #     if xml_tree is None:
+    #         print("[DEBUG] xml_tree is None - 저장 실패 혹은 active_ws 불일치")
+    #     else:
+    #         try:
+    #             root = xml_tree.getroot()
+    #             print("[DEBUG] xml_tree root loaded:", ET.tostring(root))
+    #         except Exception as e:
+    #             print("[DEBUG] xml_tree exists but .getroot() failed:", e)
+
+    #     for mo in xml_tree.findall(".//{*}managedObject"):
+    #         print(f"[DEBUG] checking MO: class={mo.attrib.get('class')}, distName={mo.attrib.get('distName')}")
+    #         if mo.attrib.get("class") == mo_class and mo.attrib.get("distName", "").endswith(match_tail):
+    #             for p in mo.findall("{*}p"):
+    #                 if p.attrib.get("name") == key:
+    #                     p.text = value
+    #                     return message_pb2.Response(success=True, result=f"[DEBUG] {key} 갱신: {value}")
+    #             ET.SubElement(mo, "p", name=key).text = value
+    #             return message_pb2.Response(success=True, result=f"[DEBUG] {key} 추가됨: {value}")
+
+    #     return message_pb2.Response(success=False, result="현재 MO를 찾을 수 없습니다.")
+
+    # def _set_list_param(self, list_name: str, index: str, param_dict: dict):
+    #     ws = getWorkspace()
+    #     xml_tree = ws.get("xml_tree")
+    #     mo_class = ws.get("mo_class")
+    #     match_tail = ws.get("match_tail")
+
+    #     for mo in xml_tree.findall(".//{*}managedObject"):
+    #         if mo.attrib.get("class") == mo_class and mo.attrib.get("distName", "").endswith(match_tail):
+    #             list_node = None
+    #             for lst in mo.findall("{*}list"):
+    #                 if lst.attrib.get("name") == list_name:
+    #                     list_node = lst
+    #                     break
+
+    #             if list_node is None:
+    #                 list_node = ET.SubElement(mo, "list", name=list_name)
+
+    #             idx = int(index) - 1
+    #             item_nodes = list_node.findall("{*}item")
+    #             while len(item_nodes) <= idx:
+    #                 ET.SubElement(list_node, "item")
+    #                 item_nodes = list_node.findall("{*}item")
+
+    #             item = item_nodes[idx]
+
+    #             for k, v in param_dict.items():
+    #                 updated = False
+    #                 for p in item.findall("{*}p"):
+    #                     if p.attrib.get("name") == k:
+    #                         p.text = v
+    #                         updated = True
+    #                         break
+    #                 if not updated:
+    #                     ET.SubElement(item, "p", name=k).text = v
+
+    #             return message_pb2.Response(success=True, result=f"[DEBUG] 리스트 {list_name}[{index}] 수정됨")
+
+    #     return message_pb2.Response(success=False, result="현재 MO를 찾을 수 없습니다.")
+
+    # def handle_list(self, arg):
+    #     args = shlex.split(arg.strip())
+    #     if len(args) != 4:
+    #         return message_pb2.Response(success=False, result="사용법: list <listName> <index> <field> <value>")
+
+    #     list_name, list_index, key, value = args
+    #     param_dict = {key: value}
+
+    #     success, msg = self._set_list_param_by_class(list_name, list_index, param_dict)
+    #     if not success:
+    #         return message_pb2.Response(success=False, result=msg)
+    #     return message_pb2.Response(success=True, result=msg)
+
+    # def _set_list_param_by_class(self, list_name: str, list_index: str, param_dict: dict):
+    #     try:
+    #         ws = getWorkspace()
+    #         xml_tree = ws.xml_tree
+    #         mo_class = ws.get("mo_class")
+    #         match_tail = ws.get("match_tail")
+
+    #         if xml_tree is None:
+    #             return False, "XML 트리가 로드되지 않았습니다."
+
+    #         for mo in xml_tree.findall(".//{*}managedObject"):
+    #             class_name = mo.attrib.get("class", "")
+    #             dist_name = mo.attrib.get("distName", "")
+
+    #             if class_name.endswith(mo_class) and dist_name.endswith(match_tail):
+    #                 list_node = None
+    #                 for lst in mo.findall("{*}list"):
+    #                     if lst.attrib.get("name") == list_name:
+    #                         list_node = lst
+    #                         break
+
+    #                 if list_node is None:
+    #                     list_node = ET.SubElement(mo, "list", name=list_name)
+
+    #                 index = int(list_index) - 1
+    #                 item_nodes = list_node.findall("{*}item")
+    #                 while len(item_nodes) <= index:
+    #                     ET.SubElement(list_node, "item")
+    #                     item_nodes = list_node.findall("{*}item")
+
+    #                 item = item_nodes[index]
+    #                 logs = []
+
+    #                 for key, value in param_dict.items():
+    #                     updated = False
+    #                     for p in item.findall("{*}p"):
+    #                         if p.attrib.get("name") == key:
+    #                             p.text = str(value)
+    #                             logs.append(f"[DEBUG] 기존 '{key}' 갱신: {value}")
+    #                             updated = True
+    #                             break
+    #                     if not updated:
+    #                         ET.SubElement(item, "p", name=key).text = str(value)
+    #                         logs.append(f"[DEBUG] 새 파라미터 '{key}' = {value} 추가됨")
+
+    #                 return True, "\n".join(logs)
+
+    #         return False, f"MO {mo_class} {match_tail}를 찾을 수 없습니다."
+
+    #     except Exception as e:
+    #         return False, f"리스트 파라미터 설정 중 오류 발생: {e}"
+
+    
+
+    
+    # def handle_show_cfg(self, arg):
+    #     try:
+    #         parser = argparse.ArgumentParser(prog="show-xml", add_help=False)
+    #         group = parser.add_mutually_exclusive_group()
+    #         group.add_argument("-a", "--all", action="store_true")
+    #         group.add_argument("-r", "--required", action="store_true")
+    #         group.add_argument("-o", "--optional", action="store_true")
+    #         parsed_args = parser.parse_args(shlex.split(arg))
+    #     except SystemExit:
+    #         return message_pb2.Response(success=False, result="인자 파싱 실패")
+
+    #     if parsed_args.all:
+    #         mode = "all"
+    #     elif parsed_args.required:
+    #         mode = "ireq"
+    #     elif parsed_args.optional:
+    #         mode = "ocli"
+    #     else:
+    #         mode = "default"
+
+    #     return self._show_mo_by_class(mode)
+
+    # def _show_mo_by_class(self, mode="default"):
+    #     ws = getWorkspace()
+    #     xml_tree = ws.xml_tree
+    #     mo_class = ws.mo_class
+    #     match_tail = ws.match_tail
+
+    #     if xml_tree is None:
+    #         return message_pb2.Response(success=False, result="XML이 아직 로드되지 않았습니다.")
+
+    #     lines = []
+    #     for mo in xml_tree.findall(".//{*}managedObject"):
+    #         if mo.attrib.get("class", "").endswith(mo_class) and mo.attrib.get("distName", "").endswith(match_tail):
+    #             for p in mo.findall("{*}p"):
+    #                 name = p.attrib.get("name")
+    #                 value = p.text
+    #                 flag = p.attrib.get("flag", "").upper()
+
+    #                 if mode == "default" and flag in ("IREQ", "OCLI"):
+    #                     lines.append(f"{name}: {value}")
+    #                 elif mode == "ireq" and flag == "IREQ":
+    #                     lines.append(f"{name}: {value}")
+    #                 elif mode == "ocli" and flag == "OCLI":
+    #                     lines.append(f"{name}: {value}")
+    #                 elif mode == "all":
+    #                     lines.append(f"{name}: {value}")
+
+    #             for lst in mo.findall("{*}list"):
+    #                 for item in lst.findall("{*}item"):
+    #                     pair_strs = [
+    #                         f"{p.attrib['name']}={p.text}" for p in item.findall("{*}p")
+    #                     ]
+    #                     lines.append("  - " + ", ".join(pair_strs))
+    #             return message_pb2.Response(success=True, result="\n".join(lines))
+
+    #     return message_pb2.Response(success=False, result=f"{mo_class} {match_tail} not found in XML.")
+
+    # def handle_show_glb(self, arg):
+    #     try:
+    #         parser = argparse.ArgumentParser(prog="show-glb", add_help=False)
+    #         parser.add_argument("base_path", type=str)
+    #         group = parser.add_mutually_exclusive_group()
+    #         group.add_argument("-r", "--required", action="store_true")
+    #         group.add_argument("-o", "--optional", action="store_true")
+    #         group.add_argument("-a", "--all", action="store_true")
+    #         parsed_args = parser.parse_args(arg.split())
+    #     except SystemExit:
+    #         return message_pb2.Response(success=False, result="사용법: show-glb <경로> [-r|-o|-a]")
+
+    #     if parsed_args.required:
+    #         mode = "ireq"
+    #     elif parsed_args.optional:
+    #         mode = "ocli"
+    #     elif parsed_args.all:
+    #         mode = "all"
+    #     else:
+    #         mode = "default"
+
+    #     return self._show_glb_by_path(parsed_args.base_path, mode)
+    
+    # def _show_glb_by_path(self, base_path: str, mode="default"):
+    #     ws = getWorkspace()
+    #     xml_tree = ws.xml_tree
+
+    #     if xml_tree is None:
+    #         return message_pb2.Response(success=False, result="XML 트리가 로드되지 않았습니다.")
+
+    #     found = False
+    #     lines = []
+
+    #     for mo in xml_tree.findall(".//{*}managedObject"):
+    #         dn = mo.attrib.get("distName", "")
+    #         if base_path == dn:
+    #             for p in mo.findall("{*}p"):
+    #                 name = p.attrib.get("name", "")
+    #                 value = (p.text or "").strip()
+    #                 flag = p.attrib.get("flag", "").upper()
+
+    #                 if mode == "default" and flag in ("IREQ", "OCLI"):
+    #                     lines.append(f"{dn}::{name} = {value}")
+    #                 elif mode == "ireq" and flag == "IREQ":
+    #                     lines.append(f"{dn}::{name} = {value}")
+    #                 elif mode == "ocli" and flag == "OCLI":
+    #                     lines.append(f"{dn}::{name} = {value}")
+    #                 elif mode == "all":
+    #                     lines.append(f"{dn}::{name} = {value}")
+    #             found = True
+
+    #     if not found:
+    #         return message_pb2.Response(success=False, result=f"[{base_path}] 경로에 해당하는 데이터가 없습니다.")
+
+    #     return message_pb2.Response(success=True, result="\n".join(lines))
+
+    # def handle_show_sib(self, arg):
+    #     try:
+    #         parser = argparse.ArgumentParser(prog="show-sib", add_help=False)
+    #         parser.add_argument("sibling_id", type=str)
+    #         group = parser.add_mutually_exclusive_group()
+    #         group.add_argument("-r", "--required", action="store_true")
+    #         group.add_argument("-o", "--optional", action="store_true")
+    #         group.add_argument("-a", "--all", action="store_true")
+    #         parsed_args = parser.parse_args(arg.split())
+    #     except SystemExit:
+    #         return message_pb2.Response(success=False, result="사용법: show-sib <ID> [-r|-o|-a]")
+
+    #     if not parsed_args.sibling_id.isdigit():
+    #         return message_pb2.Response(success=False, result="사용법: show-sib <ID>")
+
+    #     if parsed_args.required:
+    #         mode = "ireq"
+    #     elif parsed_args.optional:
+    #         mode = "ocli"
+    #     elif parsed_args.all:
+    #         mode = "all"
+    #     else:
+    #         mode = "default"
+
+    #     return self._show_sib_by_id(parsed_args.sibling_id, mode)
+
+    # def _show_sib_by_id(self, sibling_id: str, mode="default"):
+    #     ws = getWorkspace()
+    #     xml_tree = ws.xml_tree
+    #     mo_class = ws.mo_class
+    #     match_tail = ws.match_tail
+
+    #     if xml_tree is None:
+    #         return message_pb2.Response(success=False, result="XML 트리가 로드되지 않았습니다.")
+    #     if mo_class is None or match_tail is None:
+    #         return message_pb2.Response(success=False, result="현재 계층 정보가 부족합니다.")
+
+    #     parent_tail = "/".join(match_tail.split("/")[:-1])
+    #     target_dn = f"{parent_tail}/{mo_class}-{sibling_id}"
+
+    #     lines = []
+    #     found = False
+
+    #     for mo in xml_tree.findall(".//{*}managedObject"):
+    #         dn = mo.attrib.get("distName", "")
+    #         if dn.endswith(target_dn):
+    #             for p in mo.findall("{*}p"):
+    #                 name = p.attrib.get("name", "")
+    #                 value = (p.text or "").strip()
+    #                 flag = p.attrib.get("flag", "").upper()
+
+    #                 if mode == "default" and flag in ("IREQ", "OCLI"):
+    #                     lines.append(f"{name}: {value}")
+    #                 elif mode == "ireq" and flag == "IREQ":
+    #                     lines.append(f"{name}: {value}")
+    #                 elif mode == "ocli" and flag == "OCLI":
+    #                     lines.append(f"{name}: {value}")
+    #                 elif mode == "all":
+    #                     lines.append(f"{name}: {value}")
+
+    #             found = True
+    #             break
+
+    #     if not found:
+    #         return message_pb2.Response(success=False, result=f"{target_dn} 경로에 해당하는 MO를 찾을 수 없습니다.")
+
+    #     return message_pb2.Response(success=True, result="\n".join(lines))
+
+    # def handle_delmo(self, arg):
+    #     ws = getWorkspace()
+    #     cmdata = ws.get("xml_tree").find(".//{*}cmData")
+    #     dn = ws.get("match_tail")
+
+    #     for mo in list(cmdata):
+    #         if mo.attrib.get("distName") == dn:
+    #             cmdata.remove(mo)
+    #             new_tail = "/".join(dn.split("/")[:-1]) if "/" in dn else f"MRBTS-{ws.get('bts_id')}"
+    #             ws.set("match_tail", new_tail)
+    #             return message_pb2.Response(success=True, result=f"{dn} 삭제 완료")
+
+    #     return message_pb2.Response(success=False, result=f"{dn} MO를 찾을 수 없음")
+   
+    # def handle_go_top(self, arg):
+    #     ws = getWorkspace()
+    #     bts_id = ws.get("bts_id")
+    #     if not bts_id:
+    #         return message_pb2.Response(success=False, result="bts_id 미설정")
+
+    #     ws.set("match_tail", f"MRBTS-{bts_id}")
+    #     return message_pb2.Response(success=True, result=f"루트(MRBTS-{bts_id})로 이동 완료")

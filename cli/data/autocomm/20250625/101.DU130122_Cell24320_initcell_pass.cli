@@ -1,0 +1,57 @@
+### HEADER ###
+exit
+yes
+init-cell -r 4G -v 24R2
+autocomm-run-script 100.DU130122_Cell24320_initcell_pass.cli
+
+### BODY ###
+set-du-type du10
+set-ru-type FHCA
+tgt-bts 130122
+dnload-bts-cfg
+EQM 1
+APEQM 1
+RMOD 4
+auto-config
+moduleLocation NL_BSdeokposageoriL2G10A_1600166522
+exit-all
+EQM 1
+HWTOP 1
+CABLINK 6
+firstEndpointDN MRBTS-130122/EQM-1/APEQM-1/CABINET-1/smod-1
+firstEndpointLabel OPT
+firstEndpointPortId 6
+secondEndpointDN MRBTS-130122/EQM-1/APEQM-1/CABINET-1/RMOD-4
+secondEndpointLabel OPT
+secondEndpointPortId 1
+exit-all
+LNBTS 130122
+LNCEL 24320
+auto-config
+lcrId 5
+phyCellId 318
+tac 59455
+nbIotLinkedCellId 105
+LNCEL_FDD 0
+rootSeqIndex 600
+exit-all
+MNL 1
+MNLENT 1
+CELLMAPPING 1
+auto-config LCELL 5
+exit-all
+LNBTS 130122
+LNCEL 22109
+auto-config
+lcrId 105
+phyCellId 318
+tac 59455
+nbIotLinkedCellId 5
+exit-all
+MNL 1
+MNLENT 1
+CELLMAPPING 1
+auto-config LCELL 105
+exit-all
+exit-all
+

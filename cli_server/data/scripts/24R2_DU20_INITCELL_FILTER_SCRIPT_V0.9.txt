@@ -1,0 +1,71 @@
+##!
+## EQM-1/APEQM-1/ANTL-?  은  CLI 엔진이 User Input CLI를 읽어서... 각 RU 별 Antenna Path 특성에 따라 프로그램에서 자동으로 구성한다.
+## 이때 Init-cell 모드에서 user가 입력한 ru-type에 따른다.
+## MNL-1/MNLENT-1/CELLMAPPING-1/LCELL-?도  ANTL과 마찬가지로 CLI 입력값(User CLI Input)에 맞춰서 프로그램이 자동으로 구성한다.
+
+EQM  1
+  APEQM  1
+    #RMOD  000
+      #auto-config  ANTL  *
+    exit-all
+
+
+MNL  1
+  MNLENT 1
+    CELLMAPPING  1
+      #auto-config  LCELL  *
+    exit-all
+
+
+### BBPOOLALLOC MO는 DU20의 경우에 생성이 되어야 하며 LNBTS-x/actBbpooling == TRUE 인 경우에만 생성이 가능하다.
+### 따라서, BBPOOLALLOC MO 생성 시, 해당 파라미터 값도 같이 확인해야 한다.
+
+LNBTS 000
+  #LNCEL  000
+    #BBPOOLALLOC  0
+    #exit
+    #CAPR  0
+    #exit
+    #CATMCEL  0
+    #exit
+    #CDFIM  1
+    #exit
+    #DRX  0
+    #exit
+    #IAFIM  1
+    #exit
+    #IFGDPR  0
+    #exit
+    #IFGPR  0
+    #exit
+    #IRFIM  1
+    #exit
+    #REDRT  0
+    #exit
+    #SDRX  0
+    #exit
+    #SIB  0
+    #exit
+    #LNCEL_FDD  0 
+      #APUCCH_FDD  0
+      #exit
+      #MPUCCH_FDD  0
+      #exit
+    #exit-all
+
+
+
+LNBTS  000
+  #LNCEL  999 
+    #BBPOOLALLOC  0
+    #exit
+    #DRX  0
+    #exit
+    #NBIOT_FDD  0
+    #exit
+    #SDRX  0
+    #exit
+    #SIB  0
+    #exit
+  exit-all
+

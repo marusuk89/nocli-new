@@ -1,0 +1,76 @@
+EQM 1
+APEQM 1
+CABINET 1
+TRMOD 3276
+prodCodePlanned 472311A
+exit
+exit
+RMOD 3276
+actPimCancellation false
+actSharedRUIndControl false
+actSnapshotCollection false
+administrativeState Unlocked
+alVoltHighThreshold 580
+alVoltLowThreshold 405
+alVoltUnstableThreshold 5
+energySavingMode NORMAL
+legacyWideCarrierMode false
+linkSpeed Auto
+moduleLocation "DGhwanggeumilD7_C00A [G] [1506] [2403873699]"
+pimCancellingEnabled true
+prodCodePlanned 473966B
+ANTL 1
+antPortId 4
+antennaPathDelayDL 20
+antennaPathDelayUL 20
+cwaThreshold 215
+dcVoltage OFF
+hdlcCommunicationAllowed false
+totalLoss 30
+ulDelay 0
+vswrMajorThreshold 35
+vswrMinorThreshold 29
+exit
+ANTL 2
+antPortId 4
+antennaPathDelayDL 20
+antennaPathDelayUL 20
+cwaThreshold 215
+dcVoltage OFF
+hdlcCommunicationAllowed false
+totalLoss 30
+ulDelay 0
+vswrMajorThreshold 35
+vswrMinorThreshold 29
+exit
+ANTL 3
+antPortId 4
+antennaPathDelayDL 20
+antennaPathDelayUL 20
+cwaThreshold 215
+dcVoltage OFF
+hdlcCommunicationAllowed false
+totalLoss 30
+ulDelay 0
+vswrMajorThreshold 35
+vswrMinorThreshold 29
+exit
+ANTL 4
+antPortId 4
+antennaPathDelayDL 20
+antennaPathDelayUL 20
+cwaThreshold 215
+dcVoltage OFF
+hdlcCommunicationAllowed false
+totalLoss 30
+ulDelay 0
+vswrMajorThreshold 35
+vswrMinorThreshold 29
+exit
+RSL 1
+dcVoltageEnabled false
+hdlcCommunicationAllowed false
+exit
+exit
+exit
+exit

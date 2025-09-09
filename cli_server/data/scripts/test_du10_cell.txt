@@ -1,0 +1,545 @@
+
+##다운로드 후 mo및 파라 추가후 commit, commit한파일 recommission -> 검증 완료
+config
+init-stp
+dest-bts 130112
+dest-bts-ip 4.4.0.140
+exit
+init-cell -v 24R2 -r 4G
+set-ru-type FHCA
+tgt-bts 130112
+dnload-bts-cfg
+set-cfg-scf genScf
+commit-all -t r
+set-cfg-scf 커밋한 파일
+EQM 1
+APEQM 1
+RMOD 7
+actPimCancellation false
+actSharedRUIndControl false
+actSnapshotCollection false
+administrativeState Unlocked
+alVoltHighThreshold 58
+alVoltLowThreshold 40
+alVoltUnstableThreshold 5
+energySavingMode NORMAL
+legacyWideCarrierMode false
+linkSpeed Auto
+moduleLocation NL_BSdeokposageoriL2G10A_1600166522
+pimCancellingEnabled true
+prodCodePlanned 472169A
+ANTL 1
+antPortId 1
+antennaPathDelayDL 2
+antennaPathDelayUL 2
+cwaThreshold 215
+dcVoltage OFF
+hdlcCommunicationAllowed false
+rxSensitivity 0
+totalLoss 3
+ulDelay 0
+exit
+ANTL 2
+antPortId 2
+antennaPathDelayDL 2
+antennaPathDelayUL 2
+cwaThreshold 215
+dcVoltage OFF
+hdlcCommunicationAllowed false
+rxSensitivity 0
+totalLoss 3
+ulDelay 0
+exit
+exit
+exit
+HWTOP 1
+CABLINK 4
+firstEndpointDN MRBTS-130112/EQM-1/APEQM-1/CABINET-1/SMOD-1
+firstEndpointLabel OPT
+firstEndpointPortId 6
+secondEndpointDN MRBTS-130112/EQM-1/APEQM-1/RMOD-7
+secondEndpointLabel OPT
+secondEndpointPortId 1
+commit
+
+#recommission 커밋한 파일
+
+##다운로드 후 createAll~파일과 맞추기 위해서 formula -1 진행 후 run-script
+config
+init-stp
+dest-bts 130112
+dest-bts-ip 4.4.0.140
+exit
+init-cell -v 24R2 -r 4G
+set-ru-type FHCA
+tgt-bts 130112
+download-cfg-xml
+set-xml-tmpl genScf
+
+commit -t 1
+#set-xml-tmpl 커밋한 파일
+
+run-script CreateAll_FSMF_RMOD_to_LNCELL_V1__script.txt
+commit-cell
+#recommission 커밋한 파일
+#recommission 커밋한 파일 --activate
+
+##mo와 param파싱 dict 테스트
+build-mo-param-dict ref_bts_parameters_24R2_24R1.xlsx
+
+##새로운 set-cfg-tmpl 테스트(파라미터만 따오는)
+config
+init-stp
+dest-bts 130112
+dest-bts-ip 4.4.0.140
+exit
+init-cell -v 24R2 -r 4G
+set-ru-type FHCA
+tgt-bts 130112
+EQM 1
+APEQM 1
+RMOD 5
+alVoltHighThreshold 5700
+exit
+exit
+exit
+set-cfg-tmpl Cablink+RMOD-Create
+
+##다운로드 후 mo및 파라 추가후 commit, commit한파일 recommission 리네이밍/축약 완료
+config
+init-stp
+dest-bts 130112
+dest-bts-ip 4.4.0.140
+exit
+init-cell -v 24R2 -r 4G
+set-ru-type FHCA
+tgt-bts 130112
+dnload-bts-cfg
+EQM 1
+APEQM 1
+RMOD 7
+actPimCancellation false
+actSharedRUIndControl false
+actSnapshotCollection false
+administrativeState Unlocked
+alVoltHighThreshold 58
+alVoltLowThreshold 40
+alVoltUnstableThreshold 5
+energySavingMode NORMAL
+legacyWideCarrierMode false
+linkSpeed Auto
+moduleLocation NL_BSdeokposageoriL2G10A_1600166522
+pimCancellingEnabled true
+prodCodePlanned 472169A
+ANTL 1
+antPortId 1
+antennaPathDelayDL 2
+antennaPathDelayUL 2
+cwaThreshold 215
+dcVoltage OFF
+hdlcCommunicationAllowed false
+rxSensitivity 0
+totalLoss 3
+ulDelay 0
+exit
+ANTL 2
+antPortId 2
+antennaPathDelayDL 2
+antennaPathDelayUL 2
+cwaThreshold 215
+dcVoltage OFF
+hdlcCommunicationAllowed false
+rxSensitivity 0
+totalLoss 3
+ulDelay 0
+exit
+exit
+exit
+HWTOP 1
+CABLINK 4
+firstEndpointDN MRBTS-130112/EQM-1/APEQM-1/CABINET-1/SMOD-1
+firstEndpointLabel OPT
+firstEndpointPortId 6app
+secondEndpointDN MRBTS-130112/EQM-1/APEQM-1/RMOD-7
+secondEndpointLabel OPT
+secondEndpointPortId 1
+commit
+apply-bts-cfg
+act-bts-cfg
+
+##########
+##다운로드 후 mo및 파라 추가후 commit, commit한파일 recommission 리네이밍/축약 완료 -> run-script용
+config
+init-stp
+dest-bts 130112
+check-ping 130112
+exit
+init-cell -v 24R2 -r 4G
+set-ru-type FHCA
+tgt-bts 130112
+dnload-bts-cfg 
+exec-script test_renaming.txt
+commit
+apply-bts-cfg
+act-bts-cfg
+
+##auto-config ANTL * 테스트
+config
+init-stp
+dest-bts 130112
+dest-bts-ip 4.4.0.140
+exit
+init-cell -v 24R2 -r 4G
+set-ru-type FHCA
+tgt-bts 130112
+EQM 1
+APEQM 1
+RMOD 8
+auto-config ANTL *
+show-cfg -m RMOD-8 -a
+
+##auto-config CHANNEL * 테스트(rmod 명시적 방법)
+config
+init-stp
+dest-bts 130112
+dest-bts-ip 4.4.0.140
+exit
+init-cell -v 24R2 -r 4G
+set-ru-type FHCA
+tgt-bts 130112
+EQM 1
+APEQM 1
+RMOD 8
+auto-config ANTL *
+exit
+exit
+exit
+MNL 1
+MNLENT 1
+CELLMAPPING 1
+LCELL 5
+CHANNELGROUP 1
+auto-config CHANNEL * --rmod 8
+show-cfg -m CHANNELGROUP-1 -a
+
+##auto-config CHANNEL * 테스트(rmod를 먼저 만든 경우)
+config
+init-stp
+dest-bts 130112
+dest-bts-ip 4.4.0.140
+exit
+init-cell -v 24R2 -r 4G
+set-ru-type FHCA
+tgt-bts 130112
+MNL 1
+MNLENT 1
+CELLMAPPING 1
+LCELL 5
+CHANNELGROUP 1
+auto-config CHANNEL * --rmod 1
+show-cfg -m CHANNELGROUP-1 -a
+
+************2개있어야 하는 애들********
+###rulebook-to-dict함수와 enter_or_create_mo에서 000과 999로 분기 수정 해야함
+상위 : lncel
+하위 : drx, srdx, sib
+****************공식****************
+lcrId : 0~255
+nbIotLinkedCellId : macro는 nbiot의 lcrId, nbiot는 macro의 lcrId
+tac : getScf파일 읽어서 하는것이고 어떤것을 참조할지는 더 봐야함
+prodCodePlanned : RU type에 따라서 다름
+phyCellId : macro와 nbiot 둘 서로 값이 같아야함
+CABLINK : genScf중 없는 id를 할당
+firstEndpointDN : genScf에서 다른 
+
+#excel_to_dict_mo ref_bts_parameters_24R2_24R1.xlsx
+#excel_to_dict_mo ref_bts_parameters_24R2_24R1_FSFM_FSIH_P8.xlsx
+#rulebook-to-dict NOKIA_CLI_SCF_Rulebook.xml
+#exec-script senario_initcell_all.txt
+##du10 테스트 시나리오
+config
+init-stp
+dest-bts 130126
+dest-bts-ip 4.4.0.116
+exit
+init-cell -v 24R2 -r 4G -i 350
+set-ru-type FHCA
+tgt-bts 130126
+dnload-bts-cfg
+EQM 1
+APEQM 1
+RMOD 7
+prodCodePlanned 472169A
+auto-config ANTL *
+exit
+exit
+HWTOP 1
+CABLINK 7
+firstEndpointDN MRBTS-130126/EQM-1/APEQM-1/CABINET-1/SMOD-1
+firstEndpointLabel OPT
+firstEndpointPortId 2
+secondEndpointDN MRBTS-130126/EQM-1/APEQM-1/RMOD-7
+secondEndpointLabel OPT
+secondEndpointPortId 1
+exit
+exit
+exit
+LNBTS 130126
+LNCEL 300
+lcrId 30
+tac 334
+phyCellId 300
+nbIotLinkedCellId 35
+CAPR 0
+exit 
+CATMCEL 0
+exit
+CDFIM 1
+exit
+DRX 0
+exit
+SDRX 0
+exit
+SIB 0
+exit
+IFGDPR 0
+exit
+IFGPR 0
+exit
+IRFIM 1
+exit
+LNCEL_FDD 0
+APUCCH_FDD 0
+exit
+MPUCCH_FDD 0
+exit
+exit
+LNHOIF 1
+exit
+exit
+LNCEL 350
+lcrId 35
+phyCellId 300
+tac 2
+nbIotLinkedCellId 30
+NBIOT_FDD 0
+dlChBw "0.2 MHz"
+exit
+REDRT 0
+exit
+DRX 0
+exit
+SDRX 0
+exit
+SIB 0
+exit
+exit
+exit
+MNL 1
+MNLENT 1
+CELLMAPPING 1
+LCELL 30
+CHANNELGROUP 1
+auto-config CHANNEL * --rmod 7
+exit
+exit
+LCELL 35
+CHANNELGROUP 1
+auto-config CHANNEL * --rmod 7
+commit-diff
+apply-bts-cfg
+act-bts-cfg
+
+##set-cfg-tmpl 테스트 시나리오
+config
+init-stp
+dest-bts 130126
+dest-bts-ip 4.4.0.116
+exit
+init-cell -v 24R2 -r 4G -i 350
+set-ru-type FHCA
+tgt-bts 130126
+dnload-bts-cfg
+commit-all
+set-cfg-tmpl GONGDONG1.cli
+commit-diff
+
+##du10 테스트 시나리오 + set-cfg-tmpl 테스트
+config
+init-stp
+dest-bts 130126
+dest-bts-ip 4.4.0.116
+exit
+init-cell -v 24R2 -r 4G -i 350
+set-ru-type FHCA
+tgt-bts 130126
+dnload-bts-cfg
+EQM 1
+APEQM 1
+RMOD 7
+prodCodePlanned 472169A
+auto-config ANTL *
+exit
+exit
+HWTOP 1
+CABLINK 7
+firstEndpointDN MRBTS-130126/EQM-1/APEQM-1/CABINET-1/SMOD-1
+firstEndpointLabel OPT
+firstEndpointPortId 2
+secondEndpointDN MRBTS-130126/EQM-1/APEQM-1/RMOD-7
+secondEndpointLabel OPT
+secondEndpointPortId 1
+exit
+exit
+exit
+LNBTS 130126
+LNCEL 300
+lcrId 30
+tac 334
+phyCellId 300
+nbIotLinkedCellId 35
+CAPR 0
+exit 
+CATMCEL 0
+exit
+CDFIM 1
+exit
+DRX 0
+exit
+SDRX 0
+exit
+SIB 0
+exit
+IFGDPR 0
+exit
+IFGPR 0
+exit
+IRFIM 1
+exit
+LNCEL_FDD 0
+APUCCH_FDD 0
+exit
+MPUCCH_FDD 0
+exit
+exit
+LNHOIF 1
+exit
+exit
+LNCEL 350
+lcrId 35
+phyCellId 300
+tac 2
+nbIotLinkedCellId 30
+NBIOT_FDD 0
+dlChBw "0.2 MHz"
+exit
+REDRT 0
+exit
+DRX 0
+exit
+SDRX 0
+exit
+SIB 0
+exit
+exit
+exit
+MNL 1
+MNLENT 1
+CELLMAPPING 1
+LCELL 30
+CHANNELGROUP 1
+auto-config CHANNEL * --rmod 7
+exit
+exit
+LCELL 35
+CHANNELGROUP 1
+auto-config CHANNEL * --rmod 7
+exit
+exit
+exit
+exit
+exit
+set-cfg-tmpl GONGDONG1.cli
+apply-bts-cfg
+act-bts-cfg
+
+## + exec-script 테스트 / FHCG테스트
+config
+init-stp
+dest-bts 130112
+check-ping 130112
+exit
+init-cell -v 24R2 -r 4G -i 350
+set-ru-type FHCA
+#set-ru-type FHCG -f 850
+tgt-bts 130112
+dnload-bts-cfg
+exec-script senario_initcell_autocfg_130112.txt
+#commit-diff
+set-cfg-tmpl GONGDONG1.cli
+#commit-diff
+commit
+apply-bts-cfg
+
+## + exec-script 테스트 / 130112
+config
+init-stp
+dest-bts 130112
+check-ping 130112
+exit
+init-cell -v 24R2 -r 4G -i 350
+#set-ru-type FHCA
+#set-ru-type AHCA
+set-ru-type FXCA
+tgt-bts 130112
+dnload-bts-cfg
+exec-script senario_initcell_autocfg_130112.txt
+set-cfg-tmpl GONGDONG1.cli
+commit
+apply-bts-cfg
+
+## + exec-script 테스트 / 130126
+config
+init-stp
+dest-bts 130126
+check-ping 130126
+exit
+init-cell -v 24R2 -r 4G -i 350
+set-ru-type FHCA
+#set-ru-type AHCA
+#set-ru-type FXCA
+#set-ru-para 3sector
+tgt-bts 130126
+dnload-bts-cfg
+exec-script senario_initcell_autocfg_130126.txt
+set-cfg-tmpl GONGDONG1.cli
+commit
+apply-bts-cfg
+
+#룰북 적용 테스트
+config
+init-stp
+dest-bts 130126
+dest-bts-ip 4.4.0.116
+exit
+init-cell -v 24R2 -r 4G -i 350
+set-ru-type FHCA
+tgt-bts 130126
+rulebook-to-dict NOKIA_CLI_Rulebook_SCF_DU20_InitBts_V0.7.5_Michael_t1.xml
+
+## + exec-script 테스트 / 130126
+config
+init-stp
+dest-bts 130126
+check-ping 130126
+exit
+init-cell -v 24R2 -r 4G -i 350
+#set-ru-type FHCA
+#set-ru-type AHCA
+set-ru-type FXCA
+tgt-bts 130126
+dnload-bts-cfg
+exec-script senario_initcell_autocfg_130112.txt
+set-cfg-tmpl GONGDONG1.cli
+commit
+apply-bts-cfg

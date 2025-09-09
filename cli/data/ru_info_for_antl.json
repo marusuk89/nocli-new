@@ -1,0 +1,318 @@
+{
+  "FXCA": {
+    "CODE": "472142A",
+    "TYPE": "3TX6RX",
+    "ANTENNA": [
+      "ANT1(TX/RX)",
+      "ANT2",
+      "ANT3(TX/RX)",
+      "ANT4",
+      "ANT5",
+      "ANT6"
+    ],
+    "BAND": "B5",
+    "ANTL_TEMPLATE": {
+      "antennaPathDelayDL": "200",
+      "antennaPathDelayUL": "200",
+      "cwaThreshold": "215",
+      "totalLoss": "30"
+    },
+    "CHANNEL_TEMPLATE": {
+      "direction": [
+        "TX",
+        "RX"
+      ]
+    },
+    "TXRX_PORTS": [
+      1,
+      3
+    ]
+  },
+  "FRHA": {
+    "CODE": "471894A",
+    "TYPE": "3TX6RX",
+    "ANTENNA": [
+      "ANT1(TX/RX)",
+      "ANT2",
+      "ANT3(TX/RX)",
+      "ANT4",
+      "ANT5",
+      "ANT6"
+    ],
+    "BAND": "B7",
+    "ANTL_TEMPLATE": {
+      "antennaPathDelayDL": "200",
+      "antennaPathDelayUL": "200",
+      "cwaThreshold": "215",
+      "totalLoss": "30"
+    },
+    "CHANNEL_TEMPLATE": {
+      "direction": [
+        "TX",
+        "RX"
+      ]
+    },
+    "TXRX_PORTS": [
+      1,
+      3
+    ]
+  },
+  "AHCA": {
+    "CODE": "473966A",
+    "TYPE": "4TX4RX",
+    "ANTENNA": [
+      "ANT1(TX/RX)",
+      "ANT2",
+      "ANT3(TX/RX)",
+      "ANT4"
+    ],
+    "BAND": "B5",
+    "ANTL_TEMPLATE": {
+      "antennaPathDelayDL": "200",
+      "antennaPathDelayUL": "200",
+      "cwaThreshold": "215",
+      "totalLoss": "30"
+    },
+    "CHANNEL_TEMPLATE": {
+      "direction": [
+        "TX",
+        "RX"
+      ]
+    },
+    "TXRX_PORTS": [
+      1,
+      3
+    ]
+  },
+  "FRCG": {
+    "CODE": "473224A",
+    "TYPE": "2TX2RX",
+    "ANTENNA": [
+      "ANT1(TX/RX)",
+      "ANT2(TX/RX)"
+    ],
+    "BAND": null,
+    "ANTL_TEMPLATE": {
+      "antennaPathDelayDL": "200",
+      "antennaPathDelayUL": "200",
+      "cwaThreshold": "215",
+      "totalLoss": "30"
+    },
+    "CHANNEL_TEMPLATE": {
+      "direction": [
+        "TX",
+        "RX"
+      ]
+    },
+    "TXRX_PORTS": [
+      1,
+      2
+    ]
+  },
+  "FHCA": {
+    "CODE": "472169A",
+    "TYPE": "2TX2RX",
+    "ANTENNA": [
+      "ANT1(TX/RX)",
+      "ANT2(TX/RX)"
+    ],
+    "BAND": "B5",
+    "ANTL_TEMPLATE": {
+      "antennaPathDelayDL": "200",
+      "antennaPathDelayUL": "200",
+      "cwaThreshold": "215",
+      "totalLoss": "30"
+    },
+    "CHANNEL_TEMPLATE": {
+      "direction": [
+        "TX",
+        "RX"
+      ]
+    },
+    "TXRX_PORTS": [
+      1,
+      2
+    ]
+  },
+  "FRHB": {
+    "CODE": "472292A",
+    "TYPE": "2TX2RX",
+    "ANTENNA": [
+      "ANT1(TX/RX)",
+      "ANT2(TX/RX)"
+    ],
+    "BAND": "B7",
+    "ANTL_TEMPLATE": {
+      "antennaPathDelayDL": "200",
+      "antennaPathDelayUL": "200",
+      "cwaThreshold": "215",
+      "totalLoss": "30"
+    },
+    "CHANNEL_TEMPLATE": {
+      "direction": [
+        "TX",
+        "RX"
+      ]
+    },
+    "TXRX_PORTS": [
+      1,
+      2
+    ]
+  },
+  "FHCB": {
+    "CODE": "00065698",
+    "TYPE": "2TX2RX",
+    "ANTENNA": [
+      "ANT1(TX/RX)",
+      "ANT2(TX/RX)"
+    ],
+    "BAND": "B5",
+    "ANTL_TEMPLATE": {
+      "antennaPathDelayDL": "200",
+      "antennaPathDelayUL": "200",
+      "cwaThreshold": "215",
+      "totalLoss": "30"
+    },
+    "CHANNEL_TEMPLATE": {
+      "direction": [
+        "TX",
+        "RX"
+      ]
+    },
+    "TXRX_PORTS": [
+      1,
+      2
+    ]
+  },
+  "FRGY": {
+    "CODE": "472854A",
+    "TYPE": "2TX2RX",
+    "ANTENNA": [
+      "ANT1(TX/RX)",
+      "ANT2(TX/RX)"
+    ],
+    "BAND": "B1",
+    "ANTL_TEMPLATE": {
+      "antennaPathDelayDL": "200",
+      "antennaPathDelayUL": "200",
+      "cwaThreshold": "215",
+      "totalLoss": "30"
+    },
+    "CHANNEL_TEMPLATE": {
+      "direction": [
+        "TX",
+        "RX"
+      ]
+    },
+    "TXRX_PORTS": [
+      1,
+      2
+    ]
+  },
+  "FRGP": {
+    "CODE": "472100B",
+    "TYPE": "2TX2RX",
+    "ANTENNA": [
+      "ANT1(TX/RX)",
+      "ANT2",
+      "ANT3(TX/RX)",
+      "ANT4",
+      "ANT5",
+      "ANT6"
+    ],
+    "BAND": "B1",
+    "ANTL_TEMPLATE": {
+      "antennaPathDelayDL": "200",
+      "antennaPathDelayUL": "200",
+      "cwaThreshold": "215",
+      "totalLoss": "30"
+    },
+    "CHANNEL_TEMPLATE": {
+      "direction": [
+        "TX",
+        "RX"
+      ]
+    },
+    "TXRX_PORTS": [
+      1,
+      3
+    ]
+  },
+  "FHCG": {
+    "CODE": "473377A",
+    "TYPE": "2TX2RX",
+    "ANTENNA": [
+      "ANT1(TX/RX)",
+      "ANT2(TX/RX)"
+    ],
+    "BAND": "B5",
+    "ANTL_TEMPLATE": {
+      "antennaPathDelayDL": "200",
+      "antennaPathDelayUL": "200",
+      "cwaThreshold": "215",
+      "totalLoss": "30"
+    },
+    "CHANNEL_TEMPLATE": {
+      "direction": [
+        "TX",
+        "RX"
+      ]
+    },
+    "TXRX_PORTS": [
+      1,
+      2
+    ]
+  },
+  "AHGA": {
+    "CODE": "474254A",
+    "TYPE": "4TX4RX",
+    "ANTENNA": [
+      "ANT1(TX/RX)",
+      "ANT2",
+      "ANT3(TX/RX)",
+      "ANT4"
+    ],
+    "BAND": "B1",
+    "ANTL_TEMPLATE": {
+      "antennaPathDelayDL": "200",
+      "antennaPathDelayUL": "200",
+      "cwaThreshold": "215",
+      "totalLoss": "30"
+    },
+    "CHANNEL_TEMPLATE": {
+      "direction": [
+        "TX",
+        "RX"
+      ]
+    },
+    "TXRX_PORTS": [
+      1,
+      3
+    ]
+  },
+  "FRGQ": {
+    "CODE": "472261A",
+    "TYPE": "2TX2RX",
+    "ANTENNA": [
+      "ANT1(TX/RX)",
+      "ANT2(TX/RX)"
+    ],
+    "BAND": "B1",
+    "ANTL_TEMPLATE": {
+      "antennaPathDelayDL": "200",
+      "antennaPathDelayUL": "200",
+      "cwaThreshold": "215",
+      "totalLoss": "30"
+    },
+    "CHANNEL_TEMPLATE": {
+      "direction": [
+        "TX",
+        "RX"
+      ]
+    },
+    "TXRX_PORTS": [
+      1,
+      2
+    ]
+  }
+}

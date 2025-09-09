@@ -1,0 +1,76 @@
+#######################################
+############ DU10 - 130126 ############
+#######################################
+
+## 진입단계 ##
+config-x
+auto-comm
+
+## 해당 날짜의 엑셀파일명 출력 명령어 ##
+list-tmpl 20250908
+
+## 해당 파일을 통해 스크립트 생성 명령어 ##
+gen-script NoCLI 개통탬플릿_V0.9.6.xlsx
+
+## 생성된 스크립트 출력 명령어 ##
+list-script 20250908
+
+## 생성된 스크립트 실행 명령어 ##
+autocomm-run-script 101.DU130126_Cell100_initcell_pass.cli
+#autocomm-run-script 102.DU130126_Cell48291_initcell_pass.cli
+#autocomm-run-script 100.DU130126_x_initbts_pass.cli
+
+#######################################
+############ DU20 - 130120 ############
+#######################################
+
+## 진입단계 ##
+config-x
+auto-comm
+
+## 해당 날짜의 엑셀파일명 출력 명령어 ##
+list-tmpl 20250703
+
+## 해당 파일을 통해 스크립트 생성 명령어 ##
+gen-script CLI 개통탬플릿_V0.9.0.xlsx
+
+## 생성된 스크립트 출력 명령어 ##
+list-script 20250704
+
+## 생성된 스크립트 실행 명령어 ##
+#autocomm-run-script 201.DU130120_Cell24320_initcell_pass.cli
+autocomm-run-script 202.DU130120_Cell24320_initcell_pass.cli
+#autocomm-run-script 200.DU130120_x_initbts_pass.cli
+
+
+############################################
+############# 5G init-bts DU10 #############
+############################################
+
+config-x
+auto-comm
+#list-tmpl 20250819
+gen-script CLI 개통탬플릿_V0.9.3.xlsx
+#list-script 20250819
+#autocomm-run-script 200.DU2350003_x_initbts_pass.cli
+autocomm-run-script 102.DU2350003_Cell202_initcell_pass.cli
+
+#######################################
+############### 5G DU20 ###############
+#######################################
+
+config-x
+auto-comm
+#list-tmpl 20250819
+gen-script CLI 개통탬플릿_V0.9.3.xlsx
+#list-script 20250819
+#autocomm-run-script 200.DU2350003_x_initbts_pass.cli
+autocomm-run-script 101.DU2350003_Cell201_initcell_pass.cli
+
+config-x
+auto-comm
+autocomm-run-script 101.DU2350003_Cell100_initcell_pass.cli
+autocomm-run-script 102.DU2350003_Cell101_initcell_pass.cli
+autocomm-run-script 103.DU2350003_Cell100_initcell_pass.cli
+autocomm-run-script 301.DU2350005_Cell101_initcell_pass.cli
+autocomm-run-script 302.DU2350005_Cell100_initcell_pass.cli

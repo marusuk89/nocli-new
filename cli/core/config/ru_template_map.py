@@ -1,0 +1,36 @@
+ru_template_map = {
+  "FRCG": "antl_2_trx_2",
+  "FHCA": "antl_2_trx_2",
+  "FRHB": "antl_2_trx_2",
+  "FHCB": "antl_2_trx_2_noVswr",
+  "FRGY": "antl_2_trx_2",
+  "FHCG": "antl_2_trx_2_noVswr",
+  "FRGQ": "antl_2_trx_2",
+
+  "AHCA": "antl_4_trx_2",
+  "AHGA": "antl_4_trx_2",
+
+  "FXCA": "antl_6_trx_2",
+  "FRHA": "antl_6_trx_2",
+  "FRGP": "antl_6_trx_2",
+
+  "FXCA2": "antl_6_trx_3",
+
+  "AEQN_4_2": "phyant",
+  "AEQY_4_2": "phyant",
+  "AHQK_2_2": "antl_8_trx",
+  "AHQK_4_2": "antl_8_trx",
+  "AHQK_4_4": "antl_8_trx",
+  "APHA_4_2": "asirmod_antl_4",
+  "AQQA_4_2": "phyant",
+  "AZQG_2_2_0": "antl_8_trx",
+  "AZQG_2_2_4": "antl_8_trx",
+  "AZQG_4_2_0": "antl_8_trx",
+  "AZQG_4_2_2": "antl_8_trx",
+  "AZQG_4_4": "antl_8_trx",
+  "AZQS_2_2_0": "antl_8_trx",
+  "AZQS_2_2_4": "antl_8_trx",
+  "AZQS_4_2_0": "antl_8_trx",
+  "AZQS_4_2_2": "antl_8_trx",
+  "AZQS_4_4": "antl_8_trx",
+}

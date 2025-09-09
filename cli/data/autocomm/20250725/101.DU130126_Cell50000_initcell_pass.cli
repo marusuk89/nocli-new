@@ -1,0 +1,51 @@
+### HEADER ###
+dest-bts 130126
+check-ping 130126
+set-mode cell
+set-mo-version 25R2
+set-rat-type 4G
+set-iot-lncel-id None
+set-du-type du10
+set-allow-commit-diff true
+
+### BODY ###
+set-ru-type FHCA
+tgt-bts 130126
+dnload-bts-cfg
+set-ru-type FHCA
+EQM 1
+APEQM 1
+RMOD 3
+auto-config ANTL *
+moduleLocation NL_DU20_loc3
+exit-all
+EQM 1
+HWTOP 1
+CABLINK 4
+firstEndpointDN MRBTS-130126/EQM-1/APEQM-1/SMOD-1
+firstEndpointLabel OPT
+firstEndpointPortId 2
+secondEndpointDN MRBTS-130126/EQM-1/APEQM-1/RMOD-3
+secondEndpointLabel OPT
+secondEndpointPortId 1
+exit-all
+LNBTS 130126
+LNCEL 50000
+lcrId 15
+phyCellId 250
+tac 5
+nbIoTMode disabled
+LNCEL_FDD 0
+rootSeqIndex 600
+exit
+auto-config
+exit-all
+MNL 1
+MNLENT 1
+CELLMAPPING 1
+auto-config LCELL 15
+exit-all
+
+commit
+apply-bts-cfg
+#act-bts-cfg

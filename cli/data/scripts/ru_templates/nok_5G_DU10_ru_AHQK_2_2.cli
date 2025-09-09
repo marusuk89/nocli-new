@@ -1,0 +1,16 @@
+EQM 1
+APEQM 1
+RMOD 000
+prodCodePlanned 474919A
+exit-all
+NRBTS 000
+NRCELL 000
+nrCellType 2DL2UL
+pMax 46.0
+dlMimoMode "2x2 Closed Loop Spatial Multiplexing"
+numOfSubSectors 0sub-sector
+list beamSet 1 basicBeamSet beamSet_1
+actBeamforming false
+actDlLowPAPRoptimizedPrecoding false
+actDlPaWarmUp false
+exit-all

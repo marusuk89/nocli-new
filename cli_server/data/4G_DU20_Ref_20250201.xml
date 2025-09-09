@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:raml xmlns:ns0="raml21.xsd" version="2.1">
+    <ns0:managedObject class="com.nokia.srnnbts:MRBTS" distName="MRBTS-20000" version="SBT524R2_2325_100" operation="create">
+        <ns0:p name="btsName">NN0001234567</ns0:p>
+        <ns0:p name="altitude">160</ns0:p>
+        <ns0:p name="blockingState">Unblocked</ns0:p>
+        <ns0:p name="latitude">37.564839</ns0:p>
+        <ns0:p name="longitude">126.978388</ns0:p>
+    </ns0:managedObject>
+    <ns0:managedObject class="com.nokia.srnnbts:LNBTS" distName="MRBTS-20000/LNBTS-40000" version="..." operation="create">
+        <ns0:p name="lnbtsName">LNBTS_40000</ns0:p>
+        <ns0:p name="location">e0255 Pitt</ns0:p>
+    </ns0:managedObject>
+    <ns0:managedObject class="com.nokia.srnnbts:LNMME" distName="MRBTS-20000/LNBTS-40000/LNMME-1" version="..." operation="create">
+        <ns0:p name="mme-ip">39.18.70.49</ns0:p>
+        <ns0:p name="mme-gi">1</ns0:p>
+    </ns0:managedObject>
+    <ns0:managedObject class="com.nokia.srnnbts:LNMME" distName="MRBTS-20000/LNBTS-40000/LNMME-2" version="..." operation="create">
+        <ns0:p name="mme-ip">39.18.134.65</ns0:p>
+        <ns0:p name="mme-gi">2</ns0:p>
+    </ns0:managedObject>
+    <ns0:managedObject class="com.nokia.srnnbts:LNMME" distName="MRBTS-20000/LNBTS-40000/LNMME-3" version="..." operation="create">
+        <ns0:p name="mme-ip">39.18.71.65</ns0:p>
+        <ns0:p name="mme-gi">3</ns0:p>
+    </ns0:managedObject>
+    <ns0:managedObject class="APEQM" distName="MRBTS-20000/EQM-1/APEQM-1" version="..." operation="create">
+        <ns0:p name="moduleLocation">E0254 Pitt</ns0:p>
+    </ns0:managedObject>
+</ns0:raml>

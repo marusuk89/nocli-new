@@ -1,0 +1,183 @@
+2025-07-18 11:15:54 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-18 11:16:15 | config-x/auto-comm > | excel_to_dict_formula ref_bts_parameters_25R1_24R3_FSFM_FSIH.xlsx | RESULT: NOK
+2025-07-18 11:18:08 | config-x/auto-comm > | excel_to_dict_formula ref_bts_parameters_25R1_24R3_FSFM_FSIH.xlsx | RESULT: NOK
+2025-07-18 11:19:01 | config-x/auto-comm > | excel_to_dict_formula ref_bts_parameters_25R1_24R3_FSFM_FSIH.xlsx | RESULT: NOK
+2025-07-18 11:21:56 | config-x/auto-comm > | excel_to_dict_formula ref_bts_parameters_25R1_24R3_FSFM_FSIH.xlsx | RESULT: NOK
+2025-07-18 11:22:20 | config-x/auto-comm > | excel_to_dict_formula ref_bts_parameters_25R1_24R3_FSFM_FSIH.xlsx | RESULT: NOK
+2025-07-18 11:24:53 | config-x/auto-comm > | excel_to_dict_formula ref_bts_parameters_25R1_24R3_FSFM_FSIH.xlsx | RESULT: NOK
+2025-07-18 11:41:46 | config-x/auto-comm > | excel_to_dict_formula ref_bts_parameters_25R1_24R3_FSFM_FSIH.xlsx | RESULT: NOK
+2025-07-18 11:43:02 | config-x/auto-comm > | excel_to_dict_formula ref_bts_parameters_25R1_24R3_FSFM_FSIH.xlsx | RESULT: NOK
+2025-07-18 11:44:52 | config-x/auto-comm > | excel_to_dict_formula ref_bts_parameters_25R1_24R3_FSFM_FSIH.xlsx | RESULT: NOK
+2025-07-18 11:55:37 | config-x/auto-comm > | excel_to_dict_formula ref_bts_parameters_25R1_24R3_FSFM_FSIH.xlsx | RESULT: NOK
+2025-07-18 11:56:08 | config-x/auto-comm > | excel_to_dict_formula ref_bts_parameters_25R2_25R1_FSFM_FSIH.xlsx | RESULT: NOK
+2025-07-18 11:57:40 | config-x/auto-comm > | excel_to_dict_mo ref_bts_parameters_25R1_24R3_FSFM_FSIH.xlsx | RESULT: NOK
+2025-07-18 11:59:46 | config-x/auto-comm > | excel_to_dict_mo ref_bts_parameters_24R2_24R1_FSFM_FSIH_P8.xlsx | RESULT: NOK
+2025-07-18 12:11:56 | config-x/auto-comm > | excel_to_dict_mo ref_bts_parameters_25R1_24R3_FSFM_FSIH.xlsx | RESULT: NOK
+2025-07-18 12:14:18 | config-x/auto-comm > | excel_to_dict_mo ref_bts_parameters_25R1_24R3_du20.xlsx | RESULT: NOK
+2025-07-18 13:19:06 | config-x/auto-comm > | excel_to_dict_formula ref_bts_parameters_25R1_24R3_FSFM_FSIH.xlsx | RESULT: NOK
+2025-07-18 13:26:06 | config-x/auto-comm > | excel_to_dict_mo ref_bts_parameters_25R1_24R3_FSFM_FSIH.xlsx | RESULT: NOK
+2025-07-18 13:28:11 | config-x/auto-comm > | excel_to_dict_formula ref_bts_parameters_25R1_24R3_FSFM_FSIH.xlsx | RESULT: NOK
+2025-07-18 13:29:37 | config-x/auto-comm > | excel_to_dict_formula ref_bts_parameters_25R1_24R3_FSFM_FSIH.xlsx | RESULT: NOK
+2025-07-18 13:31:12 | config-x/auto-comm > | excel_to_dict_formula ref_bts_parameters_25R1_24R3_FSFM_FSIH.xlsx | RESULT: NOK
+2025-07-18 13:33:10 | config-x/auto-comm > | excel_to_dict_formula ref_bts_parameters_25R1_24R3_FSFM_FSIH.xlsx | RESULT: NOK
+2025-07-18 13:34:04 | config-x/auto-comm > | excel_to_dict_mo ref_bts_parameters_25R1_24R3_FSFM_FSIH.xlsx | RESULT: NOK
+2025-07-18 13:35:55 | config-x/auto-comm > | excel_to_dict_mo ref_bts_parameters_25R1_24R3_FSFM_FSIH.xlsx | RESULT: NOK
+2025-07-18 13:40:05 | config-x/auto-comm > | excel_to_dict_mo ref_bts_parameters_25R1_24R3_FSFM_FSIH.xlsx | RESULT: NOK
+2025-07-18 13:40:34 | config-x/auto-comm > | excel_to_dict_mo ref_bts_parameters_25R1_24R3_FSFM_FSIH.xlsx | RESULT: NOK
+2025-07-18 14:36:00 | config-x/auto-comm > | excel_to_dict_mo ref_bts_parameters_25R1_24R3_du20.xlsx | RESULT: NOK
+2025-07-18 14:45:40 | config-x/auto-comm > | excel_to_dict_mo ref_bts_parameters_25R2_25R1_FSFM_FSIH.xlsx | RESULT: NOK
+2025-07-18 14:46:24 | config-x/auto-comm > | excel_to_dict_mo ref_bts_parameters_25R2_25R1_du20.xlsx | RESULT: NOK
+2025-07-18 14:57:47 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-18 14:57:47 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-18 14:57:47 | config > | init_stp | RESULT: OK
+2025-07-18 14:57:48 | config/init-bts(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-18 14:57:48 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-18 14:57:50 | MRBTS(130126) > | exec_script DU10_INITBTS_FILTER_SCRIPT_V0.7.5.cli | RESULT: OK
+2025-07-18 14:58:11 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-18 14:58:11 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-18 14:58:11 | config > | init_stp | RESULT: OK
+2025-07-18 14:58:11 | config/init-bts(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-18 14:58:11 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-18 15:00:29 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-18 15:00:29 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-18 15:00:29 | config > | init_stp | RESULT: OK
+2025-07-18 15:00:30 | config/init-bts(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-18 15:00:30 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-18 15:00:30 | MRBTS(130126) > eqm(1) > | exec_script DU10_INITBTS_FILTER_SCRIPT_V0.7.5.cli | RESULT: OK
+2025-07-18 15:23:20 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-18 15:23:20 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-18 15:23:20 | config > | init_stp | RESULT: OK
+2025-07-18 15:23:21 | config > | init_bts -r 4G -v 25R2 -i 65534 | RESULT: OK
+2025-07-18 15:24:22 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-18 15:24:22 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-18 15:24:22 | config > | init_stp | RESULT: OK
+2025-07-18 15:24:22 | config/init-bts(25R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-18 15:24:22 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-18 15:31:30 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-18 15:31:30 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-18 15:31:30 | config > | init_stp | RESULT: OK
+2025-07-18 15:31:30 | config/init-bts(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-18 15:31:30 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-18 15:31:32 | MRBTS(130126) > | exec_script DU10_INITBTS_FILTER_SCRIPT_V0.7.5.cli | RESULT: OK
+2025-07-18 15:31:32 | MRBTS(130126) > | exec_script du10_bts130126_userinput.cli | RESULT: OK
+2025-07-18 15:31:32 | MRBTS(130126) > | commit_all -t 1 | RESULT: OK
+2025-07-18 15:31:47 | MRBTS(130126) > | apply_bts_cfg_commission | RESULT: OK
+2025-07-18 16:09:42 | config-x/auto-comm > | set_cfg_scf 25R2_NOKIA_CLI_Rulebook_SCF_DU10_InitBts_LTE_V1.0.xml | RESULT: NOK
+2025-07-18 16:09:46 | config-x/auto-comm > | set_cfg_scf 25R2_NOKIA_CLI_Rulebook_SCF_DU10_InitBts_LTE_V1.0 | RESULT: NOK
+2025-07-18 16:10:36 | config-x/auto-comm > | set_cfg_scf 25R2_NOKIA_CLI_Rulebook_SCF_DU10_InitBts_LTE_V1.0 | RESULT: NOK
+2025-07-18 16:11:10 | config-x/auto-comm > | set_cfg_scf 25R2_NOKIA_CLI_Rulebook_SCF_DU10_InitBts_LTE_V1.0 | RESULT: OK
+2025-07-18 16:11:19 | config-x/auto-comm > | commit_all -t 1 | RESULT: OK
+2025-07-18 16:11:52 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-18 16:11:53 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-18 16:11:58 | config > | init_stp | RESULT: OK
+2025-07-18 16:13:52 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-18 16:13:52 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-18 16:13:52 | config > | init_stp | RESULT: OK
+2025-07-18 16:13:52 | config/init-bts(24R2, 4G) > | set_cfg_scf 25R2_NOKIA_CLI_Rulebook_SCF_DU10_InitBts_LTE_V1.0.xml | RESULT: OK
+2025-07-18 16:13:52 | config/init-bts(24R2, 4G) > | commit_all -t 1 | RESULT: OK
+2025-07-18 16:14:15 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-18 16:14:15 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-18 16:14:15 | config > | init_stp | RESULT: OK
+2025-07-18 16:14:16 | config/init-bts(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-18 16:14:16 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-18 16:14:16 | MRBTS(130126) > | set_cfg_scf 25R2_NOKIA_CLI_Rulebook_SCF_DU10_InitBts_LTE_V1.0.xml | RESULT: OK
+2025-07-18 16:14:17 | MRBTS(130126) > | commit_all -t 1 | RESULT: OK
+2025-07-18 16:15:54 | MRBTS(130126) > | rulebook_to_dict 25R2_NOKIA_CLI_Rulebook_SCF_DU10_InitBts_LTE_V1.0_t1.xml | RESULT: OK
+2025-07-18 16:17:28 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-18 16:17:28 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-18 16:17:28 | config > | init_stp | RESULT: OK
+2025-07-18 16:17:28 | config/init-bts(25R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-18 16:17:28 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-18 16:17:29 | MRBTS(130126) > | exec_script DU10_INITBTS_FILTER_SCRIPT_V0.7.5.cli | RESULT: OK
+2025-07-18 16:17:29 | MRBTS(130126) > | exec_script du10_bts130126_userinput.cli | RESULT: OK
+2025-07-18 16:17:30 | MRBTS(130126) > | commit_all -t 1 | RESULT: OK
+2025-07-18 16:17:44 | MRBTS(130126) > | apply_bts_cfg_commission | RESULT: OK
+2025-07-18 16:42:57 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-18 16:42:57 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-18 16:42:57 | config > | init_stp | RESULT: OK
+2025-07-18 16:42:57 | config/init-bts(25R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-18 16:42:57 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-18 16:42:58 | MRBTS(130126) > | exec_script 25R2_DU10_INITBTS_FILTER_SCRIPT_V0.7.5.cli | RESULT: OK
+2025-07-18 16:42:58 | MRBTS(130126) > | exec_script 25R2_du10_bts130126_userinput.cli | RESULT: OK
+2025-07-18 16:42:59 | MRBTS(130126) > | commit_all -t 1 | RESULT: OK
+2025-07-18 16:43:17 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-18 16:43:18 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-18 16:43:18 | config > | init_stp | RESULT: OK
+2025-07-18 16:43:18 | config/init-bts(25R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-18 16:43:18 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-18 16:43:19 | MRBTS(130126) > | exec_script 25R2_DU10_INITBTS_FILTER_SCRIPT_V0.7.5.cli | RESULT: OK
+2025-07-18 16:43:19 | MRBTS(130126) > | exec_script 25R2_du10_bts130126_userinput.cli | RESULT: OK
+2025-07-18 16:43:19 | MRBTS(130126) > | commit_all -t 1 | RESULT: OK
+2025-07-18 16:44:22 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-18 16:44:22 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-18 16:44:22 | config > | init_stp | RESULT: OK
+2025-07-18 16:44:23 | config/init-bts(25R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-18 16:44:23 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-18 16:44:24 | MRBTS(130126) > | exec_script 25R2_DU10_INITBTS_FILTER_SCRIPT_V0.7.5.cli | RESULT: OK
+2025-07-18 16:44:24 | MRBTS(130126) > | exec_script 25R2_du10_bts130126_userinput.cli | RESULT: OK
+2025-07-18 16:44:24 | MRBTS(130126) > | commit_all -t 1 | RESULT: OK
+2025-07-18 16:44:36 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-18 16:44:36 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-18 16:44:37 | config > | init_stp | RESULT: OK
+2025-07-18 16:44:37 | config/init-bts(25R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-18 16:44:37 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-18 16:44:38 | MRBTS(130126) > | exec_script 25R2_DU10_INITBTS_FILTER_SCRIPT_V0.7.5.cli | RESULT: OK
+2025-07-18 16:44:38 | MRBTS(130126) > | exec_script 25R2_du10_bts130126_userinput.cli | RESULT: OK
+2025-07-18 16:44:39 | MRBTS(130126) > | commit_all -t 1 | RESULT: OK
+2025-07-18 16:44:54 | MRBTS(130126) > | apply_bts_cfg_commission | RESULT: OK
+2025-07-18 16:48:41 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-18 16:48:41 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-18 16:48:41 | config > | init_stp | RESULT: OK
+2025-07-18 16:48:42 | config/init-bts(25R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-18 16:48:42 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-18 16:48:43 | MRBTS(130126) > | exec_script 25R2_DU10_INITBTS_FILTER_SCRIPT_V0.7.5.cli | RESULT: OK
+2025-07-18 16:48:43 | MRBTS(130126) > | exec_script 25R2_du10_bts130126_userinput.cli | RESULT: OK
+2025-07-18 16:48:43 | MRBTS(130126) > | commit_all -t 1 | RESULT: OK
+2025-07-18 16:48:57 | MRBTS(130126) > | apply_bts_cfg_commission | RESULT: OK
+2025-07-18 16:53:47 | config > | init_bts -r 4G -v 25R2 -i 65534 | RESULT: OK
+2025-07-18 16:53:47 | config-x > | auto_comm | RESULT: NOK
+2025-07-18 16:56:17 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-18 16:56:17 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-18 16:56:17 | config > | init_stp | RESULT: OK
+2025-07-18 16:56:17 | config/init-bts(25R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-18 16:56:17 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-18 16:56:18 | MRBTS(130126) > | exec_script 25R2_DU10_INITBTS_FILTER_SCRIPT_V0.7.5.cli | RESULT: OK
+2025-07-18 16:56:18 | MRBTS(130126) > | exec_script 25R2_du10_bts130126_userinput.cli | RESULT: OK
+2025-07-18 16:56:18 | MRBTS(130126) > | commit_all -t 1 | RESULT: OK
+2025-07-18 16:56:33 | MRBTS(130126) > | apply_bts_cfg_commission | RESULT: OK
+2025-07-18 16:57:39 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-18 16:57:39 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-18 16:57:39 | config > | init_stp | RESULT: OK
+2025-07-18 16:57:40 | config/init-bts(25R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-18 16:57:40 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-18 16:57:41 | MRBTS(130126) > | exec_script 25R2_DU10_INITBTS_FILTER_SCRIPT_V0.7.5.cli | RESULT: OK
+2025-07-18 16:57:41 | MRBTS(130126) > | exec_script 25R2_du10_bts130126_userinput.cli | RESULT: OK
+2025-07-18 16:57:41 | MRBTS(130126) > | commit_all -t 1 | RESULT: OK
+2025-07-18 16:57:55 | MRBTS(130126) > | apply_bts_cfg_commission | RESULT: OK
+2025-07-18 17:13:32 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-18 17:13:32 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-18 17:13:32 | config > | init_stp | RESULT: OK
+2025-07-18 17:13:33 | config/init-bts(24R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-18 17:13:34 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-18 17:13:54 | MRBTS(130126) > | rulebook_to_dict 25R2_NOKIA_CLI_Rulebook_SCF_DU10_InitBts_LTE_V1.0_t1.xml | RESULT: OK
+2025-07-18 17:24:50 | MRBTS(130126) > mnl(1) > mnlent(1) > sync(1) > clock(1) > | show_cfg | RESULT: OK
+2025-07-18 17:25:40 | MRBTS(130126) > mnl(1) > mnlent(1) > sync(1) > clock(1) > | show_cfg | RESULT: OK
+2025-07-18 17:26:00 | MRBTS(130126) > mnl(1) > mnlent(1) > sync(1) > clock(1) > | show_cfg | RESULT: OK
+2025-07-18 17:30:17 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-18 17:30:17 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-18 17:30:17 | config > | init_stp | RESULT: OK
+2025-07-18 17:30:18 | config/init-bts(25R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-18 17:30:18 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-18 17:30:19 | MRBTS(130126) > | exec_script 25R2_DU10_INITBTS_FILTER_SCRIPT_V0.7.5.cli | RESULT: OK
+2025-07-18 17:30:19 | MRBTS(130126) > | exec_script 25R2_du10_bts130126_userinput.cli | RESULT: OK
+2025-07-18 17:30:19 | MRBTS(130126) > | commit_all -t 1 | RESULT: OK
+2025-07-18 17:30:34 | MRBTS(130126) > | apply_bts_cfg_commission | RESULT: OK
+2025-07-18 17:31:33 | config/init-stp > | dest_bts 130126 | RESULT: OK
+2025-07-18 17:31:33 | config/init-stp > | check_ping 130126 | RESULT: OK
+2025-07-18 17:31:33 | config > | init_stp | RESULT: OK
+2025-07-18 17:31:33 | config/init-bts(25R2, 4G) > | set_du_type du10 | RESULT: OK
+2025-07-18 17:31:33 | MRBTS(130126) > | tgt_bts 130126 | RESULT: OK
+2025-07-18 17:31:34 | MRBTS(130126) > | exec_script 25R2_DU10_INITBTS_FILTER_SCRIPT_V0.7.5.cli | RESULT: OK
+2025-07-18 17:31:34 | MRBTS(130126) > | exec_script 25R2_du10_bts130126_userinput.cli | RESULT: OK
+2025-07-18 17:31:34 | MRBTS(130126) > | commit_all -t 1 | RESULT: OK
+2025-07-18 17:32:04 | MRBTS(130126) > | apply_bts_cfg_commission | RESULT: OK

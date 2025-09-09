@@ -1,0 +1,828 @@
+EQM 1
+APEQM 1
+RMOD 1
+actParExpansionOff false
+actPimCancellation false
+actSharedRUIndControl false
+actSnapshotCollection false
+administrativeState Unlocked
+alVoltHighThreshold 0
+alVoltLowThreshold 0
+alVoltUnstableThreshold 0
+energySavingMode NORMAL
+internetProtocolVersion IPV4
+legacyWideCarrierMode false
+pimCancellingEnabled false
+plainTextConnectionAllowed true
+prodCodePlanned 475664A
+protocol NOKIA
+ANTL 1
+antPortId 1
+antennaPathDelayDL 200
+antennaPathDelayUL 200
+cwaThreshold 215
+dcVoltage OFF
+hdlcCommunicationAllowed false
+totalLoss 300
+useMeasuredRoundTripDelay false
+repeaterDelay 50
+exit
+ANTL 2
+antPortId 2
+antennaPathDelayDL 200
+antennaPathDelayUL 200
+cwaThreshold 215
+dcVoltage OFF
+hdlcCommunicationAllowed false
+totalLoss 300
+useMeasuredRoundTripDelay false
+repeaterDelay 50
+exit
+ANTL 3
+antPortId 3
+antennaPathDelayDL 200
+antennaPathDelayUL 200
+cwaThreshold 215
+dcVoltage OFF
+hdlcCommunicationAllowed false
+totalLoss 300
+useMeasuredRoundTripDelay false
+repeaterDelay 50
+exit
+ANTL 4
+antPortId 4
+antennaPathDelayDL 200
+antennaPathDelayUL 200
+cwaThreshold 215
+dcVoltage OFF
+hdlcCommunicationAllowed false
+totalLoss 300
+useMeasuredRoundTripDelay false
+repeaterDelay 50
+exit
+ANTL 5
+antPortId 5
+antennaPathDelayDL 200
+antennaPathDelayUL 200
+cwaThreshold 215
+dcVoltage OFF
+hdlcCommunicationAllowed false
+totalLoss 300
+useMeasuredRoundTripDelay false
+repeaterDelay 50
+exit
+ANTL 6
+antPortId 6
+antennaPathDelayDL 200
+antennaPathDelayUL 200
+cwaThreshold 215
+dcVoltage OFF
+hdlcCommunicationAllowed false
+totalLoss 300
+useMeasuredRoundTripDelay false
+repeaterDelay 50
+exit
+ANTL 7
+antPortId 7
+antennaPathDelayDL 200
+antennaPathDelayUL 200
+cwaThreshold 215
+dcVoltage OFF
+hdlcCommunicationAllowed false
+totalLoss 300
+useMeasuredRoundTripDelay false
+repeaterDelay 50
+exit
+ANTL 8
+antPortId 8
+antennaPathDelayDL 200
+antennaPathDelayUL 200
+cwaThreshold 215
+dcVoltage OFF
+hdlcCommunicationAllowed false
+totalLoss 300
+useMeasuredRoundTripDelay false
+repeaterDelay 50
+exit
+exit
+exit
+HWTOP 1
+CABLINK 4
+firstEndpointDN MRBTS-2350003/EQM-1/APEQM-1/CABINET-1/BBMOD-1
+firstEndpointLabel SFP
+firstEndpointPortId 1
+iqCompression "eCPRI IQ9_E7"
+linkSpeed eCpri10
+radioProtocolType 10eCPRI
+secondEndpointDN MRBTS-2350003/EQM-1/APEQM-1/RMOD-1
+secondEndpointLabel SFP
+secondEndpointPortId 1
+exit
+exit
+exit
+MNL 1
+MNLENT 1
+CELLMAPPING 1
+LCELNR 1
+actAsiDistMimoNr false
+actSimplChConfMAA false
+CHANNELGROUP 1
+CHANNEL 1
+direction TX
+antlDN MRBTS-2350003/EQM-1/APEQM-1/RMOD-1/ANTL-1
+exit
+CHANNEL 2
+direction TX
+antlDN MRBTS-2350003/EQM-1/APEQM-1/RMOD-1/ANTL-2
+exit
+CHANNEL 3
+direction TX
+antlDN MRBTS-2350003/EQM-1/APEQM-1/RMOD-1/ANTL-5
+exit
+CHANNEL 4
+direction TX
+antlDN MRBTS-2350003/EQM-1/APEQM-1/RMOD-1/ANTL-6
+exit
+CHANNEL 5
+direction RX
+antlDN MRBTS-2350003/EQM-1/APEQM-1/RMOD-1/ANTL-1
+exit
+CHANNEL 6
+direction RX
+antlDN MRBTS-2350003/EQM-1/APEQM-1/RMOD-1/ANTL-2
+exit
+exit
+exit
+exit
+SYNC 2
+actRuIntelligentSynceAstHoTime false
+profileType RU
+exit
+exit
+exit
+NRBTS 2350003
+NRCELL 100
+a1MeashoEnabled none
+a1MeashoPrefNRLayerEnabled none
+a1MeashoPrefNRLayerEnabledSA none
+a2MeasRedirectEnabled none
+a2MeasReleaseEnabled rsrp
+a2MeashoEnabled none
+a3MeasEnabled rsrp
+a5MeasEnabled none
+absThreshSsbRsrpConsolidation 0
+actARPBasedAC off
+actAdaptVoipTbs false
+actAdaptiveReTxResMcs true
+actAdaptiveReTxResMcsEnh false
+actAdaptiveSr false
+actAdjustPrachThresholdOption false
+actAdmissionCtrlSr false
+actAntPortMap false
+actAperCsi false
+actArpBasedAcDu off
+actAugSrbPrioBoost false
+actAveRxAntPwr false
+actAvoidACsiVonrUl false
+actBadUlRadioHoRej disabled
+actBadUplinkRadioRedirect disabled
+actBeamforming true
+actBlankDlSymbBorderCoord false
+actBwLimitationProfile disabled
+actCDrx true
+actCDrxVoNR true
+actCGIProvInterGnbMobilityNSA false
+actCaAwarePsCellSelectionFr1 false
+actCaNoPLMNCheck disabled
+actCaWimaxInterferenceAvoidance false
+actCbraContResDCI00 false
+actCceSplit true
+actCellCsiRsImTddNonBf false
+actCellCsirsTddOnSsbBf false
+actConfDlInterferenceGen none
+actCsiImRandomizationFddNonDss false
+actCsiMeasEthFlowControl PastTputBased
+actCsiRsMuting false
+actCsirsBeamPowerBalance false
+actCsirsMultiplexing false
+actDataForwardingForVoNr deactivated
+actDcGbrService false
+actDemoteProactUlScheduling false
+actDisableFoeProtection false
+actDisableMinPuschUciPrbsUpd false
+actDl256Qam true
+actDlCqiIncrRestriction false
+actDlDynSwitchAlloc false
+actDlForceRankDowng disabled
+actDlInterferenceAvoidance true
+actDlLaDynBlerTarget false
+actDlLaEnhCqi2McsTables true
+actDlLowPAPRoptimizedPrecoding false
+actDlMuMimo false
+actDlMuMimoEnh false
+actDlOptMcsSelection true
+actDlPaWarmUp false
+actDlPowerBoost disabled
+actDlRankAdpAndSRB1McsLimDurHO false
+actDlRankProbing false
+actDlRbgRandomization disabled
+actDlSchLowBufferOpt false
+actDlSrsBm false
+actDlSrsForCA false
+actDlSrsSubbandBm false
+actDlVoNrLimMaxMcsAndLayer false
+actDownSampling false
+actDrbBlerTargetForBR false
+actDrbPriorityPug disabled
+actDrxRetransTimerSupport false
+actDtxOptimizedScheduler false
+actDynPdcchTdMode disabled
+actDynUlDataSplitMode true
+actDynUlResAlloc false
+actDynamicPowerBackoff "on, precoding dependent"
+actECallOverIMS false
+actEcpri72e false
+actEdrx None
+actEirpControl false
+actEmergencyCall false
+actEmergencyCallExtensions false
+actEmfTestMode false
+actEnhCtrlChannelTrans false
+actEnhDtxOptimizedScheduler false
+actEnhMultipleDedicatedBWPs false
+actEnhancedFlowControlETh true
+actEnhancedPDSCHSchSplSlot true
+actEnhancedVoNR false
+actExternalAntennaBF false
+actFdmInitialDedicatedFdd false
+actFdmSchedulingInitialBWP false
+actFlexGapOffset SR_and_DRX_and_CSIRS
+actForcedDftSOfdmVonrUl false
+actFullPwrMode false
+actGBRAdmissionControl off
+actGbrLoadRepDss false
+actGbrRacTdEnhResourcePriority true
+actHighSpeedCell false
+actIncUlPdcchCapacity false
+actIncreasedFdmUsersPerSlot false
+actInfTddFrameMuting false
+actInitialBWPFlexibility false
+actInterRankSwitchBlock true
+actIntraCellHoRlcMaxRetrFail false
+actIrcRddDebiasing true
+actK1Opt disabled
+actLAForHiReliab false
+actLegExt2N77Coexist false
+actLongPucchF1F3BfOnOranExtT6 false
+actLongPucchPhase2 false
+actLongPucchResourceOpt false
+actLowGbrNumHandlingEnh false
+actMacBSRIndexAlign false
+actMaxInitDeltaCqiClampVoNR false
+actMcQosSupport false
+actMcsPrbReductionFdmUl true
+actMsg3PrachMux true
+actNbrForNonGbrBearers false
+actNonVoNRGbrService false
+actNonVoNRGbrServiceEnh false
+actNrDualConnectivity disabled
+actNrRim disabled
+actORuBeamforming false
+actORuFlexibleBeamGrpMapping false
+actORuFlexibleBeamIdMapping false
+actOptimizedFlowControl nonOptimized
+actOsiMismatchCheck false
+actPRBBlanking false
+actPathLoss false
+actPciBasedCsiImRandomization false
+actPcsiOnF2Fdm false
+actPdcchPowerBoost disabled
+actPdcchSharingWithPdsch false
+actPdschAllocAroundSsb true
+actPdschAtSsbSlots true
+actPdschBeamPowerBalance false
+actPdschRmCsirsForTracking false
+actPerCsiReportBundlingTddFr1 false
+actPfMetricReinitSchedUes false
+actPmiSinrUlMuMimo false
+actPowerSavingBWP false
+actPrachC2Scs15kHzTddFr1 false
+actPrachMultiplexing true
+actPrachMultiplexingLevel disabled
+actPrachNoPreambleNoisePwrEst true
+actPriorityAccess false
+actProactGrantsUlLteOnlyMode false
+actProactUlScheduling true
+actProactUlSchedulingEnh disabled
+actPucchAdditionalDmrs false
+actPucchF3EnhanceDTX true
+actPusch12Sb10MhzFddLongPucch false
+actPuschACSIPart2ThrAdj true
+actRachTaFilt false
+actRat1Alloc false
+actRedCapUeSupport false
+actRedFreqOffset false
+actRel16DmrsForPucchF3 false
+actRel16DmrsForPusch false
+actRescheduleBlockedRetx false
+actRrcReconfigAtBeamSwitch false
+actServiceAwareConfig false
+actServiceAwareSRPrioritization false
+actSharedSr false
+actShortBsrLimitAdaptation false
+actSib1ForNsaCell true
+actSliceBasedUlPwrCtrl false
+actSmallestRRCSetup false
+actSmartRoundInFdUeSkipping false
+actSpecificBwpSize false
+actSpeculativeDtx shortPUCCHMode
+actSrAllocOpt false
+actSrsBeamFallbackByRetrx false
+actSrsCarrierSwitching false
+actSrsUlBeamFallbackByRetrx false
+actSssgSwitching disabled
+actStnrRedCapUeRelaxedMeasSA false
+actSubTRSRateMatch false
+actSuperCell false
+actSupercellSingleSSB false
+actTaDisconnect false
+actTargetBlerVoNR false
+actTcpBoostPug allUes
+actULSchedInactiveBwp false
+actUca false
+actUeRelaxedMeasSA false
+actUl256Qam true
+actUlAudioGapReduction false
+actUlCgType2 false
+actUlClosedLoopPwrCtrl pucchPuschSrs
+actUlDftSOfdm false
+actUlLaOllaForRetxInDft false
+actUlMinTbsForVoNR false
+actUlMuMimo false
+actUlNrEcIdAoa false
+actUlNrEcIdNgRanApPosition false
+actUlNrEcIdPosMethod false
+actUlNrEcIdTAdv false
+actUlOptMcsSelection true
+actUlSlotAgg Disabled
+actUlSrsBm false
+actUlTransPreEnhHo false
+actUlTransPreEnhRankSwitchIwk false
+actUlTransPreEnhSinrMetric false
+actUlTxSkip false
+actVoNR false
+actVoNRIncCodingGain false
+actVoNrFallbackFromMeasProfile true
+actVoNrMobilityThresholds off
+actVoipPacketAggr false
+actVonr40msProGrant false
+addExtDelayCompensation 0
+addNumOfGBRBearers 0
+adjustPowerControlOffset 0
+adjustPrachThresholdOffset 10
+administrativeState Unlocked
+aggregationLevel 8CCEs
+allowCsiRsOutsideDRX false
+arpPrioEmergencyCall 1
+bestCellWaitTimer 200
+biSlotPdschAvgCqiRatio 90
+blockHoToScellA3A5 false
+bufferThesholdSCellDePrioritize 200
+caBlockingLoadLevel 100
+cbraPreamblesPerSsb n24
+ccLoadThreshold 30
+cellBarred notBarred
+cellDepType NSA
+cellIndividualSsbRsrpOffset 0dB
+cellIndividualSsbRsrqOffset 0dB
+cellName NR_TEST1
+cellReselectionPriority 0
+cellReservedForOperatorUse notReserved
+cellReservedForOtherUse FALSE
+cellTechnology TDD
+chBw 100MHz
+configuredEpsTac 59456
+consecRlOThreshold 2
+consecRlRThreshold 2
+dedicatedSib1 false
+deliveryDelayThWithDataSplit 5
+deltaCqiOffsetAdjHo 0
+disableCellWhenNmsLost false
+disableEarlyRar false
+disableUeBeamFailureRecovery false
+dlCaCqiWindow 50
+dlCaMinPCellCqi 0
+dlCaMinPCellCqi5qi1 0
+dlDMRSAdditionalPosition "One additional DMRS"
+dlDmrsType Type1
+dlMcsDropLimitForVoNR 28
+dlMimoMode "4x4 or 4x2 Open Loop Spatial Multiplexing"
+dlMuMaxNumPairedUEs 8
+dlQam256PowerBackoffSub6 8
+dllaBlerTarget 12
+dllaDeltaCqiMax 150
+dllaDeltaCqiMin -150
+dllaDeltaCqiStepdown 250
+dllaIniMcs 10
+dmrsTypeAPosition pos2
+drxWactDlEnabled false
+drxWactUlEnabled false
+eblRplCellSelectionWithCA false
+eirpControlTimeAveragingWindow 6
+eirpControlTimeAveragingWindowStepSize 100
+emergencyCallFails false
+emergencyCallLimServ false
+enDcSyncStatus none
+expectedCellSize 2.1km
+filterCoeffSsbRsrp fc4
+filterCoeffSsbRsrq fc4
+forbidDrbFwdTunNgHo false
+freqBandIndicatorNR 78
+gapOffset 0
+gscnOrSsPbchArfcn 7818
+ifhoSsbSmtcOffset 0
+initialPreambleReceivedTargetPower -92
+intraFreqReselection allowed
+lcrId 1
+limitedBeamsPerStreamPerSlot false
+longPucchConfigType duActCaPucchConfig
+lowerMcsPowerBackoff 17
+lteNrDssMode none
+lteToNrTimeOffset 0
+maxMCSVoNRRankAndMCSRestrict 12
+maxNumOfCaUsersNRCell 250
+maxNumOfGBRBearersSA 10
+maxNumOfNonGBRBearersSA 550
+maxNumOfNrDcSnNonGBRBearers 550
+maxNumOfNrDcSnUsers 275
+maxNumOfRrcSA 275
+maxNumOfSCellAlloc 250
+maxNumOfUsersPerCell 520
+maxNumOfUsersPerNRCell 520
+maxNumPagingRecords 8
+maxNumPdschAllocationPerSlot 8
+maxNumPuschAllocationPerSlot 4
+maxNumberUesPowerSaving 400
+maxNumberVoNRPowerSaving 250
+mcsIndexForArtificialLoad 0
+measGapSelection favourUeThroughput
+minPctResourceReservedMcsDl 65
+minPctResourceReservedMcsUl 65
+modPeriodCoeff n2
+msg1FrequencyStart 168
+msg3DeltaPreamble 6
+muteLastSymbolInSsbSlot NoMutingOfDlSymbol
+n310 n10
+n311 n1
+nUeCtxForCceSplitDeactivation 1500
+nbrOfBlankedPRBsHighEdgeDL 0
+nbrOfBlankedPRBsHighEdgeUL 0
+nbrOfBlankedPRBsLowEdgeDL 0
+nbrOfBlankedPRBsLowEdgeUL 0
+nbrOfSsbPerRachOccasion one
+nonGbrNrDrxDN MRBTS-2350003/NRBTS-2350003/NRDRX-4
+nrCellType 4DL2UL
+nrSysInfoNsaProfileDN MRBTS-2350003/NRBTS-2350003/NRSYSINFO_PROFILE_NSA-1
+nrUlClpcProfileDN MRBTS-2350003/NRBTS-2350003/NRULCLPC_PROFILE-0
+nrarfcn 630000
+nroSsbToAverage 2
+nrofHARQProcessesForPDSCH 16
+numOfPagingFrames halfT
+numOfRadioResReservForEmergency 0
+numOfSubSectors 2sub-sectors
+numPagingOccsnPagingFrame one
+numberOfRxBeamforming 2Rx
+omitPmaxInSib1 false
+openLoopScheme Automatic
+pMax 460
+pMaxNROwnCell 23
+pagingOffset 1
+payloadSizeProactiveDrx 64
+payloadSizeProactiveNonDrx 300
+pduHoSliceRelease false
+physCellId 100
+powerRampingStep dB4
+powerRampingStepHighPriorityCfra dB2
+prachConfigurationIndex 203
+prachRootSequenceIndex 100
+prachSequenceType Unrestricted
+preambleTransMax n20
+primaryPathMaxQueueingDelay 15
+priorityWaitTimer 200
+pucchDataDtxNumOfSamples 30
+pucchF3MaxCodeRate zeroDot15
+pucchF3ModulationScheme qpsk_4psk
+pucchModeSelect longPucch
+puschDataDtxNumOfSamples 30
+puschMappingType TypeA
+qRxLevMin -65
+raContentionResolutionTmr sf64
+raResponseWindow sl20
+rangeExtension 1x_range
+rateMatchedCsiImInMsg2Slot true
+reportAmount r1
+reportAmountCA r4
+reportAmountHoPrefNRLayer r2
+reportAmountHoPrefNRLayerSA r2
+reportAmountNrDc r4
+reportInterval ms640
+reportIntervalCA ms1024
+reportIntervalHoPrefNRLayer ms1024
+reportIntervalHoPrefNRLayerSA ms1024
+reportIntervalNrDc ms1024
+reportOnLeave false
+reqMinNumPuschPrb 237
+rlResumeBackOffTmr 2000
+rlResumePathLossThreshold 108
+rlResumeSinrThreshold 50
+rlfPsccTrigThresholdRsrp 42
+rloConsecDtxThreshold 2
+rloDtxRatioThreshold 50
+rloPathLossThreshold 111
+rloSinrThreshold -10
+rlpDetCsiBsiThreshold 75
+rlpDetDlHarqThreshold 35
+rlpRecCsiBsiThreshold 2
+rlpRecDlHarqThreshold 5
+rsrpThresholdSSB 19
+sCellActivationLevel 1TTI
+sCellActivationLevelUL 1TTI
+sCellActivationMinDataThreshold 6000
+sCellBadChannelQualityThUL 4
+sCellBadChannelQualityThreshold 4
+sCellChannelEstimationPeriod 2000
+sCellDePrioritizeEvalPeriod 50
+sCellDeactivationTimerGNB ms1280
+sCellGoodChannelQualityThreshold 8
+sMeasConfigSsbRsrp 127
+scalingStepdownHREnabled false
+scellBlockingLoadLevel 100
+seThrTargetBlerReduct 0
+secondaryPathMaxQueueingDelay 15
+sibStartPrbRandomDisabled true
+skipSsbToMeas false
+sliceAwareAdmissionCtrlEnabled false
+slimRfFilterDL Nominal
+slimRfFilterUL Nominal
+slotLAUseHighBlerAckNack true
+slotLAUseLowBlerAckNack true
+srPeriodicity slots160
+ssPbchBlockPower 10
+ssbScs "30 KHz"
+t300 2000ms
+t301 400ms
+t310 2000ms
+t311 3000ms
+t319 400ms
+targetPctResourceReservedMcsDl 90
+targetPctResourceReservedMcsUl 90
+targetTotalLoad 0
+timeRestrictionForIntfMeas notConfigured
+timingAdvanceOffset n25600
+totalNumberOfRAPreambles 32
+trsMutingInBlankedPRBsEnabled false
+type0CoresetConfigurationIndex 12
+type0SearchSpaceConfigurationIndex 4
+ueConnectionEstablishmentMode useDedicatedBwp
+ueSplitPowerAdjStep 170
+ulCaMinPCellSinr 0
+ulCaMinPCellSinr5qi1 0
+ulCaSinrWindow 50
+ulDMRSAdditionalPosition "One additional DMRS"
+ulLimitedMcsStepupSizeBler 0
+ulMcsDowngradeMaxReduction 0
+ulMimoMode "Closed loop Spatial Multiplexing (2x2)"
+ulProGrantTimer 1200
+ulRank1to2Thresh 170
+ulRank2to1Thresh 150
+ulSchedTimeInterval 50
+ulSinrSourceForRank1SUMimo SRS
+ullaBlerTarget 10
+ullaDeltaSinrMax 100
+ullaDeltaSinrMin -150
+ullaDeltaSinrStepdown 250
+ullaIniMcs 4
+upperMcsPowerBackoff 21
+voNRNrDrxDN MRBTS-2350003/NRBTS-2350003/NRDRX-0
+voiceFBMode disabled
+weightForSCellSelection 50
+weightOfFr1PSCell 50
+weightRatioOfUePwrScellVsPcell "WeightRatio 1"
+zeroCorrelationZoneConfig 14
+list a1MeashoSsbRsrp 1 a1HysteresishoSsbRsrp 0
+list a1MeashoSsbRsrp 1 a1ThresholdhoSsbRsrp 39
+list a1MeashoSsbRsrp 1 a1TimeToTriggerhoSsbRsrp ms480
+list a1MeashoSsbRsrq 1 a1HysteresishoSsbRsrq 0
+list a1MeashoSsbRsrq 1 a1ThresholdhoSsbRsrq 36
+list a1MeashoSsbRsrq 1 a1TimeToTriggerhoSsbRsrq ms480
+list a2MeasRedirectSsbRsrq 1 a2HysteresisRedirectSsbRsrq 0
+list a2MeasRedirectSsbRsrq 1 a2ThresholdRedirectSsbRsrq 31
+list a2MeasRedirectSsbRsrq 1 a2TimeToTriggerRedirectSsbRsrq ms480
+list a2MeasReleaseSsbRsrp 1 a2HysteresisReleaseSsbRsrp 0
+list a2MeasReleaseSsbRsrp 1 a2ThresholdReleaseSsbRsrp 38
+list a2MeasReleaseSsbRsrp 1 a2TimeToTriggerReleaseSsbRsrp ms100
+list a2MeashoSsbRsrp 1 a2HysteresishoSsbRsrp 0
+list a2MeashoSsbRsrp 1 a2ThresholdhoSsbRsrp 34
+list a2MeashoSsbRsrp 1 a2TimeToTriggerhoSsbRsrp ms640
+list a2MeashoSsbRsrq 1 a2HysteresishoSsbRsrq 0
+list a2MeashoSsbRsrq 1 a2ThresholdhoSsbRsrq 34
+list a2MeashoSsbRsrq 1 a2TimeToTriggerhoSsbRsrq ms480
+list a3MeasSsbRsrp 1 a3HysteresisSsbRsrp 4
+list a3MeasSsbRsrp 1 a3OffsetSsbRsrp 4
+list a3MeasSsbRsrp 1 a3TimeToTriggerSsbRsrp ms640
+list a5MeasSsbRsrp 1 a5HysteresisSsbRsrp 5
+list a5MeasSsbRsrp 1 a5Threshold1SsbRsrp 51
+list a5MeasSsbRsrp 1 a5Threshold2SsbRsrp 61
+list a5MeasSsbRsrp 1 a5TimeToTriggerSsbRsrp ms100
+list beamSet 1 basicBeamSet beamSet_2SS
+list beamSet 1 leftEdgeAngle 45
+list beamSet 1 nrBtsBeamRefinementP2 false
+list beamSet 1 rightEdgeAngle 45
+list cellBwpList 1 actPdcchCceFragmentControl false
+list cellBwpList 1 actUpperThrAckNackFiltering false
+list cellBwpList 1 actUpperThrAckNackHrFiltering false
+list cellBwpList 1 bwpDN MRBTS-2350003/NRBTS-2350003/BWP_PROFILE-0
+list cellBwpList 1 cellBwpId 0
+list cellBwpList 1 pdcchResourcePreference peakRate
+list cellBwpList 2 actPdcchCceFragmentControl false
+list cellBwpList 2 actUpperThrAckNackFiltering false
+list cellBwpList 2 actUpperThrAckNackHrFiltering false
+list cellBwpList 2 bwpDN MRBTS-2350003/NRBTS-2350003/BWP_PROFILE-44
+list cellBwpList 2 cellBwpId 1
+list cellBwpList 2 pdcchResourcePreference peakRate
+list csirsForTracking 1 csirsTrackingPeriod 80ms
+list csirsForTracking 1 firstRE 0
+list csirsForTracking 1 rbAllocation 52RB
+list csirsForTracking 1 startRB 160
+list dlDataDmrsFdm 1 actDlDataDmrsFdm true
+list dlDataDmrsFdm 1 dlDataDmrsFdmThres256QamMcs 11
+list dlDataDmrsFdm 1 dlDataDmrsFdmThres64QamMcs 11
+list dlDataDmrsFdm 1 redCap1RxUesEnabled false
+list dlDataDmrsFdm 1 thres256QamMcsRedCap1Rx 20
+list dlInterferenceAvoidance 1 dataBufferThreshold 30000
+list dlInterferenceAvoidance 1 endMcs 28
+list dlInterferenceAvoidance 1 prbAllocationDirection highPerforming_High2low
+list dlInterferenceAvoidance 1 rank 1
+list dlInterferenceAvoidance 1 rbgLimit 0
+list dlInterferenceAvoidance 1 startMcs 0
+list dlPtrs 1 actDlPtrs false
+list dlPtrs 1 dlPtrsFreqDensityThresNrb0 277
+list dlPtrs 1 dlPtrsFreqDensityThresNrb1 24
+list drxProfileNrAnr 1 drxControl intraNRNSAintraFreq
+list drxProfileNrAnr 1 nrDrxDN MRBTS-2350003/NRBTS-2350003/NRDRX-5
+list drxProfileNrAnr 2 drxControl any
+list drxProfileNrAnr 2 nrDrxDN MRBTS-2350003/NRBTS-2350003/NRDRX-3
+list dtxOptimizedScheduler 1 caSupportEnabled false
+list dtxOptimizedScheduler 1 drbDifferentiationEnabled false
+list dtxOptimizedScheduler 1 drxSupportEnabled false
+list dtxOptimizedScheduler 1 dtxDelaySinceLastScheduling 0
+list dtxOptimizedScheduler 1 dtxMaxRetentionDelay 10
+list dtxOptimizedScheduler 1 dtxPrbThreshold 80
+list dtxOptimizedScheduler 1 multiCellSyncEnabled false
+list dtxOptimizedScheduler 1 rlcStatusPduSupportEnabled false
+list interRankSwitchBlockThresholds 1 rankSwitchBlockBlerHighThres 20
+list interRankSwitchBlockThresholds 1 rankSwitchBlockBlerLowThres 13
+list interRankSwitchBlockThresholds 1 rankSwitchBlockMcsThres1 24
+list interRankSwitchBlockThresholds 1 rankSwitchBlockMcsThres2 17
+list periodicCsiAcquisition 1 csiReportPeriodicity slots320
+list periodicCsiAcquisition 1 scramblingIdStep 3
+list tddFrameStructure 1 frameStructureType semiStatic
+list tddFrameStructure 1 guardPeriodLength 2Symbols
+list tddFrameStructure 1 ulDlDataSlotRatio 1/4
+list ulConfiguredGrantType2 1 ulCgMaxNumPrbs 4
+list ulConfiguredGrantType2 1 ulCgMaxNumUeUl 1
+list ulConfiguredGrantType2 1 ulCgPrbStartOffset 0
+list ulDataDmrsFdm 1 actUlDataDmrsFdm true
+list ulDataDmrsFdm 1 ulDataDmrsFdmThres256QamMcs 10
+list ulDataDmrsFdm 1 ulDataDmrsFdmThres64QamMcs 10
+list ulPowerControlCommon 1 actUlOpenLoopPwrCtrl true
+list ulPowerControlCommon 1 alpha al1
+list ulPowerControlCommon 1 alphaSrs alpha1
+list ulPowerControlCommon 1 p0NominalPucch -90
+list ulPowerControlCommon 1 p0NominalPucchF1F3 -80
+list ulPowerControlCommon 1 p0NominalPusch -98
+list ulPowerControlCommon 1 p0NominalSrs -98
+list ulPowerControlCommon 1 p0UePusch 0
+list ulPowerControlCommon 1 pucchF1DeltaF 0
+list ulPowerControlCommon 1 pucchF3DeltaF 0
+list ulPtrs 1 actUlPtrs false
+list ulPtrs 1 ulPtrsFreqDensityThresNrb0 277
+list ulPtrs 1 ulPtrsFreqDensityThresNrb1 24
+list ulPtrsForTransPrecoding 1 ulPtrsSampleDensityThresNrb0 277
+list ulPtrsForTransPrecoding 1 ulPtrsSampleDensityThresNrb1 36
+list ulPtrsForTransPrecoding 1 ulPtrsSampleDensityThresNrb2 36
+list ulPtrsForTransPrecoding 1 ulPtrsSampleDensityThresNrb3 270
+list ulPtrsForTransPrecoding 1 ulPtrsSampleDensityThresNrb4 270
+list ulTransPrecodeCtl 1 ulTransPrecodeOffSinrThresh 35
+list ulTransPrecodeCtl 1 ulTransPrecodeOffSinrThrRedCap 35
+list ulTransPrecodeCtl 1 ulTransPrecodeOnSinrThresh 15
+list ulTransPrecodeCtl 1 ulTransPrecodeOnSinrThrRedCap 15
+list ulTransPrecodeCtl 1 ulTransPrecodePi2Bpsk false
+list ulTransPrecodeCtl 1 ulTransPrePi2BpskPwrBoost false
+exit
+NRCELLGRP 1
+actHighNumberOfUEs false
+actLoadCsiPeriodicity false
+actNackDtxFloodControlDetection false
+actPucchBeamConstraintFR2 false
+addNumOfHoUsers 0
+addNumOfNonGBRBearersCGRPSAHo 0
+addNumOfNonGBRBearersHo 0
+addNumOfRrcCGRPSAHo 0
+beamformingGridSel ABFG90
+loadBasedCsiPerThreshold 50Percent
+maxDlHarqTx 5
+maxHarqMsg3Tx 5
+maxNumOfNonGBRBearers 550
+maxNumOfNonGBRBearersCGRPSA 550
+maxNumOfNrDcSnNonGBRBearersCGRP 550
+maxNumOfNrDcSnUsersCGRP 275
+maxNumOfRrcCGRPSA 275
+maxNumOfUsers 550
+maxUlHarqTx 5
+numberOfTransmittedSsBlocks "2 beams"
+pucchF2MaxCodeRate zeroDot15
+scs "30 KHz"
+spCellChangeEnabled false
+ssBurstSetPeriod 20
+list nackFloodControlF1 1 dataFlowResumeThrFR1 5
+list nackFloodControlF1 1 dataFlowResumeThrFR2 20
+list nackFloodControlF1 1 forgettingRatioFR1 50
+list nackFloodControlF1 1 forgettingRatioFR2 50
+list nackFloodControlF1 1 maxNackFloodBurstSizeFR1 10
+list nackFloodControlF1 1 maxNackFloodBurstSizeFR2 40
+exit
+NRDU 1
+actConnectedModeMobilityCA false
+actInterGnbCa disabled
+actInterNumerologyCa false
+actMLScellAct false
+actNonBfAndBfCa false
+actUlCaWith3Tx false
+administrativeState Unlocked
+crntiAllocationOption max72cells
+dlToUlContributionRatio 101
+flexibleCAMode BasicCAMode
+gNbDuId 0
+maxNumOfRrcConUEsPerDU 26928
+numOfDrbsReservForEmergency 0
+remoteDuIpAddr fd5f:4268:2387:a881:40:43ff:fe80:a6
+targetDN MRBTS-2350003/EQM-1/APEQM-1
+list mlScellActParamSet1 1 mlDataCollectionPeriod 500ms
+exit
+NRPGRP 1
+lbpsCSONCtlEnabled true
+lbpsLastCellMinLoad 99
+lbpsLastCellRTXMinLoad 0
+lbpsLastCellSOEnabled true
+lbpsMaxLoad 100
+lbpsMinLoad 99
+lbpsMonWinForCellSOff 300
+lbpsMonWinForCellSOn 120
+lbpsPdcchLoadOffset 0
+lbpsRTXCellCapOffset 80
+lbpsRTXMaxLoad 60
+lbpsRTXMinLoad 20
+lbpsRTXSOffTime 300
+lbpsRTXSOnTime 120
+lbpsSOMethod "cell switch off"
+list lbpsCellList 1 lbpsCellSOOrder 100
+list lbpsCellList 1 lbpsUseExtConfig false
+list lbpsCellList 1 nrCellId 100
+list lbpsPeriodList 1 lbpsDayOfWeek Sun
+list lbpsPeriodList 1 lbpsDuration 120
+list lbpsPeriodList 1 lbpsStartTimeHour 3
+list lbpsPeriodList 1 lbpsStartTimeMinute 0
+list lbpsPeriodList 1 lbpsSuspended suspended
+list lbpsPeriodList 2 lbpsDayOfWeek Mon
+list lbpsPeriodList 2 lbpsDuration 120
+list lbpsPeriodList 2 lbpsStartTimeHour 3
+list lbpsPeriodList 2 lbpsStartTimeMinute 0
+list lbpsPeriodList 2 lbpsSuspended suspended
+list lbpsPeriodList 3 lbpsDayOfWeek Tue
+list lbpsPeriodList 3 lbpsDuration 120
+list lbpsPeriodList 3 lbpsStartTimeHour 3
+list lbpsPeriodList 3 lbpsStartTimeMinute 0
+list lbpsPeriodList 3 lbpsSuspended suspended
+list lbpsPeriodList 4 lbpsDayOfWeek Wed
+list lbpsPeriodList 4 lbpsDuration 120
+list lbpsPeriodList 4 lbpsStartTimeHour 3
+list lbpsPeriodList 4 lbpsStartTimeMinute 0
+list lbpsPeriodList 4 lbpsSuspended suspended
+list lbpsPeriodList 5 lbpsDayOfWeek Thu
+list lbpsPeriodList 5 lbpsDuration 120
+list lbpsPeriodList 5 lbpsStartTimeHour 3
+list lbpsPeriodList 5 lbpsStartTimeMinute 0
+list lbpsPeriodList 5 lbpsSuspended suspended
+list lbpsPeriodList 6 lbpsDayOfWeek Fri
+list lbpsPeriodList 6 lbpsDuration 120
+list lbpsPeriodList 6 lbpsStartTimeHour 3
+list lbpsPeriodList 6 lbpsStartTimeMinute 0
+list lbpsPeriodList 6 lbpsSuspended suspended
+list lbpsPeriodList 7 lbpsDayOfWeek Sat
+list lbpsPeriodList 7 lbpsDuration 120
+list lbpsPeriodList 7 lbpsStartTimeHour 3
+list lbpsPeriodList 7 lbpsStartTimeMinute 0
+list lbpsPeriodList 7 lbpsSuspended suspended
+exit
+exit
