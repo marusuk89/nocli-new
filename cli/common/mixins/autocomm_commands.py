@@ -14,6 +14,7 @@ from cli.common.util.tmpl_utils import load_cablink_blocks, load_prod_code_maps
 from cli.common.util.server_utils import load_from_server, save_to_server, delete_from_server
 from proto import message_pb2
 from cli.settings import grpc_stub
+from cli.common.util.path_utils import get_path
 
 class AutocommCommandMixin:
     def do_show_script_header(self, arg):
@@ -1567,8 +1568,9 @@ class AutocommCommandMixin:
 
     def _write_script_files(self, bts_entries, cell_entries, mod_entries):
         today_str = datetime.now().strftime("%Y%m%d")
-        base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        output_dir = os.path.join(base_dir, "..", "data", "autocomm", today_str)
+
+        # autocomm/today_str 경로 생성
+        output_dir = get_path(self.env_type, "autocomm", today_str)
         os.makedirs(output_dir, exist_ok=True)
 
         all_errors = []

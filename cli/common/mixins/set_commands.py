@@ -12,6 +12,7 @@ from cli.common.util.tmpl_utils import apply_class_based_mapping, load_cli_templ
 from cli.common.util.xml_utils import strip_namespace
 from cli.common.util.server_utils import load_from_server, save_to_server
 from cli.settings import is_debug
+from cli.common.util.path_utils import get_path
 
 class SetCommandMixin:
     def do_set_cfg_scf(self, arg):
@@ -233,7 +234,9 @@ class SetCommandMixin:
         if not ru or not du:
             return []
 
-        dirpath = os.path.join(os.path.dirname(__file__), "..", "..", "data", "scripts", "ru_templates")
+        # ru_templates 디렉토리 경로
+        dirpath = get_path(self.env_type, "scripts", "ru_templates")
+
         filter_prefix = f"nok_5G_{du}_ru_{ru}_"  # 선택 대상을 RU로 제한
         slice_prefix  = f"nok_5G_{du}_ru_"       # ← 여기 길이로 슬라이스(ru 포함해서 남김)
 
@@ -297,14 +300,17 @@ class SetCommandMixin:
             # 저장 파일명
             if self.mode not in {"cell", "bts"}:
                 raise ValueError(f"지원되지 않는 mode: {self.mode}")
+
             filename = f"{self.rat_type}_{self.mo_version}_rulebook_{self.du_type.lower()}_{self.mode}.json"
             json_text = json.dumps(self.rulebook_param_dict, indent=2, ensure_ascii=False)
 
-            # 1. 로컬 저장
-            rulebook_path = os.path.join(os.path.dirname(__file__), "..", "..", "data", filename)
+            # 1. 로컬 저장 (rulebook 폴더)
+            rulebook_path = get_path(self.env_type, "rulebook", filename)
             os.makedirs(os.path.dirname(rulebook_path), exist_ok=True)
+
             with open(rulebook_path, "w", encoding="utf-8") as f:
                 f.write(json_text)
+
             self.poutput(f"[성공] 룰북이 클라이언트에 저장되었습니다: {rulebook_path}")
 
             # 2. 서버 저장
@@ -359,13 +365,15 @@ class SetCommandMixin:
 
             # 3. CLI 스크립트 저장
             script_filename = f"{ref_basename}__script.cli"
-            base_dir = os.getcwd() if self.env_type == "PROD" else os.path.dirname(os.path.abspath(__file__))
-            scripts_dir = os.path.join(base_dir, "scripts") if self.env_type == "PROD" else os.path.abspath(os.path.join(base_dir, "..", "..", "data", "scripts"))
-            os.makedirs(scripts_dir, exist_ok=True)
 
-            script_path = os.path.join(scripts_dir, script_filename)
+            # scripts 경로 가져오기 (DEV/PROD 자동 분기)
+            script_path = get_path(self.env_type, "scripts", script_filename)
+            os.makedirs(os.path.dirname(script_path), exist_ok=True)
+
             with open(script_path, "w", encoding="utf-8") as f:
                 f.write(mapped_cli_text)
+
+            self.poutput(f"[성공] CLI 스크립트 저장됨: {script_path}")
 
             if is_debug:
                 self.poutput(f"[디버그] CLI 스크립트 저장 완료: {script_path}")

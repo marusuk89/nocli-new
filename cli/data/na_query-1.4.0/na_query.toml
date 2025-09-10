@@ -1,6 +1,0 @@
-[[ems]]
-alias = "DVT_5G"
-lbwas = "4.5.12.137"
-user = "omc"
-password = "Passw0rd+1"
-default_mr = "MRC-MRC/MR-LGU+5"

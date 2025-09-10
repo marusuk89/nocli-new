@@ -8,6 +8,7 @@ import openpyxl
 import json
 from cli.settings import is_debug
 from dotenv import load_dotenv
+from cli.common.util.path_utils import get_path
 
 class ToolCommandMixin:
     def do_exec_script(self, arg):
@@ -21,12 +22,7 @@ class ToolCommandMixin:
             return
 
         try:
-            # 경로 결정(실행 위치 기준)
-            base_dir = os.getcwd()
-            if self.env_type == "DEV":
-                script_path = os.path.join(base_dir, "cli", "data", "scripts", filename)
-            else:
-                script_path = os.path.join(base_dir, "scripts", filename)
+            script_path = get_path(self.env_type, "scripts", filename)
 
             if not os.path.exists(script_path):
                 self.perror(f"[오류] 스크립트 파일이 존재하지 않습니다: {script_path}")
@@ -82,10 +78,8 @@ class ToolCommandMixin:
                 self.poutput("[완료] exec-script 큐 설정 완료. 자동 실행됩니다.")
 
             # 오류 로그 처리
-            today = datetime.today().strftime("%Y%m%d")
             log_filename = "execScript_error.log"
-            log_path = os.path.join(base_dir, "..", "..", "data", "logs", today, log_filename)
-
+            log_path = get_path(self.env_type, "logs", log_filename)
             if self.exec_script_errors:
                 os.makedirs(os.path.dirname(log_path), exist_ok=True)
 
@@ -125,9 +119,7 @@ class ToolCommandMixin:
             self.perror("사용법: rulebook-to-dict <XML파일명>")
             return
 
-        base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        data_dir = os.path.join(base_dir, "..", "data", "rulebook")
-        xml_path = os.path.join(data_dir, xml_filename)
+        xml_path = get_path(self.env_type, "rulebook", xml_filename)
 
         if not os.path.exists(xml_path):
             self.perror(f"XML 파일이 존재하지 않습니다: {xml_path}")
@@ -283,8 +275,9 @@ class ToolCommandMixin:
                                 print(f"[경고] 역공식 적용 실패: {key}, 값={value_text}, 에러={e}")
 
                     result[mo_base][mo_id][pname] = param_data
+            output_filename = os.path.splitext(xml_filename)[0] + ".json"
+            output_path = get_path(self.env_type, "rulebook", output_filename)
 
-            output_path = os.path.join(data_dir, os.path.splitext(xml_filename)[0] + ".json")
             with open(output_path, "w", encoding="utf-8") as f:
                 json.dump(result, f, indent=2, ensure_ascii=False)
 
@@ -304,9 +297,7 @@ class ToolCommandMixin:
             self.perror("사용법: rulebook-to-dict <XML파일명>")
             return
 
-        base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        data_dir = os.path.join(base_dir, "..", "data", "rulebook")
-        xml_path = os.path.join(data_dir, xml_filename)
+        xml_path = get_path(self.env_type, "rulebook", xml_filename)
 
         if not os.path.exists(xml_path):
             self.perror(f"XML 파일이 존재하지 않습니다: {xml_path}")
@@ -437,7 +428,8 @@ class ToolCommandMixin:
                         result[mo_base][mo_id][pname] = param_data
                         result[dist][pname] = param_data
 
-            output_path = os.path.join(data_dir, os.path.splitext(xml_filename)[0] + ".json")
+            output_filename = os.path.splitext(xml_filename)[0] + ".json"
+            output_path = get_path(self.env_type, "rulebook", output_filename)
             with open(output_path, "w", encoding="utf-8") as f:
                 json.dump(result, f, indent=2, ensure_ascii=False)
 

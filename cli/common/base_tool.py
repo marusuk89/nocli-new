@@ -6,6 +6,7 @@ import xml.etree.ElementTree as ET
 from cli.settings import is_debug
 from cli.common.util.commit_utils import generate_cli_script_from_xml, load_param_dict, reverse_formula
 from cli.settings import is_debug
+from cli.common.util.path_utils import get_path
 
 class BaseTool():
     def __init__(self):
@@ -18,18 +19,22 @@ class BaseTool():
             self.perror("사용법: scf-to-cli <xml파일명>")
             return
 
-        base_dir = os.path.dirname(os.path.abspath(__file__))
-        xml_path = os.path.join(base_dir, "..", "data", "generated", filename)
-
-        if not os.path.exists(xml_path):
-            self.perror(f"[오류] 파일이 존재하지 않습니다: {xml_path}")
-            return
-
         try:
-            output_path = os.path.join(base_dir, "..", "data", "scripts", f"{os.path.splitext(filename)[0]}__script.cli")
+            # 입력 XML 파일 (generated 폴더)
+            xml_path = get_path(self.env_type, "gen_scf", filename)
+            if not os.path.exists(xml_path):
+                self.perror(f"[오류] 파일이 존재하지 않습니다: {xml_path}")
+                return
+
+            # 출력 CLI 스크립트 (scripts 폴더)
+            output_name = f"{os.path.splitext(filename)[0]}__script.cli"
+            output_path = get_path(self.env_type, "scripts", output_name)
+
             generate_cli_script_from_xml(xml_path, output_path)
+
             if is_debug:
                 self.poutput(f"[완료] CLI 스크립트 저장됨: {output_path}")
+
         except Exception as e:
             self.perror(f"[오류] XML 파싱 중 문제 발생: {e}")
 
@@ -44,9 +49,8 @@ class BaseTool():
             self.perror("사용법: excel_to_dict_formula <엑셀파일명>")
             return
 
-        base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        data_dir = os.path.join(base_dir, "data", "xlsx")
-        excel_path = os.path.join(data_dir, excel_filename)
+        # xlsx 경로를 유틸로 해결
+        excel_path = get_path(self.env_type, "xlsx", excel_filename)
 
         if not os.path.exists(excel_path):
             self.perror(f"엑셀 파일이 존재하지 않습니다: {excel_path}")
@@ -134,7 +138,7 @@ class BaseTool():
                 break
 
         output_filename = f"{version}_formula_param_dict.json"
-        output_path = os.path.join(data_dir, output_filename)
+        output_path = get_path(self.env_type, "mo_param", output_filename)
 
         with open(output_path, "w", encoding="utf-8") as f:
             json.dump(param_dict, f, indent=2, ensure_ascii=False)
@@ -153,9 +157,8 @@ class BaseTool():
             self.perror("사용법: excel_to_dict_mo <엑셀파일명>")
             return
 
-        base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        data_dir = os.path.join(base_dir, "data", "xlsx")
-        excel_path = os.path.join(data_dir, excel_filename)
+        # xlsx 경로를 유틸 함수로 처리
+        excel_path = get_path(self.env_type, "xlsx", excel_filename)
 
         if not os.path.exists(excel_path):
             self.perror(f"엑셀 파일이 존재하지 않습니다: {excel_path}")
@@ -310,7 +313,7 @@ class BaseTool():
                 break
 
         output_filename = f"{version}_mo_param_dict.json"
-        output_path = os.path.join(data_dir, output_filename)
+        output_path = get_path(self.env_type, "mo_param", output_filename)
 
         with open(output_path, "w", encoding="utf-8") as f:
             json.dump(mo_param_dict, f, indent=2, ensure_ascii=False)
@@ -359,11 +362,10 @@ class BaseTool():
             return
 
         file_a, file_b = tokens
-        base_dir = os.path.dirname(os.path.abspath(__file__))
-        scf_dir = os.path.join(base_dir, "..", "data", "generated")
 
-        file_a_path = os.path.join(scf_dir, file_a)
-        file_b_path = os.path.join(scf_dir, file_b)
+        # SCF 파일 경로 계산
+        file_a_path = get_path(self.env_type, "gen_scf", file_a)
+        file_b_path = get_path(self.env_type, "gen_scf", file_b)
 
         if not os.path.exists(file_a_path):
             self.perror(f"[오류] 파일 없음: {file_a_path}")

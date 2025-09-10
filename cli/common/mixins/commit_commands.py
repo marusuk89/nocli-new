@@ -11,6 +11,7 @@ from cli.common.prettify_utils import prettify_xml
 from cli.settings import grpc_stub
 from proto import message_pb2
 from cli.settings import is_debug
+from cli.common.util.path_utils import get_path
 
 class CommitCommandMixin:
     def do_commit(self, arg):
@@ -69,16 +70,16 @@ class CommitCommandMixin:
                     elem.tag = elem.tag.split('}', 1)[1]
             self.xml_tree = ET.ElementTree(root)
 
-            base_dir = os.getcwd() if self.env_type == "PROD" else os.path.dirname(os.path.abspath(__file__))
-
+            # 날짜별 디렉토리 (PROD 전용)
             if self.env_type == "PROD":
                 today_str = datetime.now().strftime("%Y%m%d")
-                data_dir = os.path.join(base_dir, "xml", today_str)
+                generated_dir = get_path(self.env_type, "gen_scf", today_str)
             else:
-                data_dir = os.path.abspath(os.path.join(base_dir, "..", "..", "data"))
+                generated_dir = get_path(self.env_type, "gen_scf")
 
-            generated_dir = os.path.join(data_dir, "generated")
-            scripts_dir = os.path.join(data_dir, "generated")
+            # scripts_dir도 같은 위치 사용
+            scripts_dir = generated_dir
+
             os.makedirs(generated_dir, exist_ok=True)
             os.makedirs(scripts_dir, exist_ok=True)
 
@@ -219,10 +220,10 @@ class CommitCommandMixin:
                     elem.tag = elem.tag.split('}', 1)[1]
             self.xml_tree = ET.ElementTree(root)
 
-            base_dir = os.path.dirname(os.path.abspath(__file__))
-            data_dir = os.path.abspath(os.path.join(base_dir, "..", "..", "data"))
-            generated_dir = os.path.join(data_dir, "generated")
-            scripts_dir = os.path.join(data_dir, "scripts")
+            # generated / scripts 경로 준비
+            generated_dir = get_path(self.env_type, "gen_scf")
+            scripts_dir   = get_path(self.env_type, "scripts")
+
             os.makedirs(generated_dir, exist_ok=True)
             os.makedirs(scripts_dir, exist_ok=True)
 
@@ -448,10 +449,9 @@ class CommitCommandMixin:
 
             # 2) 경로/파일명 준비
             stage = "prepare_paths"
-            base_dir = os.path.dirname(os.path.abspath(__file__))
-            data_dir = os.path.abspath(os.path.join(base_dir, "..", "..", "data"))
-            generated_dir = os.path.join(data_dir, "generated")
-            scripts_dir = os.path.join(data_dir, "scripts")
+            generated_dir = get_path(self.env_type, "gen_scf")
+            scripts_dir   = get_path(self.env_type, "scripts")
+
             os.makedirs(generated_dir, exist_ok=True)
             os.makedirs(scripts_dir, exist_ok=True)
 
