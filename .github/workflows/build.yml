@@ -23,10 +23,22 @@ jobs:
           pip install pyinstaller
 
       - name: Build client exe (4G)
-        run: pyinstaller --onefile cli/main.py --name nocli-client-4g
+        run: >
+          pyinstaller --onefile cli/main.py
+          --add-data "bin;bin"
+          --add-data "proto;proto"
+          --add-data "cli/data;cli/data"
+          --add-data "cli/settings.py;."
+          --name nocli-client-4g
 
       - name: Build client exe (5G)
-        run: pyinstaller --onefile cli/main.py --name nocli-client-5g
+        run: >
+          pyinstaller --onefile cli/main.py
+          --add-data "bin;bin"
+          --add-data "proto;proto"
+          --add-data "cli/data;cli/data"
+          --add-data "cli/settings.py;."
+          --name nocli-client-5g
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
