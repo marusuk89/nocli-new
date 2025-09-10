@@ -1,7 +1,9 @@
 name: Build EXE (Windows)
 
 on:
-  workflow_dispatch:   # GitHub에서 수동으로 실행할 수 있게 함
+  push:
+    tags:
+      - 'v*'   # 태그 push될 때 실행
 
 jobs:
   build:
@@ -24,7 +26,7 @@ jobs:
 
       - name: Build client exe (4G)
         run: >
-          pyinstaller --onefile cli/main.py
+          pyinstaller --onedir cli/main.py
           --add-data "bin;bin"
           --add-data "proto;proto"
           --add-data "cli/data;cli/data"
@@ -33,15 +35,27 @@ jobs:
 
       - name: Build client exe (5G)
         run: >
-          pyinstaller --onefile cli/main.py
+          pyinstaller --onedir cli/main.py
           --add-data "bin;bin"
           --add-data "proto;proto"
           --add-data "cli/data;cli/data"
           --add-data "cli/settings.py;."
           --name nocli-client-5g
 
-      - name: Upload artifact
+      - name: Zip 4G build
+        run: powershell Compress-Archive -Path dist/nocli-client-4g -DestinationPath nocli-client-4g.zip
+
+      - name: Zip 5G build
+        run: powershell Compress-Archive -Path dist/nocli-client-5g -DestinationPath nocli-client-5g.zip
+
+      - name: Upload 4G artifact
         uses: actions/upload-artifact@v4
         with:
-          name: nocli-exes
-          path: dist/*.exe
+          name: nocli-client-4g_${{ github.ref_name }}
+          path: nocli-client-4g.zip
+
+      - name: Upload 5G artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: nocli-client-5g_${{ github.ref_name }}
+          path: nocli-client-5g.zip
