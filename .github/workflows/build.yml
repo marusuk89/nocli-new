@@ -16,15 +16,20 @@ jobs:
         with:
           python-version: '3.9'
 
-      - name: Install PyInstaller
-        run: pip install pyinstaller
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pyinstaller
 
-      - name: Build client exe
-        run: pyinstaller --onefile cli/main.py --name nocli-client
+      - name: Build client exe (4G)
+        run: pyinstaller --onefile cli/main.py --name nocli-client-4g
+
+      - name: Build client exe (5G)
+        run: pyinstaller --onefile cli/main.py --name nocli-client-5g
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: my-exe
+          name: nocli-exes
           path: dist/*.exe
-
