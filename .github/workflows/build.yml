@@ -19,8 +19,8 @@ jobs:
       - name: Install PyInstaller
         run: pip install pyinstaller
 
-      - name: Build exe
-        run: pyinstaller --onefile main.py
+      - name: Build client exe
+        run: pyinstaller --onefile cli/main.py --name nocli-client
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
