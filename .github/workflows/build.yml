@@ -40,12 +40,12 @@ jobs:
       - name: Create batch launcher (4G)
         run: |
           echo @echo off > dist/nocli-client-4g/nocli-client-4g.bat
-          echo chcp 65001 ^>nul >> dist/nocli-client-4g/nocli-client-4g.bat
+          echo chcp 65001 >> dist/nocli-client-4g/nocli-client-4g.bat
           echo echo 실행 중... >> dist/nocli-client-4g/nocli-client-4g.bat
           echo "%%~dp0nocli-client-4g.exe" >> dist/nocli-client-4g/nocli-client-4g.bat
           echo echo. >> dist/nocli-client-4g/nocli-client-4g.bat
           echo echo 실행이 종료되었습니다. 계속하려면 아무 키나 누르세요... >> dist/nocli-client-4g/nocli-client-4g.bat
-          echo pause ^>nul >> dist/nocli-client-4g/nocli-client-4g.bat
+          echo pause >> dist/nocli-client-4g/nocli-client-4g.bat
 
       # 5. PyInstaller 빌드 (5G)
       - name: Build client exe (5G)
@@ -60,12 +60,12 @@ jobs:
       - name: Create batch launcher (5G)
         run: |
           echo @echo off > dist/nocli-client-5g/nocli-client-5g.bat
-          echo chcp 65001 ^>nul >> dist/nocli-client-5g/nocli-client-5g.bat
+          echo chcp 65001 >> dist/nocli-client-5g/nocli-client-5g.bat
           echo echo 실행 중... >> dist/nocli-client-5g/nocli-client-5g.bat
           echo "%%~dp0nocli-client-5g.exe" >> dist/nocli-client-5g/nocli-client-5g.bat
           echo echo. >> dist/nocli-client-5g/nocli-client-5g.bat
           echo echo 실행이 종료되었습니다. 계속하려면 아무 키나 누르세요... >> dist/nocli-client-5g/nocli-client-5g.bat
-          echo pause ^>nul >> dist/nocli-client-5g/nocli-client-5g.bat
+          echo pause >> dist/nocli-client-5g/nocli-client-5g.bat
 
 
       # 6. PyInstaller 결과 Zip 압축
