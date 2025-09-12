@@ -59,10 +59,10 @@ jobs:
       # 8. Inno Setup 빌드 (4G/5G)
       # repo 안에 installer-4g.iss, installer-5g.iss 파일이 있다고 가정
       - name: Build installer (4G)
-        run: iscc installer/installer-4g.iss
+        run: iscc installer-4g.iss
 
       - name: Build installer (5G)
-        run: iscc installer/installer-5g.iss
+        run: iscc installer-5g.iss
 
       # 9. Artifact 업로드 (Zip + Setup exe)
       - name: Upload 4G zip
