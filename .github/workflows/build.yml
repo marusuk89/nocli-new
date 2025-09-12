@@ -41,10 +41,10 @@ jobs:
         run: |
           echo @echo off > dist/nocli-client-4g/nocli-client-4g.bat
           echo chcp 65001 >> dist/nocli-client-4g/nocli-client-4g.bat
-          echo echo 실행 중... >> dist/nocli-client-4g/nocli-client-4g.bat
+          echo echo Running Nocli... >> dist/nocli-client-4g/nocli-client-4g.bat
           echo "%%~dp0nocli-client-4g.exe" >> dist/nocli-client-4g/nocli-client-4g.bat
           echo echo. >> dist/nocli-client-4g/nocli-client-4g.bat
-          echo echo 실행이 종료되었습니다. 계속하려면 아무 키나 누르세요... >> dist/nocli-client-4g/nocli-client-4g.bat
+          echo echo Program finished. Press any key to exit... >> dist/nocli-client-4g/nocli-client-4g.bat
           echo pause >> dist/nocli-client-4g/nocli-client-4g.bat
 
       # 5. PyInstaller 빌드 (5G)
@@ -61,10 +61,10 @@ jobs:
         run: |
           echo @echo off > dist/nocli-client-5g/nocli-client-5g.bat
           echo chcp 65001 >> dist/nocli-client-5g/nocli-client-5g.bat
-          echo echo 실행 중... >> dist/nocli-client-5g/nocli-client-5g.bat
+          echo echo Running Nocli... >> dist/nocli-client-5g/nocli-client-5g.bat
           echo "%%~dp0nocli-client-5g.exe" >> dist/nocli-client-5g/nocli-client-5g.bat
           echo echo. >> dist/nocli-client-5g/nocli-client-5g.bat
-          echo echo 실행이 종료되었습니다. 계속하려면 아무 키나 누르세요... >> dist/nocli-client-5g/nocli-client-5g.bat
+          echo echo Program finished. Press any key to exit... >> dist/nocli-client-5g/nocli-client-5g.bat
           echo pause >> dist/nocli-client-5g/nocli-client-5g.bat
 
 
