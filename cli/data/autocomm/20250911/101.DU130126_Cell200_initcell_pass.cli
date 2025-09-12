@@ -1,0 +1,93 @@
+### HEADER ###
+set-bts 130126 4.4.0.116
+dest-bts 130126
+check-ping 130126
+set-mode cell
+set-mo-version 24R2
+set-rat-type 4G
+set-iot-lncel-id 2933
+set-du-type FSMF
+set-allow-commit-diff true
+
+### BODY ###
+set-ru-type FHCG
+tgt-bts 130126
+dnload-bts-cfg
+set-ru-type FHCG
+EQM 1
+APEQM 1
+RMOD 1
+auto-config ANTL *
+moduleLocation NL_GMOK_G00A
+exit-all
+EQM 1
+HWTOP 1
+CABLINK 3
+firstEndpointDN MRBTS-130126/EQM-1/APEQM-1/CABINET-1/SMOD-1
+firstEndpointLabel OPT
+firstEndpointPortId 1
+secondEndpointDN MRBTS-130126/EQM-1/APEQM-1/RMOD-1
+secondEndpointLabel OPT
+secondEndpointPortId 1
+exit-all
+LNBTS 130126
+LNCEL 200
+lcrId 20
+phyCellId 311
+tac 59333
+nbIotLinkedCellId 120
+LNCEL_FDD 0
+rootSeqIndex 500
+exit
+auto-config
+exit-all
+LNBTS 130126
+LNCEL 2933
+lcrId 120
+phyCellId 311
+tac 59343
+nbIotLinkedCellId 20
+NBIOT_FDD 0
+dlChBw '0.2 MHz'
+exit
+REDRT 0
+exit
+DRX 0
+exit
+SDRX 0
+exit
+SIB 0
+exit-all
+MNL 1
+MNLENT 1
+CELLMAPPING 1
+auto-config LCELL 20
+auto-config LCELL 120
+exit-all
+
+# 더미 제거 시작
+EQM 1
+APEQM 1
+no-mo-scf RMOD 32767
+exit-all
+EQM 1
+HWTOP 1
+no-mo-scf CABLINK 65535
+exit-all
+LNBTS 130126
+no-mo-scf LNCEL 65535
+no-mo-scf LNCEL 65534
+exit-all
+MNL 1
+MNLENT 1
+CELLMAPPING 1
+no-mo-scf LCELL 254
+no-mo-scf LCELL 255
+no-mo-scf LNMME 10
+no-mo-scf LNMME 11
+exit-all
+# 더미 제거 끝
+
+commit
+apply-bts-cfg
+#act-bts-cfg

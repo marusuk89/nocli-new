@@ -7,13 +7,13 @@ config-x
 auto-comm
 
 ## 해당 날짜의 엑셀파일명 출력 명령어 ##
-list-tmpl 20250908
+list-tmpl 20250911
 
 ## 해당 파일을 통해 스크립트 생성 명령어 ##
 gen-script NoCLI 개통탬플릿_V0.9.6.xlsx
 
 ## 생성된 스크립트 출력 명령어 ##
-list-script 20250908
+list-script 20250911
 
 ## 생성된 스크립트 실행 명령어 ##
 autocomm-run-script 101.DU130126_Cell100_initcell_pass.cli

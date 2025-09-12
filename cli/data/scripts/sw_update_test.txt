@@ -9,13 +9,13 @@ update-sw-ver 130126 --file SBTS24R2_FSM3_0000_000161_000000.zip
 ### 엑셀을 통한 sw 업데이트 시나리오 ###
 config-x
 auto-comm
-init-sw-ver CLI 개통탬플릿_V0.9.0.xlsx
+init-sw-ver NoCLI 개통탬플릿_V0.9.6.xlsx
 
 ### 엑셀을 통한 sw 업데이트 부터 실행 까지의 시나리오 ###
 config-x
 auto-comm
 list-tmpl 20250715
-show-bts-entry CLI 개통탬플릿_V0.9.0.xlsx
-init-sw-ver CLI 개통탬플릿_V0.9.0.xlsx
-gen-script CLI 개통탬플릿_V0.9.0.xlsx
+show-bts-entry NoCLI 개통탬플릿_V0.9.6.xlsx
+init-sw-ver NoCLI 개통탬플릿_V0.9.6.xlsx
+gen-script NoCLI 개통탬플릿_V0.9.6.xlsx
 list-script 20250715

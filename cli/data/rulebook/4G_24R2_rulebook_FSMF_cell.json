@@ -6634,6 +6634,250 @@
       }
     }
   },
+  "IRFIM": {
+    "1": {
+      "dlCarFrqEut": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "3050.0"
+      },
+      "enableA4IMLB": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "enabled"
+      },
+      "eutCelResPrio": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "6.0"
+      },
+      "incMonExSel": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "R8ListPartPreferred"
+      },
+      "interFrqThrH": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "4.0"
+      },
+      "interFrqThrL": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "interPresAntP": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "interTResEut": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.0"
+      },
+      "mbmsNeighCellConfigInterF": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "00"
+      },
+      "measBdw": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "50mbw"
+      },
+      "minDeltaRsrpIMLB": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-20.0"
+      },
+      "minRsrpIMLB": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-100.0"
+      },
+      "pMaxInterF": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "23.0"
+      },
+      "qOffFrq": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0 dB"
+      },
+      "qRxLevMinInterF": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-110.0"
+      },
+      "reducedMeasPerformance": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "tResEutSF": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "eutResTiFHM": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "0.5"
+            },
+            "eutResTiFMM": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "0.5"
+            }
+          }
+        ]
+      }
+    },
+    "2": {
+      "dlCarFrqEut": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "100.0"
+      },
+      "enableA4IMLB": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "enabled"
+      },
+      "eutCelResPrio": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "6.0"
+      },
+      "incMonExSel": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "R8ListPartPreferred"
+      },
+      "interFrqThrH": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "4.0"
+      },
+      "interFrqThrL": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0.0"
+      },
+      "interPresAntP": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "true"
+      },
+      "interTResEut": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "1.0"
+      },
+      "mbmsNeighCellConfigInterF": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "00"
+      },
+      "measBdw": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "50mbw"
+      },
+      "minDeltaRsrpIMLB": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-20.0"
+      },
+      "minRsrpIMLB": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-100.0"
+      },
+      "pMaxInterF": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "23.0"
+      },
+      "qOffFrq": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "0 dB"
+      },
+      "qRxLevMinInterF": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "-110.0"
+      },
+      "reducedMeasPerformance": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "value": "false"
+      },
+      "tResEutSF": {
+        "req": 0,
+        "ishow": 0,
+        "soam": 1,
+        "type": "list",
+        "isList": true,
+        "children": [
+          {
+            "eutResTiFHM": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "0.5"
+            },
+            "eutResTiFMM": {
+              "req": 0,
+              "ishow": 0,
+              "soam": 1,
+              "value": "0.5"
+            }
+          }
+        ]
+      }
+    }
+  },
   "LNCEL_FDD": {
     "0": {
       "act1TxIn2Tx": {

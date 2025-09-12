@@ -18,6 +18,7 @@ PATH_MAP = {
     "xlsx": ["xlsx"],
     "mo_param": ["mo_param_dict"],
     "gen_scf": ["genScf"],
+    "commit": ["generated"],
 }
 
 def get_path(env_type: str, category: str, *parts):

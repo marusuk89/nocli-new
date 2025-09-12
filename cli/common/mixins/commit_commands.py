@@ -73,9 +73,9 @@ class CommitCommandMixin:
             # 날짜별 디렉토리 (PROD 전용)
             if self.env_type == "PROD":
                 today_str = datetime.now().strftime("%Y%m%d")
-                generated_dir = get_path(self.env_type, "gen_scf", today_str)
+                generated_dir = get_path(self.env_type, "commit", today_str)
             else:
-                generated_dir = get_path(self.env_type, "gen_scf")
+                generated_dir = get_path(self.env_type, "commit")
 
             # scripts_dir도 같은 위치 사용
             scripts_dir = generated_dir
@@ -221,7 +221,7 @@ class CommitCommandMixin:
             self.xml_tree = ET.ElementTree(root)
 
             # generated / scripts 경로 준비
-            generated_dir = get_path(self.env_type, "gen_scf")
+            generated_dir = get_path(self.env_type, "commit")
             scripts_dir   = get_path(self.env_type, "scripts")
 
             os.makedirs(generated_dir, exist_ok=True)
@@ -449,7 +449,7 @@ class CommitCommandMixin:
 
             # 2) 경로/파일명 준비
             stage = "prepare_paths"
-            generated_dir = get_path(self.env_type, "gen_scf")
+            generated_dir = get_path(self.env_type, "commit")
             scripts_dir   = get_path(self.env_type, "scripts")
 
             os.makedirs(generated_dir, exist_ok=True)

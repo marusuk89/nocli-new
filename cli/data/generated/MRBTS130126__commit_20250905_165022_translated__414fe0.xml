@@ -1,8 +1,0 @@
-<?xml version="1.0" ?>
-<raml version="2.0">
-  <cmData type="plan">
-    <managedObject class="com.nokia.srbts:MRBTS" distName="MRBTS-130126" version="SBTS25R2FSM3_2502_100" operation="create"/>
-    <managedObject class="com.nokia.srbts.eqm:EQM" distName="MRBTS-130126/EQM-1" version="EQM25R2FSM3_2522_100" operation="create"/>
-    <managedObject class="com.nokia.srbts.eqm:HWTOP" distName="MRBTS-130126/EQM-1/HWTOP-1" version="EQM25R2FSM3_2522_100" operation="create"/>
-  </cmData>
-</raml>

@@ -1,0 +1,4 @@
+[2025-09-11 13:20:34] [101.DU130126_Cell100_initcell_fail.cli] RMOD:prod-name 값이 누락됨 (row 7)
+[2025-09-11 13:20:34] [101.DU130126_Cell100_initcell_fail.cli] LNCEL_IOT:id 값이 없어야 함 (prod_name=, row 7)
+[2025-09-11 13:20:34] [101.DU130126_Cell100_initcell_fail.cli] LNCEL_IOT:lcrId 값이 없어야 함 (prod_name=, row 7)
+[2025-09-11 13:20:34] [101.DU130126_Cell100_initcell_fail.cli] LNCEL_IOT:nbIotLinkedCellId 값이 없어야 함 (prod_name=, row 7)

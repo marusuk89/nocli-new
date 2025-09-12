@@ -591,7 +591,7 @@ class AutocommCommandMixin:
 
         script = ["### HEADER ###"]
         script += [
-            f"set-bts {mrbts_id} {ip_id}",
+            f"set-bts {mrbts_id} {ip_addr}",
             f"dest-bts {mrbts_id}",
             f"check-ping {mrbts_id}",
             f"set-mode bts",
@@ -606,7 +606,7 @@ class AutocommCommandMixin:
             "### BODY ###",
             f"set-du-type {du_type}",
             f"tgt-bts {mrbts_id}",
-            f"exec-script {radio_ver}_{du_type.upper()}_INITBTS_FILTER_SCRIPT_V0.7.5.cli",
+            f"exec-script {radio_ver}_{du_type.upper()}_INITBTS_FILTER_SCRIPT_V0.7.5_TEST.cli",
             "# 진입 단계 종료", "",
             f"btsName {enb_name}", "# MRBTS 단계 종료", "",
             f"LNBTS {mrbts_id}", f"enbName {enb_name}",
@@ -734,7 +734,7 @@ class AutocommCommandMixin:
 
         script = ["### HEADER ###"]
         script += [
-            f"set-bts {mrbts_id} {ip_id}",
+            f"set-bts {mrbts_id} {ip_addr}",
             f"dest-bts {mrbts_id}",
             f"check-ping {mrbts_id}",
             f"set-mode bts",
@@ -1238,7 +1238,7 @@ class AutocommCommandMixin:
                 f"LNCEL {iot_lncel_id}",
                 f"lcrId {iot_lcr_id}",
                 f"phyCellId {phy_cell_id}",
-                f"tac {tac}",
+                f"tac {iot_tac}",
                 f"nbIotLinkedCellId {iot_nbiot_linked_cell_id}",
                 "NBIOT_FDD 0",
                 "dlChBw '0.2 MHz'", 
@@ -1264,6 +1264,8 @@ class AutocommCommandMixin:
         if iot_lncel_id :
             script += [f"auto-config LCELL {iot_lcr_id}"]
         script += ["exit-all", ""]
+
+        print("du_dummy_killed = ", du_dummy_killed)
 
         # 더미 제거
         if self.kill_dummy_flag and mrbts_id_str not in du_dummy_killed:

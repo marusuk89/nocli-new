@@ -1,0 +1,1484 @@
+EQM 1
+APEQM 1
+RMOD 10
+actPimCancellation false
+actSharedRUIndControl false
+actSnapshotCollection false
+administrativeState Unlocked
+alVoltHighThreshold 5800
+alVoltLowThreshold 4050
+alVoltUnstableThreshold 5
+energySavingMode NORMAL
+legacyWideCarrierMode false
+pimCancellingEnabled true
+prodCodePlanned 473966A
+moduleLocation NL_BSdeokposageoriL2G10A_1600166522
+ANTL 1
+antPortId 1
+antennaPathDelayDL 20000
+antennaPathDelayUL 20000
+cwaThreshold 215
+dcVoltage OFF
+hdlcCommunicationAllowed false
+totalLoss 3000
+ulDelay 0
+vswrMajorThreshold 350
+vswrMinorThreshold 290
+exit
+ANTL 2
+antPortId 2
+antennaPathDelayDL 20000
+antennaPathDelayUL 20000
+cwaThreshold 215
+dcVoltage OFF
+hdlcCommunicationAllowed false
+totalLoss 3000
+exit
+ANTL 3
+antPortId 3
+antennaPathDelayDL 20000
+antennaPathDelayUL 20000
+cwaThreshold 215
+dcVoltage OFF
+hdlcCommunicationAllowed false
+totalLoss 3000
+ulDelay 0
+vswrMajorThreshold 350
+vswrMinorThreshold 290
+exit
+ANTL 4
+antPortId 4
+antennaPathDelayDL 20000
+antennaPathDelayUL 20000
+cwaThreshold 215
+dcVoltage OFF
+hdlcCommunicationAllowed false
+totalLoss 3000
+exit
+exit
+exit
+exit
+LNBTS 130126
+LNCEL 100
+a1TimeToTriggerDeactInterMeas 0ms
+a2RedirectQci1 enabled
+a2TimeToTriggerActInterFreqMeas 5120ms
+a2TimeToTriggerRedirect 5120ms
+a3Offset 8
+a3ReportAmount infinity
+a3ReportInterval 240ms
+a3TimeToTrigger 256ms
+a3TriggerQuantityHO RSRP
+a5ReportAmount infinity
+a5ReportInterval 240ms
+a5TimeToTrigger 320ms
+a5TriggerQuantityIntraFreqHO RSRP
+actAcHpsLimits false
+actAir2Ground false
+actAmle false
+actAntPortMap false
+actB1ReturnTo5GSA false
+actCaArchEnhImp off
+actCaBlocking false
+actCaScellSchedWeightFactor false
+actCarelCounters false
+actCsiRsSubFNonTM9Sch false
+actDataSessionProf false
+actDeltaCqiAgingScellChEst false
+actDlPwBackoff false
+actDlsLdAdaptPf false
+actDlsOldtc true
+actDlsVoicePacketAgg true
+actDownSampling false
+actDrx true
+actDrxDuringMeasGap false
+actDrxDuringTTIB false
+actDynamicDataSessionProf false
+actEDrxIdle false
+actEicic false
+actEirpControl disabled
+actEnDcBlocking false
+actEndcHoPrefLay false
+actEndcIntraFreqMdt true
+actExtSib1 false
+actFastPdcchAdapt false
+actFlexDupGap false
+actFlowCtrlEnh false
+actForcedDrxS1Ho true
+actGsmSrvccMeasOpt false
+actHapPrachCfg false
+actHapPrachTaFilt false
+actInactiveTimeForwarding false
+actInterFreqLB false
+actInterFreqSPIDBasedHo none
+actIntraFreqLoadBal false
+actLBSpidUeSel false
+actLdPdcch true
+actMaxNumUeDlNonGbr 0
+actMcsUpgrade Disabled
+actMfbiDupFre False
+actMicroDtx false
+actModulationSchemeDl 64QAM
+actModulationSchemeUL 256QAMand16QAMHighMCS
+actNbrForNonGbrBearers false
+actNoIntraBandIFMeasurements false
+actOlLaPdcch true
+actOtdoa false
+actPdcchQci1SrbControl false
+actPeriodicB1NRMeas disabled
+actPeriodical5GRedirect false
+actProactSchedBySrb true
+actPrsTxDiv false
+actPttOverbooking false
+actPuschPrbDistribution false
+actPuschPrbDistributionEnh false
+actQci1BlerTgt false
+actQci1RfDrx false
+actQci1eVTT true
+actRbr false
+actReducedFormat false
+actReqDiffFallbacks false
+actResourceAllocType1 false
+actReturnTo5GSA disabled
+actRrcConnRelDelayForwarding false
+actScellBadChQualExtMonitor false
+actScellConfigForHiDemand false
+actSixIfMeasurements false
+actSmartDrx false
+actSrb1Robustness true
+actTaDisconnect false
+actTcpServiceDiff false
+actTtiBundling true
+actTtibAcqi true
+actTtibRsc true
+actUca false
+actUePowerBasedMobThr false
+actUl256QamChQualEst true
+actUlDynamicTargetBler false
+actUlGrpHop false
+actUlLnkAdp fUlLa
+actUlVarianceAdapt false
+actUlpcMethod PuschCLPucchCL
+actUlpcRachPwrCtrl true
+actUlsLdAdaptPf false
+actUlsOptimizePrbMcs true
+actVoLteSrcRate true
+actVoipCovBoost false
+actVoipCovBoostEnh off
+adaptPdcchDwellTime 100
+addGbrTrafficRrHo 5
+addGbrTrafficTcHo 0
+addSpectrEmi 1
+administrativeState unlocked
+allowPbIndexZero true
+amRlcSnFieldLengthDl 10bit
+amleMaxNumHo 10
+amlePeriodLoadExchange 1000ms
+caPoolId 0
+cellIndOffServ 0dB
+cellResourceSharingMode none
+cellTechnology FDD
+cellType large
+cqiAperEnable true
+cqiAperMode FBT2
+cqiPerSbCycK 1
+cqiPerSimulAck true
+csgType openAccess
+dSrTransMax 64n
+defPagCyc 128rf
+deltaLbCioMargin 0
+deltaPreMsg3 1
+deltaTfEnabled false
+dlCaMinPcellCqi 0
+dlCaMinPcellCqiQci1 0
+dlCellPwrRed 0
+dlInterferenceEnable false
+dlInterferenceLevel 0
+dlInterferenceModulation QPSK
+dlOlqcEnable true
+dlPathlossChg "3 db"
+dlPcfichBoost 0
+dlPhichBoost 0
+dlSrbCqiOffset -400
+dlTargetBler 1000
+dlamcCqiDef 6
+dlamcEnable true
+dlsDciCch "DCI format 1C"
+dlsOldtcTarget 9800
+dlsUsePartPrb "PRBs with PSS or SSS and PBCH used"
+eIcicMaxMutePattern mp4
+eTputFilterConfig 51
+eTputInitMcs 20
+eUlLaAtbPeriod 30
+eUlLaBlerAveWin 30
+eUlLaDeltaMcs 1
+eUlLaLowMcsThr 2
+eUlLaLowPrbThr 5
+eUlLaPrbIncDecFactor 280
+ecidMeasSupervisionTimer 3000
+enableAmcPdcch true
+enableBetterCellHo true
+enableCovHo true
+enableDefaultBcsChkEnDc false
+enableLowAgg true
+enablePcPdcch true
+expectedCellSize 60km
+fUlLAAtbTrigThr -2
+filterCoeff fc4
+filterCoefficientCSFBCpichEcn0 fc4
+filterCoefficientCSFBCpichRscp fc4
+filterCoefficientCpichEcn0 fc4
+filterCoefficientCpichRscp fc4
+filterCoefficientRSRP fc8
+filterCoefficientRSRQ fc4
+filterCoefficientRSSI fc2
+gbrCongHandling l2andl3
+grpAssigPUSCH 1
+harqMaxMsg3 3
+harqMaxTrDl 7
+harqMaxTrSignalingDl 7
+harqMaxTrUlTtiBundling 24
+harqMaxTrVoLteDl 8
+harqMaxTxUl 7
+hopModePusch interSubFrame
+hysA3Offset 4
+hysThreshold2GERAN 0
+hysThreshold2InterFreq 0
+hysThreshold2Wcdma 0
+hysThreshold2a 0
+hysThreshold3 0
+hysThreshold4 0
+iFEndcHoRetryTimer 60
+idleLBCapThresh 100
+idleLBCelResWeight 20
+idleLBPercCaUe 0
+idleLBPercUeTM9 0
+idleLBPercentageOfUes 0
+ilReacTimerUl 0
+inactivityTimer 10
+inactivityTimerQci5Sign 0
+iniMcsDl 4
+iniMcsUl 10
+iniPrbsUl 10
+iniUl256QamChQualEst 1s
+lbLoadFilCoeff 4
+lcrId 10
+longPeriodScellChEst 2000
+lowerMarginCio -10
+lteNrDssMode none
+maxBitrateDl 170000
+maxBitrateUl 110000
+maxCrPgDl 1200
+maxCrRa4Dl 1200
+maxCrRaDl 1200
+maxCrRaDlHo 1200
+maxCrSibDl 2600
+maxGbrTrafficLimit 85
+maxNumCaUeScell 100
+maxNumScells 2
+maxNumUeProactiveUl 10
+maxNumUeProactiveUlNonTxSkip 10
+maxNumVoLteProactUlGrantsPerTti 5
+maxPdcchAgg 16
+maxPdcchAggHighLoad 16
+maxPeriodicCqiIncrease 15
+maxPhyCces 8
+mbrSelector OaM
+measQuantityCSFBUtra cpichRSCP
+measQuantityUtra cpichRSCP
+minBitrateDl 30
+minBitrateUl 30
+mobStateParamNCelChgHgh 10
+mobStateParamNCelChgMed 5
+mobStateParamTEval 30s
+mobStateParamTHystNorm 30s
+msg3ConsecutiveDtx 0
+msg3DtxOffset 0
+multLoadMeasRrm 2
+multLoadMeasRrmEicic 2
+n310Qci1 n6
+nbIoTMode inband
+nbIotLinkedCellId 110
+offsetFreqIntra 0dB
+p0NomPucch -109
+p0NomPusch -70
+pMax 4780
+pagingNb oneT
+pdcchAggDefUe 4
+pdcchAggMsg4 4
+pdcchAggPaging 4
+pdcchAggPreamb 4
+pdcchAggRaresp 4
+pdcchAggRarespHo 4
+pdcchAggSib 4
+pdcchAlpha 320
+pdcchCqiShift -500
+pdcchCqiShift4Tx 0
+pdcchHarqTargetBler 100
+pdcchOrderConfig enabled
+pdcchUlDlBal 200
+perUl256QamChQualEst 5s
+periodicCqiFeedbackType wideband
+phyCellId 300
+prachDetThresScaling 10000
+preventCellActivation false
+prsPowerBoost 0
+puschAckOffI 10
+puschCqiOffI 8
+puschHarqMode adaptive
+puschRiOffI 11
+raContResoT 64ms
+raLargeMcsUl 5
+raMsgPoffGrB "10 dB"
+raNondedPreamb 40
+raPreGrASize 32
+raRespWinSize 10
+raSmallMcsUl 5
+raSmallVolUl "144 bits"
+rcAmbrMgnDl 10300
+rcAmbrMgnUl 10200
+rcEnableDl false
+rcEnableUl false
+redBwEnDl false
+redBwMaxRbDl 50
+redBwRpaEnUl false
+reqMaxCCsDlOffset 0
+rttCsfbType forbidden
+sbHoMode all
+scellBadChQualThr 1
+scellFastSchedulingSelect normal
+scellGoodChQualThr 1
+scellNotDetectableThr 0
+shortPeriodScellChEst 200
+t301Guard 390
+t302 8000
+t304InterRAT 500ms
+t304InterRATGsm 500ms
+t304IntraLte 1000ms
+t304eNaccGsm 2000ms
+t310Qci1 1000ms
+t320 180min
+tExtendedWait 300
+tLoadMeasX2 10000ms
+tLoadMeasX2Eicic 2000
+tPeriodicBsr 10ms
+tPeriodicPhr 20sf
+tPingPong 3000
+tProhibitPhr 0sf
+tReTxBsrTime "320 ms"
+tStoreUeCntxt 2000
+taMaxOffset 5200
+taTimer infinity
+taTimerMargin 2000
+tac 59455
+targetSelMethod SIB_based
+threshold1 230
+threshold2InterFreq 141
+threshold2a 212
+threshold2aQci1 143
+threshold3 140
+threshold3a 237
+threshold4 140
+timeToTriggerSfHigh 0.5
+timeToTriggerSfMedium 0.5
+tmpActFeat1 0
+tmpActFeat2 0
+tmpParam15 0
+tmpParam16 0
+tmpParam19 957
+tmpParam4 0
+tmpParam5 0
+tmpParam6 0
+ttiBundlingBlerTarget 24
+ttiBundlingBlerThreshold 20
+ttiBundlingSinrThreshold 100
+ttibAltUlPrbThreshold 0
+ttibMinDelayAfterBearerSetup 0
+ttibMinUlPrb 2
+ttibOperMode sinrBasedTtibOnAllowed
+ttibSinrDwellTimeIn 200
+ttibSinrDwellTimeOut 200
+ttibSinrThresholdIn 128
+ttibSinrThresholdOut 304
+ttibUlsMinTbs 144
+ul256QamDeactChQualThr 22
+ul256QamReactChQualThr 25
+ulCaMinPcellSinr 0
+ulCaMinPcellSinrQci1 0
+ulRsCs 0
+ulTargetBler 10
+ulamcAllTbEn true
+ulamcSwitchPer 30
+ulatbEventPer 1
+ulpcAlpha "alpha 0.7"
+ulpcReadPeriod 50
+ulsFdPrbAssignAlg MixedFD
+ulsMaxPacketAgg 2
+ulsMinRbNonTtibVolte 2
+ulsMinRbPerUe 3
+ulsMinTbs 104
+ulsMinTbsNonTtibVolte 120
+ulsOptimizePrbMinMcs 5
+ulsSchedMethod "channel unaware"
+upperMarginCio 10
+voLteProactUlGrantPeriodRegTx 20
+voLteProactUlGrantPeriodTtib 20
+list dFListPucch 1 dFpucchF1 0
+list dFListPucch 1 dFpucchF1b 1
+list dFListPucch 1 dFpucchF2 0
+list dFListPucch 1 dFpucchF2a 0
+list dFListPucch 1 dFpucchF2b 0
+list drxProfile101 1 drxInactivityT 200
+list drxProfile101 1 drxLongCycle 160ms
+list drxProfile101 1 drxOnDuratT 6
+list drxProfile101 1 drxProfileIndex 101
+list drxProfile101 1 drxProfilePriority 50
+list drxProfile101 1 drxRetransT 4
+list drxProfile102 1 drxInactivityT 2560
+list drxProfile102 1 drxLongCycle 1280ms
+list drxProfile102 1 drxOnDuratT 10
+list drxProfile102 1 drxProfileIndex 102
+list drxProfile102 1 drxProfilePriority 30
+list drxProfile102 1 drxRetransT 16
+list drxProfile103 1 drxInactivityT 10
+list drxProfile103 1 drxLongCycle 160ms
+list drxProfile103 1 drxOnDuratT 6
+list drxProfile103 1 drxProfileIndex 103
+list drxProfile103 1 drxProfilePriority 50
+list drxProfile103 1 drxRetransT 16
+list drxProfile104 1 drxInactivityT 30
+list drxProfile104 1 drxLongCycle 320
+list drxProfile104 1 drxOnDuratT 6
+list drxProfile104 1 drxProfileIndex 104
+list drxProfile104 1 drxProfilePriority 45
+list drxProfile104 1 drxRetransT 4
+list drxProfile105 1 drxInactivityT 20
+list drxProfile105 1 drxLongCycle 320ms
+list drxProfile105 1 drxOnDuratT 10
+list drxProfile105 1 drxProfileIndex 105
+list drxProfile105 1 drxProfilePriority 30
+list drxProfile105 1 drxRetransT 16
+list iFLBLoadThresholds 1 iFLBBearCheckTimer 10
+list iFLBLoadThresholds 1 iFLBHighLoadGBRDL 95
+list iFLBLoadThresholds 1 iFLBHighLoadNonGBRDL 95
+list iFLBLoadThresholds 1 iFLBHighLoadPdcch 95
+list iFLBLoadThresholds 1 iFLBRetryTimer 120
+list iFLBLoadThresholds 1 maxNumAmleNeigh 16
+list intraFreqLbLoadThresholds 1 highLoadGbrDl 95
+list intraFreqLbLoadThresholds 1 highLoadNonGbrDl 95
+list intraFreqLbLoadThresholds 1 highLoadPdcch 95
+list intraFreqLbLoadThresholds 1 hysteresisLoadDlGbr 2
+list intraFreqLbLoadThresholds 1 hysteresisLoadDlNonGbr 2
+list intraFreqLbLoadThresholds 1 hysteresisLoadPdcch 2
+list intraFreqLbLoadThresholds 1 loadBalancingProfile medium
+list intraFreqLbLoadThresholds 1 maxLbPartners 16
+list loadSettings 1 cellCapClass 100
+list loadSettings 1 mlbEicicOperMode allUes
+list loadSettings 1 nomNumPrbNonGbr 1
+list loadSettings 1 targetLoadGbrDl 90
+list loadSettings 1 targetLoadNonGbrDl 90
+list loadSettings 1 targetLoadPdcch 90
+list loadSettings 1 ulCacIgnore false
+list loadSettings 1 ulCacSelection ulReflectDlCac
+list loadSettings 1 ulStaticCac 100
+list moPrMappingList 1 lteNrDualConnectSupport EN-DC_capable
+list moPrMappingList 1 mcc 450
+list moPrMappingList 1 mnc 6
+list moPrMappingList 1 mncLength 2
+list moPrMappingList 1 moPrId 1
+list moPrMappingList 1 spid 99
+list moPrMappingList 2 lteNrDualConnectSupport EN-DC_capable
+list moPrMappingList 2 mcc 450
+list moPrMappingList 2 mnc 6
+list moPrMappingList 2 mncLength 2
+list moPrMappingList 2 moPrId 1
+list moPrMappingList 2 spid 61
+list moPrMappingList 3 lteNrDualConnectSupport EN-DC_capable
+list moPrMappingList 3 mcc 450
+list moPrMappingList 3 mnc 6
+list moPrMappingList 3 mncLength 2
+list moPrMappingList 3 moPrId 1
+list moPrMappingList 3 spid 76
+list pcellSwapConfig 1 disableVideoGbrPcellSwap QCI_67
+list pcellSwapConfig 1 enableVoLteUePcellSwap UesWithoutVoLte
+list pcellSwapConfig 1 numCaUeThreshold 100
+list pcellSwapConfig 1 pcellSwapMaxHoRate 5
+list pcellSwapConfig 1 pFreqPrio 2
+list pcellSwapConfig 1 puschLoadHysteresis 10
+list pcellSwapConfig 1 puschLoadIndexThr 100
+list pcellSwapConfig 1 scellChQualThreshold 8
+list pcellSwapConfig 1 scellStateForPcellSwap activated
+list pcellSwapConfig 1 ulSinrLowThreshold 24
+list perMeasLocServ 1 reportAmountPerLoc 2
+list perMeasLocServ 1 reportIntervalPerLoc 640ms
+list qci1eVTTConfig 1 qci1DlTargetBler 300
+list qci1eVTTConfig 1 qci1HarqMaxTrDl 7
+list qci1eVTTConfig 1 qci1HarqMaxTrUl 7
+list qci1eVTTConfig 1 qci1ReconStopTimer 100
+list qci1eVTTConfig 1 qci1ThroughputFactorDl 400
+list qci1eVTTConfig 1 qci1ThroughputFactorUl 400
+list qci1eVTTConfig 1 qci1UlTargetBler 3
+list redBwRbUlConfig 1 redBwMaxRbUl 50
+list redBwRbUlConfig 1 redBwMinRbUl 1
+list ulpcPucchConfig 1 ulpcLowlevCch -111
+list ulpcPucchConfig 1 ulpcLowqualCch 9
+list ulpcPucchConfig 1 ulpcUplevCch -108
+list ulpcPucchConfig 1 ulpcUpqualCch 11
+list ulpcPuschConfig 1 ulpcLowlevSch -103
+list ulpcPuschConfig 1 ulpcLowqualSch 18
+list ulpcPuschConfig 1 ulpcUplevSch -78
+list ulpcPuschConfig 1 ulpcUpqualSch 27
+CAPR 0
+a3Offset -12
+a3TimeToTrigger ms320
+a3TriggerQuantity RSRP
+a6Offset 12
+a6ReportInterval 640ms
+a6TimeToTrigger 320ms
+earfcnDL 3050
+enableA3Event true
+enableA6Event true
+enableFreqPrioSwap disabled
+hysA3Offset 4
+hysA6Offset 0
+maxNumScellSwaps 0
+sFreqPrio 1
+scellMeasThreshRsrp -110
+scellMeasThreshRsrq -1200
+scellPdcchOlLa enabledScellBased
+exit
+CATMCEL 0
+a2TimeToTriggerCatM 480ms
+actAcBarringCatM false
+actAmcCatM "Both Downlink and Uplink enabled"
+actCatMSpecMeas false
+actConvVoiceCatM true
+actDlPciBasedNarBandCatM true
+actDrxCatM false
+actDynamicRepMpdcchCatM false
+actDynamicRepMpdschCatM false
+actDynamicRepMpuschCatM false
+actDynamicRepVoLTECatM false
+actEDrxIdleCatM false
+actEabCatM None
+actHARQBundlingCatM false
+actHighHarqCatM disabled
+actIMSEmerSessCatM false
+actIdleLBCatM false
+actInterFreqHoCatM disabled
+actIntraFreqHoCatM true
+actLoadbasedNBSelectionCatM false
+actMultiHarqCatM true
+actPuschMaxTbsCatM false
+actQci1CatMSpecMeas false
+actRLFbasedRCRCatM false
+actRaiCatM false
+actRelaxMoCatM false
+actSchedBypassCatM disabled
+actSelMobPrfCatM disabled
+actSf9InvalidLVRBCatM true
+actUeDataInactivityCatM false
+cellReSelPrioCatM 7
+dFpucchF1CatM 0
+deltaPreMsg3CatM 4
+dl3HarqMcsCatM MCS12
+hysThreshold2CatM 0
+idleLBPercentageOfUesCatM 0
+immediateS1ReleaseCatM false
+numCELevelCatM 2
+numNarBandModeACatM 1
+p0NomPucchCatM -104
+p0NomPuschCatM -80
+prachPwrRampCatM 4
+prachRsrpThrCatM -117
+qRxLevMinCeCatM -128
+qRxLevMinIntraFCatM -128
+tReselEutrCatM 1
+threshSrvLowCatM 4
+threshold2CatM 210
+ulpcAlphaCatM "alpha 1"
+ulpcIniPrePwrCatM -104
+ulpcRarespTpcCatM 4
+exit
+CDFIM 1
+acBarring0To9Adapt false
+searchWinSize 10
+tResHrpd 2
+list hrpdBdClList 1 hrpdBdClBcl 4bc
+list hrpdBdClList 1 hrpdFrqThrH 1000
+list hrpdBdClList 1 hrpdFrqThrL 1000
+list hrpdNCList 1 hrpdArfcn 500
+list hrpdNCList 1 hrpdBdClNcl 4bc
+list hrpdNCList 1 hrpdCellId 4
+list hrpdNCList 1 hrpdExSel R9ExtensionPartPossible
+exit
+DRX 0
+applyOutOfSyncState extendedDrxOnly
+drxApplyDeviceType false
+stInactFactor 10
+list drxProfile1 1 drxProfileIndex 1
+list drxProfile1 1 drxProfilePriority 45
+list drxProfile2 1 drxInactivityT 4
+list drxProfile2 1 drxLongCycle 20ms
+list drxProfile2 1 drxOnDuratT 6
+list drxProfile2 1 drxProfileIndex 2
+list drxProfile2 1 drxProfilePriority 40
+list drxProfile2 1 drxRetransT 4
+list drxProfile3 1 drxInactivityT 80
+list drxProfile3 1 drxLongCycle 80ms
+list drxProfile3 1 drxOnDuratT 10
+list drxProfile3 1 drxProfileIndex 3
+list drxProfile3 1 drxProfilePriority 30
+list drxProfile3 1 drxRetransT 8
+list drxProfile4 1 drxInactivityT 500
+list drxProfile4 1 drxLongCycle 320ms
+list drxProfile4 1 drxOnDuratT 20
+list drxProfile4 1 drxProfileIndex 4
+list drxProfile4 1 drxProfilePriority 20
+list drxProfile4 1 drxRetransT 16
+list drxProfile5 1 drxInactivityT 2560
+list drxProfile5 1 drxLongCycle 2560ms
+list drxProfile5 1 drxOnDuratT 20
+list drxProfile5 1 drxProfileIndex 5
+list drxProfile5 1 drxProfilePriority 10
+list drxProfile5 1 drxRetransT 16
+list drxProfile6 1 drxInactivityT 4
+list drxProfile6 1 drxLongCycle 20ms
+list drxProfile6 1 drxOnDuratT 6
+list drxProfile6 1 drxProfileIndex 6
+list drxProfile6 1 drxProfilePriority 40
+list drxProfile6 1 drxRetransT 4
+exit
+IFGDPR 0
+algSelection "weighted probability randomization"
+groupPrio 12
+groupSize 0
+exit
+IFGPR 0
+algSelection "weighted probability randomization"
+exit
+LNCEL_FDD 0
+act1TxIn2Tx false
+actAperPmiPolling false
+actAutoPucchAlloc true
+actCatM true
+actCombSuperCell false
+actDlMuMimo false
+actDlSlimCarrier false
+actDonutCell false
+actFastMimoSwitch false
+actLiquidCell false
+actMMimo false
+actOran false
+actPdcchLoadGen false
+actPuschMask false
+actRedFreqOffset false
+actRepeaterMode none
+actSdlc false
+actShutdownTxPath false
+actSlimCoexCatM false
+actSrs14Pos false
+actSuperCell false
+actTmSwitchMMimo false
+actUciOnlyGrants false
+actUlMultiCluster false
+actUlPwrRestrScn none
+addNumDrbRadioReasHo 35
+addNumDrbTimeCriticalHo 60
+addNumQci1DrbRadioReasHo 15
+addNumQci1DrbTimeCriticalHo 20
+blankedPucch 2
+catMProfId 0
+cqiAperPollT 3
+dlChBw "10 MHz"
+dlMimoMode "Dynamic Open Loop MIMO"
+dlRsBoost 3dB
+dlSrbMimoMode SpatialMultiplexing
+dlpcMimoComp 0
+earfcnDL 2600
+earfcnUL 20600
+maxNrSymPdcch 3
+maxNumActDrb 1200
+maxNumActUE 400
+maxNumCaConfUe 100
+maxNumCaConfUe3c 100
+maxNumCaConfUeDc 100
+maxNumQci1Drb 300
+maxNumUeDl 10
+maxNumUeUl 10
+prachCS 12
+prachConfIndex 3
+prachFreqOff 6
+prachHsFlag false
+prsConfigurationIndex 151
+prsNumDlFrames 1
+pucchNAnCs 0
+rootSeqIndex 600
+selectOuterPuschRegion None
+slimRfFilterDL Nominal
+slimRfFilterUL Nominal
+srsActivation false
+srsPwrOffset 7
+syncSigTxMode TxDiv
+twoLayerMimoAvSpectralEff 2
+ulChBw "10 MHz"
+ulCombinationMode IRC
+ulpcRarespTpc 2
+list mimoClConfig 1 mimoClCqiThD 700
+list mimoClConfig 1 mimoClCqiThU 800
+list mimoClConfig 1 mimoClRiThD 560
+list mimoClConfig 1 mimoClRiThU 640
+list mimoOlConfig 1 mimoOlCqiThD 700
+list mimoOlConfig 1 mimoOlCqiThU 800
+list mimoOlConfig 1 mimoOlRiThD 560
+list mimoOlConfig 1 mimoOlRiThU 640
+APUCCH_FDD 0
+aPucchAddAUeRrHo 10
+aPucchAddAUeTcHo 10
+aPucchMinNumEmergencySessions 5
+aPucchMinNumRrc 100
+aPucchMinNumRrcNoDrb 5
+aPucchSrPeriodUpperLimit 20
+actLbPucchReg true
+pucchArRateEvalWinLength 3
+selectPrachRegion InnerLowerEdge
+exit
+MPUCCH_FDD 0
+addAUeRrHo 15
+addAUeTcHo 20
+addEmergencySessions 20
+cellSrPeriod 20ms
+cqiPerNp 40ms
+deltaPucchShift 1
+maxNumRrc 400
+maxNumRrcEmergency 420
+minNumEmergencySessions 10
+minNumRrc 10
+minNumRrcNoDrb 5
+n1PucchAn 72
+nCqiRb 5
+nPucchF3Prbs 1
+phichDur Normal
+phichRes "N = 1/6"
+riEnable true
+riPerM 1
+riPerOffset -1
+exit
+exit
+SDRX 0
+list drxSmartProfile2 1 drxInactivityT 4
+list drxSmartProfile2 1 drxLongCycle 20ms
+list drxSmartProfile2 1 drxOnDuratT 6
+list drxSmartProfile2 1 drxProfileIndex 2
+list drxSmartProfile2 1 drxProfilePriority 40
+list drxSmartProfile2 1 drxRetransT 4
+list drxSmartProfile2 1 drxShortCycle 20ms
+list drxSmartProfile2 1 drxShortCycleT 1
+list drxSmartProfile2 1 smartStInactFactor 124
+list drxSmartProfile3 1 drxInactivityT 10
+list drxSmartProfile3 1 drxLongCycle 80ms
+list drxSmartProfile3 1 drxOnDuratT 6
+list drxSmartProfile3 1 drxProfileIndex 3
+list drxSmartProfile3 1 drxProfilePriority 30
+list drxSmartProfile3 1 drxRetransT 4
+list drxSmartProfile3 1 drxShortCycle 40ms
+list drxSmartProfile3 1 drxShortCycleT 5
+list drxSmartProfile3 1 smartStInactFactor 6
+list drxSmartProfile4 1 drxInactivityT 50
+list drxSmartProfile4 1 drxLongCycle 320ms
+list drxSmartProfile4 1 drxOnDuratT 10
+list drxSmartProfile4 1 drxProfileIndex 4
+list drxSmartProfile4 1 drxProfilePriority 20
+list drxSmartProfile4 1 drxRetransT 16
+list drxSmartProfile4 1 drxShortCycle 80ms
+list drxSmartProfile4 1 drxShortCycleT 4
+list drxSmartProfile4 1 smartStInactFactor 4
+list drxSmartProfile5 1 drxInactivityT 50
+list drxSmartProfile5 1 drxLongCycle 2560ms
+list drxSmartProfile5 1 drxOnDuratT 10
+list drxSmartProfile5 1 drxProfileIndex 5
+list drxSmartProfile5 1 drxProfilePriority 10
+list drxSmartProfile5 1 drxRetransT 16
+list drxSmartProfile5 1 drxShortCycle 80ms
+list drxSmartProfile5 1 drxShortCycleT 16
+list drxSmartProfile5 1 smartStInactFactor 32
+list drxSmartProfile6 1 drxInactivityT 4
+list drxSmartProfile6 1 drxLongCycle 20ms
+list drxSmartProfile6 1 drxOnDuratT 6
+list drxSmartProfile6 1 drxProfileIndex 6
+list drxSmartProfile6 1 drxProfilePriority 40
+list drxSmartProfile6 1 drxRetransT 4
+list drxSmartProfile6 1 drxShortCycle 20ms
+list drxSmartProfile6 1 drxShortCycleT 1
+list drxSmartProfile6 1 smartStInactFactor 124
+exit
+SIB 0
+acbProfileId 0
+autoAcBarringStartTimer 300
+autoAcbPlmnRmvlStopTimer 3600
+autoPlmnRmvlStartTimer 300
+cellBarred notBarred
+cellReSelPrio 2
+intrFrqCelRes allowed
+intraPresAntP true
+modPeriodCoeff 4
+n310 n20
+n311 n1
+pMaxOwnCell 23
+prachPwrRamp 2dB
+preambTxMax 10
+primPlmnCellres "Not Reserved"
+primPlmnUpperLayerIndicationR15 1
+qHyst 2dB
+qrxlevmin -128
+qrxlevminintraF -128
+sIntrasearch 62
+sNonIntrsearch 62
+siWindowLen 20ms
+sib2xTransmit false
+t300 400ms
+t301 400ms
+t310 2000ms
+t311 3000ms
+tReselEutr 1
+threshSrvLow 14
+ulpcIniPrePwr "-104 dBm"
+list celResTiF 1 celResTiFHM 0.5
+list celResTiF 1 celResTiFMM 0.5
+list sib2Scheduling 1 siMessagePeriodicity 160ms
+list sib2Scheduling 1 siMessageRepetition 1
+list sib2Scheduling 1 siMessageSibType SIB2
+list sib3Scheduling 1 siMessagePeriodicity 320ms
+list sib3Scheduling 1 siMessageRepetition 1
+list sib3Scheduling 1 siMessageSibType SIB3
+list sibSchedulingList 1 siMessagePeriodicity 320ms
+list sibSchedulingList 1 siMessageRepetition 1
+list sibSchedulingList 1 siMessageSibType SIB12
+list sibSchedulingList 2 siMessagePeriodicity 640ms
+list sibSchedulingList 2 siMessageRepetition 1
+list sibSchedulingList 2 siMessageSibType SIB5
+list sibSchedulingList 3 siMessagePeriodicity 5120ms
+list sibSchedulingList 3 siMessageRepetition 1
+list sibSchedulingList 3 siMessageSibType SIB4
+exit
+exit
+LNCEL 22109
+a1TimeToTriggerDeactInterMeas 640ms
+a2RedirectQci1 enabled
+a2TimeToTriggerActInterFreqMeas 640ms
+a2TimeToTriggerActWcdmaMeas 320ms
+a2TimeToTriggerRedirect 5120ms
+a3Offset 8
+a3ReportAmount infinity
+a3ReportInterval 240ms
+a3TimeToTrigger 256ms
+a3TriggerQuantityHO RSRP
+a5ReportAmount infinity
+a5ReportInterval 240ms
+a5TimeToTrigger 320ms
+a5TriggerQuantityIntraFreqHO RSRP
+actAcHpsLimits false
+actAir2Ground false
+actAmle false
+actAntPortMap false
+actB1ReturnTo5GSA false
+actCaBlocking false
+actCaScellSchedWeightFactor false
+actCarelCounters false
+actCsiRsSubFNonTM9Sch false
+actDataSessionProf false
+actDeltaCqiAgingScellChEst false
+actDlPwBackoff false
+actDlsLdAdaptPf false
+actDlsOldtc true
+actDlsVoicePacketAgg true
+actDownSampling false
+actDrx true
+actDrxDuringMeasGap false
+actDrxDuringTTIB false
+actDynamicDataSessionProf false
+actEDrxIdle false
+actEicic false
+actEirpControl disabled
+actEnDcBlocking false
+actEndcHoPrefLay false
+actEndcIntraFreqMdt false
+actExtSib1 false
+actFastPdcchAdapt false
+actFlexDupGap false
+actForcedDrxS1Ho false
+actGsmSrvccMeasOpt false
+actHapPrachCfg false
+actHapPrachTaFilt false
+actInterFreqLB false
+actInterFreqSPIDBasedHo none
+actIntraFreqLoadBal false
+actLBSpidUeSel false
+actLdPdcch true
+actMaxNumUeDlNonGbr 0
+actMcsUpgrade Disabled
+actMfbiDupFre False
+actMicroDtx false
+actModulationSchemeDl 64QAM
+actModulationSchemeUL 256QAMand16QAMHighMCS
+actNbrForNonGbrBearers false
+actNoIntraBandIFMeasurements false
+actOlLaPdcch true
+actOtdoa false
+actPdcchQci1SrbControl false
+actPeriodicB1NRMeas disabled
+actPeriodical5GRedirect false
+actProactSchedBySrb true
+actPrsTxDiv false
+actPttOverbooking false
+actPuschPrbDistribution false
+actPuschPrbDistributionEnh false
+actQci1BlerTgt false
+actQci1RfDrx false
+actQci1eVTT true
+actReducedFormat false
+actReqDiffFallbacks false
+actResourceAllocType1 false
+actReturnTo5GSA disabled
+actRrcConnRelDelayForwarding false
+actScellBadChQualExtMonitor false
+actSixIfMeasurements false
+actSmartDrx false
+actSrb1Robustness true
+actTaDisconnect false
+actTcpServiceDiff false
+actTtiBundling false
+actUca false
+actUePowerBasedMobThr false
+actUl256QamChQualEst true
+actUlDynamicTargetBler false
+actUlGrpHop false
+actUlLnkAdp fUlLa
+actUlVarianceAdapt false
+actUlpcMethod PuschCLPucchCL
+actUlpcRachPwrCtrl true
+actUlsLdAdaptPf false
+actUlsOptimizePrbMcs false
+actVoLteSrcRate false
+actVoipCovBoost false
+actVoipCovBoostEnh off
+addGbrTrafficRrHo 5
+addGbrTrafficTcHo 0
+addSpectrEmi 1
+administrativeState unlocked
+allowPbIndexZero true
+amRlcSnFieldLengthDl 10bit
+amleMaxNumHo 10
+amlePeriodLoadExchange 1000ms
+cellIndOffServ 0dB
+cellResourceSharingMode none
+cellTechnology NB-IoT-FDD
+cellType large
+cqiAperEnable true
+cqiAperMode FBT2
+cqiPerSbCycK 1
+cqiPerSimulAck true
+csgType openAccess
+dSrTransMax 64n
+defPagCyc 256rf
+deltaLbCioMargin 0
+deltaPreMsg3 5
+deltaTfEnabled false
+dlCellPwrRed 0
+dlInterferenceEnable false
+dlInterferenceLevel 0
+dlInterferenceModulation QPSK
+dlOlqcEnable true
+dlPathlossChg "3 db"
+dlPcfichBoost 0
+dlPhichBoost 0
+dlSrbCqiOffset -400
+dlTargetBler 1000
+dlamcCqiDef 6
+dlamcEnable true
+dlsDciCch "DCI format 1C"
+dlsOldtcTarget 9800
+dlsUsePartPrb "PRBs with PSS or SSS and PBCH used"
+eIcicMaxMutePattern mp4
+eTputFilterConfig 51
+eTputInitMcs 20
+eUlLaAtbPeriod 30
+eUlLaBlerAveWin 30
+eUlLaDeltaMcs 1
+eUlLaLowMcsThr 2
+eUlLaLowPrbThr 5
+eUlLaPrbIncDecFactor 280
+ecidMeasSupervisionTimer 3000
+enableAmcPdcch true
+enableBetterCellHo true
+enableCovHo true
+enableDefaultBcsChkEnDc false
+enableLowAgg true
+enablePcPdcch true
+expectedCellSize 2.1km
+fUlLAAtbTrigThr -2
+filterCoeff fc4
+filterCoefficientCSFBCpichEcn0 fc4
+filterCoefficientCSFBCpichRscp fc4
+filterCoefficientCpichEcn0 fc4
+filterCoefficientCpichRscp fc4
+filterCoefficientRSRP fc8
+filterCoefficientRSRQ fc4
+filterCoefficientRSSI fc2
+gbrCongHandling l2andl3
+grpAssigPUSCH 1
+harqMaxMsg3 3
+harqMaxTrDl 7
+harqMaxTrUlTtiBundling 12
+harqMaxTxUl 7
+hopModePusch interSubFrame
+hysA3Offset 4
+hysThreshold2GERAN 0
+hysThreshold2InterFreq 0
+hysThreshold2Wcdma 0
+hysThreshold2a 0
+hysThreshold3 0
+hysThreshold4 0
+iFEndcHoRetryTimer 60
+idleLBCapThresh 1
+idleLBCelResWeight 10
+idleLBPercCaUe 0
+idleLBPercUeTM9 0
+idleLBPercentageOfUes 0
+ilReacTimerUl 0
+inactivityTimer 10
+inactivityTimerQci5Sign 0
+iniMcsDl 4
+iniMcsUl 10
+iniPrbsUl 10
+iniUl256QamChQualEst 1s
+lbLoadFilCoeff 4
+lcrId 110
+longPeriodScellChEst 2000
+lowerMarginCio -10
+lteNrDssMode none
+maxBitrateDl 170000
+maxBitrateUl 110000
+maxCrPgDl 1200
+maxCrRa4Dl 1200
+maxCrRaDl 1200
+maxCrSibDl 2600
+maxGbrTrafficLimit 85
+maxNumCaUeScell 100
+maxNumScells 2
+maxPdcchAgg 16
+maxPdcchAggHighLoad 16
+maxPhyCces 8
+mbrSelector OaM
+measQuantityCSFBUtra cpichRSCP
+measQuantityUtra cpichRSCP
+minBitrateDl 30
+minBitrateUl 30
+mobStateParamNCelChgHgh 10
+mobStateParamNCelChgMed 5
+mobStateParamTEval 30s
+mobStateParamTHystNorm 30s
+msg3ConsecutiveDtx 0
+msg3DtxOffset 0
+multLoadMeasRrm 2
+multLoadMeasRrmEicic 2
+n310Qci1 n6
+nbIoTMode inband
+nbIotLinkedCellId 10
+offsetFreqIntra 0dB
+p0NomPucch -109
+p0NomPusch -85
+pMax 4780
+pagingNb oneT
+pdcchAggDefUe 4
+pdcchAggMsg4 4
+pdcchAggPaging 4
+pdcchAggPreamb 4
+pdcchAggRaresp 4
+pdcchAggSib 4
+pdcchAlpha 320
+pdcchCqiShift -500
+pdcchHarqTargetBler 100
+pdcchUlDlBal 200
+perUl256QamChQualEst 5s
+periodicCqiFeedbackType wideband
+phyCellId 300
+prachDetThresScaling 10000
+preventCellActivation false
+prsPowerBoost 0
+puschAckOffI 10
+puschCqiOffI 8
+puschRiOffI 11
+raContResoT 64ms
+raLargeMcsUl 5
+raMsgPoffGrB "10 dB"
+raNondedPreamb 40
+raPreGrASize 32
+raRespWinSize 10
+raSmallMcsUl 5
+raSmallVolUl "144 bits"
+rcAmbrMgnDl 10300
+rcAmbrMgnUl 10200
+rcEnableDl false
+rcEnableUl false
+redBwEnDl false
+redBwMaxRbDl 50
+redBwRpaEnUl false
+reqMaxCCsDlOffset 0
+rttCsfbType forbidden
+sbHoMode all
+scellBadChQualThr 1
+scellGoodChQualThr 1
+scellNotDetectableThr 0
+shortPeriodScellChEst 200
+t301Guard 100
+t302 8000
+t304InterRAT 500ms
+t304InterRATGsm 500ms
+t304IntraLte 1000ms
+t304eNaccGsm 2000ms
+t310Qci1 1000ms
+t320 10min
+tExtendedWait 300
+tLoadMeasX2 10000ms
+tLoadMeasX2Eicic 2000
+tPeriodicBsr 10ms
+tPeriodicPhr 20sf
+tPingPong 3000
+tProhibitPhr 0sf
+tReTxBsrTime "320 ms"
+tStoreUeCntxt 2000
+taMaxOffset 5200
+taTimer 10240
+taTimerMargin 2000
+tac None
+targetSelMethod SIB_based
+threshold1 230
+threshold2InterFreq 166
+threshold2a 169
+threshold2aQci1 169
+threshold3 140
+threshold3a 237
+threshold4 140
+timeToTriggerSfHigh 0.5
+timeToTriggerSfMedium 0.5
+tmpActFeat1 0
+tmpActFeat2 0
+tmpParam15 0
+tmpParam16 0
+tmpParam19 957
+tmpParam4 0
+tmpParam5 0
+tmpParam6 0
+ttiBundlingBlerTarget 24
+ttiBundlingBlerThreshold 20
+ttiBundlingSinrThreshold 100
+ul256QamDeactChQualThr 22
+ul256QamReactChQualThr 25
+ulRsCs 0
+ulTargetBler 10
+ulamcAllTbEn true
+ulamcSwitchPer 30
+ulatbEventPer 1
+ulpcAlpha "alpha 0.9"
+ulpcReadPeriod 50
+ulsFdPrbAssignAlg MixedFD
+ulsMaxPacketAgg 2
+ulsMinRbPerUe 3
+ulsMinTbs 104
+ulsSchedMethod "channel unaware"
+upperMarginCio 10
+list dFListPucch 1 dFpucchF1 0
+list dFListPucch 1 dFpucchF1b 1
+list dFListPucch 1 dFpucchF2 0
+list dFListPucch 1 dFpucchF2a 0
+list dFListPucch 1 dFpucchF2b 0
+list dlIshConfig 1 actDlIsh false
+list dlIshConfig 1 amountBlankedRes 0
+list dlIshConfig 1 ishPrId 0
+list drxProfile101 1 drxInactivityT 10
+list drxProfile101 1 drxLongCycle 160ms
+list drxProfile101 1 drxOnDuratT 8
+list drxProfile101 1 drxProfileIndex 101
+list drxProfile101 1 drxProfilePriority 50
+list drxProfile101 1 drxRetransT 4
+list drxProfile102 1 drxInactivityT 2560
+list drxProfile102 1 drxLongCycle 1280ms
+list drxProfile102 1 drxOnDuratT 10
+list drxProfile102 1 drxProfileIndex 102
+list drxProfile102 1 drxProfilePriority 30
+list drxProfile102 1 drxRetransT 16
+list drxProfile103 1 drxInactivityT 10
+list drxProfile103 1 drxLongCycle 160ms
+list drxProfile103 1 drxOnDuratT 6
+list drxProfile103 1 drxProfileIndex 103
+list drxProfile103 1 drxProfilePriority 50
+list drxProfile103 1 drxRetransT 16
+list drxProfile105 1 drxInactivityT 20
+list drxProfile105 1 drxLongCycle 320ms
+list drxProfile105 1 drxOnDuratT 10
+list drxProfile105 1 drxProfileIndex 105
+list drxProfile105 1 drxProfilePriority 30
+list drxProfile105 1 drxRetransT 16
+list qci1eVTTConfig 1 qci1DlTargetBler 300
+list qci1eVTTConfig 1 qci1HarqMaxTrDl 7
+list qci1eVTTConfig 1 qci1HarqMaxTrUl 7
+list qci1eVTTConfig 1 qci1ReconStopTimer 100
+list qci1eVTTConfig 1 qci1ThroughputFactorDl 400
+list qci1eVTTConfig 1 qci1ThroughputFactorUl 400
+list qci1eVTTConfig 1 qci1UlTargetBler 3
+list redBwRbUlConfig 1 redBwMaxRbUl 50
+list redBwRbUlConfig 1 redBwMinRbUl 1
+list ulpcPucchConfig 1 ulpcLowlevCch -111
+list ulpcPucchConfig 1 ulpcLowqualCch 9
+list ulpcPucchConfig 1 ulpcUplevCch -108
+list ulpcPucchConfig 1 ulpcUpqualCch 11
+list ulpcPuschConfig 1 ulpcLowlevSch -103
+list ulpcPuschConfig 1 ulpcLowqualSch 18
+list ulpcPuschConfig 1 ulpcUplevSch -78
+list ulpcPuschConfig 1 ulpcUpqualSch 27
+DRX 0
+applyOutOfSyncState extendedDrxOnly
+drxApplyDeviceType false
+qci1DrxOffThreshold 700
+qci1DrxOnThreshold 900
+stInactFactor 1
+list drxProfile1 1 drxProfileIndex 1
+list drxProfile1 1 drxProfilePriority 45
+list drxProfile2 1 drxInactivityT 4
+list drxProfile2 1 drxLongCycle 20ms
+list drxProfile2 1 drxOnDuratT 6
+list drxProfile2 1 drxProfileIndex 2
+list drxProfile2 1 drxProfilePriority 40
+list drxProfile2 1 drxRetransT 4
+list drxProfile3 1 drxInactivityT 80
+list drxProfile3 1 drxLongCycle 80ms
+list drxProfile3 1 drxOnDuratT 10
+list drxProfile3 1 drxProfileIndex 3
+list drxProfile3 1 drxProfilePriority 30
+list drxProfile3 1 drxRetransT 8
+list drxProfile4 1 drxInactivityT 500
+list drxProfile4 1 drxLongCycle 320ms
+list drxProfile4 1 drxOnDuratT 10
+list drxProfile4 1 drxProfileIndex 4
+list drxProfile4 1 drxProfilePriority 20
+list drxProfile4 1 drxRetransT 8
+list drxProfile5 1 drxInactivityT 2560
+list drxProfile5 1 drxLongCycle 2560ms
+list drxProfile5 1 drxOnDuratT 20
+list drxProfile5 1 drxProfileIndex 5
+list drxProfile5 1 drxProfilePriority 10
+list drxProfile5 1 drxRetransT 16
+list drxProfile6 1 drxInactivityT 4
+list drxProfile6 1 drxLongCycle 20ms
+list drxProfile6 1 drxOnDuratT 6
+list drxProfile6 1 drxProfileIndex 6
+list drxProfile6 1 drxProfilePriority 40
+list drxProfile6 1 drxRetransT 4
+exit
+NBIOT_FDD 0
+actAcBarringNB None
+actDssNrOptPrbBlankingGb disabled
+actEarlyContResoNB false
+actExtendedNPRACH false
+actHighTbsNB2 false
+actIdleLBNB false
+actMultiHarqNB2 Disabled
+actMultiTones false
+actRaiNB false
+actSepMFBI false
+actStatusRepSNGap false
+carrSelectMode AllCarriers
+cyclicShiftMt6 0
+dlChBw "0.2 MHz"
+dlMimoMode TXDiv
+dlPwrBoost 600
+inbandPRBIndexDL 19
+inbandPRBIndexUL 0
+loadWeightMode Automatic
+loadWeightNBCL1 10
+loadWeightNBCL2 100
+maxCoverageMCL 164
+maxNumRrcNB 200
+maxNumRrcNBCL1 10
+maxNumRrcNBCL2 4
+minNumRrcNB 5
+nbIoTProfId 0
+nprachConfigIndex "Manual Configuration"
+nprachRsrpThreshold1 -110
+nprachRsrpThreshold2 -120
+nprachTAThreshold 10000
+numCoverageLevels 1
+numDlNonAnchCarrierNB 0
+numUlNonAnchCarrierNB 0
+p0NomNpusch -85
+standaloneEarfcnDL 0
+standaloneEarfcnUL 0
+startingCovLevelPagingOptNB "Coverage Level 0"
+syncSigTxMode TxDiv
+tCellDelNB 10
+tInterReselNB 3
+tReselNB 3
+ulChBw "0.2 MHz"
+ulpcIniPrePwrNB "-104 dBm"
+exit
+REDRT 0
+redirFreqEutra 2850
+redirRat eutra
+redirectPrio 1
+exit
+SDRX 0
+list drxSmartProfile2 1 drxInactivityT 4
+list drxSmartProfile2 1 drxLongCycle 20ms
+list drxSmartProfile2 1 drxOnDuratT 6
+list drxSmartProfile2 1 drxProfileIndex 2
+list drxSmartProfile2 1 drxProfilePriority 40
+list drxSmartProfile2 1 drxRetransT 4
+list drxSmartProfile2 1 drxShortCycle 20ms
+list drxSmartProfile2 1 drxShortCycleT 1
+list drxSmartProfile2 1 smartStInactFactor 124
+list drxSmartProfile3 1 drxInactivityT 10
+list drxSmartProfile3 1 drxLongCycle 80ms
+list drxSmartProfile3 1 drxOnDuratT 6
+list drxSmartProfile3 1 drxProfileIndex 3
+list drxSmartProfile3 1 drxProfilePriority 30
+list drxSmartProfile3 1 drxRetransT 4
+list drxSmartProfile3 1 drxShortCycle 40ms
+list drxSmartProfile3 1 drxShortCycleT 5
+list drxSmartProfile3 1 smartStInactFactor 6
+list drxSmartProfile4 1 drxInactivityT 50
+list drxSmartProfile4 1 drxLongCycle 320ms
+list drxSmartProfile4 1 drxOnDuratT 10
+list drxSmartProfile4 1 drxProfileIndex 4
+list drxSmartProfile4 1 drxProfilePriority 20
+list drxSmartProfile4 1 drxRetransT 16
+list drxSmartProfile4 1 drxShortCycle 80ms
+list drxSmartProfile4 1 drxShortCycleT 4
+list drxSmartProfile4 1 smartStInactFactor 4
+list drxSmartProfile5 1 drxInactivityT 50
+list drxSmartProfile5 1 drxLongCycle 2560ms
+list drxSmartProfile5 1 drxOnDuratT 10
+list drxSmartProfile5 1 drxProfileIndex 5
+list drxSmartProfile5 1 drxProfilePriority 10
+list drxSmartProfile5 1 drxRetransT 16
+list drxSmartProfile5 1 drxShortCycle 80ms
+list drxSmartProfile5 1 drxShortCycleT 16
+list drxSmartProfile5 1 smartStInactFactor 32
+list drxSmartProfile6 1 drxInactivityT 4
+list drxSmartProfile6 1 drxLongCycle 20ms
+list drxSmartProfile6 1 drxOnDuratT 6
+list drxSmartProfile6 1 drxProfileIndex 6
+list drxSmartProfile6 1 drxProfilePriority 40
+list drxSmartProfile6 1 drxRetransT 4
+list drxSmartProfile6 1 drxShortCycle 20ms
+list drxSmartProfile6 1 drxShortCycleT 1
+list drxSmartProfile6 1 smartStInactFactor 124
+exit
+SIB 0
+acbNumRrcConnCellStart 90
+acbNumRrcConnCellStop 80
+acbNumRrcReqStart 30
+acbNumRrcReqStop 20
+acbProfileId 0
+acbRrcConnCellStartTimer 30
+acbRrcConnCellStopTimer 30
+acbRrcReqFactor 0.5
+autoAcBarringStartTimer 300
+autoAcbPlmnRmvlStopTimer 3600
+autoPlmnRmvlStartTimer 300
+cellBarred notBarred
+cellReSelPrio 2
+intrFrqCelRes allowed
+intraPresAntP true
+mbmsNeighCellConfigIntraF 00
+modPeriodCoeff 4
+n310 n20
+n311 n1
+pMaxOwnCell 23
+prachPwrRamp 6dB
+preambTxMax 10
+primPlmnCellres "Not Reserved"
+qHyst 2dB
+qrxlevmin -128
+qrxlevminintraF -128
+sIntrasearch 62
+sNonIntrsearch 62
+siWindowLen 20ms
+sib2xTransmit false
+t300 400ms
+t301 400ms
+t310 2000ms
+t311 3000ms
+tReselEutr 1
+threshSrvLow 12
+ulpcIniPrePwr "-104 dBm"
+list celResTiF 1 celResTiFHM 0.5
+list celResTiF 1 celResTiFMM 0.5
+list cellSelectionInfoV920 1 qQualMinR9 -34
+list sib2Scheduling 1 siMessagePeriodicity 160ms
+list sib2Scheduling 1 siMessageRepetition 1
+list sib2Scheduling 1 siMessageSibType SIB2
+list sib3Scheduling 1 siMessagePeriodicity 320ms
+list sib3Scheduling 1 siMessageRepetition 1
+list sib3Scheduling 1 siMessageSibType SIB3
+list sibSchedulingList 1 siMessagePeriodicity 320ms
+list sibSchedulingList 1 siMessageRepetition 1
+list sibSchedulingList 1 siMessageSibType SIB12
+list sibSchedulingList 2 siMessagePeriodicity 640ms
+list sibSchedulingList 2 siMessageRepetition 1
+list sibSchedulingList 2 siMessageSibType SIB5
+exit
+exit
+exit
+MNL 1
+MNLENT 1
+CELLMAPPING 1
+LCELL 10
+actAsiDistMimo false
+actDynamicSharedSpectrum false
+actWcdmaLteSharedSpectrum false
+CHANNELGROUP 1
+CHANNEL 1
+antlDN MRBTS-130126/EQM-1/APEQM-1/RMOD-10/ANTL-1
+direction RX
+exit
+CHANNEL 2
+antlDN MRBTS-130126/EQM-1/APEQM-1/RMOD-10/ANTL-3
+direction RX
+exit
+CHANNEL 3
+antlDN MRBTS-130126/EQM-1/APEQM-1/RMOD-10/ANTL-1
+direction TX
+exit
+CHANNEL 4
+antlDN MRBTS-130126/EQM-1/APEQM-1/RMOD-10/ANTL-3
+direction TX
+exit
+exit
+exit
+LCELL 110
+actAsiDistMimo false
+actDynamicSharedSpectrum false
+actWcdmaLteSharedSpectrum false
+CHANNELGROUP 1
+CHANNEL 1
+antlDN MRBTS-130126/EQM-1/APEQM-1/RMOD-10/ANTL-1
+direction RX
+exit
+CHANNEL 2
+antlDN MRBTS-130126/EQM-1/APEQM-1/RMOD-10/ANTL-3
+direction RX
+exit
+CHANNEL 3
+antlDN MRBTS-130126/EQM-1/APEQM-1/RMOD-10/ANTL-1
+direction TX
+exit
+CHANNEL 4
+antlDN MRBTS-130126/EQM-1/APEQM-1/RMOD-10/ANTL-3
+direction TX
+exit
+exit
+exit
+exit
+exit
+exit
