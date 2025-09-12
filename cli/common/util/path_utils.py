@@ -8,6 +8,11 @@ def get_base_dir(env_type: str):
         return os.path.join(os.path.dirname(sys.executable), "data")
     return os.path.join(os.getcwd(), "data")
 
+def get_resource_dir(name: str):
+    if getattr(sys, 'frozen', False):
+        return os.path.join(os.path.dirname(sys.executable), "_internal", "resources", name)
+    return os.path.join(os.getcwd(), name)
+
 PATH_MAP = {
     "logs": ["logs"],
     "scripts": ["scripts"],

@@ -27,20 +27,19 @@ jobs:
       - name: Build client exe (4G)
         run: >
           pyinstaller --onedir cli/main.py
-          --add-data "bin;bin"
-          --add-data "proto;proto"
-          --add-data "cli/data;cli/data"
-          --add-data "cli/settings.py;."
+          --add-data "bin;resources/bin"
+          --add-data "proto;resources/proto"
+          --add-data "cli/data;../data"
           --name nocli-client-4g
-
+      
       - name: Build client exe (5G)
         run: >
           pyinstaller --onedir cli/main.py
-          --add-data "bin;bin"
-          --add-data "proto;proto"
-          --add-data "cli/data;cli/data"
-          --add-data "cli/settings.py;."
+          --add-data "bin;resources/bin"
+          --add-data "proto;resources/proto"
+          --add-data "cli/data;../data"
           --name nocli-client-5g
+        
 
       - name: Zip 4G build
         run: powershell Compress-Archive -Path dist/nocli-client-4g -DestinationPath nocli-client-4g.zip
