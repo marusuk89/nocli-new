@@ -29,7 +29,7 @@ jobs:
           pyinstaller --onedir cli/main.py
           --add-data "bin;resources/bin"
           --add-data "proto;resources/proto"
-          --add-data "cli/data;../data"
+          --add-data "cli/data;/data"
           --name nocli-client-4g
       
       - name: Build client exe (5G)
@@ -37,7 +37,7 @@ jobs:
           pyinstaller --onedir cli/main.py
           --add-data "bin;resources/bin"
           --add-data "proto;resources/proto"
-          --add-data "cli/data;../data"
+          --add-data "cli/data;/data"
           --name nocli-client-5g
         
 

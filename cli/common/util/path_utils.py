@@ -5,7 +5,7 @@ def get_base_dir(env_type: str):
     if env_type == "DEV":
         return os.path.join(os.getcwd(), "cli", "data")
     if getattr(sys, 'frozen', False):  # exe 환경
-        return os.path.join(os.path.dirname(sys.executable), "data")
+        return os.path.join(os.path.dirname(sys.executable), "_internal", "data")
     return os.path.join(os.getcwd(), "data")
 
 def get_resource_dir(name: str):
