@@ -2,9 +2,10 @@
 ; Custom for nocli-client-5g
 
 #define MyAppName "Nocli 5G"
-#define MyAppVersion "1.0.3"
+#define MyAppVersion "1.0.4"
 #define MyAppPublisher "Cloai"
 #define MyAppExeName "nocli-client-5g.exe"
+#define MyAppBatName "nocli-client-5g.bat"
 
 [Setup]
 AppId={{F3948C1B-2AC9-4DFB-A010-D038691986F7}
@@ -30,6 +31,7 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 [Files]
 ; GitHub Actions 빌드 아웃풋 기준 경로로 수정
 Source: "dist\nocli-client-5g\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
+Source: "dist\nocli-client-5g\{#MyAppBatName}"; DestDir: "{app}"; Flags: ignoreversion
 Source: "dist\nocli-client-5g\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 [Icons]
