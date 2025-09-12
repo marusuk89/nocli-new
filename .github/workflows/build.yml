@@ -10,20 +10,24 @@ jobs:
     runs-on: windows-latest
 
     steps:
+      # 1. 코드 체크아웃
       - name: Checkout code
         uses: actions/checkout@v3
 
+      # 2. Python 환경 세팅
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
 
+      # 3. 의존성 설치
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           pip install pyinstaller
 
+      # 4. PyInstaller 빌드 (4G)
       - name: Build client exe (4G)
         run: >
           pyinstaller --onedir cli/main.py
@@ -31,7 +35,8 @@ jobs:
           --add-data "proto;resources/proto"
           --add-data "cli/data;data"
           --name nocli-client-4g
-      
+
+      # 5. PyInstaller 빌드 (5G)
       - name: Build client exe (5G)
         run: >
           pyinstaller --onedir cli/main.py
@@ -39,22 +44,47 @@ jobs:
           --add-data "proto;resources/proto"
           --add-data "cli/data;data"
           --name nocli-client-5g
-        
 
+      # 6. PyInstaller 결과 Zip 압축
       - name: Zip 4G build
         run: powershell Compress-Archive -Path dist/nocli-client-4g -DestinationPath nocli-client-4g.zip
 
       - name: Zip 5G build
         run: powershell Compress-Archive -Path dist/nocli-client-5g -DestinationPath nocli-client-5g.zip
 
-      - name: Upload 4G artifact
+      # 7. Inno Setup 설치
+      - name: Install Inno Setup
+        run: choco install innosetup --yes
+
+      # 8. Inno Setup 빌드 (4G/5G)
+      # repo 안에 installer-4g.iss, installer-5g.iss 파일이 있다고 가정
+      - name: Build installer (4G)
+        run: iscc installer-4g.iss
+
+      - name: Build installer (5G)
+        run: iscc installer-5g.iss
+
+      # 9. Artifact 업로드 (Zip + Setup exe)
+      - name: Upload 4G zip
         uses: actions/upload-artifact@v4
         with:
           name: nocli-client-4g_${{ github.ref_name }}
           path: nocli-client-4g.zip
 
-      - name: Upload 5G artifact
+      - name: Upload 5G zip
         uses: actions/upload-artifact@v4
         with:
           name: nocli-client-5g_${{ github.ref_name }}
           path: nocli-client-5g.zip
+
+      - name: Upload 4G installer
+        uses: actions/upload-artifact@v4
+        with:
+          name: nocli-setup-4g_${{ github.ref_name }}
+          path: Output/Setup_NoCLI_4G.exe
+
+      - name: Upload 5G installer
+        uses: actions/upload-artifact@v4
+        with:
+          name: nocli-setup-5g_${{ github.ref_name }}
+          path: Output/Setup_NoCLI_5G.exe
